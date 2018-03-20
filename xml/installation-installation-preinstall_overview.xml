@@ -7,18 +7,16 @@
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Pre-Installation</title>
-
  <chapter xml:id="preinstall_overview">
   <title>Overview</title>
   <para>
-   We have a <xref linkend="preinstall_checklist"/> we recommend going through
-   to ensure your environment meets the requirements of the Cloud model you
-   choose.
+   We recommend reviewing <xref linkend="preinstall_checklist"/> to ensure your
+   environment meets the requirements of the Cloud model you choose.
   </para>
   <para>
-   Once you have an idea of the configuration you want to choose for your cloud
-   and you have gone through the pre-installation steps, you have two options
-   for installation. You can use a GUI that runs in your web browser or you can
+   Once you have an idea of the configuration you want for your cloud and you
+   have gone through the pre-installation steps, you have two options for
+   installation. You can use a GUI that runs in your web browser or you can
    install via the command-line that exposes the full power and flexibility of
    &kw-hos-phrase;.
   </para>
@@ -31,8 +29,8 @@
   <itemizedlist>
    <listitem>
     <para>
-     You are not planning to deploy availability zones or use L3 segmentation in
-     your initial deployment.
+     You are not planning to deploy availability zones or use L3 segmentation
+     in your initial deployment.
     </para>
    </listitem>
    <listitem>
@@ -57,8 +55,8 @@
   </para>
  </chapter>
  <xi:include href="installation-installation-preinstall_checklist.xml"/>
- <!-- FIXME: The following was commented in the DITA original: -->
- <!--<topicref href="installation/existing_v2_input_model.cephdita" navtitle="Re-Using Existing Configuration Files"
+<!-- FIXME: The following was commented in the DITA original: -->
+<!--<topicref href="installation/existing_v2_input_model.cephdita" navtitle="Re-Using Existing Configuration Files"
    keys="existing_v2_input_model" locktitle="yes"/>-->
  <xi:include href="installation-installation-using_git.xml"/>
  <xi:include href="installation-installation-multipath_boot_from_san.xml"/>

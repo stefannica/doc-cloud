@@ -14,14 +14,14 @@
   </para>
  </important>
  <para>
-  This checklist is focused on the Entry-scale KVM model but you can
-  alter it to fit the example configuration you chose for your cloud.
+  This checklist is focused on the Entry-scale KVM model but you can alter it
+  to fit the example configuration you choose for your cloud.
  </para>
  <section>
   <title>BIOS and iLO Settings</title>
   <para>
-   Ensure that the following BIOS and iLO settings are applied to each baremetal
-   server:
+   Ensure that the following BIOS and iLO settings are applied to each
+   baremetal server:
   </para>
   <informaltable>
    <tgroup cols="2">
@@ -54,7 +54,7 @@
        </para>
        <note>
         <para>
-          &productname; installs and runs with UTC, not local time.
+         &productname; installs and runs with UTC, not local time.
         </para>
        </note>
       </entry>
@@ -94,10 +94,10 @@
    <xref linkend="example_configurations"/>.
   </para>
   <para>
-   Note that if you want a pluggable IPAM driver, it must be specified at
-   install time. Only with a clean install of &kw-hos-phrase; can you specify a
-   different IPAM driver. If upgrading, you must use the default driver.
-   <!-- More information can be found in
+   If you want a pluggable IPAM driver, it must be specified at install time.
+   Only with a clean install of &kw-hos-phrase; can you specify a different
+   IPAM
+<!-- More information can be found in
    <!-/- FIXME: <xref linkend="ipam"/> (from networking/using_ipam.xml)-/->. -->
   </para>
   <para>
@@ -221,7 +221,8 @@
    management communications. Control messages are exchanged between the
    Controllers, Compute hosts, and Cinder backends through this network. In
    addition to the control flows, the management network is also used to
-   transport Swift and iSCSI based Cinder block storage traffic between servers.
+   transport Swift and iSCSI based Cinder block storage traffic between
+   servers.
   </para>
   <para>
    When provisioning the IP Range, allocate sufficient IP addresses to cover
@@ -273,7 +274,7 @@
    <tgroup cols="3">
     <colspec colname="c1" colnum="1" colwidth="1*"/>
     <colspec colname="c2" colnum="2" colwidth="8*"/>
-    <colspec colname="c3" colnum="3" colwidth="4*"/>
+    <colspec colname="c3" colnum="3" colwidth="6*"/>
     <thead>
      <row>
       <entry>☐</entry>
@@ -332,8 +333,8 @@
   </para>
   <para>
    The IPMI network is used to connect the IPMI interfaces on the servers that
-   are assigned for use with implementing the cloud. For HPE ProLiant servers,
-   the IPMI network connects to the HPE iLO management device port for the
+   are assigned for use with implementing the cloud. For <phrase vendor="hpe">&vendor;</phrase> ProLiant servers,
+   the IPMI network connects to the <phrase vendor="hpe">&vendor;</phrase> iLO management device port for the
    server. This network is used by Cobbler to control the state of the servers
    during baremetal deployments.
   </para>
@@ -341,7 +342,7 @@
    <tgroup cols="3">
     <colspec colname="c1" colnum="1" colwidth="1*"/>
     <colspec colname="c2" colnum="2" colwidth="15*"/>
-    <colspec colname="c3" colnum="3" colwidth="4*"/>
+    <colspec colname="c3" colnum="3" colwidth="6*"/>
     <thead>
      <row>
       <entry>☐</entry>
@@ -388,9 +389,9 @@
   </para>
   <informaltable colsep="1" rowsep="1">
    <tgroup cols="3">
-    <colspec colname="c1" colnum="1"/>
-    <colspec colname="c2" colnum="2"/>
-    <colspec colname="c3" colnum="3"/>
+    <colspec colname="c1" colnum="1" colwidth="4*"/>
+    <colspec colname="c2" colnum="2" colwidth="6*"/>
+    <colspec colname="c3" colnum="3" colwidth="1*"/>
     <thead>
      <row>
       <entry>Instance</entry>
@@ -477,7 +478,7 @@
    <tgroup cols="3">
     <colspec colname="c1" colnum="1" colwidth="1*"/>
     <colspec colname="c2" colnum="2" colwidth="15*"/>
-    <colspec colname="c3" colnum="3" colwidth="4*"/>
+    <colspec colname="c3" colnum="3" colwidth="8*"/>
     <thead>
      <row>
       <entry>☐</entry>
@@ -551,8 +552,7 @@
      </row>
      <row>
       <entry/>
-      <entry>
-       <xref linkend="install_kvm"/>
+      <entry><xref linkend="install_kvm"/>
       </entry>
       <entry/>
      </row>
@@ -594,15 +594,15 @@
  <section>
   <title>Information for the <filename>nic_mappings.yml</filename> Input File</title>
   <para>
-   Log onto each type of physical server you have and issue platform-appropriate
-   commands to identify the <literal>bus-address</literal> and
-   <literal>port-num</literal> values that may be required. For example, run the
-   following command:
+   Log onto each type of physical server you have and issue
+   platform-appropriate commands to identify the <literal>bus-address</literal>
+   and <literal>port-num</literal> values that may be required. For example,
+   run the following command:
   </para>
 <screen>sudo lspci -D | grep -i net</screen>
   <para>
-   and use this information for the <literal>bus-address</literal> value in your
-   <literal>nic_mappings.yml</literal> file.
+   and use this information for the <literal>bus-address</literal> value in
+   your <literal>nic_mappings.yml</literal> file.
   </para>
   <informaltable colsep="1" rowsep="1">
    <tgroup cols="1">
@@ -634,7 +634,7 @@
   <para>
    To find the <literal>port-num</literal> use:
   </para>
- <screen>cat /sys/class/net/&lt;device name&gt;/dev_port</screen>
+<screen>cat /sys/class/net/&lt;device name&gt;/dev_port</screen>
   <para>
    where the 'device-name' is the name of the device
    <emphasis role="bold">currently mapped</emphasis> to this address, not
@@ -672,7 +672,7 @@
  <section>
   <title>Control Plane</title>
   <para>
-   The Control Plane consists of three servers, in a highly available cluster,
+   The Control Plane consists of three servers in a highly available cluster
    that host the core &kw-hos; services including Nova, Keystone, Glance,
    Cinder, Heat, Neutron, Swift, Ceilometer, and Horizon. Additional services
    include mariadb, ip-cluster, apache2, rabbitmq, memcached, zookeeper, kafka,
@@ -680,20 +680,31 @@
   </para>
   <note>
    <para>
-    To mitigate the <quote>split-brain</quote> situation described in
-    <!--FIXME: <xref linkend="neutron_troubleshooting"/> --> it is recommended
-    that you have HA network configuration with Multi-Chassis Link Aggregation
-    (MLAG) and NIC bonding configured for all the controllers to deliver
-    system-level redundancy as well network-level resiliency. Also reducing
-    the ARP timeout on the TOR switches will help.
+    A <quote>split-brain</quote> situation occurs when L3 High Availability is
+    configured and a network failure occurs to the node hosting the currently
+    active l3 agent. L3 HA is intended to provide HA in situations where the
+    l3-agent crashes or the node hosting an l3-agent crashes/restarts. In the
+    case of a physical networking issue which isolates the active l3 agent, the
+    stand-by l3-agent takes over. When the physical networking issue is
+    resolved, traffic to the VMs is disrupted due to a "split-brain" situation
+    in which traffic is split over the two L3 agents.
+</para>
+<para>
+The solution is to
+    restart the L3-agent that was originally the master. To mitigate this
+    <quote>split-brain</quote> situation, it is recommended that you have HA
+    network configuration with Multi-Chassis Link Aggregation (MLAG) and NIC
+    bonding configured for all the controllers to deliver system-level
+    redundancy as well network-level resiliency. You should also reduce the ARP
+    timeout on the TOR switches.
    </para>
   </note>
   <table xml:id="cp_1" colsep="1" rowsep="1">
    <title>Control Plane 1</title>
    <tgroup cols="3">
     <colspec colname="c1" colnum="1" colwidth="1*"/>
-    <colspec colname="c2" colnum="2" colwidth="15*"/>
-    <colspec colname="c3" colnum="3" colwidth="4*"/>
+    <colspec colname="c2" colnum="2" colwidth="10*"/>
+    <colspec colname="c3" colnum="3" colwidth="8*"/>
     <thead>
      <row>
       <entry>☐</entry>
@@ -704,9 +715,8 @@
     <tbody>
      <row>
       <entry/>
-      <entry>
-       Disk Requirement: 3x 512 GB disks (or enough space to create three
-       logical drives with that amount of space)
+      <entry>Disk Requirement: 3x 512 GB disks (or enough space to create three
+logical drives with that amount of space)
       </entry>
       <entry/>
      </row>
@@ -742,8 +752,8 @@
    <title>Control Plane 2</title>
    <tgroup cols="3">
     <colspec colname="c1" colnum="1" colwidth="1*"/>
-    <colspec colname="c2" colnum="2" colwidth="15*"/>
-    <colspec colname="c3" colnum="3" colwidth="4*"/>
+    <colspec colname="c2" colnum="2" colwidth="10*"/>
+    <colspec colname="c3" colnum="3" colwidth="8*"/>
     <thead>
      <row>
       <entry>☐</entry>
@@ -792,8 +802,8 @@
    <title>Control Plane 3</title>
    <tgroup cols="3">
     <colspec colname="c1" colnum="1" colwidth="1*"/>
-    <colspec colname="c2" colnum="2" colwidth="15*"/>
-    <colspec colname="c3" colnum="3" colwidth="4*"/>
+    <colspec colname="c2" colnum="2" colwidth="10*"/>
+    <colspec colname="c3" colnum="3" colwidth="8*"/>
     <thead>
      <row>
       <entry>☐</entry>
@@ -925,8 +935,8 @@
  <section>
   <title>Storage Hosts</title>
   <para>
-   Three or more servers with local disk volumes to provide &o_blockstore; block
-   storage resources.
+   Three or more servers with local disk volumes to provide &o_blockstore;
+   block storage resources.
   </para>
   <note>
    <para>
@@ -1027,8 +1037,7 @@
  <section>
   <title>Additional Comments</title>
   <para>
-   This section is for any additional information that you deem
-   necessary.
+   This section is for any additional information that you deem necessary.
   </para>
 <screen>
 <?dbsuse-disable-trimming?>
@@ -1045,7 +1054,7 @@
 
 </screen>
  </section>
- <!-- no SLES preinstall section needed; per Dirk Mueller: Ardana handles
+<!-- no SLES preinstall section needed; per Dirk Mueller: Ardana handles
  iptables on its own on SLES and installs/deinstalls stuff as necessary -->
  <xi:include vendor="hpe" href="installation-installation-rhel-rhel_preinstall.xml"/>
 </chapter>

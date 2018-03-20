@@ -41,8 +41,9 @@
   </listitem>
  </itemizedlist>
  <para>
-  For HPE servers, <literal>agent_ipmitool</literal> and
-  <literal>agent_ilo</literal> drivers are supported.
+  For <phrase vendor="hpe">&vendor;</phrase> servers,
+  <literal>agent_ipmitool</literal> and <literal>agent_ilo</literal> drivers
+  are supported.
  </para>
  <para>
   Before you start, you should be aware that:
@@ -76,9 +77,9 @@
    <para>
     The use of <literal>agent_</literal> drivers is predicated upon Glance
     images being backed by a Swift image store, specifically the need for the
-    temporary file access features. Use of Ceph or the filesystem as a Glance
-    back-end image store means that the <literal>agent_</literal> drivers
-    cannot be used.
+    temporary file access features. Use of the filesystem as a Glance back-end
+    image store means that the <literal>agent_</literal> drivers cannot be
+    used.
    </para>
   </listitem>
   <listitem>
@@ -91,11 +92,12 @@
  <section>
   <title>Supplied Images</title>
   <para>
-   As part of the &productname; Entry-scale Ironic Cloud installation, Ironic Python
-   Agent (IPA) images are supplied and loaded into Glance. To see the images
-   that have been loaded, execute the following commands on the deployer node:
+   As part of the &productname; Entry-scale Ironic Cloud installation, Ironic
+   Python Agent (IPA) images are supplied and loaded into Glance. To see the
+   images that have been loaded, execute the following commands on the deployer
+   node:
   </para>
- <screen>$ source ~/service.osrc
+<screen>$ source ~/service.osrc
  glance image-list</screen>
   <para>
    This will produce output like the following example, showing three images
@@ -113,16 +115,17 @@
   <para>
    The <literal>ir-deploy-ramdisk-HOS4.0</literal> image is a traditional boot
    ramdisk used by the <literal>agent_ipmitool</literal>,
-   <literal>pxe_ipmitool</literal>, and <literal>pxe_ilo</literal> drivers while
-   <literal>ir-deploy-iso-HOS4.0</literal> is an ISO image that is supplied as
-   virtual media to the host when using the <literal>agent_ilo</literal> driver.
+   <literal>pxe_ipmitool</literal>, and <literal>pxe_ilo</literal> drivers
+   while <literal>ir-deploy-iso-HOS4.0</literal> is an ISO image that is
+   supplied as virtual media to the host when using the
+   <literal>agent_ilo</literal> driver.
   </para>
  </section>
  <section>
   <title>Provisioning a node</title>
   <para>
-   The information required to provision a node varies slightly depending on the
-   driver used. In general the following details are required.
+   The information required to provision a node varies slightly depending on
+   the driver used. In general the following details are required.
   </para>
   <itemizedlist>
    <listitem>
@@ -170,8 +173,8 @@
    Use the <literal>ironic node-create</literal> command to specify the
    <literal>agent_ilo</literal> driver, network access and credential
    information for the iLO, properties of the node and the Glance ID of the
-   supplied ISO IPA image. Note that memory size is specified in megabytes while
-   disk size is gigabytes.
+   supplied ISO IPA image. Note that memory size is specified in megabytes
+   while disk size is gigabytes.
   </para>
 <screen>
 ironic node-create -d agent_ilo -i ilo_address=10.1.196.117 -i \
@@ -206,8 +209,8 @@ ilo_username=Administrator -i ilo_password=******* \
 ironic node-update <emphasis role="bold">ea7246fd-e1d6-4637-9699-0b7c59c22e67</emphasis> add properties/capabilities="boot_mode:bios,boot_option:local"
  </screen>
   <para>
-   The <literal>ironic node-update</literal> command returns details for all the
-   node's characteristics.
+   The <literal>ironic node-update</literal> command returns details for all
+   the node's characteristics.
   </para>
 <screen>
 <?dbsuse-fo font-size="0.70em"?>
@@ -291,8 +294,8 @@ ironic node-create -d <emphasis role="bold">agent_ipmitool</emphasis> \
 ironic node-update <emphasis role="bold">cf25b19d-098d-406c-b7a1-e0c40cc84a12</emphasis> add  properties/capabilities="boot_mode:bios,boot_option:local"
 </screen>
   <para>
-   The <literal>ironic node-update</literal> command returns details for all the
-   node's characteristics.
+   The <literal>ironic node-update</literal> command returns details for all
+   the node's characteristics.
   </para>
 <screen>
 <?dbsuse-fo font-size="0.70em"?>
@@ -481,7 +484,8 @@ nova boot --nic net-id=c010267c-9424-45be-8c05-99d68531ca8c \
 --key-name ironic_kp ubuntu
 </screen>
   <para>
-   This command returns information about the state of the node that is booting.
+   This command returns information about the state of the node that is
+   booting.
   </para>
 <screen>
 +--------------------------------------+------------------------+
@@ -537,8 +541,8 @@ nova list
    During the boot procedure, a login prompt will appear for &slsa;:
   </para>
   <para>
-   Just ignore this login and wait for the login screen of your target Operating
-   System to appear:
+   Just ignore this login and wait for the login screen of your target
+   Operating System to appear:
   </para>
   <para>
    If you now run the <literal>nova list</literal> command, it should show the
@@ -571,7 +575,7 @@ ssh ubuntu@192.3.15.14 -i ironic_kp.pem
    <link xlink:href="http://docs.openstack.org/developer/diskimage-builder/user_guide/installation.html"/>.
   </para>
  </section>
- <!-- FIXME: no SUSE instructions here - sknorr, 2018-01-03 -->
+<!-- FIXME: no SUSE instructions here - sknorr, 2018-01-03 -->
  <section vendor="hpe">
   <title>Creating BIOS images for &rhla;</title>
   <procedure>
@@ -580,32 +584,32 @@ ssh ubuntu@192.3.15.14 -i ironic_kp.pem
      Install <literal>dib-utils</literal>:
     </para>
 <screen>pip install dib-utils</screen>
-  </step>
-  <step xml:id="li2">
-   <para>
-    Download the qcow2 guest image from &rhla; portal and define
-    <literal>DIB_LOCAL_IMAGE</literal>:
-   </para>
+   </step>
+   <step xml:id="li2">
+    <para>
+     Download the qcow2 guest image from &rhla; portal and define
+     <literal>DIB_LOCAL_IMAGE</literal>:
+    </para>
 <screen>
 <?dbsuse-fo font-size="0.70em"?>
 export DIB_LOCAL_IMAGE=/home/stack/rhel-guest-image-7.2-20151102.0.x86_64.qcow2</screen>
-  </step>
-  <step>
-   <para>
-    Create a local yum repo and define DIB_YUM_REPO_CONF to be the path to the
-    repo:
-   </para>
+   </step>
+   <step>
+    <para>
+     Create a local yum repo and define DIB_YUM_REPO_CONF to be the path to the
+     repo:
+    </para>
 <screen>export DIB_YUM_REPO_CONF = &lt;&lt;path_to_repo_file&gt;&gt;</screen>
-  </step>
-  <step xml:id="li4">
-   <para>
-    Use <literal>disk-image-create</literal> to create the image:
-   </para>
+   </step>
+   <step xml:id="li4">
+    <para>
+     Use <literal>disk-image-create</literal> to create the image:
+    </para>
 <screen>cd diskimage-builder/bin
 ./disk-image-create  -o rhel.qcow2 vm dhcp-all-interfaces  rhel7
 </screen>
-  </step>
- </procedure>
+   </step>
+  </procedure>
  </section>
  <section>
   <title>Creating BIOS images for Ubuntu</title>
@@ -632,8 +636,9 @@ git clone https://git.gozer.hpcloud.net/openstack/diskimage-builder.git -b featu
    <step>
     <para>
      Apply the patch to your cloned <literal>diskimage-builder</literal>
-     repository (<link xlink:href="https://review.openstack.org/#/c/391850/6"/>)
-     and then clone the diskimage-builder utilities (dib-utils) repository.
+     repository
+     (<link xlink:href="https://review.openstack.org/#/c/391850/6"/>) and then
+     clone the diskimage-builder utilities (dib-utils) repository.
     </para>
 <screen>
 <?dbsuse-fo font-size="0.70em"?>

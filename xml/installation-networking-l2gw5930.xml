@@ -14,13 +14,13 @@
    allows two L2 networks to be seamlessly connected to create a single L2
    broadcast domain. The initial implementation provides for the ability to
    connect a virtual Neutron VxLAN network to a physical VLAN using a
-   VTEP-capable HPE 5930 switch. The L2 gateway is to be enabled only for VxLAN
-   deployments.
+   VTEP-capable <phrase vendor="hpe">&vendor;</phrase> 5930 switch. The L2
+   gateway is to be enabled only for VxLAN deployments.
   </para>
   <para>
    To begin L2 gateway agent setup, you need to configure your switch. These
    instructions use an
-   <link xlink:href="http://www8.hp.com/us/en/products/networking-switches/product-detail.html?oid=6604154#!tab=models">HPE
+   <link xlink:href="http://www8.hp.com/us/en/products/networking-switches/product-detail.html?oid=6604154#!tab=models"><phrase vendor="hpe">&vendor;</phrase>
    FlexFabric 5930 Switch Series</link> switch.
   </para>
   <itemizedlist>
@@ -102,7 +102,7 @@
      <imagedata fileref="media-networking-l2gateway5930-new.png"/>
     </imageobject>
    </mediaobject>
- </informalfigure>
+  </informalfigure>
  </section>
  <section xml:id="sec.l2gw5930.networks">
   <title>Networks</title>
@@ -119,7 +119,7 @@
      <imagedata fileref="media-networking-l2gateway5930-2-new.png"/>
     </imageobject>
    </mediaobject>
- </figure>
+  </figure>
   <para>
    An L2 gateway is useful in extending virtual networks (VxLAN) in a cloud
    onto physical VLAN networks. The L2 gateway switch converts VxLAN packets
@@ -135,7 +135,7 @@
      <imagedata fileref="media-networking-l2gateway5930-3-new.png"/>
     </imageobject>
    </mediaobject>
- </informalfigure>
+  </informalfigure>
   <itemizedlist>
    <listitem>
     <para>
@@ -159,7 +159,7 @@
   </para>
  </section>
  <section xml:id="sec.l2gw5930.switchConfig">
-  <title>HPE 5930 switch configuration</title>
+  <title><phrase vendor="hpe">&vendor;</phrase> 5930 switch configuration</title>
   <procedure>
    <step>
     <para>
@@ -197,7 +197,7 @@ ip address 10.1.1.10 255.255.255.0</screen>
 ip address 10.10.83.3 255.255.255.0</screen>
     <para>
      The 5930 switch has a fortygigE1/0/5 interface to which a splitter cable
-     is connected that splits the network into four tengigEthernet
+     is connected that splits the network into four tengig Ethernet
      (tengigEthernet1/0/5:1 to tengigEthernet1/0/5:4) interfaces:
     </para>
     <itemizedlist>
@@ -205,10 +205,10 @@ ip address 10.10.83.3 255.255.255.0</screen>
       <para>
        tengigEthernet1/0/5:1 and tengigEthernet1/0/5:2 are connected to the
        compute node. This is required just to bring the interface up. In other
-       words, in order to have the HPE 5930 switch work as a router, there
-       should be at least one interface of that particular VLAN up.
-       Alternatively, the interface can be connected to any host or network
-       element.
+       words, in order to have the <phrase vendor="hpe">&vendor;</phrase> 5930
+       switch work as a router, there should be at least one interface of that
+       particular VLAN up. Alternatively, the interface can be connected to any
+       host or network element.
       </para>
      </listitem>
      <listitem>
@@ -225,7 +225,7 @@ ip address 10.10.83.3 255.255.255.0</screen>
     </itemizedlist>
     <para>
      The switch’s fortygigE1/0/6 interface to which the splitter cable is
-     connected splits it into four tengigEthernet (tengigEthernet1/0/6:1 to
+     connected splits it into four tengig Ethernet (tengigEthernet1/0/6:1 to
      tengigEthernet1/0/6:4) interfaces:
     </para>
     <itemizedlist>
@@ -261,7 +261,7 @@ port link-type trunk
 port trunk permit vlan 83</screen>
    </step>
   </procedure>
-  </section>
+ </section>
  <section>
   <title>Configuring the provider data path network</title>
   <procedure>
@@ -456,7 +456,7 @@ MAC _uuid ipaddr locator logical_switch
 --- ----- ------ ------- --------------</screen>
    </step>
   </procedure>
-  </section>
+ </section>
  <section xml:id="sec.l2gw5930.enabling">
   <title>Enabling and configuring the L2 gateway agent</title>
   <procedure>
@@ -610,8 +610,8 @@ sudo vtep-ctl --db=tcp:10.10.85.10:6632 set-manager ssl:10.10.85.130:6632</scree
    </step>
    <step>
     <para>
-     To enable the HPE 5930 switch for SSL communication, execute the following
-     commands:
+     To enable the <phrase vendor="hpe">&vendor;</phrase> 5930 switch for SSL
+     communication, execute the following commands:
     </para>
 <screen>undo ovsdb server ptcp
 undo ovsdb server enable
@@ -632,7 +632,7 @@ ovsdb-client -C &lt;ca-cert.pem&gt; -p &lt;client-private-key.pem&gt; -c &lt;cli
 dump ssl:10.10.85.10:6632</screen>
    </step>
   </procedure>
-  </section>
+ </section>
  <section xml:id="sec.l2gw5930.routing">
   <title>Routing between software and hardware</title>
   <para>
@@ -689,8 +689,8 @@ dump ssl:10.10.85.10:6632</screen>
         - REMOTE</screen>
     <para>
      <emphasis role="bold">Note that the IP route is configured on the compute
-     node. Per this route, the HPE 5930 acts as a gateway that routes between
-     the two networks.</emphasis>
+     node. Per this route, the <phrase vendor="hpe">&vendor;</phrase> 5930 acts
+     as a gateway that routes between the two networks.</emphasis>
     </para>
    </step>
    <step>
@@ -740,16 +740,16 @@ ansible-playbook -i hosts/verb_hosts ardana-reconfigure.yml</screen>
   </procedure>
  </section>
  <section xml:id="sec.l2gw5930.connecting">
-  <title>Connecting a baremetal server to the HPE 5930 switch</title>
+  <title>Connecting a baremetal server to the <phrase vendor="hpe">&vendor;</phrase> 5930 switch</title>
   <para>
    As Ubuntu (baremetal server) is not aware of tagged packets, it is not
    possible for a virtual machine to communicate with a baremetal box.
   </para>
   <para>
    You (the administrator) must manually perform configuration changes to the
-   interface in the HPE 5930 switch to which the baremetal server is connected
-   so that the switch can send untagged packets. Either one of the following
-   command sets can be used to do so:
+   interface in the <phrase vendor="hpe">&vendor;</phrase> 5930 switch to which
+   the baremetal server is connected so that the switch can send untagged
+   packets. Either one of the following command sets can be used to do so:
   </para>
 <screen>Interface &lt;interface number&gt;
 service-instance &lt;service-instance id&gt;
@@ -780,9 +780,12 @@ xconnect vsi &lt;vsi-name&gt; access-mode ethernet</screen>
    from the switch.
   </para>
   <para>
-   Bare metal Management ip: 10.10.85.129 on interface em1 Switch 5930 is
-   connected to baremetal on eth1 Need to set the IP address into tagged
-   interface of eth1
+   The management IP address (<literal>10.10.85.129</literal>) residing on
+   interface <literal>em1</literal> of the
+   <phrase vendor="hpe">&vendor;</phrase> 5930 switch is connected to
+   <literal>eth1</literal> on the baremetal server. The VLAN tag and IP address
+   need to be added to the <literal>eth1</literal> interface on the baremetal
+   server.
   </para>
   <procedure>
    <step>
@@ -793,10 +796,10 @@ xconnect vsi &lt;vsi-name&gt; access-mode ethernet</screen>
    </step>
    <step>
     <para>
-     <!-- FIXME: lolwut does this mean? - sknorr, 2018-01-03 -->
-     Assign the IP address (10.10.10.129) to eth1.183 tagged interface (IP
-     from the subnet 10.10.10.0/24 as VM (10.10.10.4) spawned in Compute node
-     belongs to this subnet).
+     Assign the IP address (<literal>10.10.10.129</literal>) to
+     <literal>eth1.183</literal> tagged interface. This IP address must be from
+     the same subnet (<literal>10.10.10.0/24</literal>) as the VM
+     (<literal>10.10.10.4</literal>) that was launched on the Compute node.
     </para>
 <screen>ifconfig eth1.183 10.10.10.129/24</screen>
    </step>
@@ -804,13 +807,13 @@ xconnect vsi &lt;vsi-name&gt; access-mode ethernet</screen>
   <section xml:id="NICbonding">
    <title>NIC bonding and IRF configuration</title>
    <para>
-    With L2 gateway in actiondeployment, NIC bonding can be enabled on compute
-    nodes. For more details on NIC bonding, please refer to
-    <xref linkend="configobj_interfacemodels"/>.
-    In order to achieve high availability, HPE 5930 switches can be
+    With L2 gateway deployed, NIC bonding can be enabled on compute nodes. For
+    more details on NIC bonding, please refer to
+    <xref linkend="configobj_interfacemodels"/>. In order to achieve high
+    availability, <phrase vendor="hpe">&vendor;</phrase> 5930 switches can be
     configured to form a cluster using Intelligent Resilient Framework (IRF).
     Please refer to the
-    <link xlink:href="http://h20564.www2.hpe.com/hpsc/doc/public/display?docId=c04567141">HPE
+    <link xlink:href="http://h20564.www2.hpe.com/hpsc/doc/public/display?docId=c04567141"><phrase vendor="hpe">&vendor;</phrase>
     FlexFabric 5930 Switch Series configuration guide</link> for details.
    </para>
   </section>
@@ -825,12 +828,13 @@ xconnect vsi &lt;vsi-name&gt; access-mode ethernet</screen>
    </listitem>
    <listitem>
     <para>
-     Number of HPE 5930 switches tested: 2
+     Number of <phrase vendor="hpe">&vendor;</phrase> 5930 switches tested: 2
     </para>
    </listitem>
    <listitem>
     <para>
-     Number of baremetal connected to a single HPE 5930 switch: 100
+     Number of baremetal connected to a single
+     <phrase vendor="hpe">&vendor;</phrase> 5930 switch: 100
     </para>
    </listitem>
    <listitem>
