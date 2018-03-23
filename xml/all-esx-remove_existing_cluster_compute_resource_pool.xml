@@ -18,10 +18,10 @@
 </listitem>
         <listitem><para>Select the ovsvapp node running on each ESXi host and click <emphasis role="bold">Summary</emphasis> tab as shown
           in the following example. </para>
-<mediaobject xml:id="idg-all-esx-remove_existing_cluster_compute_resource_pool-xml-8"><imageobject role="fo"><imagedata fileref="..-media-esx-esx_hostname.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-esx-esx_hostname.png"/></imageobject></mediaobject>
+<mediaobject xml:id="idg-all-esx-remove_existing_cluster_compute_resource_pool-xml-8"><imageobject role="fo"><imagedata fileref="media-esx-esx_hostname.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-esx-esx_hostname.png"/></imageobject></mediaobject>
 <para>Similarly you can retrieve the compute-proxy node
             information.</para>
-<mediaobject xml:id="image_wgh_f1f_xx"><imageobject role="fo"><imagedata fileref="..-media-esx-esx_cluster2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-esx-esx_cluster2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_wgh_f1f_xx"><imageobject role="fo"><imagedata fileref="media-esx-esx_cluster2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-esx-esx_cluster2.png"/></imageobject></mediaobject>
 </listitem>
       </orderedlist></sidebar>
    

@@ -102,7 +102,7 @@
         first level of failure occurs.</para>
 <para><para><emphasis role="bold">Highly Available Cloud Infrastructure</emphasis></para><para>Cloud users are able to provision and manage the compute, storage, and network
           infrastructure resources at any given point in time and the Horizon Dashboard and the
-          OpenStack APIs must be reachable and be able to fulfill user requests.</para><para><mediaobject xml:id="CloudInfrastructure"><imageobject role="fo"><imagedata fileref="..-media-ha30-ha-resilient-cloud-infrastructure.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-ha-resilient-cloud-infrastructure.png"/></imageobject></mediaobject></para><para>Once the Compute, Storage, and Network resources are deployed, users expect these
+          OpenStack APIs must be reachable and be able to fulfill user requests.</para><para><mediaobject xml:id="CloudInfrastructure"><imageobject role="fo"><imagedata fileref="media-ha30-ha-resilient-cloud-infrastructure.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-ha-resilient-cloud-infrastructure.png"/></imageobject></mediaobject></para><para>Once the Compute, Storage, and Network resources are deployed, users expect these
           resources to be reliable in the following ways:</para></para>
 <itemizedlist>
           <listitem><para>If the nova-compute KVM hypervisors/servers hosting a project compute instance
@@ -169,7 +169,7 @@
           by running these in a clustered mode across the three nodes of the control plane: RabbitMQ
           cluster with Mirrored Queues and Percona MySQL Galera cluster.</para>
 </listitem>
-      </itemizedlist><mediaobject xml:id="ControlPlane1"><imageobject  role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Flow.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-ha30-HPE_HA_Flow.png"/></imageobject></mediaobject>
+      </itemizedlist><mediaobject xml:id="ControlPlane1"><imageobject  role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-ha30-HPE_HA_Flow.png"/></imageobject></mediaobject>
 <para>The above diagram illustrates the HA architecture with the focus on VIP management and load
         balancing. It only shows a subset of active-active API instances and does not show examples
         of other services such as nova-scheduler, cinder-scheduler, etc.</para>
@@ -196,24 +196,24 @@
       </itemizedlist><para><para xml:id="api_request"><emphasis role="bold">API Request Message Flow</emphasis></para><para>The diagram below shows the flow for an API request in an HA deployment. All API requests
           (internal and external) are sent through the VIP. </para>
          . </para>
-<mediaobject xml:id="image_hrh_tvf_4w"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Flow.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_Flow.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_hrh_tvf_4w"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_Flow.png"/></imageobject></mediaobject>
 <para><para>The [[[kw-hos]]] installer deploys
             highly available configurations of OpenStack cloud services, resilient against single
             points of failure. Step through the included flow for an API request in an HA
             deployment. All API requests (internal and external) are sent through the VIP.</para></para>
-<mediaobject xml:id="image_rw2_wvf_4w"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Flow-1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_Flow-1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_rw2_wvf_4w"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow-1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_Flow-1.png"/></imageobject></mediaobject>
 <para><para>1.
             keepalived has currently configured the VIP on the Controller0 node; client sends Nova
             request to VIP:8774</para></para>
-<mediaobject xml:id="image_r4r_xvf_4w"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Flow-2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_Flow-2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_r4r_xvf_4w"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow-2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_Flow-2.png"/></imageobject></mediaobject>
 <para><para>2a. HA proxy (listening on VIP:8774) receives the request and selects Controller0
             from the list of available nodes (Controller0, Controller1, Controller2). The request is
             forwarded to the Controller0IP:8774. 2b and 2c are configured Load Balancers</para></para>
-<mediaobject xml:id="image_mcf_zvf_4w"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Flow-3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_Flow-3.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_mcf_zvf_4w"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow-3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_Flow-3.png"/></imageobject></mediaobject>
 <para><para>3.
             nova-api on Controller0 receives the request and determines that a database change is
             required. It connects to the database using VIP:3306</para></para>
-<mediaobject xml:id="image_sxf_bwf_4w"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Flow-4.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_Flow-4.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_sxf_bwf_4w"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow-4.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_Flow-4.png"/></imageobject></mediaobject>
 <para><para>4.
             HA proxy (listening on VIP:3306) receives the database connection request and selects
             Controller0 from the list of available nodes (Controller0, Controller1, Controller2).
@@ -247,8 +247,8 @@
       
         <para>You can view the entire HA API Request Message Flow with the following <link xlink:href="../../media/ha30/HPE_HA_RequestFlow.png">High
             Availability Request Flow Diagram</link></para><para xml:id="node_failure"><emphasis role="bold">Handling Node Failure</emphasis></para><para>With the above HA set up, loss of a controller node is handled as follows:</para><para>Assume that the Controller0, which is currently in control of the VIP, is lost, as shown
-          in the diagram below:</para><para><mediaobject xml:id="ControlPlane3"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_NodeFailure1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_NodeFailure1.png"/></imageobject></mediaobject></para><para>When this occurs, keepalived immediately moves the VIP on to Controller1 and can now
-          receive API requests, which is load-balanced by HA proxy, as stated earlier.</para><para><mediaobject xml:id="ControlPlane4"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_NodeFailure2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_NodeFailure2.png"/></imageobject></mediaobject></para><para>Finally, when Controller0 comes back online, keepalived and HA proxy will resume in
+          in the diagram below:</para><para><mediaobject xml:id="ControlPlane3"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_NodeFailure1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_NodeFailure1.png"/></imageobject></mediaobject></para><para>When this occurs, keepalived immediately moves the VIP on to Controller1 and can now
+          receive API requests, which is load-balanced by HA proxy, as stated earlier.</para><para><mediaobject xml:id="ControlPlane4"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_NodeFailure2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_NodeFailure2.png"/></imageobject></mediaobject></para><para>Finally, when Controller0 comes back online, keepalived and HA proxy will resume in
           standby/slave mode and be ready to take over, should there be a failure of Controller1.
           The Controller0 rejoins the MySQL and RabbitMQ clusters.</para><para xml:id="network_partitions"><emphasis role="bold">Handling Network Partitions</emphasis></para><para>It is important for the HA setup to tolerate network failures, specifically those that
           result in a partition of the cluster, whereby one of the three nodes in the control plane
@@ -258,9 +258,9 @@
           partition can continue to operate as normal, whereas the non-primary/minority partition
           cannot commit any requests. In the example below, Controller0 is partitioned from the rest
           of the control plane. As a result, requests can only be satisfied on Controller1 or
-          Controller2. Controller0 will continue to attempt to rejoin the cluster:</para><para><mediaobject xml:id="ControlPlane5"><imageobject role="fo"><imagedata fileref="..-media-ha30-HPE_HA_MySQLGaleraCluster.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-HPE_HA_MySQLGaleraCluster.png"/></imageobject></mediaobject></para><para>When HA proxy detects the errors against the mysql instance on Controller0, it removes
+          Controller2. Controller0 will continue to attempt to rejoin the cluster:</para><para><mediaobject xml:id="ControlPlane5"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_MySQLGaleraCluster.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_MySQLGaleraCluster.png"/></imageobject></mediaobject></para><para>When HA proxy detects the errors against the mysql instance on Controller0, it removes
           that node from its pool for future database requests.</para><para><emphasis role="bold">Singleton Services</emphasis></para><para xml:id="cinder_volume"><emphasis role="bold">Cinder-Backup and Cinder-Volume</emphasis></para><para>Due to the single threading required in both cinder-volume and the drivers, the Cinder
-            volume service is run as a singleton in the control plane. <mediaobject xml:id="CinderVolume"><imageobject role="fo"><imagedata fileref="..-media-ha30-ha-cinder-volume.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-ha30-ha-cinder-volume.png"/></imageobject></mediaobject></para><para>Cinder-volume is deployed on all three controller nodes, but kept active on only one
+            volume service is run as a singleton in the control plane. <mediaobject xml:id="CinderVolume"><imageobject role="fo"><imagedata fileref="media-ha30-ha-cinder-volume.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-ha-cinder-volume.png"/></imageobject></mediaobject></para><para>Cinder-volume is deployed on all three controller nodes, but kept active on only one
             node at a time. By default, cinder-volume is kept active on the controller. If the
             controller fails, you must enable and start the cinder-volume service on one of the
             other controller nodes, until it is restored. Once the controller is restored, you must
@@ -293,7 +293,7 @@
         resource manager. This CRM (Cluster resource manager) uses VRRP (Virtual Router Redundancy
         Protocol) to implement the HA mechanism. VRRP is a industry standard protocol and defined in
         RFC 5798.</para>
-<mediaobject xml:id="Layer3HA"><imageobject  role="fo"><imagedata fileref="..-media-ha30-HPE_HA_Layer-3HA.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-ha30-HPE_HA_Layer-3HA.png"/></imageobject></mediaobject>
+<mediaobject xml:id="Layer3HA"><imageobject  role="fo"><imagedata fileref="media-ha30-HPE_HA_Layer-3HA.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-ha30-HPE_HA_Layer-3HA.png"/></imageobject></mediaobject>
 <para>L3 HA uses of VRRP comes with several benefits.</para>
 <para>The primary benefit is the failover mechanism does not involve interprocess communication
         overhead (order of 10s of seconds). By not using an RPC mechanism to invoke the secondary
@@ -323,7 +323,7 @@
 <para>For more information on creating HA routers, see: <xref linkend="CreateHARouter"/></para>
 </sidebar>
 
-    <sidebar xml:id="availability_zones"><title>Availability Zones</title><mediaobject xml:id="DeploymentZones"><imageobject  role="fo"><imagedata fileref="..-media-ha30-HA_AvailabilityZones_3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-ha30-HA_AvailabilityZones_3.png"/></imageobject></mediaobject>
+    <sidebar xml:id="availability_zones"><title>Availability Zones</title><mediaobject xml:id="DeploymentZones"><imageobject  role="fo"><imagedata fileref="media-ha30-HA_AvailabilityZones_3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-ha30-HA_AvailabilityZones_3.png"/></imageobject></mediaobject>
 <para>While planning your OpenStack deployment, you should decide on how to zone various types of
         nodes - such as compute, block storage, and object storage. For example, you may decide to
         place all servers in the same rack in the same zone. For larger deployments, you may plan
@@ -364,7 +364,7 @@
 <para>Furthermore, each of the VSA nodes of the cluster can be strategically deployed in
         different zones of your data center for maximum redundancy and resiliency. For more
         information on how to deploy VSA nodes on desired target servers, refer to the <xref linkend="config_vsa"/> document.</para>
-<mediaobject xml:id="BlockStorage"><imageobject  role="fo"><imagedata fileref="..-media-ha30-ha-block-storage.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-ha30-ha-block-storage.png"/></imageobject></mediaobject>
+<mediaobject xml:id="BlockStorage"><imageobject  role="fo"><imagedata fileref="media-ha30-ha-block-storage.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-ha30-ha-block-storage.png"/></imageobject></mediaobject>
 </sidebar>
 
     <sidebar xml:id="deploy_vsa_cluster"><title>Deploy VSA cluster across Availability Zones/Racks</title><para>In the Availablity Zone image above, the input model example has 3 VSA servers in three

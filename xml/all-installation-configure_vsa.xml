@@ -189,14 +189,14 @@ tcp6       0      0 :::5903                 :::*                    LISTEN      
               <listitem><para>Connecting through remote desktop client </para>
 <orderedlist>
                   <listitem><para>Login to your remote desktop. You will be prompted with xrdp login screen.</para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-vsa-xrdp1.PNG" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-xrdp1.PNG"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-vsa-xrdp1.PNG" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-xrdp1.PNG"/></imageobject></mediaobject>
 </listitem>
                   <listitem><para>Click the <emphasis role="bold">Module</emphasis> drop-down list and select
                         <literal>vnc-any</literal>.</para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-vsa-xrdp2.PNG" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-xrdp2.PNG"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-vsa-xrdp2.PNG" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-xrdp2.PNG"/></imageobject></mediaobject>
 </listitem>
                   <listitem><para>Enter the IP address, port and password in the respective fields.</para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-vsa-xrdp3.PNG" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-xrdp3.PNG"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-vsa-xrdp3.PNG" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-xrdp3.PNG"/></imageobject></mediaobject>
 </listitem>
                   <listitem><para>Click <emphasis role="bold">Ok</emphasis>.</para>
 </listitem>
@@ -206,7 +206,7 @@ tcp6       0      0 :::5903                 :::*                    LISTEN      
 <orderedlist>
                   <listitem><para>Enter the IP address and port and click <emphasis role="bold">Connect</emphasis>. You will be prompted
                     for your password once the connection is established. </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-vsa-vncview1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-vncview1.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-vsa-vncview1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-vncview1.png"/></imageobject></mediaobject>
 </listitem>
                 </orderedlist></listitem>
             </orderedlist><para>A terminal emulator will be displayed where you can enter the CMC launch command.
@@ -226,7 +226,7 @@ tcp6       0      0 :::5903                 :::*                    LISTEN      
                 <listitem><para>Navigate to the <literal>Connection -&gt; SSH -&gt; X11</literal> option in PuTTy</para></listitem>
                 <listitem><para>Click the <literal>Enable X11 forwarding box to ensure it has a checkmark in
                     it</literal></para></listitem>
-              </orderedlist><para><mediaobject><imageobject role="fo"><imagedata fileref="..-media-vsa-xming1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-xming1.png"/></imageobject></mediaobject></para></listitem>
+              </orderedlist><para><mediaobject><imageobject role="fo"><imagedata fileref="media-vsa-xming1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-xming1.png"/></imageobject></mediaobject></para></listitem>
             <listitem><para>SSH to first control plane node. </para><screen>ssh -X</screen><para>and enter the CMC
                 command (as mentioned below) to launch CMC.</para></listitem>
           </orderedlist></para></para>
@@ -242,65 +242,65 @@ tcp6       0      0 :::5903                 :::*                    LISTEN      
 </listitem>
           <listitem><para>In the CMC GUI, click the <emphasis role="bold">Find</emphasis> menu and then select the <emphasis role="bold">Find Systems</emphasis>
             options. </para>
-<mediaobject xml:id="image_dqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_dqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc1.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Click the <emphasis role="bold">Add</emphasis> button which will open the <emphasis role="bold">Enter IP Address</emphasis> dialogue box
             where you can enter the IP address of your VSA nodes which you noted earlier from your
               <literal>~/scratch/ansible/next/my_cloud/stage/info/net_info.yml</literal> file.
                 </para>
-<mediaobject xml:id="image_eqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_eqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc2.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Once you have all of your VSA nodes entered, click the <emphasis role="bold">Close</emphasis> button. </para>
-<mediaobject xml:id="image_fqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc3.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_fqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc3.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Next, click the <emphasis role="bold">Tasks</emphasis> menu and then navigate to the <emphasis role="bold">Management Group</emphasis>
             submenu and select the <emphasis role="bold">New Management Group</emphasis> option. </para>
-<mediaobject xml:id="image_gqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc4.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc4.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_gqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc4.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc4.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>In the Management Group wizard, click <emphasis role="bold">Next</emphasis> and then select <emphasis role="bold">New Management
               Group</emphasis> and then <emphasis role="bold">Next</emphasis> again to continue. </para>
-<mediaobject xml:id="image_hqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc5.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc5.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_hqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc5.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc5.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Enter a name in the <emphasis role="bold">New Management Group Name</emphasis> field and then click <emphasis role="bold">Next</emphasis>.
                 </para>
-<mediaobject xml:id="image_iqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc6.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc6.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_iqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc6.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc6.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>On the <emphasis role="bold">Add Administrative User</emphasis> you will enter a username and password you will
             use to administer the CMC utility. </para>
 <important><para>You will need to remember these values as you will input them
                 into your <literal>cinder.conf.j2</literal> file later.</para>
 </important>
-<mediaobject xml:id="image_jqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc7.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc7.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_jqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc7.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc7.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Click <emphasis role="bold">Next</emphasis> to display the <emphasis role="bold">Management Group Time</emphasis> page.</para>
 </listitem>
           <listitem><para>Add your NTP server information and click <emphasis role="bold">Next</emphasis></para>
-<mediaobject xml:id="image_kqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc8.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc8.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_kqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc8.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc8.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Skip the DNS and SMTP sections. To do so, click <emphasis role="bold">Next</emphasis> and a popup will display
             where you can choose the <emphasis role="bold">Accept Incomplete</emphasis> option. Repeat this to skip SMTP
             section as well. </para>
-<mediaobject xml:id="image_lqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc9.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc9.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_lqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc9.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc9.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>On the <emphasis role="bold">Create a Cluster</emphasis> options, select <emphasis role="bold">Standard Cluster</emphasis> from the
             displayed options and click <emphasis role="bold">Next</emphasis>. </para>
-<mediaobject xml:id="image_mqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc10.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc10.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_mqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc10.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc10.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>In the <emphasis role="bold">Cluster Name</emphasis> field, enter a name for the cluster and click <emphasis role="bold">Next</emphasis>.
                 </para>
-<mediaobject xml:id="image_nqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc11.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc11.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_nqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc11.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc11.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>On the <emphasis role="bold">Assign Virtual IPs and Subnet Masks</emphasis> page, click <emphasis role="bold">Add</emphasis> and enter the
             virtual IP address and subnet mask of the cluster in the respective boxes and click
               <emphasis role="bold">OK</emphasis>. </para>
-<mediaobject xml:id="image_oqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc12.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc12.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_oqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc12.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc12.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>The CMC utility will verify the virtual IP address information and then you can click
             the <emphasis role="bold">Next</emphasis> button.</para>
 </listitem>
           <listitem><para>Select the checkbox for <emphasis role="bold">Skip Volume Creation</emphasis> and click the <emphasis role="bold">Finish</emphasis> button
             which will display your VSA management cluster. </para>
-<mediaobject xml:id="image_pqt_p3k_5v"><imageobject role="fo"><imagedata fileref="..-media-vsa-cmc13.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-vsa-cmc13.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_pqt_p3k_5v"><imageobject role="fo"><imagedata fileref="media-vsa-cmc13.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-vsa-cmc13.png"/></imageobject></mediaobject>
 <para>Cluster creation using
             CMC takes approximately 10 minutes or longer.</para>
 <important><para>You may get a pop-up

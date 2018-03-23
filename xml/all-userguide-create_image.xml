@@ -218,11 +218,11 @@ Serial port for logging : COM1</screen></listitem>
 </listitem>
           <listitem><para>Under the <emphasis role="bold">Project</emphasis> heading, navigate to the <emphasis role="bold">Images</emphasis> menu and then click
             the <emphasis role="bold">Create Image</emphasis> button: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-horizon_uploadimage1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-horizon_uploadimage1.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-horizon_uploadimage1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-horizon_uploadimage1.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Fill in the details for your new image and then click the <emphasis role="bold">Create Image</emphasis> button:
                 </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-horizon_uploadimage2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-horizon_uploadimage2.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-horizon_uploadimage2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-horizon_uploadimage2.png"/></imageobject></mediaobject>
 </listitem>
         </orderedlist>
 </formalpara>

@@ -11,7 +11,7 @@
       [[[kw-hos]]] services and the Identity service. It shows how Keystone issues and
         validates tokens to ensure the identity of the caller of each service.</para>
 </sidebar> 
-    <mediaobject xml:id="idg-all-operations-configuring-identity-keystone_token_validation-xml-6"><imageobject role="fo"><imagedata fileref="..-media-keystone-KeystoneTokenValidationExample.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-keystone-KeystoneTokenValidationExample.png"/></imageobject></mediaobject>
+    <mediaobject xml:id="idg-all-operations-configuring-identity-keystone_token_validation-xml-6"><imageobject role="fo"><imagedata fileref="media-keystone-KeystoneTokenValidationExample.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-keystone-KeystoneTokenValidationExample.png"/></imageobject></mediaobject>
 
     <para><link xlink:href="../../../../media/keystone/KeystoneTokenValidationExample.png" xml:id="idg-all-operations-configuring-identity-keystone_token_validation-xml-7">Download this image</link></para>
 

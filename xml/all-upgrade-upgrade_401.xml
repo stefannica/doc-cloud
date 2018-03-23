@@ -60,7 +60,7 @@
                 you want to upgrade.</para>
 <orderedlist xml:id="ol_l41_jgy_sx">
                     <listitem><para>Launch CMC and login to management group (mg).</para>
-<mediaobject xml:id="image_ubn_sjy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_ubn_sjy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc1.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Click <emphasis role="bold">Check for Upgrades</emphasis> on the horizontal menu bar and select
                             <emphasis role="bold">Upgrade</emphasis>.</para>
@@ -68,30 +68,30 @@
                     <listitem><para>Click <emphasis role="bold">Click here to stay at current Software version</emphasis> link, a pop-up
                         box is displayed. Select the check box on the pop-up box and click
                                 <emphasis role="bold">OK</emphasis>.</para>
-<mediaobject xml:id="image_m1y_tjy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_m1y_tjy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc2.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Click <emphasis role="bold">Use Local Media</emphasis> to apply the patches from local media. Now,
                         browse the location where the patch sets are downloaded and click <emphasis role="bold">OK</emphasis>.
                         In the following screen shot, the patches are saved in
                             <literal>/home/cmc_installer/patch_for_VSA_11.5.01.0079</literal>
                             location.</para>
-<mediaobject xml:id="image_nj4_5jy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc3.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_nj4_5jy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc3.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>In respective mg tab, click <emphasis role="bold">Continue</emphasis> to proceed to apply the patch
                                 sets.</para>
-<mediaobject xml:id="image_lkf_vjy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc4.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc4.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_lkf_vjy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc4.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc4.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Verify the patches that (namely: 45102-00, 45103-00 and 45104-00) are going
                         to be updated. Click Install to install all the three patches.</para>
-<mediaobject xml:id="image_ars_vjy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc5.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc5.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_ars_vjy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc5.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc5.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Wait till patch sets are installed on all three VSA nodes. Reboot of VSA VMs
                         happens multiple times as required.</para>
-<mediaobject xml:id="image_rhg_wjy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc6.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc6.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_rhg_wjy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc6.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc6.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Select the check box and click <emphasis role="bold">Finish</emphasis> to complete the installation.
                         The patches are applied successfully .</para>
-<mediaobject xml:id="image_azz_wjy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc7.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc7.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_azz_wjy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc7.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc7.png"/></imageobject></mediaobject>
 </listitem>
                 </orderedlist>
 
@@ -101,7 +101,7 @@
                 procedure to upgrade it to VSA_11.5.01.0099.</para>
 <orderedlist xml:id="ol_wqc_4py_sx">
                     <listitem><para>Launch CMC and login to VSA.</para>
-<mediaobject xml:id="image_xhx_pqy_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc-vsa1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc-vsa1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_xhx_pqy_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc-vsa1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc-vsa1.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Click <emphasis role="bold">Check for Upgrades</emphasis> on the horizontal menu bar and select
                             <emphasis role="bold">Upgrade</emphasis>.</para>
@@ -118,7 +118,7 @@
 </listitem>
                     <listitem><para>In <emphasis role="bold">Available systems</emphasis> tab, click <emphasis role="bold">Continue</emphasis> to proceed to apply
                         the patch sets.</para>
-<mediaobject xml:id="image_xdf_dry_sx"><imageobject  role="fo"><imagedata fileref="..-media-vsa_upgrade-cmc-vsa4.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa_upgrade-cmc-vsa4.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_xdf_dry_sx"><imageobject  role="fo"><imagedata fileref="media-vsa_upgrade-cmc-vsa4.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa_upgrade-cmc-vsa4.png"/></imageobject></mediaobject>
 </listitem>
                     <listitem><para>Verify the patches that (namely: 45102-00, 45103-00 and 45104-00) are going
                         to be updated. Click <emphasis role="bold">Install</emphasis> to install all the three patches.</para>

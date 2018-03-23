@@ -114,32 +114,32 @@ ansible-playbook -i hosts/verb_hosts vsalm-configure-cluster.yml</screen></listi
           <listitem><para>Remove the VSA node from the cluster, using these steps: </para>
 <orderedlist>
               <listitem><para>Right click on the VSA node and select <literal>Remove from Cluster</literal></para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_1.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_1.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_1.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_1.jpg"/></imageobject></mediaobject>
 </listitem>
               <listitem><para>In the Remove Storage Systems from Cluster window, select the specific storage
                 system from the list and click OK: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_2.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_2.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_2.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_2.jpg"/></imageobject></mediaobject>
 </listitem>
               <listitem><para>Click Continue to continue with the storage system removal operation: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_3.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_3.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_3.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_3.jpg"/></imageobject></mediaobject>
 </listitem>
             </orderedlist></listitem>
           <listitem><para>Remove the VSA node from the management group, using these steps: </para>
 <orderedlist>
               <listitem><para>Right click on the VSA node and select Remove from Management Group: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_4.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_4.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_4.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_4.jpg"/></imageobject></mediaobject>
 </listitem>
               <listitem><para>Select a system to remove from the management group and click Remove from
                 Management Group: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_5.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_5.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_5.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_5.jpg"/></imageobject></mediaobject>
 </listitem>
               <listitem><para>It will ask for confirmation. Click OK: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_6.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_6.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_6.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_6.jpg"/></imageobject></mediaobject>
 </listitem>
             </orderedlist></listitem>
           <listitem><para>After successful removal of the VSA node, it will be available under the Available
             Systems list: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_7.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-operations-remove_vsa_node_30_7.jpg"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_7.jpg" width="75%" format="JPG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-operations-remove_vsa_node_30_7.jpg"/></imageobject></mediaobject>
 </listitem>
         </orderedlist>
 </sidebar>

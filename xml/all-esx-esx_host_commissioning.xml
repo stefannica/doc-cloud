@@ -27,7 +27,7 @@
 +--------------------------------------+-----------+-------------+--------------------------------------+------------+-------+------------+------------+</screen></listitem>
                                 <listitem><para>Add the host in the maintenance mode to the already activated
                                                   cluster:</para>
-<mediaobject xml:id="image_it1_3bp_lt"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_service_host1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_service_host1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_it1_3bp_lt"><imageobject  role="fo"><imagedata fileref="media-esx-eon_service_host1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_service_host1.png"/></imageobject></mediaobject>
 <para> Any host that is in
                                         maintenance mode and without OVSvAPP will be considered as a
                                         new host to be activated. </para>
@@ -57,11 +57,11 @@
 +-----------------+--------------------------------------+</screen><para>The
                                                 following image shows the host in folder during
                                                 execution of playbooks:</para>
-<mediaobject xml:id="image_ush_nbp_lt"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_service_host2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_service_host2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_ush_nbp_lt"><imageobject  role="fo"><imagedata fileref="media-esx-eon_service_host2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_service_host2.png"/></imageobject></mediaobject>
 <para>The following image
                                         shows the host after successful completion of Host
                                                   commissioning:</para>
-<mediaobject xml:id="image_fck_qr5_vv"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_service_host3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_service_host3.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_fck_qr5_vv"><imageobject  role="fo"><imagedata fileref="media-esx-eon_service_host3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_service_host3.png"/></imageobject></mediaobject>
 </listitem>
                         </orderedlist>
 

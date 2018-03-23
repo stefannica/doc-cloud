@@ -139,7 +139,7 @@ The Freezer scheduler takes care of uploading jobs to
             </row>
           </tbody>
         </tgroup></informaltable></sidebar>
-    <sidebar xml:id="idg-all-bura-bura_overview-xml-9"><title>Architecture of the Backup/Restore Service</title><mediaobject><imageobject  role="fo"><imagedata fileref="..-media-bura-bura_architecture.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-bura-bura_architecture.png"/></imageobject></mediaobject>
+    <sidebar xml:id="idg-all-bura-bura_overview-xml-9"><title>Architecture of the Backup/Restore Service</title><mediaobject><imageobject  role="fo"><imagedata fileref="media-bura-bura_architecture.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-bura-bura_architecture.png"/></imageobject></mediaobject>
 </sidebar>
     <sidebar><informaltable xml:id="table_igp_j1f_z5" colsep="1" rowsep="1"><tgroup cols="3">
           <colspec colname="c1" colnum="1" colwidth="1*"/>

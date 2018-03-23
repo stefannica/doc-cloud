@@ -298,7 +298,7 @@ ansible-playbook -i hosts/verb_hosts horizon-reconfigure.yml</screen></listitem>
                 </orderedlist>
 <para>The following image displays an example certificate as it appears in a browser's
                 certificate manager.</para>
-<mediaobject xml:id="image_gx4_gyp_hx"><imageobject  role="fo"><imagedata fileref="..-media-security-cert_dn_example.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-security-cert_dn_example.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_gx4_gyp_hx"><imageobject  role="fo"><imagedata fileref="media-security-cert_dn_example.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-security-cert_dn_example.png"/></imageobject></mediaobject>
 </sidebar>
         <sidebar xml:id="section_u54_p2p_hx"><title>User accounts</title><para>For the Keystone service to use X.509 certificates to grant users access to Horizon,
                 there must be a Keystone user account associated with each certificate. Keystone
@@ -395,6 +395,6 @@ ansible-playbook -i hosts/verb_hosts horizon-reconfigure.yml</screen></listitem>
                     <listitem><para>The login process is completed.</para>
 </listitem>
                 </orderedlist>
-<mediaobject xml:id="image_h4j_mdq_hx"><imageobject  role="fo"><imagedata fileref="..-media-security-Horizon-SSL-Keystone.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-security-Horizon-SSL-Keystone.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_h4j_mdq_hx"><imageobject  role="fo"><imagedata fileref="media-security-Horizon-SSL-Keystone.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-security-Horizon-SSL-Keystone.png"/></imageobject></mediaobject>
 </sidebar>
     </section>

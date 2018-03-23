@@ -11,7 +11,7 @@
       regular interval, as shown in the diagram below.</para>
 
     
-    <mediaobject><imageobject  role="fo"><imagedata fileref="..-media-metering-Ceilo_API_Polling.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-metering-Ceilo_API_Polling.png"/></imageobject></mediaobject>
+    <mediaobject><imageobject  role="fo"><imagedata fileref="media-metering-Ceilo_API_Polling.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-metering-Ceilo_API_Polling.png"/></imageobject></mediaobject>
 
     
     <para>Ceilometer query APIs can put a significant load on the database leading to unexpected

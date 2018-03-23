@@ -523,7 +523,7 @@ curl -k -X GET -H "X-Auth-Token: &lt;unscoped token&gt;" https://&lt;sp_public_e
         <listitem><para>Users now have access to the resources owned by the project.</para>
 </listitem>
       </orderedlist><para> The following diagram illustrates the flow of authentication requests. </para>
-<mediaobject xml:id="image_ldf_njb_mv"><imageobject role="fo"><imagedata fileref="..-media-keystone-Keystone-2-Keystone-Sequence-Generic.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-keystone-Keystone-2-Keystone-Sequence-Generic.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_ldf_njb_mv"><imageobject role="fo"><imagedata fileref="media-keystone-Keystone-2-Keystone-Sequence-Generic.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-keystone-Keystone-2-Keystone-Sequence-Generic.png"/></imageobject></mediaobject>
 </sidebar>
 
 

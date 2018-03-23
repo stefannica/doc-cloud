@@ -15,15 +15,15 @@
         <listitem><para>Log in to your Horizon dashboard.</para>
 </listitem>
         <listitem><para>Under the <emphasis role="bold">Project</emphasis> menu, navigate to <emphasis role="bold">Access and Security</emphasis>: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-create_keypair1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-create_keypair1.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-create_keypair1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-create_keypair1.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Navigate to the <emphasis role="bold">Key Pairs</emphasis> tab and select the <emphasis role="bold">Create Key Pair</emphasis> button:
               </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-create_keypair2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-create_keypair2.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-create_keypair2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-create_keypair2.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Enter in a unique name for your key pair and then select the <emphasis role="bold">Create Key Pair</emphasis>
           button: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-create_keypair3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-create_keypair3.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-create_keypair3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-create_keypair3.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Your key pair will be created and the public key portion of the key
             (<literal>.pem</literal>) will be automatically downloaded to your local computer. You

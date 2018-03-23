@@ -30,7 +30,7 @@
     <para>Within a <guilabel>disk-model</guilabel>, disk devices are assigned to either a
         <guilabel>device-group</guilabel> or a <guilabel>volume-group</guilabel>.</para>
 
-    <mediaobject><imageobject  role="fo"><imagedata fileref="..-media-inputmodel-hphelionopenstack_diskmodels.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-inputmodel-hphelionopenstack_diskmodels.png"/></imageobject></mediaobject>
+    <mediaobject><imageobject  role="fo"><imagedata fileref="media-inputmodel-hphelionopenstack_diskmodels.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-inputmodel-hphelionopenstack_diskmodels.png"/></imageobject></mediaobject>
 
     <para><link xlink:href="../../../../media/inputmodel/hphelionopenstack_diskmodels_lg.png">Download a high-res version</link></para>
 

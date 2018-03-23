@@ -27,7 +27,7 @@
         deployed on a per-control basis. </para><para>In the input model, each region is defined as a set of services 
         drawn from one or more control-planes.  All of the following are valid mappings 
         of control-planes to regions:</para></para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-inputmodel-multi-region.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-inputmodel-multi-region.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-inputmodel-multi-region.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-inputmodel-multi-region.png"/></imageobject></mediaobject>
 <para>In a simple single control-plane cloud,  there is no need for a separate region definition 
             and the control-plane itself can define the region name.</para>
 </sidebar>

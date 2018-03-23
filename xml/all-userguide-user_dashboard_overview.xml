@@ -163,7 +163,7 @@
 </listitem>
         <listitem><para>On the <emphasis role="bold">Log In</emphasis> page, enter your user name and password and then click
             <emphasis role="bold">Connect</emphasis>.</para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-horizon-HelionLogin.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-horizon-HelionLogin.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-horizon-HelionLogin.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-horizon-HelionLogin.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>The UserID with the <literal>admin</literal> role is provided with a special tab called
           Admin. The menu options underneath this tab are similar to the non-admin user views but
@@ -184,7 +184,7 @@
         following screen shots illustrate some of the services you can manage in the Horizon
         dashboard. <!----><!----></para>
 <para><emphasis role="bold">Viewing System Info</emphasis></para>
-<mediaobject xml:id="SystemInfo"><imageobject  role="fo"><imagedata fileref="..-media-horizon-HorizonSystemInfo.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-HorizonSystemInfo.png"/></imageobject></mediaobject>
+<mediaobject xml:id="SystemInfo"><imageobject  role="fo"><imagedata fileref="media-horizon-HorizonSystemInfo.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-HorizonSystemInfo.png"/></imageobject></mediaobject>
 <para>The System Info panel provides a list of all currently installed OpenStack services and
         their operation status.</para>
 <para>Additional panels on the System Info display sub service
@@ -192,19 +192,19 @@
         Compute Services tab. There is also a Block Storage Services tab and a tab for Network
         Agents.</para>
 <para><emphasis role="bold">Managing Quotas</emphasis></para>
-<mediaobject xml:id="image_lnv_rb3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-quotas2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-quotas2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_lnv_rb3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-quotas2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-quotas2.png"/></imageobject></mediaobject>
 <para>The Managing Quotas panel provides a list of system quotas that you can view and edit, such
         as VCPU's, RAM and Storage.</para>
 <para><emphasis role="bold">Managing Routers</emphasis></para>
-<mediaobject xml:id="image_kl5_5b3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-routers.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-routers.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_kl5_5b3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-routers.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-routers.png"/></imageobject></mediaobject>
 <para>Routers are created to connect end user networks together as well as to provide external
         connectivity. This panel provides a list of all currently deployed routers and associated
         metadata and enables the system administrator the ability to create, edit, and delete
         routers.</para>
 <para><emphasis role="bold">Managing Availability Zones</emphasis></para>
-<mediaobject xml:id="image_slz_wb3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-AZ.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-AZ.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_slz_wb3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-AZ.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-AZ.png"/></imageobject></mediaobject>
 <para><emphasis role="bold">Getting Hypervisor Status</emphasis></para>
-<mediaobject xml:id="image_jt2_zb3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-hypervisors.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-hypervisors.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_jt2_zb3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-hypervisors.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-hypervisors.png"/></imageobject></mediaobject>
 <para>The first tab option on the Hypervisors panel provides a view of the different hypervisors
         currently running, which physical server each hypervisor instance is running on, the type of
         hypervisor, and the infrastructure resources consumed by the hypervisor. </para>
@@ -212,15 +212,15 @@
         Host tab lists all of the currently configured physical hosts, which Availability Zone each
         host is configured for, the status, and total consumed resources.</para>
 <para><emphasis role="bold">Creating a DNS Record</emphasis></para>
-<mediaobject xml:id="image_zfd_cc3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-create_a_record.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-create_a_record.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_zfd_cc3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-create_a_record.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-create_a_record.png"/></imageobject></mediaobject>
 <para><emphasis role="bold">Managing Services</emphasis></para>
-<mediaobject xml:id="image_d5m_2c3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-services.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-services.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_d5m_2c3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-services.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-services.png"/></imageobject></mediaobject>
 <para><emphasis role="bold">Viewing Stacks</emphasis></para>
-<mediaobject xml:id="image_lgf_gc3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-stacks.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-stacks.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_lgf_gc3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-stacks.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-stacks.png"/></imageobject></mediaobject>
 <para><emphasis role="bold">Creating a Domain</emphasis></para>
-<mediaobject xml:id="image_pdf_3c3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-create_domain.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-create_domain.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_pdf_3c3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-create_domain.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-create_domain.png"/></imageobject></mediaobject>
 <para><emphasis role="bold">Viewing Network Topology</emphasis></para>
-<mediaobject xml:id="image_xdh_gf3_ps"><imageobject  role="fo"><imagedata fileref="..-media-horizon-HelionDashboardMenusnew1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-horizon-HelionDashboardMenusnew1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_xdh_gf3_ps"><imageobject  role="fo"><imagedata fileref="media-horizon-HelionDashboardMenusnew1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-horizon-HelionDashboardMenusnew1.png"/></imageobject></mediaobject>
 </sidebar>
 
     <sidebar><title>Other Panels</title><itemizedlist>
