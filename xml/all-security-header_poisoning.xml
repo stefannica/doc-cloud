@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="header_poisoning"><title>&kw-hos-tm; &kw-hos-version-50;: Preventing Host Header Poisoning</title><!---->
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="header_poisoning"><title>&kw-hos-tm; &kw-hos-version-50;: Preventing Host Header Poisoning</title><!---->
     <para><para xml:id="idg-all-security-header_poisoning-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar><para> Depending on the environment and context of your &kw-hos; deployment, it
@@ -74,4 +76,4 @@ ansible-playbook -i hosts/verb_hosts FND-CLU-deploy.yml</screen></listitem>
 
     <para>2 https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts </para>
 
-  </section>
+  </chapter>

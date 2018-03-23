@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tls30overview"><title>&kw-hos-tm; &kw-hos-version-50;: Transport Layer Security (TLS)  Overview</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tls30overview"><title>&kw-hos-tm; &kw-hos-version-50;: Transport Layer Security (TLS)  Overview</title>
     <!---->
 
 
@@ -67,4 +69,4 @@
 </sidebar>
     
 
-  <xi:include  href="all-security-tls_config.xml"/><xi:include  href="all-security-tls_mysql.xml"/><xi:include  href="all-security-tls_rabbit_mq.xml"/><xi:include  href="all-security-troubleshooting_tls.xml"/></section>
+  <xi:include  href="all-security-tls_config.xml"/><xi:include  href="all-security-tls_mysql.xml"/><xi:include  href="all-security-tls_rabbit_mq.xml"/><xi:include  href="all-security-troubleshooting_tls.xml"/></chapter>

@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_rmq_j1v_4t"><title>&kw-hos-tm; &kw-hos-version-50;: Refining Access Control with AppArmor</title><!---->
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_rmq_j1v_4t"><title>&kw-hos-tm; &kw-hos-version-50;: Refining Access Control with AppArmor</title><!---->
     <para><para xml:id="idg-all-security-using_apparmor-xml-4"><phrase><phrase/></phrase></para></para>
 
    <sidebar xml:id="idg-all-security-using_apparmor-xml-6"><para> AppArmor is a Mandatory Access Control (MAC) system as opposed to a discretionary access
@@ -58,4 +60,4 @@
 </listitem>
           </itemizedlist></listitem>
       </itemizedlist></sidebar>
-  </section>
+  </chapter>
