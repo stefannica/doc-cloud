@@ -23,14 +23,14 @@
 </listitem>
         <listitem><para>Select the ovsvapp node running on the ESXi host and click <emphasis role="bold">Summary</emphasis> tab as shown
           in the following example.</para>
-<mediaobject xml:id="idg-all-esx-removing_esx_host_from_cluster-xml-8"><imageobject  role="fo"><imagedata fileref="..-media-esx-esx_hostname.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-esx_hostname.png"/></imageobject></mediaobject>
+<mediaobject xml:id="idg-all-esx-removing_esx_host_from_cluster-xml-8"><imageobject  role="fo"><imagedata fileref="media-esx-esx_hostname.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-esx_hostname.png"/></imageobject></mediaobject>
 </listitem>
       </orderedlist>
 <para><emphasis role="bold">Procedure</emphasis></para>
 <orderedlist>
         <listitem><para>Right-click and put the host in the maintenance mode. This will automatically migrate
           all the tenant VMs except OVSvApp. </para>
-<mediaobject xml:id="image_qyh_rsw_st"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_maintenance.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_maintenance.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_qyh_rsw_st"><imageobject  role="fo"><imagedata fileref="media-esx-eon_maintenance.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_maintenance.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Cancel the maintenance mode
             task.</para>
@@ -38,16 +38,16 @@
 </listitem>
         <listitem><para>Right-click the <emphasis role="bold">ovsvapp VM (IP Address)</emphasis> node, select <emphasis role="bold">Power</emphasis>, and then click
             <emphasis role="bold">Power Off</emphasis>. </para>
-<mediaobject xml:id="image_nb3_gsw_st"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_poweroff_ovsvapp.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_poweroff_ovsvapp.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_nb3_gsw_st"><imageobject  role="fo"><imagedata fileref="media-esx-eon_poweroff_ovsvapp.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_poweroff_ovsvapp.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Right-click the node and then click <emphasis role="bold">Delete from Disk</emphasis>.</para>
-<mediaobject xml:id="image_eq4_3sw_st"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_delete_ovsvapp.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_delete_ovsvapp.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_eq4_3sw_st"><imageobject  role="fo"><imagedata fileref="media-esx-eon_delete_ovsvapp.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_delete_ovsvapp.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Right-click the
             <emphasis role="bold">Host</emphasis>, and then click <emphasis role="bold">Enter Maintenance Mode</emphasis>.</para>
 </listitem>
         <listitem><para>Disconnect the VM. Right-click the VM, and then click <emphasis role="bold">Disconnect</emphasis>.</para>
-<mediaobject xml:id="image_zx3_j2n_rt"><imageobject  role="fo"><imagedata fileref="..-media-esx-eon_disconnect_maintenance.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-eon_disconnect_maintenance.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_zx3_j2n_rt"><imageobject  role="fo"><imagedata fileref="media-esx-eon_disconnect_maintenance.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-eon_disconnect_maintenance.png"/></imageobject></mediaobject>
 </listitem>
       </orderedlist>
 
@@ -218,17 +218,17 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
           <listitem><para>Login to vCenter.</para>
 </listitem>
           <listitem><para>Right click on cluster and select <emphasis role="bold">Edit settings</emphasis>.</para>
-<mediaobject xml:id="image_bp5_zm2_xx"><imageobject  role="fo"><imagedata fileref="..-media-esx-drs-rule1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-drs-rule1.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_bp5_zm2_xx"><imageobject  role="fo"><imagedata fileref="media-esx-drs-rule1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-drs-rule1.png"/></imageobject></mediaobject>
 <para>A cluster
               settings page appear.</para>
 </listitem>
           <listitem><para>Click <emphasis role="bold">DRS Groups Manager</emphasis> on the left hand side of the pop-up box. Select the
             group which is created for deleted OVSvAPP and click Remove. </para>
-<mediaobject xml:id="image_x1j_bn2_xx"><imageobject  role="fo"><imagedata fileref="..-media-esx-drs-group2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-drs-group2.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_x1j_bn2_xx"><imageobject  role="fo"><imagedata fileref="media-esx-drs-group2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-drs-group2.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Click <emphasis role="bold">Rules</emphasis> on the left hand side of the pop-up box and select the checkbox for
             deleted OVSvAPP and click <emphasis role="bold">Remove</emphasis>.</para>
-<mediaobject xml:id="image_z5y_cn2_xx"><imageobject  role="fo"><imagedata fileref="..-media-esx-rules3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-rules3.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_z5y_cn2_xx"><imageobject  role="fo"><imagedata fileref="media-esx-rules3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-rules3.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Click <emphasis role="bold">OK</emphasis>.</para>
 </listitem>

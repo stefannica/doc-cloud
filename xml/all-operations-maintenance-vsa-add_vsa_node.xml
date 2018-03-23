@@ -171,48 +171,48 @@ ansible-playbook -i hosts/verb_hosts vsalm-configure-cluster.yml</screen></listi
 </listitem>
           <listitem><para>In the CMC GUI, click the <emphasis role="bold">Find</emphasis> menu and then select the <emphasis role="bold">Find Systems</emphasis>
             options. </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc1.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc1.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc1.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Click the <emphasis role="bold">Add</emphasis> button which will open the <emphasis role="bold">Enter IP Address</emphasis> dialogue box
             where you can enter the IP address of the VSA node(s) that you are adding. These will be
             the same IP addresses you noted in step 1 from your
               <literal>~/scratch/ansible/next/my_cloud/stage/info/net_info.yml</literal> file.
                 </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc2.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc2.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc2.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Once you have all of your VSA nodes entered, click the <emphasis role="bold">Close</emphasis> button. </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc3.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc3.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc3.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Next, click the <emphasis role="bold">Tasks</emphasis> menu and then navigate to the <emphasis role="bold">System</emphasis> submenu and
             select the <emphasis role="bold">Add to Existing Management Group</emphasis> option. </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc4.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc4.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc4.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc4.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>In the Management Group wizard, select your new VSA node and then press
               <emphasis role="bold">Continue</emphasis>. </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc5.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc5.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc5.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc5.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Select your <emphasis role="bold">Group Name</emphasis> from the drop down box and then press <emphasis role="bold">Add</emphasis> to
             continue. </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc6.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc6.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc6.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc6.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>The CMC utility will then add your new VSA node to the management group. Once it has
             completed you will see the <emphasis role="bold">Status</emphasis> change to <literal>Storage System
               Normal</literal>. </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc7.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc7.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc7.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc7.png"/></imageobject></mediaobject>
 </listitem>
           <listitem><para>Add the VSA node to an existing cluster. </para>
 <itemizedlist>
               <listitem><para>Right click the newly added VSA node and select <emphasis role="bold">Add to Existing Cluster</emphasis>:
                     </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc8.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc8.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc8.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc8.png"/></imageobject></mediaobject>
 </listitem>
               <listitem><para>Select your cluster from the drop down box. Select the storage system to add to
                 the cluster and then click OK: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc9.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc9.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc9.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc9.png"/></imageobject></mediaobject>
 </listitem>
               <listitem><para>You can then mouse over your VSA node to see the Storage System get successfully
                 added to the cluster: </para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-vsa-addvsa_cmc10.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-vsa-addvsa_cmc10.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-vsa-addvsa_cmc10.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-vsa-addvsa_cmc10.png"/></imageobject></mediaobject>
 </listitem>
             </itemizedlist></listitem>
         </orderedlist>

@@ -132,7 +132,7 @@
         Logstash, and Kibana cluster. In this cluster they are indexed and organized for easier and
         visual searches. The following illustration describes the architecture used to collect
         operational logs.</para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-logservice_arch.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-logservice_arch.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-logservice_arch.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-logservice_arch.png"/></imageobject></mediaobject>
 </sidebar>
 
 

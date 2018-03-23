@@ -35,7 +35,7 @@
 </listitem>
         <listitem><para>On the <emphasis role="bold">Home/Central Dashboard</emphasis> page, click the menu represented by 3 horizontal
           lines. </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-opsconsole-OpsConsoleBurgerMenu.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-opsconsole-OpsConsoleBurgerMenu.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-opsconsole-OpsConsoleBurgerMenu.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-opsconsole-OpsConsoleBurgerMenu.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>From the menu that slides in on the left, select <emphasis role="bold">Home</emphasis>, and then select
             <emphasis role="bold">Logging</emphasis>.</para>

@@ -18,7 +18,7 @@
         a failure zone consisting of multiple racks, each of which in turn contains a number of
         <guilabel>servers</guilabel>.</para>
 
-    <mediaobject><imageobject  role="fo"><imagedata fileref="..-media-inputmodel-hphelionopenstack_servergroups.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-inputmodel-hphelionopenstack_servergroups.png"/></imageobject></mediaobject>
+    <mediaobject><imageobject  role="fo"><imagedata fileref="media-inputmodel-hphelionopenstack_servergroups.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-inputmodel-hphelionopenstack_servergroups.png"/></imageobject></mediaobject>
 
     <para><link xlink:href="../../../../media/inputmodel/hphelionopenstack_servergroups_lg.png">Download a high-res version</link></para>
 

@@ -51,7 +51,7 @@
     <sidebar xml:id="integration_approaches"><title>Integration Approaches</title><para>Integration between Nagios and Monasca can occur at two levels, at the individual check
         level or at the management interfaces. Both options are discussed in the following
         sections.</para>
-<para><para><emphasis role="bold">Running Nagios-style checks in the Monasca agents</emphasis></para><para><mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios_int1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios_int1.png"/></imageobject></mediaobject></para><para>The Monasca agent is installed on all [[[kw-hos]]] servers and includes the
+<para><para><emphasis role="bold">Running Nagios-style checks in the Monasca agents</emphasis></para><para><mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-integrations-nagios-nagios_int1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-integrations-nagios-nagios_int1.png"/></imageobject></mediaobject></para><para>The Monasca agent is installed on all [[[kw-hos]]] servers and includes the
           ability to execute Nagios-style plugins as well as its own plugin scripts. For this
           configuration check, plugins need to be installed on the required server then added to the
           Monasca configuration under <literal>/etc/monasca/agent/conf.d</literal>. Care should be
@@ -73,11 +73,11 @@
             the node is running, plugins or dependencies may not be available.</para>
 </listitem>
         </itemizedlist>
-<para><para><emphasis role="bold">Using Nagios as a central dashboard</emphasis></para><para><mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios_int2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios_int2.png"/></imageobject></mediaobject></para><para>It is possible to create a Nagios-style plugin that will query the Monasca API endpoint
+<para><para><emphasis role="bold">Using Nagios as a central dashboard</emphasis></para><para><mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-integrations-nagios-nagios_int2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-integrations-nagios-nagios_int2.png"/></imageobject></mediaobject></para><para>It is possible to create a Nagios-style plugin that will query the Monasca API endpoint
           for an alarm status to create Nagios alerts and alarms based on Monasca alarms and
           filters. The following diagram demonstrates how the Monasca alarms appear in Nagios using
           two approaches, one listing checks by service and the other listing checks by physical
-          host.</para><para><mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios.png"/></imageobject></mediaobject></para><para>In the top section, services have been created under a dummy host,
+          host.</para><para><mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-integrations-nagios-nagios.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-integrations-nagios-nagios.png"/></imageobject></mediaobject></para><para>In the top section, services have been created under a dummy host,
             <literal>monasca_endpoint</literal>. Each service retrieves all alarms based on defined
           dimensions, for example the <literal>hos-compute</literal> check will return all alarms with
           the compute (Nova) dimension.</para><para>In the subsequent section, the physical servers making up the [[[kw-hos]]]
@@ -127,7 +127,7 @@
             other issues.</para>
 </listitem>
         </itemizedlist>
-<para><para><emphasis role="bold">Using Ops Console as central dashboard</emphasis></para><para><mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios_int3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-integrations-nagios-nagios_int3.png"/></imageobject></mediaobject></para><para>Nagios has the ability to run custom scripts in response to events. It is therefore
+<para><para><emphasis role="bold">Using Ops Console as central dashboard</emphasis></para><para><mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-integrations-nagios-nagios_int3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-integrations-nagios-nagios_int3.png"/></imageobject></mediaobject></para><para>Nagios has the ability to run custom scripts in response to events. It is therefore
           possible to write a plugin to update Monasca whenever a Nagios alert occurs. The Ops
           Console could then be used as a central reporting dashboard for both Monasca and Nagios
           alarms. The external Nagios alarms can have their own check dimension and could be

@@ -61,7 +61,7 @@
 
     <para>The physical network is shown below:</para>
 
-    <mediaobject><imageobject  role="fo"><imagedata fileref="..-media-inputmodel-hphelionopenstack_networkroutevalidation.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-inputmodel-hphelionopenstack_networkroutevalidation.png"/></imageobject></mediaobject>
+    <mediaobject><imageobject  role="fo"><imagedata fileref="media-inputmodel-hphelionopenstack_networkroutevalidation.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-inputmodel-hphelionopenstack_networkroutevalidation.png"/></imageobject></mediaobject>
 
     <para><link xlink:href="../../../../media/inputmodel/hphelionopenstack_networkroutevalidation_lg.png">Download a high-res version</link></para>
 

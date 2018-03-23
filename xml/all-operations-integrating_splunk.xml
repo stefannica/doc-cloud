@@ -34,36 +34,36 @@
 <orderedlist>
         <listitem><para>On the Splunk web UI, click on the Settings menu in the upper right-hand corner:
               </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_1.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_1.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_1.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>In the Data section of the Settings menu, click Data Inputs: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_2.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_2.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Choose the TCP option: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_3.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_3.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_3.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Click the New button to add an input. </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_4.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_4.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_4.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_4.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>In the Port field, enter <literal>5514</literal> (or any other port number of your
           choice): </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_5.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_5.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_5.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_5.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Click the Next button: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_6.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_6.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_6.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_6.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Specify the Source Type by clicking on the Select button and choosing
             <literal>linux_messages_syslog</literal> from the list: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_7.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_7.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_7.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_7.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Click the Review button: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_8.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_8.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_8.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_8.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>Review the configuration and click the Submit button: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_9.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_9.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_9.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_9.png"/></imageobject></mediaobject>
 </listitem>
         <listitem><para>You should see this success images if everything went okay: </para>
-<mediaobject><imageobject role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_10.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_10.png"/></imageobject></mediaobject>
+<mediaobject><imageobject role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_10.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_10.png"/></imageobject></mediaobject>
 </listitem>
       </orderedlist></sidebar>
 
@@ -128,6 +128,6 @@ ansible-playbook -i hosts/verb_hosts logging-server-configure.yml</screen></list
         forwarded you can navigate back to your Splunk dashboard. In the search field, use this
         string:</para>
 <screen >source="tcp:5514"</screen><para>Example:</para>
-<mediaobject><imageobject  role="fo"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_11.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-hos.docs-planning-splunk-configuring_splunk_11.png"/></imageobject></mediaobject>
+<mediaobject><imageobject  role="fo"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_11.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-hos.docs-planning-splunk-configuring_splunk_11.png"/></imageobject></mediaobject>
 </sidebar>
   </section>

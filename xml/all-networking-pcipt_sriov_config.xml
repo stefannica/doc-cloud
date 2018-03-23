@@ -419,7 +419,7 @@
     <para>The following diagram shows which fields in nic_mappings.yml map to corresponding fields in
       net_interfaces.yml:</para>
 
-    <mediaobject xml:id="image_wqb_vth_tw"><imageobject role="fo"><imagedata fileref="..-media-sriov_pcpit.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-sriov_pcpit.png"/></imageobject></mediaobject>
+    <mediaobject xml:id="image_wqb_vth_tw"><imageobject role="fo"><imagedata fileref="media-sriov_pcpit.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-sriov_pcpit.png"/></imageobject></mediaobject>
  
     <!---->
     <sidebar><title>Example Use Cases for Intel</title><orderedlist>

@@ -11,7 +11,7 @@
       named OVSvApp VM is deployed on each ESXi Hypervisor within a cluster managed by OpenStack
       Nova, as shown in the following figure. </para>
 
-    <mediaobject xml:id="image_a4n_t3x_rt"><imageobject  role="fo"><imagedata fileref="..-media-esx-esx_ovsvapp.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="..-media-esx-esx_ovsvapp.png"/></imageobject></mediaobject>
+    <mediaobject xml:id="image_a4n_t3x_rt"><imageobject  role="fo"><imagedata fileref="media-esx-esx_ovsvapp.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-esx-esx_ovsvapp.png"/></imageobject></mediaobject>
 
     <para> The OVSvApp VM runs hlinux as a guest operating system, and has Open vSwitch 2.1.0 or above
       installed. It also runs an agent called OVSvApp agent, which is responsible for dynamically

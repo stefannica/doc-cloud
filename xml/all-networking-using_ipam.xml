@@ -379,7 +379,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
         </tgroup></informaltable></sidebar>
     <para> The diagram below shows Nova compute sending notification to the
         infoblox-ipam-agent</para>
-<mediaobject xml:id="image_ul5_vwv_mv"><imageobject role="fo"><imagedata fileref="..-media-networking-ipam.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="..-media-networking-ipam.png"/></imageobject></mediaobject>
+<mediaobject xml:id="image_ul5_vwv_mv"><imageobject role="fo"><imagedata fileref="media-networking-ipam.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-networking-ipam.png"/></imageobject></mediaobject>
 
 
     <sidebar><title>Limitations</title><itemizedlist>
