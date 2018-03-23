@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="post_install_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Post-Installation Overview</title>
+        <para><para xml:id="idg-all-installation-post_install_overview-xml-4"><phrase><phrase/></phrase></para></para>
+
+        <para>Once you have completed your cloud deployment, these are some of the common
+            post-installation tasks you may need to perform. Take a look at the descriptions below
+            to determine which of these you need to do.</para>
+
+    <xi:include  href="all-installation-cloud_verification.xml"/><xi:include  href="all-installation-ui_verification.xml"/><xi:include  href="all-installation-install_openstack_clients.xml"/><xi:include  href="all-operations-configuring_tls.xml"/><xi:include  href="all-installation-config_availability_zones.xml"/><xi:include  href="all-installation-configure_lbaas.xml"/><xi:include  href="all-installation-postinstall_tasks.xml"/></section>

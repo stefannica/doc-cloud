@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="othertopics"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Other Topics</title><!---->
+        <para><para xml:id="idg-all-architecture-input_model-other_topics-othertopics-xml-4"><phrase><phrase/></phrase></para></para>
+
+        
+    <xi:include  href="all-architecture-input_model-other_topics-services_components.xml"/><xi:include  href="all-architecture-input_model-other_topics-namegeneration.xml"/><xi:include  href="all-architecture-input_model-other_topics-persisteddata.xml"/><xi:include  href="all-architecture-input_model-other_topics-serverallocation.xml"/><xi:include  href="all-architecture-input_model-other_topics-servernetworkselection.xml"/><xi:include  href="all-architecture-input_model-other_topics-networkroutevalidation.xml"/><xi:include  href="all-architecture-input_model-other_topics-configneutronprovidervlans.xml"/><xi:include  href="all-architecture-input_model-other_topics-standalonedeployer.xml"/></section>

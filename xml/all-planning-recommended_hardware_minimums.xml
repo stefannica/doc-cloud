@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-planning-recommended_hardware_minimums-xml-1"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Recommended Hardware Minimums for the Example
+    Configurations</title><abstract><para><para>Recommended minimums for disk, memory (RAM), network
+      interface, and CPU hardware for several of our example configurations.</para></para>
+</abstract>
+    
+    <sidebar xml:id="idg-all-planning-recommended_hardware_minimums-xml-4"><title>Firmware Requirements</title><para>Before performing any installation or upgrade of a [[[kw-hos]]] release on
+        HPE (ProLiant) servers, the Service Pack for ProLiant (SPP) should be applied to be
+        compatible with latest releases in firmware. The Service Pack for ProLiant (SPP) can be
+          downloaded from <link xlink:href="http://www.hpe.com/info/spp"/></para>
+</sidebar>
+    
+    
+    
+    <!---->
+  <xi:include  href="all-planning-rec_min_entryscale_kvm_vsa.xml"/><xi:include  href="all-planning-rec_min_entryscale_kvm_ceph.xml"/><xi:include  href="all-planning-rec_min_entryscale_esx_kvm_vsa.xml"/><xi:include  href="all-planning-rec_min_entryscale_esx_kvm_vsa_mml.xml"/><xi:include  href="all-planning-rec_min_ironic.xml"/><xi:include  href="all-planning-rec_min_swift.xml"/></section>
