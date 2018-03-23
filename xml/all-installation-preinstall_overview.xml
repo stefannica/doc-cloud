@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="preinstall_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Pre-installation Overview</title><!---->
+        <para><para xml:id="idg-all-installation-preinstall_overview-xml-4"><phrase><phrase/></phrase></para></para>
+
+        <sidebar xml:id="idg-all-installation-preinstall_overview-xml-6"><para>We have a <xref linkend="preinstall_checklist"/> we
+                recommend going through to ensure your environment meets the requirements of the Cloud model
+                you choose.</para>
+</sidebar>
+        
+        <sidebar xml:id="idg-all-installation-preinstall_overview-xml-7"><title>[[[kw-hos-phrase]]] Installation</title><para>Once you have an idea of the configuration you want to choose for your cloud and you have
+                gone through the pre-installation steps, you have two options for installation. You can use
+                a GUI that runs in your web browser or you can install via the command-line that exposes the
+                full power and flexibility of [[[kw-hos-phrase]]].</para>
+<para><emphasis role="bold">Using the GUI</emphasis></para>
+<para>You should use the GUI if: </para>
+<itemizedlist>
+                    <listitem><para>You are not planning to deploy availability zones or use L3 segmentation in
+                        your initial deployment. </para>
+</listitem>
+                <listitem><para>You are happy with the tuned HPE default OpenStack configurations.</para>
+</listitem>
+            </itemizedlist>
+<para>Instructions for installing via the GUI are here.</para>
+<itemizedlist>
+                <listitem/>
+            </itemizedlist><para>Note that reconfiguration of your cloud, at the moment, can only be done via the
+                command-line. The GUI installer is for initial installation only. </para>
+</sidebar>
+
+
+    <xi:include  href="all-installation-preinstall_checklist.xml"/><xi:include  href="all-installation-using_git.xml"/><xi:include  href="all-installation-multipath_boot_from_san.xml"/><xi:include  href="all-networking-l2gw5930.xml"/></section>

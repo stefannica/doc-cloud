@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_nicmapping"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>NIC Mapping</title><!---->
+        <para><para xml:id="idg-all-architecture-input_model-concepts-nicmapping-xml-4"><phrase><phrase/></phrase></para></para>
+
+        
+        
+
+    <para>When a <guilabel>server</guilabel> has more than a single physical network port, a
+        <guilabel>nic-mapping</guilabel> is required to unambiguously identify each port.
+        Standard Linux mapping of ports to interface names at the time of initial discovery (e.g.
+        eth0, eth1, eth2, ...) is not uniformly consistent from server to server, so a mapping of PCI
+        bus address to interface name is instead.</para>
+
+    <!---->
+        
+        <para>NIC mappings are also used to specify the device type for interfaces that are to be used for SR-IOV 
+            or PCI Passthrough.   Each [[[kw-hos]]] release includes the data for the supported device types.</para>
+
+    </section>
