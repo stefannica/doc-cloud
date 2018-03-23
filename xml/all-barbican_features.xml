@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican_features"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Key Manager Service (Barbican) Features</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican_features"><title>&kw-hos-tm; &kw-hos-version-50;: Key Manager Service (Barbican) Features</title>
     <sidebar xml:id="BarbicanFeatures"><para>Key Manager Service (Barbican) produces a secret storage and generation system capable of
         providing key management for services wishing to enable encryption features.</para>
 <para>Barbican is all new for the &kw-hos; Mitaka release.</para>

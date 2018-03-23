@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceph_overview"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Ceph Overview</title><abstract><para><para>&kw-hos-tm;
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceph_overview"><title>&kw-hos-tm; &kw-hos-version-50;: Ceph Overview</title><abstract><para><para>&kw-hos-tm;
             &kw-hos-version; supports the Hammer version of Ceph cluster. Ceph
             cluster is a distributed object storage solution that can scale horizontally up to
             multiple petabytes and is based on the Reliable Autonomic Distributed Object Store

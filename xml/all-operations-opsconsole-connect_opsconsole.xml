@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="connect_opsconsole"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Connecting to the Operations Console</title><abstract><para><para>Instructions for accessing the Operations Console
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="connect_opsconsole"><title>&kw-hos-tm; &kw-hos-version-50;: Connecting to the Operations Console</title><abstract><para><para>Instructions for accessing the Operations Console
       through a web browser.</para></para>
 </abstract>
     <sidebar xml:id="idg-all-operations-opsconsole-connect_opsconsole-xml-4"><para>To connect to OpsConsole you will need to understand the following tasks:</para>

@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk_setup"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>DPDK Setup for Neutron Networking</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk_setup"><title>&kw-hos-tm; &kw-hos-version-50;: DPDK Setup for Neutron Networking</title>
     <sidebar><title>Hardware requirements</title><itemizedlist xml:id="ul_epc_stf_qw">
           <listitem><para>Intel-based compute node. DPDK is not available on AMD-based systems.</para>
 </listitem>

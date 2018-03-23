@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="create_keypair"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Creating a Key Pair</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="create_keypair"><title>&kw-hos-tm; &kw-hos-version-50;: Creating a Key Pair</title><!---->
     <sidebar xml:id="idg-all-userguide-create_keypair-xml-4"><para>Key pairs are used to provide SSH access to Nova compute instances. These steps will show
         you how to create them with either the Horizon dashboard UI or the command-line tools.</para>
 <itemizedlist>

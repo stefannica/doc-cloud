@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_cli"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Installing the Command-Line Clients</title><abstract><para><para/></para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_cli"><title>&kw-hos-tm; &kw-hos-version-50;: Installing the Command-Line Clients</title><abstract><para><para/></para>
 </abstract>
     <sidebar xml:id="idg-all-userguide-installing_cli-xml-4"><para>During the installation, by default, the suite of OpenStack command-line tools are
         installed on the lifecycle manager and the control plane in your environment. This includes

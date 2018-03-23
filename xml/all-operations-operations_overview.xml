@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gettingstarted_ops"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Operations Overview</title><abstract><para><para>A high-level overview of the processes related to
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gettingstarted_ops"><title>&kw-hos-tm; &kw-hos-version-50;: Operations Overview</title><abstract><para><para>A high-level overview of the processes related to
       operating a &kw-hos-phrase; cloud.</para></para>
 </abstract>
     <!---->

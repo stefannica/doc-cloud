@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-installation-ceph-alternative_supported_choice-xml-1"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Alternative Supported Choices</title><abstract><para><para>This section provides insight on how to alter the
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-installation-ceph-alternative_supported_choice-xml-1"><title>&kw-hos-tm; &kw-hos-version-50;: Alternative Supported Choices</title><abstract><para><para>This section provides insight on how to alter the
                 <literal>entry-scale-kvm-ceph</literal> input model to deploy Ceph with various
             supported options. We recommend that you deploye your supported choice only after
             evaluating all pros and cons.</para></para>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="example_entryscale_esx"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Entry-scale ESX, KVM with VSA Model</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="example_entryscale_esx"><title>&kw-hos-tm; &kw-hos-version-50;: Entry-scale ESX, KVM with VSA Model</title>
         <!---->
         <para><para xml:id="idg-all-architecture-examples-entryscale_esx_kvm_vsa-xml-4"><phrase><phrase/></phrase></para></para>
 

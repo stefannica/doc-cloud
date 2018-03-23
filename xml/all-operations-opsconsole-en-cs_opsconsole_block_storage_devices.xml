@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Blk_Str_Devices"><title><phrase><phrase><phrase><phrase>&kw-cs-tm; &kw-cs-version-10;: </phrase></phrase></phrase></phrase>Block Storage Devices</title><para>This page allows you to register and manage block storage devices, manage volume backends, and manage common provisioning groups.</para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Blk_Str_Devices"><title>&kw-cs-tm; &kw-cs-version-10;: Block Storage Devices</title><para>This page allows you to register and manage block storage devices, manage volume backends, and manage common provisioning groups.</para>
 
         <para><emphasis role="bold">Search and Sort</emphasis></para>
 

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-operations_index-xml-1"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Operations Guide</title><!---->
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-operations_index-xml-1"><title>&kw-hos-tm; &kw-hos-version-50;: Operations Guide</title><!---->
     <sidebar><para>This guide provides a list of useful procedures for managing your &kw-hos-phrase; cloud.  The audience is the admin-level operator of the
         cloud.</para>
 </sidebar>

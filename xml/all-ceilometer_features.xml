@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilometer_features"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Data Collection Service (Ceilometer)
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilometer_features"><title>&kw-hos-tm; &kw-hos-version-50;: Data Collection Service (Ceilometer)
     Features</title>
     <sidebar xml:id="CeilometerFeatures"><para>Data Collection Service (Ceilometer) efficiently collects, normalise and transform data
         produced by OpenStack services.</para>

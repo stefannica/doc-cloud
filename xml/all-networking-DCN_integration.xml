@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_integration"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>DCN Integration with Multisite Support for
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_integration"><title>&kw-hos-tm; &kw-hos-version-50;: DCN Integration with Multisite Support for
     Neutron</title>
 
     <sidebar><title>HPE Distributed Cloud Networking (DCN) capabilities in &kw-hos-phrase;</title><para>HPE Distributed Cloud Networking (DCN) is network overlay software that enables network 

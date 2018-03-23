@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="keystone_features"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Identity Service (Keystone) Features</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="keystone_features"><title>&kw-hos-tm; &kw-hos-version-50;: Identity Service (Keystone) Features</title>
     <sidebar xml:id="idg-all-keystone_features-xml-4"><para>Identity Service (Keystone) facilitates API client authentication, service discovery,
         distributed multi-tenant authorization, and auditing.</para>
 <informaltable xml:id="KeystoneTable" colsep="1" rowsep="1"><tgroup cols="4">

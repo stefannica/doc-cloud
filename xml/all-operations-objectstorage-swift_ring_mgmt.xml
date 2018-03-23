@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="swift_ansible_playbooks"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Managing Rings Using Swift Playbooks</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="swift_ansible_playbooks"><title>&kw-hos-tm; &kw-hos-version-50;: Managing Rings Using Swift Playbooks</title>
     <!---->
     <para><para xml:id="idg-all-operations-objectstorage-swift_ring_mgmt-xml-4"><phrase><phrase/></phrase></para></para>
 

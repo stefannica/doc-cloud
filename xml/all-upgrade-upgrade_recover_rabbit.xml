@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade_recover_rabbit"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Recovering RabbitMQ after Failure during Upgrade</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade_recover_rabbit"><title>&kw-hos-tm; &kw-hos-version-50;: Recovering RabbitMQ after Failure during Upgrade</title><!---->
         <para><para xml:id="idg-all-upgrade-upgrade_recover_rabbit-xml-4"><phrase><phrase/></phrase></para></para>
 
 
