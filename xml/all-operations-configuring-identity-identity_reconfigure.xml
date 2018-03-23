@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_m43_2j3_bt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Reconfiguring the Identity Service</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_m43_2j3_bt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Reconfiguring the Identity Service</title><!---->
     <para><para xml:id="idg-all-operations-configuring-identity-identity_reconfigure-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar><title>Updating the Keystone Identity Service</title><para>This topic explains
         configuration options for the Identity service. </para>
-<para>[[[kw-hos]]] lets you
+<para>&kw-hos; lets you
       perform updates on the following parts of the Identity service configuration:</para>
 </sidebar>
       
@@ -82,7 +82,7 @@ $ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
 $ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml</screen></listitem>
       </orderedlist></sidebar>
     
-    <sidebar><title>Fernet Tokens</title><para>[[[kw-hos-phrase]]] supports UUID tokens by default. Fernet tokens are
+    <sidebar><title>Fernet Tokens</title><para>&kw-hos-phrase; supports UUID tokens by default. Fernet tokens are
         available as an experimental feature. You can switch to using Fernet tokens instead of UUID
         tokens by following the preceding steps. The benefit of using Fernet tokens is that tokens
         are not persisted in a database, which is helpful if you want to deploy the Keystone

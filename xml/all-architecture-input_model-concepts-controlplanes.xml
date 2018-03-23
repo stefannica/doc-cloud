@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_controlplanes"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Control Planes</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_controlplanes"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Control Planes</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-concepts-controlplanes-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -26,7 +26,7 @@
     <para>A simple cloud may have a single <guilabel>control-plane</guilabel> which runs all of the
         <guilabel>services</guilabel>. A more complex cloud may have multiple
         <guilabel>control-planes</guilabel> to allow for more than one instance of some services. 
-        <!----><phrase>(Note that support for multiple control-planes is a non-core feature in [[[kw-hos-phrase]]] 
+        <!----><phrase>(Note that support for multiple control-planes is a non-core feature in &kw-hos-phrase; 
         and not covered by the examples).</phrase>
         
         

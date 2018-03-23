@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_controlplanes_regions"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Control Planes and Regions</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_controlplanes_regions"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Control Planes and Regions</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-concepts-controlplanes_regions-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -21,7 +21,7 @@
         than one Nova and so these will generally be deployed 
         as region specific services, provided from separate control-planes.   
         
-        Equally in [[[kw-hos]]], Mysql and RabbitMQ cannot be shared by more than one 
+        Equally in &kw-hos;, Mysql and RabbitMQ cannot be shared by more than one 
         instance of the same service (for example a single mysql cluster cannot 
         be used by two different instances of Nova, and so these are also 
         deployed on a per-control basis. </para><para>In the input model, each region is defined as a set of services 

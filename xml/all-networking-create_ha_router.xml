@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CreateHARouter"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Creating a Highly Available Router</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CreateHARouter"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Creating a Highly Available Router</title>
     <para><para xml:id="idg-all-networking-create_ha_router-xml-4"><phrase><phrase/></phrase></para></para>
 
     
     <sidebar xml:id="CVRDVR"><title>CVR and DVR High Available Routers</title><para>CVR (Centralized Virtual Routing) and DVR (Distributed Virtual Routing) are two types of 
-        technologies which can be used to provide routing processes in [[[kw-hos-phrase]]].
+        technologies which can be used to provide routing processes in &kw-hos-phrase;.
         You can create Highly Available (HA) versions of CVR and DVR routers by using the options in the table 
         below when creating your router.
         </para>

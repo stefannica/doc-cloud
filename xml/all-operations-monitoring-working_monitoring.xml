@@ -19,7 +19,7 @@
 </listitem>
       </itemizedlist>
 
-    <para>For a full list of packaged plugins that are included [[[kw-hos]]], see <link xlink:href="https://github.com/stackforge/monasca-agent/blob/master/docs/Plugins.md">Monasca Plugins</link></para>
+    <para>For a full list of packaged plugins that are included &kw-hos;, see <link xlink:href="https://github.com/stackforge/monasca-agent/blob/master/docs/Plugins.md">Monasca Plugins</link></para>
 
     <para>You can further customize the monasca-agent to suit your needs, see <link xlink:href="https://github.com/stackforge/monasca-agent/blob/master/docs/Customizations.md">Customizing the Agent</link></para>
 

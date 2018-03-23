@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="central_log_configure_settings"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Centralized Logging</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="central_log_configure_settings"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Centralized Logging</title>
     <sidebar xml:id="Clog_config_settings"><para>You can adjust the settings for centralized logging when you are troubleshooting problems
         with a service or to decrease log size and retention to save on disk space. For steps on how
         to configure logging settings, refer to the following tasks:</para>
@@ -141,22 +141,22 @@ ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem>
   
   
     </literallayout>
-    <sidebar xml:id="CL_BU_Elasticsearch"><title>How Do I Back-Up the Elasticsearch log indices?</title><para>The log files that are centrally collected in [[[kw-hos]]] are stored by
+    <sidebar xml:id="CL_BU_Elasticsearch"><title>How Do I Back-Up the Elasticsearch log indices?</title><para>The log files that are centrally collected in &kw-hos; are stored by
         Elasticsearch on disk in the <literal>/var/lib/elasticsearch</literal> partition. However,
         this is distributed across each of the Elasticsearch cluster nodes as shards. A cron job
         runs periodically to see if the disk partition runs low on space, and, if so, it runs
         curator to delete the old log indices to make room for new logs. This deletion is permanent
         and the logs are lost forever. If you want to backup old logs, for example to comply with
         certain regulations, you can configure automatic backup of Elasticsearch indices.</para>
-<important><para>If you need to restore data that was archived prior to [[[kw-hos-phrase]]] and used the older versions of Elasticsearch, then this data will
+<important><para>If you need to restore data that was archived prior to &kw-hos-phrase; and used the older versions of Elasticsearch, then this data will
         need to be restored to a separate deployment of Elasticsearch. </para>
 <para>This can be accomplished
           using the following steps:</para>
 <orderedlist>
-          <listitem><para>Deploy a separate distinct Elasticsearch instance version matching the version in [[[kw-hos-phrase]]].</para>
+          <listitem><para>Deploy a separate distinct Elasticsearch instance version matching the version in &kw-hos-phrase;.</para>
 </listitem>
           <listitem><para>Configure the backed-up data using NFS or some other share mechanism to be available
-            to the ElasticSearch instance matching the version in [[[kw-hos-phrase]]].</para>
+            to the ElasticSearch instance matching the version in &kw-hos-phrase;.</para>
 </listitem>
         </orderedlist></important><para>Before enabling automatic back-ups, make sure you understand how much disk space you will
         need, and configure the disks that will store the data. Use the following checklist to
@@ -231,7 +231,7 @@ $ ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem
     <sidebar xml:id="restore_elastic_logs"><title>How Do I Restore logs from the Elasticsearch Backups?</title><para>To restore logs from an Elasticsearch Back-up, please refer to the following page: <link xlink:href="https://www.elastic.co/guide/en/elasticsearch/reference/2.4/modules-snapshots.html">https://www.elastic.co/guide/en/elasticsearch/reference/2.4/modules-snapshots.html</link></para>
 </sidebar>
     
-    <sidebar xml:id="tuning_logging_parameters"><title>Tuning Logging Parameters</title><para>When centralized logging is installed in [[[kw-hos]]], parameters 
+    <sidebar xml:id="tuning_logging_parameters"><title>Tuning Logging Parameters</title><para>When centralized logging is installed in &kw-hos;, parameters 
         for elasticsearch heap size and logstash heap size are automatically configured 
         based on the amount of RAM on the system. These values are typically the required 
         values, but they may need to be adjusted if performance issues arise, or disk 

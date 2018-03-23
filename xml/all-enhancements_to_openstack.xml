@@ -2,31 +2,31 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="vsOpenStack"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Enhancements to OpenStack</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="vsOpenStack"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Enhancements to OpenStack</title>
     <para><para xml:id="idg-all-enhancements_to_openstack-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <formalpara><title>How does [[[kw-hos]]] differ from a pure OpenStack cloud
-        implementation?</title><para>[[[kw-hos]]]</para>
+    <formalpara><title>How does &kw-hos; differ from a pure OpenStack cloud
+        implementation?</title><para>&kw-hos;</para>
 </formalpara>
-    <para>During installation of [[[kw-hos]]], the core OpenStack services, such as
+    <para>During installation of &kw-hos;, the core OpenStack services, such as
       compute, networking, orchestration, storage, identity, etc. are installed automatically, and
       by default. These services are integrated and work together out of the box. Rather than
-      configuring each service individually and configuring their interaction, the [[[kw-hos]]] lifecycle manager, a collection of Ansible playbooks, script together
+      configuring each service individually and configuring their interaction, the &kw-hos; lifecycle manager, a collection of Ansible playbooks, script together
       those integrations for you. The playbooks read YAML files that describe your cloud
       configuration in human-readable text which you have entered or edited, and builds your cloud
       based on those configuration settings. In addition, these files, collectively referred to as
         <xref linkend="input_model"/> are pre-populated as your starting point for a
       variety of cloud configurations.</para>
 
-    <para>[[[kw-hos]]] lifecyle manager responsibilities go beyond installation and
+    <para>&kw-hos; lifecyle manager responsibilities go beyond installation and
       configuration, however. Ongoing management and reconfiguration, in many instances, can be
       achieved using the lifecycle manager rather than the OpenStack APIs as the Ansible playbooks
       themselves use the OpenStack APIs and abstract the tasks for you. Beginning with version 2.0,
       each release adds additional automation to management tasks.</para>
 
-    <para>Granular monitoring of processes and services is integrated into [[[kw-hos]]] as well using Monasca integration.</para>
+    <para>Granular monitoring of processes and services is integrated into &kw-hos; as well using Monasca integration.</para>
 
-    <sidebar><para>Additionally, the following security features are built into [[[kw-hos]]]: </para>
+    <sidebar><para>Additionally, the following security features are built into &kw-hos;: </para>
 <itemizedlist>
           <listitem><para>Data at rest encryption capabilities including encrypted storage of passwords and
             sensitive data</para>

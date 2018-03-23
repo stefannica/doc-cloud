@@ -3,17 +3,17 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="neutron_provider_networks"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Neutron Provider Networks</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="neutron_provider_networks"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Neutron Provider Networks</title>
     <!---->
     <sidebar><title>Provider networks overview</title><para>This topic explains how to create a Neutron provider network. </para>
 <para>A provider network is a virtual network created in the
-          [[[kw-hos]]] cloud that is consumed by Helion services. The distinctive
+          &kw-hos; cloud that is consumed by Helion services. The distinctive
         element of a provider network is that it does not create a virtual router; rather, it
         depends on L3 routing that is provided by the infrastructure. </para>
-<para>A provider network is created by adding the specification to the [[[kw-hos]]]
+<para>A provider network is created by adding the specification to the &kw-hos;
         input model. It consists of at least one network and one or more subnets. </para>
 </sidebar>
-    <sidebar><title>[[[kw-hos]]] input model</title><para>The input model is the primary mechanism a cloud admin uses in defining a Helion
+    <sidebar><title>&kw-hos; input model</title><para>The input model is the primary mechanism a cloud admin uses in defining a Helion
         installation. It exists as a directory with a data subdirectory that contains YAML files. By
         convention, any service that creates a Neutron provider network will create a subdirectory
         under the data directory and the name of the subdirectory shall be the project name. For
@@ -305,8 +305,8 @@ ansible-playbook -i hosts/verb_hosts neutron-deploy.yml</screen></listitem>
 
     <sidebar xml:id="MultipleProviderNetworks"><title>Multiple Provider Networks</title><para>The physical network infrastructure must be configured to convey the provider VLAN traffic
         as tagged VLANs to the cloud compute nodes and network service network nodes. Configuration
-        of the physical network infrastructure is outside the scope of the [[[kw-hos-phrase]]] software.</para>
-<para>[[[kw-hos-phrase]]] automates the server networking configuration and the
+        of the physical network infrastructure is outside the scope of the &kw-hos-phrase; software.</para>
+<para>&kw-hos-phrase; automates the server networking configuration and the
         Network Service configuration based on information in the cloud definition. To configure the
         system for provider VLANs, specify the<emphasis> neutron.networks.vlan</emphasis> tag with a
           <emphasis>provider-physical-network</emphasis> attribute on one or more network groups. For example
@@ -334,8 +334,8 @@ ansible-playbook -i hosts/verb_hosts neutron-deploy.yml</screen></listitem>
         name: eth3
         network-groups:
         - NET_GROUP_B
-      </screen><para>A network group used for provider VLANs may contain only a single [[[kw-hos]]] network, because that VLAN must span all compute nodes and any Network Service network
-        nodes/controllers (i.e. it is a single L2 segment). The [[[kw-hos]]] network
+      </screen><para>A network group used for provider VLANs may contain only a single &kw-hos; network, because that VLAN must span all compute nodes and any Network Service network
+        nodes/controllers (i.e. it is a single L2 segment). The &kw-hos; network
         must be defined with tagged-vlan false, otherwise a linux vlan network interface will be
         created. For example:</para>
 <screen >networks:
@@ -346,7 +346,7 @@ ansible-playbook -i hosts/verb_hosts neutron-deploy.yml</screen></listitem>
         
         - name: NET_B
         tagged-vlan: false
-        network-group: NET_GROUP_B</screen><para>When the cloud is deployed, [[[kw-hos-phrase]]] will create the appropriate
+        network-group: NET_GROUP_B</screen><para>When the cloud is deployed, &kw-hos-phrase; will create the appropriate
         bridges on the servers, and set the appropriate attributes in the Neutron configuration
         files (e.g. bridge_mappings).</para>
 <para>After the cloud has been deployed, create Network Service network objects for each provider

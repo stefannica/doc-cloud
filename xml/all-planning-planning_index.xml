@@ -3,6 +3,6 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="planning_index"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Planning</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="planning_index"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Planning</title>
     
   <xi:include  href="all-planning-suse-register_suse_overview.xml"/><xi:include  href="all-planning-hw_support_matrix.xml"/><xi:include  href="all-planning-recommended_hardware_minimums.xml"/><xi:include  href="all-planning-high_availability.xml"/><xi:include  href="all-planning-thirdparty_overview.xml"/><xi:include  href="all-architecture-architecture_index.xml"/></chapter>

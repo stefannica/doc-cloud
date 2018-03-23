@@ -2,12 +2,12 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="provisioning_sles"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Provisioning SLES Yourself</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="provisioning_sles"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Provisioning SLES Yourself</title>
         <para><para xml:id="idg-all-installation-sles-provisioning_sles-xml-4"><phrase><phrase/></phrase></para></para>
 
         
         <sidebar><title>Introduction</title><para>This article outlines the steps needed to manually provision a SLES node so that 
-                it can be added to a new or existing [[[kw-hos-phrase]]] cloud.</para>
+                it can be added to a new or existing &kw-hos-phrase; cloud.</para>
 </sidebar>
         
         <sidebar xml:id="configure_lm"><title>Configure Lifecycle Manager to Enable SLES</title><itemizedlist>

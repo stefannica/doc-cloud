@@ -3,11 +3,11 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="using_git"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using Git for Configuration Management</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="using_git"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using Git for Configuration Management</title>
     <!---->
     <para><para xml:id="idg-all-installation-using_git-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <para>In [[[kw-hos-phrase]]], a local git repository is used to track configuration
+    <para>In &kw-hos-phrase;, a local git repository is used to track configuration
       changes and the configuration processor (CP) uses this repository. The introduction of a git
       workflow also means that your configuration history is maintained, making rollbacks easier as
       well as keeping a record of previous configuration settings.</para>
@@ -18,7 +18,7 @@
     <para>The git repository provides a way for you to merge changes that you pull down as "upstream"
       (i.e. from HP) updates, and allows you to manage your own configuration changes. </para>
 
-    <sidebar><title>Initialization on a new deployment</title><para>On a system new to [[[kw-hos-phrase]]], the lifecycle manager will prepare a
+    <sidebar><title>Initialization on a new deployment</title><para>On a system new to &kw-hos-phrase;, the lifecycle manager will prepare a
         git repository under <literal>~/helion</literal>. The lifecycle manager provisioning runs the
           <literal>hlm-init-deployer</literal> script automatically - this calls
           <literal>ansible-playbook -i hosts/localhost git-00-initialise.yml</literal>.</para>

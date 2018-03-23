@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="persisteddata"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Persisted Data</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="persisteddata"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Persisted Data</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-other_topics-persisteddata-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -15,11 +15,11 @@
         they don’t disrupt the previously deployed allocations.</para>
 
     <para>To allow users to make multiple iterations of the input model before deployment 
-        [[[kw-hos]]] will only persist data when the administrator confirms that they are about to
+        &kw-hos; will only persist data when the administrator confirms that they are about to
         deploy the results via the "ready-deployment" operation. To understand this better, consider
         the following example:</para>
 
-    <para>Imagine you have completed your [[[kw-hos]]] deployment with servers A, B, and C
+    <para>Imagine you have completed your &kw-hos; deployment with servers A, B, and C
         and you want to add two new compute nodes by adding servers D and E to the input model.</para>
 
     <para>When you add these to the input model and re-run the configuration processor it will read

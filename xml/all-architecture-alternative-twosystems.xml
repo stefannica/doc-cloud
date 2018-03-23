@@ -3,14 +3,14 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="twosystems"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Considerations When Installing Two Systems on One Subnet</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="twosystems"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Considerations When Installing Two Systems on One Subnet</title><!---->
         <para><para xml:id="idg-all-architecture-alternative-twosystems-xml-4"><phrase><phrase/></phrase></para></para>
 
         
 
 
 
-    <para>If you wish to install two separate [[[kw-hos-phrase]]] systems
+    <para>If you wish to install two separate &kw-hos-phrase; systems
         using a single subnet, you will need to consider the following notes.</para>
 
     <para>The <literal>ip_cluster</literal> service includes the <literal>keepalived</literal> daemon
@@ -26,10 +26,10 @@
 Dec 16 15:43:43 helion-cp1-c1-m1-mgmt Keepalived_vrrp[2218]: one or more VIP associated with VRID mismatch actual MASTER advert
 Dec 16 15:43:43 helion-cp1-c1-m1-mgmt Keepalived_vrrp[2218]: bogus VRRP packet received on br-bond0 !!!
 Dec 16 15:43:43 helion-cp1-c1-m1-mgmt Keepalived_vrrp[2218]: VRRP_Instance(VI_2) ignoring received advertisment...</screen>
-        <para>To resolve this issue, our recommendation is to install your separate [[[kw-hos-phrase]]] systems with VRRP traffic on different
+        <para>To resolve this issue, our recommendation is to install your separate &kw-hos-phrase; systems with VRRP traffic on different
         subnets.</para>
 
-        <para>If this is not possible, you may also assign a unique routerid to your separate [[[kw-hos-phrase]]] system by changing the
+        <para>If this is not possible, you may also assign a unique routerid to your separate &kw-hos-phrase; system by changing the
         <literal>keepalived_vrrp_offset</literal> service configurable. The routerid is currently
         derived using the <literal>keepalived_vrrp_index</literal> which comes from a configuration
         processor variable and the <literal>keepalived_vrrp_offset</literal>.</para>

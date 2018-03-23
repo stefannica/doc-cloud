@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="multipath_boot_from_san"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Boot from SAN and Multipath Configuration</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="multipath_boot_from_san"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Boot from SAN and Multipath Configuration</title><!---->
         <para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -22,7 +22,7 @@
 </important>
 <para><!----><para>iSCSI boot from SAN is not supported. For more information on the use of Cinder with multipath, see
                        .</para><para>
-                   In order to allow [[[kw-hos-phrase]]] use volumes from a SAN,
+                   In order to allow &kw-hos-phrase; use volumes from a SAN,
                    a number of configuration options need to be specified for both the install phases and for the osconfig phases.
                    In all cases the devices that are utilised are devices for which multipath is configured.
                    
@@ -74,7 +74,7 @@ multipath names (which will be of the form <literal>/dev/mapper/mpatha</literal>
 				
 			</orderedlist></sidebar>
         
-        <sidebar><title>QLogic FCoE restrictions and additional configurations</title><para><para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-9"><phrase><phrase>Applies to [[[kw-hos-tm]]] [[[kw-hos-version-301]]].</phrase></phrase></para></para></para>
+        <sidebar><title>QLogic FCoE restrictions and additional configurations</title><para><para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-9"><phrase><phrase>Applies to &kw-hos-tm; &kw-hos-version-301;.</phrase></phrase></para></para></para>
 <para> 
                   If you are using network cards such as Qlogic Flex Fabric 536 and 630 series
                   then there are additional OS configuration steps to support the importation of LUNs
@@ -288,7 +288,7 @@ ansible-playbook -i hosts/verb_hosts fcoe-enable.yml
         
 
         
-    <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_boot_from_san"><title>Installing the [[[kw-hos-phrase]]] iso for nodes that support Boot from SAN</title><!---->
+    <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_boot_from_san"><title>Installing the &kw-hos-phrase; iso for nodes that support Boot from SAN</title><!---->
 
             <sidebar><para>This sections describes how to install the iso on the Lifecycle Manager 
                     to support the following configurations:</para>
@@ -304,7 +304,7 @@ ansible-playbook -i hosts/verb_hosts fcoe-enable.yml
 <para>Press <literal>Ctrl-X</literal> or <literal>F10</literal> to proceed with the install.</para>
 </sidebar>      
  
-<sidebar xml:id="uefi_fcoe"><title>UEFI Boot Mode with QLogic FCoE</title><para><para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-16"><phrase><phrase>Applies to [[[kw-hos-tm]]] [[[kw-hos-version-301]]].</phrase></phrase></para></para></para>
+<sidebar xml:id="uefi_fcoe"><title>UEFI Boot Mode with QLogic FCoE</title><para><para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-16"><phrase><phrase>Applies to &kw-hos-tm; &kw-hos-version-301;.</phrase></phrase></para></para></para>
 <para>At the installer boot menu, type a lower-case "e" to enter the <literal>Edit Selection</literal> screen
                      as described in the preceding section. In addition to inserting <literal>multipath=true</literal>,
                 it is necessary to supply details of the FCoE network interfaces.
@@ -323,7 +323,7 @@ partman-fcoe/interfaces=6c:c2:17:33:4c:a1,6c:c2:17:33:4c:a9  disk-detect/fcoe/en
 <para>Navigate to the <literal>Multipath install</literal> entry and press Enter to start the installation.</para>
 </sidebar>
  
-  <sidebar xml:id="bios_fcoe"><title>Legacy BIOS Boot Mode with QLogic FCoE</title><para><para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-20"><phrase><phrase>Applies to [[[kw-hos-tm]]] [[[kw-hos-version-301]]].</phrase></phrase></para></para></para>
+  <sidebar xml:id="bios_fcoe"><title>Legacy BIOS Boot Mode with QLogic FCoE</title><para><para><para xml:id="idg-all-installation-multipath_boot_from_san-xml-20"><phrase><phrase>Applies to &kw-hos-tm; &kw-hos-version-301;.</phrase></phrase></para></para></para>
 <para>On the installer boot menu, navigate (using the Down Arrow) to the <literal>Advanced options</literal> entry and then press Enter </para>
 <para>This will bring up the Advanced options menu:</para>
 <para>Navigate to the <literal>Multipath install</literal> entry and press TAB to edit the entry details.

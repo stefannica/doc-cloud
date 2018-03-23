@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Hardware"><title><phrase><phrase><phrase><phrase>[[[kw-cs-tm]]] [[[kw-cs-version-10]]]: </phrase></phrase></phrase></phrase>HPE OneView/Synergy Servers</title><para>This page allows you to view and provision <emphasis role="bold">HPE Synergy</emphasis> and other HPE server hardware that is
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Hardware"><title><phrase><phrase><phrase><phrase>&kw-cs-tm; &kw-cs-version-10;: </phrase></phrase></phrase></phrase>HPE OneView/Synergy Servers</title><para>This page allows you to view and provision <emphasis role="bold">HPE Synergy</emphasis> and other HPE server hardware that is
         managed in <emphasis role="bold">HPE OneView</emphasis> into activated <emphasis role="bold">ESXi </emphasis>compute clusters.</para>
 
         <para><emphasis role="bold">Search and Sort</emphasis></para>

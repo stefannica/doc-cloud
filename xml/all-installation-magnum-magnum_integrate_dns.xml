@@ -2,12 +2,12 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="MagnumIntegrateDNS"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Integrate Magnum with the DNS Service </title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="MagnumIntegrateDNS"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Integrate Magnum with the DNS Service </title>
     <para><para xml:id="idg-all-installation-magnum-magnum_integrate_dns-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="idg-all-installation-magnum-magnum_integrate_dns-xml-6"><title>Integrate Magnum with the DNS Service</title><para>Integration with DNSaaS may be needed if: </para>
 <orderedlist>
-          <listitem><para>External endpoint is configured to use 'myhelion.test' as hostname and [[[kw-hos]]] frontend certificate is issued for this hostname.</para>
+          <listitem><para>External endpoint is configured to use 'myhelion.test' as hostname and &kw-hos; frontend certificate is issued for this hostname.</para>
 </listitem>
           <listitem><para>Minions are registered using Nova VM names as hostnames Kubernetes API server. Most
             kubectl command won't work if VM name (e.g.

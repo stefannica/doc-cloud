@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade_patch"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Delta Upgrades</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade_patch"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Delta Upgrades</title><!---->
         <para><para xml:id="idg-all-upgrade-upgrade_deltas-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -13,7 +13,7 @@
                 smaller in size, and more importantly, they reduce the impact of the update on a running cloud, by
                 only modifying the services that have  changed in that release.
             </para>
-<para>A full [[[kw-hos]]] kit contains the following elements:</para>
+<para>A full &kw-hos; kit contains the following elements:</para>
 <itemizedlist>
                 <listitem><para>A set of packages: hlinux debs and RHEL rpms.</para>
 </listitem>
@@ -22,7 +22,7 @@
                 <listitem><para>A set of Ansible playbooks for both lifecycle manager  setup and carrying out lifecycle operations 
                     for an OpenStack cloud (deploy, upgrade, etc.)</para>
 </listitem>
-                <listitem><para> A set of input model yaml files, which contains both [[[kw-hos]]]
+                <listitem><para> A set of input model yaml files, which contains both &kw-hos;
                     service definitions and example sets of cloud model files.</para>
 </listitem>
                 <listitem><para>A set of config file symlinks, which determines the configuration files that are exposed for 

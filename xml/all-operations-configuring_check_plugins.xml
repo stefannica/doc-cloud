@@ -35,7 +35,7 @@
 
         
         
-        <para><emphasis role="bold">Using Ansible modules to configure plugins in [[[kw-hos-phrase]]]</emphasis></para>
+        <para><emphasis role="bold">Using Ansible modules to configure plugins in &kw-hos-phrase;</emphasis></para>
 
         <para>The <literal>monasca_agent_plugin</literal> module is installed as part of the
             monasca-agent role.</para>

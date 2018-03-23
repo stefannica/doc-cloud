@@ -3,15 +3,15 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="esx_troubleshooting_installation"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Troubleshooting the ESX</title><abstract><para><para>We have gathered some of the common issues that occur
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="esx_troubleshooting_installation"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Troubleshooting the ESX</title><abstract><para><para>We have gathered some of the common issues that occur
             during installation and organized them by when they occur during the
             installation.</para></para>
 </abstract>
         <!---->
         <para><para xml:id="idg-all-installation-esx-esx_troubleshooting-xml-4"><phrase><phrase/></phrase></para></para>
 
-        <sidebar xml:id="idg-all-installation-esx-esx_troubleshooting-xml-6"><para>This section contains troubleshooting tasks for your [[[kw-hos-tm]]]
-                [[[kw-hos-version]]] for ESX.</para>
+        <sidebar xml:id="idg-all-installation-esx-esx_troubleshooting-xml-6"><para>This section contains troubleshooting tasks for your &kw-hos-tm;
+                &kw-hos-version; for ESX.</para>
 </sidebar>
         <sidebar xml:id="idg-all-installation-esx-esx_troubleshooting-xml-7"><title>Issue: If hlm-ux-services.service is not running, the EON resource-activate and
                 resource-deactivate commands fails</title><para>If you perform any maintenance work or reboot the lifecycle manager/deployer node,

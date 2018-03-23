@@ -2,11 +2,11 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HOS5NewtonFeatures"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>OpenStack Newton Features</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HOS5NewtonFeatures"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>OpenStack Newton Features</title>
     <para><para xml:id="idg-all-newton_features-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <sidebar xml:id="NewtonFeatures"><title>[[[kw-hos-phrase]]] Newton Features</title><para>Core features in the  Foundation’s Newton release (as
-        identified below) are enabled in the [[[kw-hos-phrase]]] standard settings and
+    <sidebar xml:id="NewtonFeatures"><title>&kw-hos-phrase; Newton Features</title><para>Core features in the  Foundation’s Newton release (as
+        identified below) are enabled in the &kw-hos-phrase; standard settings and
         are included in Helion standard product support. </para>
 <para>Non-core services (listed in the Features tables below) are provided as-is. Some non-core
         services are included in this release to provide early access to features that HPE may

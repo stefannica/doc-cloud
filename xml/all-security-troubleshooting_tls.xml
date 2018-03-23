@@ -19,7 +19,7 @@ ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
       hasn't restarted or the Trust chain is not installed. This is the certificate of the CA that
       signed the server certificate.</para>
 </sidebar>
-    <formalpara><title> Troubleshooting trust chain installation</title><para>[[[kw-hos-phrase]]]</para>
+    <formalpara><title> Troubleshooting trust chain installation</title><para>&kw-hos-phrase;</para>
 </formalpara>
     <para>However, this does't apply to certificates. There is a certificate-related issue
       whereby haproxy is not restarted if certificate content has been changed but the certificate
@@ -70,7 +70,7 @@ ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
       </para>
 <screen >ansible-playbook -i hosts/verb_hosts monasca-stop.yml
 ansible-playbook -i hosts/verb_hosts monasca-start.yml</screen></sidebar>
-    <sidebar><title>Troubleshooting certificates</title><para>Certificates can fail in [[[kw-hos-phrase]]] due to the following. </para>
+    <sidebar><title>Troubleshooting certificates</title><para>Certificates can fail in &kw-hos-phrase; due to the following. </para>
 <itemizedlist>
         <listitem><para>Trust chain issue. This is dealt with in the previous section </para>
 </listitem>

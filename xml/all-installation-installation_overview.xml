@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Installation Overview</title><!---->
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_overview"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Installation Overview</title><!---->
     <para><para xml:id="idg-all-installation-installation_overview-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="idg-all-installation-installation_overview-xml-6"><para>Before jumping into your installation, we recommend taking the time to read through our
            documentation to
-        get an overview of the sample configurations [[[kw-hos-phrase]]] offers. We
+        get an overview of the sample configurations &kw-hos-phrase; offers. We
         have highly tuned example configurations for each of these Cloud models:</para>
 <informaltable><tgroup cols="2">
           <tbody>

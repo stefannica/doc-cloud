@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_System_Networking"><title><phrase><phrase><phrase><phrase>[[[kw-cs-tm]]] [[[kw-cs-version-10]]]: </phrase></phrase></phrase></phrase>System Networking</title><para>This page allows you to edit a configurable network by adding an IP address or range, or remove a gateway IP address.</para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_System_Networking"><title><phrase><phrase><phrase><phrase>&kw-cs-tm; &kw-cs-version-10;: </phrase></phrase></phrase></phrase>System Networking</title><para>This page allows you to edit a configurable network by adding an IP address or range, or remove a gateway IP address.</para>
 
         <para><emphasis role="bold">Search and Sort</emphasis></para>
 

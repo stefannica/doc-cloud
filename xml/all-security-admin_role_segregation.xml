@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="roleSegregation"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Service Admin Role Segregation in the Identity
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="roleSegregation"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Service Admin Role Segregation in the Identity
     Service</title>
     <!---->
     <para><para xml:id="idg-all-security-admin_role_segregation-xml-4"><phrase><phrase/></phrase></para></para>
@@ -53,7 +53,7 @@
 </listitem>
       </itemizedlist></sidebar>
     
-    <sidebar><title>Roles</title><para>The following are the roles defined in [[[kw-hos-phrase]]]. These roles serve as a way to group common administrative needs at
+    <sidebar><title>Roles</title><para>The following are the roles defined in &kw-hos-phrase;. These roles serve as a way to group common administrative needs at
       the OpenStack service level. Each role represents administrative privilege into each service.
       Multiple roles can be assigned to a user. You can assign a Service Admin Role to a user once
       you have determined that the user is authorized to perform administrative actions and access

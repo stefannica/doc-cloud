@@ -3,15 +3,15 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DesignateInfoBlox"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Install the DNS Service with InfoBlox </title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DesignateInfoBlox"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Install the DNS Service with InfoBlox </title><!---->
     <para><para xml:id="idg-all-installation-designate-install_designate_InfoBlox-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <sidebar xml:id="idg-all-installation-designate-install_designate_InfoBlox-xml-6"><title>Install DNS Service with InfoBlox</title><para>[[[kw-hos]]] DNS Service can be installed with the <emphasis role="bold">InfoBlox</emphasis> backend
+    <sidebar xml:id="idg-all-installation-designate-install_designate_InfoBlox-xml-6"><title>Install DNS Service with InfoBlox</title><para>&kw-hos; DNS Service can be installed with the <emphasis role="bold">InfoBlox</emphasis> backend
         instead of the default <emphasis role="bold">PowerDNS</emphasis> backend. In order to use InfoBlox as the backend, all
         prerequisites must be satisfied and the configuration of InfoBlox complete. 
         
         </para>
-<important><para>The InfoBlox integration was enabled and validated in [[[kw-hos]]] 3.x. To use InfoBlox with version [4.x / 5.x] we recommend that you
+<important><para>The InfoBlox integration was enabled and validated in &kw-hos; 3.x. To use InfoBlox with version [4.x / 5.x] we recommend that you
           review the InfoBlox Deployment guide which can be found here: <link xlink:href="https://www.infoblox.com/wp-content/uploads/infoblox-deployment-guide-infoblox-openstack-driver.pdf">https://www.infoblox.com/wp-content/uploads/infoblox-deployment-guide-infoblox-openstack-driver.pdf</link>
           and address any questions with your InfoBlox support contact.</para>
 </important>

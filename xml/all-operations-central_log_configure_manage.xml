@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="central_log_manage"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Managing the Centralized Logging Feature</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="central_log_manage"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Managing the Centralized Logging Feature</title>
     <sidebar xml:id="running_overview"><para>No specific configuration tasks are required to use Centralized Logging, as it is enabled
         by default after installation. However, you can configure the individual components as
         needed for your environment. 
@@ -17,7 +17,7 @@
         files in the &lt;service&gt;-clr.yml files and then reconfigure logging. You would enable
         centralized logging for a file when you want to make sure you are able to monitor those logs
         in Kibana.</para>
-<para><emphasis role="bold">NEW in 4.0</emphasis>: In [[[kw-hos-phrase]]] the logging-ansible restart
+<para><emphasis role="bold">NEW in 4.0</emphasis>: In &kw-hos-phrase; the logging-ansible restart
         playbook has been updated to manage the start,stop, and restart of the Centralized Logging
         Service in a specific way. This change was made to ensure the proper stop, start, and
         restart of Elasticsearch. </para>
@@ -29,7 +29,7 @@
 <para>The steps in this section only impact centralized logging. Logrotate is an essential
         feature that keeps the service log files from filling the disk and will not be affected.
           </para>
-<important><para>These playbooks must be run from the [[[kw-hos]]]
+<important><para>These playbooks must be run from the &kw-hos;
           lifecycle manager.</para>
 </important>
 <para><emphasis role="bold">To stop the Logging service:</emphasis></para>
@@ -65,7 +65,7 @@
         <listitem><para>Use the documentation provided with the service to ensure it is not configured for
           logging.</para>
 </listitem>
-        <listitem><para>To find the [[[kw-hos]]] file to edit, run:
+        <listitem><para>To find the &kw-hos; file to edit, run:
           </para>
 <screen>find ~/helion/my_cloud/config/logging/vars/ -name "*&lt;service-name&gt;*"</screen></listitem>
         <listitem><para>Edit the file for the service for which you want to enable logging.</para>

@@ -3,16 +3,16 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ironic_multi_control_plane"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Ironic in Multiple Control Plane</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ironic_multi_control_plane"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Ironic in Multiple Control Plane</title>
         <!---->
         <para><para xml:id="idg-all-installation-ironic-ironic_multi_control_plane-xml-4"><phrase><phrase/></phrase></para></para>
 
       
-      <sidebar><para>[[[kw-hos-phrase]]] introduces the concept of multiple control planes and multiple regions - see the 
+      <sidebar><para>&kw-hos-phrase; introduces the concept of multiple control planes and multiple regions - see the 
           Input Model documentation for the relevant  and 
         . 
           
-          This document covers the use of an Ironic region in a multiple control plane cloud model in [[[kw-hos]]].                                  
+          This document covers the use of an Ironic region in a multiple control plane cloud model in &kw-hos;.                                  
         </para>
 </sidebar>
       
@@ -29,7 +29,7 @@ neutron net-list
   <formalpara><title>Architecture of Multiple Control Plane with Ironic</title><mediaobject><imageobject role="fo"><imagedata fileref="media-ironic-ironic_multi_control_plane.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ironic-ironic_multi_control_plane.png"/></imageobject></mediaobject>
 </formalpara>
 
-  <sidebar><title>Handling Optional Swift Service</title><para>Swift is very resource-intensive and as a result, it is now optional in the [[[kw-hos]]] control plane. 
+  <sidebar><title>Handling Optional Swift Service</title><para>Swift is very resource-intensive and as a result, it is now optional in the &kw-hos; control plane. 
     A number of services depend on Swift, and if it is not present, they must provide a fallback strategy. 
     Fore example, Glance can use the filesystem in place of Swift for its backend store.  
     </para>

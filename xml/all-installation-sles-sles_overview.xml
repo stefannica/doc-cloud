@@ -2,17 +2,17 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="sles_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>SLES Compute Node Installation
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="sles_overview"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>SLES Compute Node Installation
         Overview</title>
         <para><para xml:id="idg-all-installation-sles-sles_overview-xml-4"><phrase><phrase/></phrase></para></para>
 
-        <formalpara xml:id="idg-all-installation-sles-sles_overview-xml-6"><title>Introduction</title><para><para>[[[kw-hos-phrase]]] supports SLES compute nodes, specifically SLES
-                    12 SP2. HPE does not ship a SLES ISO with [[[kw-hos]]] so you will
+        <formalpara xml:id="idg-all-installation-sles-sles_overview-xml-6"><title>Introduction</title><para><para>&kw-hos-phrase; supports SLES compute nodes, specifically SLES
+                    12 SP2. HPE does not ship a SLES ISO with &kw-hos; so you will
                     need to download a copy of the SLES iso
                     (SLE-12-SP2-Server-DVD-x86_64-GM-DVD1.iso) and the SLES SDK ISO
                     (SLE-12-SP2-SDK-DVD-x86_64-GM-DVD1.iso) from SUSE. You can use the following
                     link to download the ISO. To do so, you will need to sign in or create a SUSE
-                    customer service account before downloading: <link xlink:href="https://www.suse.com/products/server/download/"/></para><para>There are two approaches for deploying SLES compute nodes in [[[kw-hos]]]: </para></para>
+                    customer service account before downloading: <link xlink:href="https://www.suse.com/products/server/download/"/></para><para>There are two approaches for deploying SLES compute nodes in &kw-hos;: </para></para>
 <itemizedlist>
                     <listitem><para>Using the lifecycle manager to automatically deploy SLES Compute nodes. </para>
 </listitem>

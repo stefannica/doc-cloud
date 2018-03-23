@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="user_image_upload"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Creating and Uploading a Glance Image</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="user_image_upload"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Creating and Uploading a Glance Image</title>
     <!---->
     <para><para xml:id="idg-all-userguide-create_image-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -11,7 +11,7 @@
         (Glance) repository and uploading them for use.</para>
 </sidebar>
     <sidebar xml:id="idg-all-userguide-create_image-xml-7"><title>How to Curate Your Own Images</title><para>OpenStack has created a guide to show you how to obtain, create, and modify images that
-        will be compatible with your [[[kw-hos]]] cloud:</para>
+        will be compatible with your &kw-hos; cloud:</para>
 <para><link xlink:href="http://docs.openstack.org/image-guide/content/">OpenStack Virtual Machine Image Guide</link></para>
 </sidebar>
 
@@ -46,7 +46,7 @@
 </formalpara>
 
     <formalpara xml:id="idg-all-userguide-create_image-xml-9"><title>Building a Microsoft Windows Server Guest Image</title><para><para>This section describes how to create a Microsoft Windows Server 2012, 2012 R2, 2008, or
-          2008 R2 image for deployment within [[[kw-hos]]]. The Microsoft Windows
+          2008 R2 image for deployment within &kw-hos;. The Microsoft Windows
           Server images can be created on a 64-bit workstation running Ubuntu 13.10 or higher on
           physical hardware that supports KVM.</para><para><emphasis role="bold">How to build a supported Microsoft Windows Server guest image for HPE Helion
             OpenStack</emphasis></para><para>The following steps describe the procedure to create and deploy Microsoft Windows Server

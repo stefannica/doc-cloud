@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DesignateMonitoringSupport"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>DNS Service Monitoring Support</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DesignateMonitoringSupport"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>DNS Service Monitoring Support</title><!---->
     
     <!---->
     
@@ -11,7 +11,7 @@
     <para><para xml:id="idg-all-operations-dns-designate_monitor_support-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="MonitoringSupport"><title>DNS Service Monitoring Support</title><para>Additional monitoring support for the DNS Service (Designate) has been added to
-        [[[kw-hos]]].
+        &kw-hos;.
       </para>
 <para>In the Networking section of the Ops Console, you can see alarms for all of the
         DNS Services (Designate), such as designate-zone-manager, designate-api, 

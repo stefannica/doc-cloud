@@ -3,18 +3,18 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_x2x_vy4_lt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>ESX ON-Boarding Service (EON)</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_x2x_vy4_lt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>ESX ON-Boarding Service (EON)</title><!---->
     <!---->
     <para><para xml:id="idg-all-esx-eon_service-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <para>The [[[kw-hos-phrase]]] EON (ESX on boarding) service is an inventory service, which
+    <para>The &kw-hos-phrase; EON (ESX on boarding) service is an inventory service, which
       interacts with the VMware vCenter server, and collects available information from data
       centers, clusters, datastore, dvSwitch and portgroup details. When a cloud administrator wants
-      a particular cluster to be a compute resource in [[[kw-hos-phrase]]], EON provisions the
+      a particular cluster to be a compute resource in &kw-hos-phrase;, EON provisions the
       Nova proxy service VM for each cluster, and OVSvApp service VM, for each ESX host in that
       cluster.</para>
 
-    <para>The integration of EON with [[[kw-hos-phrase]]] automates the steps for moving/adding a
+    <para>The integration of EON with &kw-hos-phrase; automates the steps for moving/adding a
       cluster in a compute resource. To use this functionality, you must run a few EON commands.</para>
 
     <sidebar><title><emphasis role="bold">Architecture</emphasis></title><para>EON is installed on the master control plane node, and the EON CLI is installed on the HLM

@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade_fail_alarms"><title>Upgrade Can Fail while Creating or Removing Alarms</title><!---->
         <!---->
-        <sidebar xml:id="idg-all-upgrade-upgrade_fail_alarms-xml-2"><para>If you experience a failure during upgrade from [[[kw-hos-phrase-30]]] to [[[kw-hos-version-40]]] 
+        <sidebar xml:id="idg-all-upgrade-upgrade_fail_alarms-xml-2"><para>If you experience a failure during upgrade from &kw-hos-phrase-30; to &kw-hos-version-40; 
              
             and the error indicates it failed while removing or creating alarm definitions, you should check that the <literal>monasca-api</literal> 
             is working and then restart the upgrade.</para>

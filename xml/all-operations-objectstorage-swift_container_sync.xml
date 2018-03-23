@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_el2_cqv_mv"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring your Swift System to Allow Container
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_el2_cqv_mv"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring your Swift System to Allow Container
     Sync</title>
     <!---->
     <sidebar xml:id="idg-all-operations-objectstorage-swift_container_sync-xml-4"><para>Swift has a feature where all the contents of a container can be mirrored to another
@@ -64,12 +64,12 @@
           <xref linkend="tls30"/></para>
 </sidebar>
     <sidebar xml:id="configure"><title>Configuring container sync</title><para>Container to container synchronization requires that both the source and destination Swift
-        systems involved be configured to allow/accept this. These instructions are for a [[[kw-hos-version-30]]] system. If you are synchronizing with another Swift system
+        systems involved be configured to allow/accept this. These instructions are for a &kw-hos-version-30; system. If you are synchronizing with another Swift system
         that uses a different deployment system, you may have to adapt the instructions provided
         here for that system.</para>
 <para>In the context of container to container synchronization, Swift uses the term
           <emphasis>cluster</emphasis> to denote a Swift system. This corresponds to a <emphasis>Control Plane</emphasis> in the
-          [[[kw-hos-version-30]]] terminology.</para>
+          &kw-hos-version-30; terminology.</para>
 <para><para><emphasis role="bold">Gather the public API endpoints for both Swift systems</emphasis></para><para>Gather information about the external/public URL used by each system, as follows:</para></para>
 <orderedlist>
           <listitem><para>On the lifecycle manager of one system, get the public API endpoint of the system by

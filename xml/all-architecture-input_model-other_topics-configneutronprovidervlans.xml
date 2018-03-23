@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configneutronprovidervlans"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Neutron Provider VLANs</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configneutronprovidervlans"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Neutron Provider VLANs</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-other_topics-configneutronprovidervlans-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -24,10 +24,10 @@
     </itemizedlist>
     <para>The physical network infrastructure must be configured to convey the provider VLAN traffic
         as tagged VLANs to the cloud compute nodes and Neutron network nodes. Configuration of the
-        physical network infrastructure is outside the scope of the [[[kw-hos-phrase]]]
+        physical network infrastructure is outside the scope of the &kw-hos-phrase;
         software.</para>
 
-    <para>[[[kw-hos-phrase]]] automates the server networking configuration and the Neutron
+    <para>&kw-hos-phrase; automates the server networking configuration and the Neutron
         configuration based on information in the cloud definition. To configure the system for
         provider VLANs, specify the <literal>neutron.networks.vlan</literal> tag with a
         <literal>provider-physical-network</literal> attribute on one or more
@@ -63,9 +63,9 @@
           network-groups:
             - NET_GROUP_B</screen>
     <para>A <guilabel>network-group</guilabel> used for provider VLANs may contain only a single 
-        [[[kw-hos]]] <guilabel>network</guilabel>, because that VLAN must span all compute
+        &kw-hos; <guilabel>network</guilabel>, because that VLAN must span all compute
         nodes and any Neutron network nodes/controllers (i.e. it is a single L2 segment). The 
-        [[[kw-hos]]] <guilabel>network</guilabel> must be defined with <literal>tagged-vlan:
+        &kw-hos; <guilabel>network</guilabel> must be defined with <literal>tagged-vlan:
             false</literal>, otherwise a linux VLAN network interface will be created. For example:</para>
 
         <screen >
@@ -76,7 +76,7 @@
      - name: NET_B
        tagged-vlan: false
        network-group: NET_GROUP_B</screen>
-    <para>When the cloud is deployed, [[[kw-hos-phrase]]] will create the appropriate bridges on
+    <para>When the cloud is deployed, &kw-hos-phrase; will create the appropriate bridges on
         the servers, and set the appropriate attributes in the Neutron configuration files (e.g.
         bridge_mappings).</para>
 

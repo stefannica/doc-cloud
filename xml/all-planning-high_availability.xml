@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP3.0HA"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>High Availability</title><abstract><para><para>High availability concepts.</para></para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP3.0HA"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>High Availability</title><abstract><para><para>High availability concepts.</para></para>
 </abstract>
     <para><para xml:id="idg-all-planning-high_availability-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -95,7 +95,7 @@
         <listitem><para><emphasis role="bold">Software SPOFs</emphasis>: Server processes can crash due to software defects, out-of-memory
           conditions, operating system kernel panic, and so forth.</para>
 </listitem>
-      </itemizedlist><para>By design, [[[kw-hos]]] strives to create a system architecture resilient to
+      </itemizedlist><para>By design, &kw-hos; strives to create a system architecture resilient to
         SPOFs, and does not attempt to automatically protect the system against multiple cascading
         levels of failures; such cascading failures will result in an unpredictable state. Hence,
         the cloud operator is encouraged to recover and restore any failed component, as soon as the
@@ -130,7 +130,7 @@
 </listitem>
         </itemizedlist>
 <para><para>The infrastructure that provides these features is called a <emphasis role="bold">Highly Available Cloud
-            Infrastructure</emphasis>.</para><para><emphasis role="bold">Highly Available Cloud-Aware Tenant Workloads</emphasis></para><para>[[[kw-hos]]] Compute hypervisors do not support transparent high
+            Infrastructure</emphasis>.</para><para><emphasis role="bold">Highly Available Cloud-Aware Tenant Workloads</emphasis></para><para>&kw-hos; Compute hypervisors do not support transparent high
           availability for user applications; as such, the project application provider is
           responsible for deploying their applications in a redundant and highly available manner,
           using multiple VMs spread appropriately across availability zones, routed through the load
@@ -155,7 +155,7 @@
 </listitem>
       </itemizedlist></sidebar>
 
-    <sidebar xml:id="high_availablity_controllers"><title>High Availability of Controllers</title><para>The [[[kw-hos]]] installer deploys highly available configurations of
+    <sidebar xml:id="high_availablity_controllers"><title>High Availability of Controllers</title><para>The &kw-hos; installer deploys highly available configurations of
         OpenStack cloud services, resilient against single points of failure.</para>
 <para>The high availability of the controller components comes in two main forms.</para>
 <itemizedlist>
@@ -197,7 +197,7 @@
           (internal and external) are sent through the VIP. </para>
          . </para>
 <mediaobject xml:id="image_hrh_tvf_4w"><imageobject role="fo"><imagedata fileref="media-ha30-HPE_HA_Flow.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-ha30-HPE_HA_Flow.png"/></imageobject></mediaobject>
-<para><para>The [[[kw-hos]]] installer deploys
+<para><para>The &kw-hos; installer deploys
             highly available configurations of OpenStack cloud services, resilient against single
             points of failure. Step through the included flow for an API request in an HA
             deployment. All API requests (internal and external) are sent through the VIP.</para></para>
@@ -229,7 +229,7 @@
           
         
       
-      The [[[kw-hos]]] installer deploys highly
+      The &kw-hos; installer deploys highly
         available configurations of OpenStack cloud services, resilient against single points of
         failure. Step through the included flow for an API request in an HA deployment. All API
         requests (internal and external) are sent through the VIP.%1. keepalived has currently
@@ -285,7 +285,7 @@
         failure all HA routers are migrated from the primary L3 agent to a secondary L3 agent. The
         implementation efficiency of an HA subsystem is measured by the number of packets that are
         lost when the secondary L3 agent is made the master. </para>
-<para>In [[[kw-hos]]], the primary and secondary L3 agents run continuously, and
+<para>In &kw-hos;, the primary and secondary L3 agents run continuously, and
         failover involves a rapid switchover of mastership to the secondary agent (IEFT RFC 5798).
         The failover essentially involves a switchover from a already running master to already
         running slave. This substantially reduces the latency of the HA. The mechanism used by the
@@ -303,7 +303,7 @@
         less than 2 seconds instead of 60+ seconds it would have taken to start a backup router and
         failover. </para>
 <para>The failover depends upon a heartbeat link between the primary and secondary. That link in
-          [[[kw-hos-phrase-30]]] uses keepalived package of the pacemaker resource
+          &kw-hos-phrase-30; uses keepalived package of the pacemaker resource
         manager. The heartbeats are sent at a 2 second intervals between the primary and secondary.
         As per the VRRP protocol, if the secondary does not hear from the master after 3 intervals,
         it assumes the function of the primary. </para>
@@ -330,7 +330,7 @@
         more elaborate redundancy schemes for redundant power, network ISP connection, and even
         physical firewalling between zones (<emphasis>this aspect is outside the scope of this
         document</emphasis>).</para>
-<para>[[[kw-hos]]] offers APIs, CLIs and Horizon UIs for the administrator to
+<para>&kw-hos; offers APIs, CLIs and Horizon UIs for the administrator to
         define and user to consume, availability zones for Nova, Cinder and Swift services. This
         section outlines the process to deploy specific types of nodes to specific physical servers,
         and makes a statement of available support for these types of availability zones in the
@@ -438,7 +438,7 @@
             <listitem><itemizedlist>
                 <listitem><para>Replicate VMs containing stateless services such as Web application tier or Web
                   service API tier and put them behind load balancers (you must implement your own
-                  HA Proxy type load balancer in your application VMs until [[[kw-hos]]] delivers the LBaaS service). </para>
+                  HA Proxy type load balancer in your application VMs until &kw-hos; delivers the LBaaS service). </para>
 </listitem>
                 <listitem><para>Boot the replicated VMs into different Nova availability zones.</para>
 </listitem>
@@ -457,11 +457,11 @@
               </itemizedlist></listitem>
           </itemizedlist></listitem>
         <listitem><para>Instead of rolling your own highly available stateful services, use readily available
-            [[[kw-hos]]] platform services such as Designate, the DNS service. </para>
+            &kw-hos; platform services such as Designate, the DNS service. </para>
 </listitem>
       </orderedlist></sidebar>
 
-    <formalpara xml:id="what_not_ha"><title>What is not Highly Available?</title><para><para xml:id="idg-all-planning-high_availability-xml-50"><emphasis role="bold">Lifecycle Manager</emphasis></para><para>The lifecycle manager in [[[kw-hos]]] is not highly-available. The
+    <formalpara xml:id="what_not_ha"><title>What is not Highly Available?</title><para><para xml:id="idg-all-planning-high_availability-xml-50"><emphasis role="bold">Lifecycle Manager</emphasis></para><para>The lifecycle manager in &kw-hos; is not highly-available. The
           lifecycle manager state/data are all maintained in a filesystem and are backed up by the
           Freezer service. In case of lifecycle manager failure, the state/data can be recovered
           from the backup.</para><para xml:id="idg-all-planning-high_availability-xml-51"><emphasis role="bold">Control Plane</emphasis></para><para>High availability is not supported for Network Services (LBaaS, VPNaaS, FWaaS)</para><para xml:id="consoleauth"><emphasis role="bold">Nova-consoleauth</emphasis></para><para>Nova-consoleauth is a singleton service, it can only run on a single node at a time.

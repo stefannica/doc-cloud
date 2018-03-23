@@ -2,13 +2,13 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican_40"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Features in the Barbican Key Manager
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican_40"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Features in the Barbican Key Manager
     Service</title>
-    <para> This topic explains the Barbican service in [[[kw-hos-phrase]]]. </para>
+    <para> This topic explains the Barbican service in &kw-hos-phrase;. </para>
 
 
     <sidebar><title>Enhancements</title><para><emphasis role="bold">DAR Policy</emphasis></para>
-<para>In [[[kw-hos-phrase]]], DAR policy has been enhanced
+<para>In &kw-hos-phrase;, DAR policy has been enhanced
       for Barbican specific key-manager:creator role. User with key-manager:creator role on a
       project now also has the privilege to delete encrypted volumes and secrets. Before this
       enhancement, Barbican key-manager:creator role only had privilege to create, modify and list

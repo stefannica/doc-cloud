@@ -2,8 +2,8 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_valueadd"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>HPE Enhancements to OpenStack </title>
-    <sidebar><para>[[[kw-hos-phrase]]] offers a number of value-added
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_valueadd"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>HPE Enhancements to OpenStack </title>
+    <sidebar><para>&kw-hos-phrase; offers a number of value-added
         features and services that complement and enhance OpenStack and can be used to set up private cloud environments that scale from a few nodes
         up to 200 compute nodes. </para>
 <itemizedlist>

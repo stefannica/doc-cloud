@@ -3,28 +3,28 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="k2kfed"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Keystone-to-Keystone Federation</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="k2kfed"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Keystone-to-Keystone Federation</title>
     <!---->
     <para><para xml:id="idg-all-operations-configuring-identity-keystone_federation-xml-4"><phrase><phrase/></phrase></para></para>
 
     <para>This topic explains how you can use one instance of Keystone as an identity provider
       and one as a service provider.</para>
 
-    <sidebar><title>What Is Keystone-to-Keystone Federation?</title><para>Identity federation lets you configure [[[kw-hos]]] using existing identity
+    <sidebar><title>What Is Keystone-to-Keystone Federation?</title><para>Identity federation lets you configure &kw-hos; using existing identity
         management systems such as an LDAP directory as the source of user access authentication.
         The Keystone-to-Keystone federation (K2K) function extends this concept for accessing
-        resources in multiple, separate [[[kw-hos]]] clouds. You can configure each cloud to
+        resources in multiple, separate &kw-hos; clouds. You can configure each cloud to
         trust the authentication credentials of other clouds to provide the ability for users to
         authenticate with their home cloud and to access authorized resources in another cloud
         without having to reauthenticate with the remote cloud. This function is sometimes referred
         to as "single sign-on" or SSO.</para>
-<para>The [[[kw-hos]]] cloud that provides the initial user authentication is called the
+<para>The &kw-hos; cloud that provides the initial user authentication is called the
         identity provider (IdP). The identity provider cloud can support domain-based authentication
         against external authentication sources including LDAP-based directories such as Microsoft
         Active Directory. The identity provider creates the user attributes, known as assertions,
-        which are used to automatically authenticate users with other [[[kw-hos]]]
+        which are used to automatically authenticate users with other &kw-hos;
         clouds.</para>
-<para>An [[[kw-hos]]] cloud that provides resources is called a service provider (SP). A
+<para>An &kw-hos; cloud that provides resources is called a service provider (SP). A
         service provider cloud accepts user authentication assertions from the identity provider and
         provides access to project resources based on the mapping file settings developed for each
         service provider cloud. The following are characteristics of a service provider:</para>
@@ -40,7 +40,7 @@
           <listitem><para>Project quotas are defined locally by each service provider cloud.</para>
 </listitem>
         </itemizedlist>
-<para>Keystone-to-Keystone federation is supported and enabled in [[[kw-hos-phrase-30]]] using configuration parameters in specific Ansible files.
+<para>Keystone-to-Keystone federation is supported and enabled in &kw-hos-phrase-30; using configuration parameters in specific Ansible files.
         Instructions are provided to define and enable the required configurations.</para>
 <para>Support for Keystone-to-Keystone federation happens on the API level, and you must
         implement it using your own client code by calling the supported APIs. Python-keystoneclient

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_servergroups_networks"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Server Groups and Networks</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_servergroups_networks"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Server Groups and Networks</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-concepts-servergroups_networks-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -11,7 +11,7 @@
     <para>Each L3 <guilabel>network</guilabel> in a cloud must be associated with all or some of
         the <guilabel>servers</guilabel>, typically following a physical pattern (such as having
         separate networks for each rack or set of racks). This is also represented in the
-        [[[kw-hos]]] model via <guilabel>server-groups</guilabel>, each group lists zero or more
+        &kw-hos; model via <guilabel>server-groups</guilabel>, each group lists zero or more
         networks to which <guilabel>servers</guilabel> associated with
         <guilabel>server-groups</guilabel> at or below this point in the hierarchy are
         connected.</para>

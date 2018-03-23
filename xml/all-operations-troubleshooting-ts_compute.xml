@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ts_compute"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Troubleshooting Compute Service</title><abstract><para><para>Troubleshooting scenarios with resolutions for the
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ts_compute"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Troubleshooting Compute Service</title><abstract><para><para>Troubleshooting scenarios with resolutions for the
       Nova service.</para>Nova offers scalable, on-demand, self-service access to compute
     resources. You can use this guide to help with known issues and troubleshooting of Nova
     services.</para>
@@ -83,7 +83,7 @@
 <para>You will only experience an issue if you've enabled encryption. If you haven't enabled
         encryption, then there is no need to follow the procedure below. If you are using encryption
         and you have made a configuration change and run the configuration processor after your
-        initial install or upgrade to [[[kw-hos-phrase-30]]], and you have run the
+        initial install or upgrade to &kw-hos-phrase-30;, and you have run the
           <literal>ready-deployment.yml</literal> playbook, and you want to enable migrate or resize
         in Nova, then the following steps will allow you to proceed. Note that the ansible vault key
         referred to below is the encryption key that you have provided to the configuration

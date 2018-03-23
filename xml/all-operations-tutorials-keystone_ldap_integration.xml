@@ -3,8 +3,8 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="LDAP_Integration"><title>Integrating [[[kw-hos]]] with an LDAP System</title>
-        <sidebar><title>Overview</title><para>You can configure your [[[kw-hos]]] cloud to work with an outside user
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="LDAP_Integration"><title>Integrating &kw-hos; with an LDAP System</title>
+        <sidebar><title>Overview</title><para>You can configure your &kw-hos; cloud to work with an outside user
                 authentication source such as Active Directory or OpenLDAP. Keystone, the Helion
                 OpenStack identity service, functions as the first stop for any user
                 authorization/authentication requests. Keystone can also function as a proxy for
@@ -12,12 +12,12 @@
                 to any LDAP-enabled system that has been configured as an outside source. This type
                 of integration lets you use an existing user-management system such as Active
                 Directory and its powerful group-based organization features as a source for
-                permissions in [[[kw-hos]]]. </para>
+                permissions in &kw-hos;. </para>
 <para>Upon successful completion of this tutorial, your cloud will refer user
                 authentication requests to an outside LDAP-enabled directory system, such as
                 Microsoft Active Directory or OpenLDAP.</para>
 </sidebar>
-        <sidebar><title>Configure your LDAP source</title><para>To configure your [[[kw-hos]]] cloud to use an outside user-management
+        <sidebar><title>Configure your LDAP source</title><para>To configure your &kw-hos; cloud to use an outside user-management
                 source, perform the following steps:</para>
 <orderedlist xml:id="ol_lj2_l2y_yw">
                     <listitem><para>Make sure that the LDAP-enabled system you plan to integrate with is up and
@@ -140,7 +140,7 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
                             parameter.</para>
 <screen >cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/home/stack/helion/my_cloud/config/keystone/keystone_configure_ldap_my.yml</screen><para>To
-                            integrate your [[[kw-hos]]] cloud with multiple domains,
+                            integrate your &kw-hos; cloud with multiple domains,
                             create and edit a YAML file for each domain (steps 3 and 4), and then
                             proceed with the rest of the steps in this
                         tutorial.</para>
@@ -148,7 +148,7 @@ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/home/stack/hel
                 </orderedlist>
 </sidebar>
         <sidebar xml:id="section_ptg_5m5_zw"><title>Keystone auth token validation</title><para>The following video illustrates how the Keystone identity service responds to
-                authentication requests from the other [[[kw-hos]]] services:</para>
+                authentication requests from the other &kw-hos; services:</para>
 </sidebar>
         <mediaobject xml:id="idg-all-operations-tutorials-keystone_ldap_integration-xml-4"><imageobject role="fo"><imagedata fileref="media-keystone-KeystoneTokenValidationExample.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-keystone-KeystoneTokenValidationExample.png"/></imageobject></mediaobject>
 

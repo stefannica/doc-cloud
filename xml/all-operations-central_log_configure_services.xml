@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="central_log_configure_services"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Settings for Other Services</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="central_log_configure_services"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Settings for Other Services</title>
     <sidebar xml:id="Clog_config_services"><para>When you configure settings for the Centralized Logging Service, those changes impact all
         services that are enabled for centralized logging. However, if you only need to change the
         logging configuration for one specific service, you will want to modify the service's files
@@ -1005,10 +1005,10 @@ ansible-playbook -i hosts/verb_hosts vsa-reconfigure.yml</screen></listitem>
     </literallayout>
 
 
-    <sidebar xml:id="CL_select_central_logging"><title>How Do I Select Files for Centralized Logging?</title><para>As you use [[[kw-hos]]], you might find a need to redefine which log files
+    <sidebar xml:id="CL_select_central_logging"><title>How Do I Select Files for Centralized Logging?</title><para>As you use &kw-hos;, you might find a need to redefine which log files
         are rotated on disk or transferred to centralized logging. These changes are all made in the
         centralized logging definition files.</para>
-<para>[[[kw-hos]]] uses the logrotate service to provide rotation, compression, and
+<para>&kw-hos; uses the logrotate service to provide rotation, compression, and
         removal of log files. All of the tunable variables for the logrotate process itself can be
         controlled in the following file:
           <literal>~/helion/hos/ansible/roles/logging-common/defaults/main.yml</literal></para>
@@ -1126,9 +1126,9 @@ ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem>
 </sidebar>
 
 
-    <sidebar xml:id="CL_elasticsearch_config"><title>How Do I Configure Elasticsearch for Centralized Logging?</title><para>Elasticsearch includes some tunable options exposed in its configuration. [[[kw-hos]]] uses these options in Elasticsearch to prioritize indexing speed over
-        search speed. [[[kw-hos]]] also configures Elasticsearch for optimal
-        performance in low RAM environments. The options that [[[kw-hos]]] modifies
+    <sidebar xml:id="CL_elasticsearch_config"><title>How Do I Configure Elasticsearch for Centralized Logging?</title><para>Elasticsearch includes some tunable options exposed in its configuration. &kw-hos; uses these options in Elasticsearch to prioritize indexing speed over
+        search speed. &kw-hos; also configures Elasticsearch for optimal
+        performance in low RAM environments. The options that &kw-hos; modifies
         are listed below along with an explanation about why they were modified.</para>
 <para>These configurations are defined in the
           <literal>~/helion/my_cloud/config/logging/main.yml</literal> file and are implemented in the

@@ -3,13 +3,13 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-monitoring-monitoring_overview-xml-1"><title>Monitoring Service Overview</title>
-    <sidebar xml:id="idg-all-operations-monitoring-monitoring_overview-xml-2"><title>Installation</title><para>The monitoring service is automatically installed as part of the [[[kw-hos]]]
+    <sidebar xml:id="idg-all-operations-monitoring-monitoring_overview-xml-2"><title>Installation</title><para>The monitoring service is automatically installed as part of the &kw-hos;
         installation.</para>
 <para>No specific configuration is required to use Monasca. However, you can configure the
         database for storing metrics as detailed in the <xref linkend="configure_monitoring"/> document.</para>
 </sidebar>
-    <sidebar xml:id="differences"><title>Differences Between Upstream and [[[kw-hos]]]
-        Implementations</title><para>In the [[[kw-hos-phrase]]] release, the OpenStack monitoring service,
+    <sidebar xml:id="differences"><title>Differences Between Upstream and &kw-hos;
+        Implementations</title><para>In the &kw-hos-phrase; release, the OpenStack monitoring service,
         Monasca, is included as the monitoring solution with the following exceptions which are not
         included:</para>
 <itemizedlist>

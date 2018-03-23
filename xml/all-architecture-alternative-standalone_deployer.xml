@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="standalone_deployer"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using a Dedicated Lifecycle Manager
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="standalone_deployer"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using a Dedicated Lifecycle Manager
         Node</title>
         <!---->
         <para><para xml:id="idg-all-architecture-alternative-standalone_deployer-xml-4"><phrase><phrase/></phrase></para></para>
@@ -133,7 +133,7 @@
               name: os</emphasis></screen></sidebar>
         <sidebar xml:id="servers_yml"><title>Servers.yml</title><para>The snippet below shows the insertion of an additional server used for hosting the
                 lifecycle manager. Provide the address information here for the server you are
-                running on, i.e., the node where you have installed the [[[kw-hos]]]
+                running on, i.e., the node where you have installed the &kw-hos;
                 ISO.</para>
 <screen >  servers:
      # NOTE: Addresses of servers need to be changed to match your environment.

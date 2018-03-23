@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="swift_ring_management"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Managing Swift Rings</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="swift_ring_management"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Managing Swift Rings</title>
     <!---->
     <para><para xml:id="idg-all-operations-objectstorage-ring_management-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -11,7 +11,7 @@
       Storage service (for example, a drive is used to store account or object data). Rings also
       specify the policy for data storage (for example, defining the number of replicas). The rings
       are automatically built during the initial deployment of your cloud, with the configuration
-      provided during setup of the [[[kw-hos]]] Input Model. (For more information,
+      provided during setup of the &kw-hos; Input Model. (For more information,
       see <xref linkend="idg-all-architecture-input_model-input_model-xml-1"/>.) </para>
 
     <para>After successful deployment of your cloud, you may want to change or modify the configuration

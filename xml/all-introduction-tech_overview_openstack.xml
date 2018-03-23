@@ -2,9 +2,9 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_openstack"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>OpenStack Services</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_openstack"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>OpenStack Services</title>
     <sidebar><para>
-        [[[kw-hos]]]  is based on the OpenStack offering which brings many benefits:
+        &kw-hos;  is based on the OpenStack offering which brings many benefits:
         
         </para>
 <itemizedlist>
@@ -19,7 +19,7 @@
             while allowing for massive scalability.</para>
 </listitem>
         </itemizedlist>
-<para>The following table provides a brief summary of the OpenStack services on which [[[kw-hos]]]
+<para>The following table provides a brief summary of the OpenStack services on which &kw-hos;
       is based.</para>
 <informaltable xml:id="tb_openstackservices" colsep="1" rowsep="1"><tgroup cols="2">
           <colspec colname="c1" colnum="1"/>

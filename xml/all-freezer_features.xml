@@ -2,12 +2,12 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="freezer_features"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Backup, Restore, and Disaster Recovery Service
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="freezer_features"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Backup, Restore, and Disaster Recovery Service
     (Freezer) Features</title>
     <sidebar xml:id="FreezerFeatures"><para>Backup, Restore, and Disaster Recovery Service (Freezer) provides integrated tools for
         backing up and restoring cloud data in multiple use cases, including disaster recovery.
         These resources include file systems, server instances, volumes, and databases.</para>
-<para>Freezer is all new for the [[[kw-hos]]] Mitaka release.</para>
+<para>Freezer is all new for the &kw-hos; Mitaka release.</para>
 <informaltable xml:id="FreezerTable" colsep="1" rowsep="1"><tgroup cols="4">
             <colspec colname="c1" colnum="1" colwidth="1.0*"/>
             <colspec colname="c2" colnum="2" colwidth="1.0*"/>

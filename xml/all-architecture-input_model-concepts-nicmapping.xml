@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_nicmapping"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>NIC Mapping</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_nicmapping"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>NIC Mapping</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-concepts-nicmapping-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -18,6 +18,6 @@
     <!---->
         
         <para>NIC mappings are also used to specify the device type for interfaces that are to be used for SR-IOV 
-            or PCI Passthrough.   Each [[[kw-hos]]] release includes the data for the supported device types.</para>
+            or PCI Passthrough.   Each &kw-hos; release includes the data for the supported device types.</para>
 
     </section>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilo_metering_concepts_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Understanding the Metering Service Concepts</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilo_metering_concepts_overview"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Understanding the Metering Service Concepts</title>
     <para><para xml:id="idg-all-metering-metering_concepts-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="ceilo_concept_intro"><para>Before configuring the Celiometer Metering Service, make sure you understand how it works. This topic provides conceptual information about:</para>

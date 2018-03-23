@@ -20,9 +20,9 @@
 
     <para><emphasis role="bold">Operations Console (OpsConsole) GUI</emphasis></para>
 
-    <!----><sidebar xml:id="idg-all-operations-monitoring-accessing_monitoring-xml-2"><para> You can use the Operations Console (Ops Console) for [[[kw-hos-phrase]]] to view data about your Helion cloud infrastructure in a web-based
+    <!----><sidebar xml:id="idg-all-operations-monitoring-accessing_monitoring-xml-2"><para> You can use the Operations Console (Ops Console) for &kw-hos-phrase; to view data about your Helion cloud infrastructure in a web-based
       graphical user interface (GUI) and ensure your cloud is operating correctly. By logging on to
-      the console, [[[kw-hos]]] administrators can manage data in the following ways:
+      the console, &kw-hos; administrators can manage data in the following ways:
         <emphasis role="bold">Triage alarm notifications.</emphasis></para>
 <itemizedlist>
         <listitem><para>Alarm Definitions and notifications now have their own screens and are collected under

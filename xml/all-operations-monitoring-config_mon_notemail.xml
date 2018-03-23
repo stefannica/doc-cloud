@@ -2,14 +2,14 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_mon_notemail"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring the Monitoring Email Notification
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_mon_notemail"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring the Monitoring Email Notification
     Settings</title><abstract><para><para>The monitoring service, based on Monasca, allows you
       to configure an external SMTP server for email notifications when alarms
-    trigger.</para>In [[[kw-hos-phrase]]] you have the option to specify a SMTP
+    trigger.</para>In &kw-hos-phrase; you have the option to specify a SMTP
     server for email notifications. These steps will assist in this process.<para>If you are going to
       use the email notifiication feature of the monitoring service, you must set the configuration
       options with valid email settings including an SMTP server and valid email addresses. The
-      email server is not provided by [[[kw-hos]]], but must be specified in the
+      email server is not provided by &kw-hos;, but must be specified in the
       configuration file described below. The email server must support SMTP.</para></para>
 </abstract>
     <sidebar xml:id="email"><title>Configuring monitoring notification settings during initial installation</title><orderedlist>
@@ -91,7 +91,7 @@ git commit -m "Updated monitoring service email notification settings"</screen><
       </orderedlist></sidebar>
     
     <sidebar xml:id="apache_commons_validate"><title>Monasca and Apache Commons validator</title><para>The Monasca notification uses a standard Apache Commons validator to validate the
-        configured [[[kw-hos]]] domain names before sending the notification over
+        configured &kw-hos; domain names before sending the notification over
         webhook. Monasca notification supports some non-standard domain names, but not all. See the
         Domain Validator documentation for more information: <link xlink:href="https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/DomainValidator.html"/></para>
 <para>You should insure that any domains that you use are supported by IETF and IANA.  As an

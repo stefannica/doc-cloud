@@ -2,11 +2,11 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="licensinghos50"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Software License Terms</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="licensinghos50"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Software License Terms</title>
     <sidebar><title>Part 1: HPE End User License Agreement</title><para>The end user license agreement is provided at the time of purchase.</para>
 </sidebar>
 
-    <sidebar><title>Part 2: Additional License Authorizations (ALA)</title><para>Additional license authorizations for [[[kw-hos]]] are available at: <link xlink:href="http://docs.hpcloud.com/pdf/static/HPE_HOS_5.0_ALA_May2017.pdf">http://docs.hpcloud.com/pdf/static/HPE_HOS_5.0_ALA_May2017.pdf</link>.</para>
+    <sidebar><title>Part 2: Additional License Authorizations (ALA)</title><para>Additional license authorizations for &kw-hos; are available at: <link xlink:href="http://docs.hpcloud.com/pdf/static/HPE_HOS_5.0_ALA_May2017.pdf">http://docs.hpcloud.com/pdf/static/HPE_HOS_5.0_ALA_May2017.pdf</link>.</para>
 </sidebar>
 
     <sidebar><title>Part 3: Open Source and Third Party License Terms</title><para>License information related to ancillary, third party, and open source software components

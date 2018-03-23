@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP2.0LBaaSAdmin"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Load Balancing as a Service
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP2.0LBaaSAdmin"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Load Balancing as a Service
     (LBaaS)</title>
     <!---->
     <para><para xml:id="idg-all-networking-lbaas_admin-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <para><emphasis role="bold">[[[kw-hos-phrase]]] LBaaS Configuration</emphasis></para>
+    <para><emphasis role="bold">&kw-hos-phrase; LBaaS Configuration</emphasis></para>
 
     <para> Load Balancing as a Service (LBaaS) is an advanced networking service that allows load
       balancing of multi-node environments. It provides the ability to spread requests across
@@ -17,7 +17,7 @@
       v2.</para>
 
 
-    <para>[[[kw-hos-phrase]]] can support either LBaaS v1 or LBaaS v2 to allow for wide
+    <para>&kw-hos-phrase; can support either LBaaS v1 or LBaaS v2 to allow for wide
       ranging customer requirements. If the decision is made to utilize LBaaS v1 it is highly
       unlikely that you will be able to perform an on-line upgrade of the service to v2 after the
       fact as the internal data structures are significantly different. Should you wish to attempt
@@ -29,18 +29,18 @@
       balancers. LBaaS-compatible drivers are provided by load balancer vendors including F5 and
       Citrix. A new software load balancer driver was introduced in the OpenStack Liberty release
       called "<emphasis>Octavia</emphasis>". The Octavia driver deploys a software load balancer called HAProxy.
-      Octavia is the default load balancing provider in [[[kw-hos-phrase-30]]] for
+      Octavia is the default load balancing provider in &kw-hos-phrase-30; for
       LBaaS V2. Until Octavia is configured the creation of load balancers will fail with an error.
       Please refer to <xref linkend="OctaviaInstall"/>
       document for information on installing Octavia.</para>
 </warning>
     
-    <warning><para>If you are planning to upgrade from [[[kw-hos-phrase-30]]] or [[[kw-hos-phrase-40]]],
+    <warning><para>If you are planning to upgrade from &kw-hos-phrase-30; or &kw-hos-phrase-40;,
       please contact F5 and HPE PointNext to determine which F5 drivers have been certified for
       use with Helion OpenStack. Loading drivers not certified by HPE may result in catastrophic
-      failure of your cloud deployment. The last tested versions are 8.0.8 for [[[kw-hos]]] 3.x and 9.0.3
-      for [[[kw-hos]]] 4.x . More information is expected in 4th quarter 2017, including the correct
-      drivers for [[[kw-hos]]] 5.x.</para>
+      failure of your cloud deployment. The last tested versions are 8.0.8 for &kw-hos; 3.x and 9.0.3
+      for &kw-hos; 4.x . More information is expected in 4th quarter 2017, including the correct
+      drivers for &kw-hos; 5.x.</para>
 </warning>
 
     <para>LBaaS V2 offers with <xref linkend="OctaviaInstall"/> a
@@ -109,7 +109,7 @@
     </orderedlist>
 
     <para>LBaaS v1 requires configuration changes prior to installation and is not recommended. LBaaS
-      v2 is installed by default with [[[kw-hos]]] and requires minimal configuration
+      v2 is installed by default with &kw-hos; and requires minimal configuration
       to start the service.</para>
 
 
@@ -124,7 +124,7 @@
 
     
 
-    <sidebar xml:id="idg-all-networking-lbaas_admin-xml-7"><title>Prerequisites</title><para><emphasis role="bold">[[[kw-hos]]] LBaaS v1</emphasis></para>
+    <sidebar xml:id="idg-all-networking-lbaas_admin-xml-7"><title>Prerequisites</title><para><emphasis role="bold">&kw-hos; LBaaS v1</emphasis></para>
 <para>Installing LBaaS v1</para>
 <important><para>It is not recommended that LBaaS v1 is used in a production
         environment. It is recommended you use LBaaS v2. If you do deploy LBaaS v1, the upgrade to
@@ -148,9 +148,9 @@
         <listitem><para>To test the installation follow the steps outlined in <xref linkend="OctaviaInstall"/> after you have created a suitable subnet, see: 
           <xref linkend="create_extnet"/>.</para>
 </listitem>
-      </orderedlist><para><emphasis role="bold">[[[kw-hos]]] LBaaS v2</emphasis></para>
+      </orderedlist><para><emphasis role="bold">&kw-hos; LBaaS v2</emphasis></para>
 <orderedlist>
-        <listitem><para>[[[kw-hos]]] must be installed for LBaaS v2.</para>
+        <listitem><para>&kw-hos; must be installed for LBaaS v2.</para>
 </listitem>
         <listitem><para>Follow the instructions to install <xref linkend="OctaviaInstall"/></para>
 </listitem>

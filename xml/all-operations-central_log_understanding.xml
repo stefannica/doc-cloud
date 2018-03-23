@@ -39,13 +39,13 @@
           application security in cloud environments.</para>
 </listitem>
         <listitem><para><emphasis role="bold">Centralized Logging and Monitoring (CLM):</emphasis> used to evaluate and troubleshoot your
-            [[[kw-hos]]] distributed cloud environment from a single location.</para>
+            &kw-hos; distributed cloud environment from a single location.</para>
 </listitem>
         <listitem><para><emphasis role="bold">Curator:</emphasis> a tool provided by Elasticsearch to manage indices.</para>
 </listitem>
         <listitem><para><emphasis role="bold">Elasticsearch:</emphasis> A data store offering fast indexing and querying.</para>
 </listitem>
-        <listitem><para><emphasis role="bold">[[[kw-hos]]]:</emphasis> provides public, private, and managed cloud solutions
+        <listitem><para><emphasis role="bold">&kw-hos;:</emphasis> provides public, private, and managed cloud solutions
           to get you moving on your cloud journey.</para>
 </listitem>
         <listitem><para><emphasis role="bold">JavaScript Object Notation (JSON) log file:</emphasis> a file stored in the JSON format and
@@ -53,7 +53,7 @@
           can be read and used as a data format by any programming language. This format is used by
           the Beaver and Logstash components.</para>
 </listitem>
-        <listitem><para><emphasis role="bold">Kafka:</emphasis> a messaging broker used for collection of [[[kw-hos]]]
+        <listitem><para><emphasis role="bold">Kafka:</emphasis> a messaging broker used for collection of &kw-hos;
           centralized logging data across nodes. It is highly available, scalable and performant.
           Kafka stores logs in disk instead of memory and is therefore more tolerant to consumer
           down times. </para>
@@ -86,7 +86,7 @@
           the log data.</para>
 </listitem>
         <listitem><para><emphasis role="bold">Logging API (monasca-log-api):</emphasis>
-          [[[kw-hos]]] API provides a standard REST interface to store logs. It uses
+          &kw-hos; API provides a standard REST interface to store logs. It uses
           Keystone authentication and role-based access control support.</para>
 </listitem>
         <listitem><para><emphasis role="bold">Logstash:</emphasis> a log processing system for receiving, processing and outputting logs.
@@ -125,7 +125,7 @@
 </listitem>
       </itemizedlist><para>The purpose of the logging service is to provide a common logging infrastructure with
         centralized user access. Since there are numerous services and applications running in each
-        node of a [[[kw-hos]]] cloud, and there could be hundreds of nodes, all of
+        node of a &kw-hos; cloud, and there could be hundreds of nodes, all of
         these services and applications can generate enough log files to make it very difficult to
         search for specific events in log files across all of the nodes. Centralized Logging
         addresses this issue by sending log messages in real time to a central Elasticsearch,
@@ -285,8 +285,8 @@
         </varlistentry>
         <varlistentry>
           <term>Step 15</term>
-          <listitem><para>The audit logs are configured to be backed up by the [[[kw-hos]]]
-            Freezer product. For more information about Freezer, read the [[[kw-hos]]]
+          <listitem><para>The audit logs are configured to be backed up by the &kw-hos;
+            Freezer product. For more information about Freezer, read the &kw-hos;
             documentation on <link xlink:href="http://docs.hpcloud.com/#3.x/helion/bura/bura_overview.html">Backup and Restore</link>.</para>
 </listitem>
         </varlistentry>
@@ -300,8 +300,8 @@
         these indices takes up CPU and memory. If these indices are left unattended they will
         continue to consume system resources and eventually deplete them.</para>
 <para>Elasticsearch, by itself, doesn't prevent this from happening.</para>
-<para>[[[kw-hos]]] uses a tool called curator that is developed by the
-        Elasticsearch community to handle these situations. [[[kw-hos]]] installs and
+<para>&kw-hos; uses a tool called curator that is developed by the
+        Elasticsearch community to handle these situations. &kw-hos; installs and
         uses a curator in conjunction with several configurable settings. This curator is called by
         cron and performs the following checks:</para>
 <itemizedlist>
@@ -324,7 +324,7 @@
           is, an error message is written to the log file but the current index is NOT deleted.</para>
 </listitem>
       </itemizedlist><para>In the case of an extreme network issue, log files can run out of disk space in under an
-        hour. To avoid this [[[kw-hos]]] uses a shell script called
+        hour. To avoid this &kw-hos; uses a shell script called
           <literal>logrotate_if_needed.sh</literal>. The cron process runs this script every 5 minutes
         to see if the size of <literal>/var/log</literal> has exceeded the high_watermark_percent (95%
         of the disk, by default). If it is at or above this level,
@@ -333,7 +333,7 @@
         out of disk space on <literal>/var/log</literal>.</para>
 </sidebar>
 
-    <sidebar xml:id="rotating_logs"><title>How Are Logs Rotated?</title><para>[[[kw-hos]]] uses the cron process which in turn calls Logrotate to provide
+    <sidebar xml:id="rotating_logs"><title>How Are Logs Rotated?</title><para>&kw-hos; uses the cron process which in turn calls Logrotate to provide
         rotation, compression, and removal of log files. Each log file can be rotated hourly, daily,
         weekly, or monthly. If no rotation period is set then the log file will only be rotated when
         it grows too large.</para>
@@ -486,7 +486,7 @@ freezer-scheduler.log.7.gz at 123K        </screen>
         reason is because Centralized Logging relies on the Elasticsearch FileSystem Repository
         plugin, which in turn requires shared disk partitions to be configured and accessible from
         each of the Elasticsearch nodes. Since there are multiple ways to setup a shared disk
-        partition, [[[kw-hos]]] allows you to choose an approach that works best for
+        partition, &kw-hos; allows you to choose an approach that works best for
         your deployment before enabling the back-up of log files to Elasticsearch.</para>
 <para>If you enable automatic back-up of centralized log files, then all the logs collected from
         the cloud nodes will be backed-up to Elasticsearch. Every hour, in the management controller

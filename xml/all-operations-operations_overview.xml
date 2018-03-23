@@ -3,13 +3,13 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gettingstarted_ops"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Operations Overview</title><abstract><para><para>A high-level overview of the processes related to
-      operating a [[[kw-hos-phrase]]] cloud.</para></para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gettingstarted_ops"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Operations Overview</title><abstract><para><para>A high-level overview of the processes related to
+      operating a &kw-hos-phrase; cloud.</para></para>
 </abstract>
     <!---->
 
     <sidebar><title>What is a cloud operator?</title><para>When we talk about a cloud operator it is important to understand the scope of the tasks
-        and responsibilities we are referring to. [[[kw-hos]]] defines a cloud
+        and responsibilities we are referring to. &kw-hos; defines a cloud
         operator as the person or group of people who will be administering the cloud
         infrastructure, which includes:</para>
 <itemizedlist>
@@ -25,12 +25,12 @@
       </itemizedlist></sidebar>
 
 
-    <sidebar xml:id="tools"><title>Tools provided to operate your cloud</title><para>[[[kw-hos]]] provides the following tools which are available to operate your
+    <sidebar xml:id="tools"><title>Tools provided to operate your cloud</title><para>&kw-hos; provides the following tools which are available to operate your
         cloud:</para>
 <para><emphasis role="bold">Operations Console</emphasis></para>
 <para>Often referred to as the Ops Console, you can use this console to view data about your
         cloud infrastructure in a web-based graphical user interface (GUI) to make sure your cloud
-        is operating correctly. By logging on to the console, [[[kw-hos]]]
+        is operating correctly. By logging on to the console, &kw-hos;
         administrators can manage data in the following ways:</para>
 <itemizedlist>
         <listitem><para>Triage alarm notifications in the central dashboard</para>
@@ -63,7 +63,7 @@
         <listitem/>
         <listitem/>
       </itemizedlist><para><emphasis role="bold">Command-line interface (CLI)</emphasis></para>
-<para>Each service within [[[kw-hos]]] provides a command-line client, such as the
+<para>Each service within &kw-hos; provides a command-line client, such as the
         novaclient (sometimes referred to as the python-novaclient or nova CLI) for the Compute
         service, the keystoneclient for the Identity service, etc. There is also an effort in the
         OpenStack community to make a unified client, called the openstackclient, which will combine
@@ -75,10 +75,10 @@
 </sidebar>
 
     <sidebar><title>Daily tasks</title><itemizedlist xml:id="ul_mx2_z4x_rv">
-        <listitem><para><emphasis role="bold">Ensure your cloud is running correctly</emphasis>: [[[kw-hos]]] is deployed as
+        <listitem><para><emphasis role="bold">Ensure your cloud is running correctly</emphasis>: &kw-hos; is deployed as
           a set of highly available services to minimize the impact of failures. That said, hardware
           and software systems can fail. Detection of failures early in the process will enable you
-          to address issues before they affect the broader system. [[[kw-hos]]]
+          to address issues before they affect the broader system. &kw-hos;
           provides a monitoring solution, based on OpenStack’s Monasca, which provides monitoring
           and metrics for all OpenStack components and much of the underlying system, including
           service status, performance metrics, compute node, and virtual machine status. Failures
@@ -105,7 +105,7 @@
     <sidebar><title>Weekly or monthly tasks</title><itemizedlist xml:id="ul_nz4_npx_rv">
         <listitem><para><emphasis role="bold">Do regular capacity planning</emphasis>: Your initial deployment will likely reflect the
           known near to mid-term scale requirements, but at some point your needs will outgrow your
-          initial deployment’s capacity. You can expand [[[kw-hos]]] in a variety of
+          initial deployment’s capacity. You can expand &kw-hos; in a variety of
           ways, such as by adding compute and storage capacity. </para>
 </listitem>
       </itemizedlist><para>To manage your cloud’s capacity, begin by determining the load on the existing system.
@@ -131,9 +131,9 @@
 
     <sidebar><title>Troubleshooting</title><para>As part of managing your cloud, you should be ready to troubleshoot issues, as needed. The
         following are some common troubleshooting scenarios and solutions:</para>
-<para><emphasis role="bold">How do I determine if my cloud is operating correctly now?</emphasis>: [[[kw-hos]]] provides a monitoring solution based on OpenStack’s Monasca service. This service
+<para><emphasis role="bold">How do I determine if my cloud is operating correctly now?</emphasis>: &kw-hos; provides a monitoring solution based on OpenStack’s Monasca service. This service
         provides monitoring and metrics for all OpenStack components, as well as much of the
-        underlying system. By default, [[[kw-hos]]] comes with a set of alarms that
+        underlying system. By default, &kw-hos; comes with a set of alarms that
         provide coverage of the primary systems. In addition, you can define alarms based on
         threshold values for any metrics defined in the system. You can view alarm information in
         the Operations Console. You can also receive or deliver this information to others by

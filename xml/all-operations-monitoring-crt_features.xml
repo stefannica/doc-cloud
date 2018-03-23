@@ -17,7 +17,7 @@
           <listitem><para>These aggregated metrics are made available to the cloud operators via Ops Console's
             new Capacity Summary (reporting) UI</para>
 </listitem>
-          <listitem><para>Capacity reporting is a new feature in [[[kw-hos-phrase]]] which will provides cloud operators an
+          <listitem><para>Capacity reporting is a new feature in &kw-hos-phrase; which will provides cloud operators an
             overall capacity (available, used and remaining) for Compute and Object Storage</para>
 </listitem>
           <listitem><para>Cloud operators can look at Capacity reporting via Ops Console's Compute Capacity

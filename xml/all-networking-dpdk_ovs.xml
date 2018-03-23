@@ -2,9 +2,9 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>OVS-DPDK Support</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>OVS-DPDK Support</title>
     <sidebar><title>What is OVS-DPDK?</title><para>
-        [[[kw-hos-phrase]]] uses an updated Open vSwitch (OVS) that is built with the
+        &kw-hos-phrase; uses an updated Open vSwitch (OVS) that is built with the
         Data Plane Development Kit (DPDK) and includes a QEMU hypervisor which supports
         vhost-user.</para>
 <para>The OVS-DPDK package modifes the OVS fast path, which is normally performed in kernel

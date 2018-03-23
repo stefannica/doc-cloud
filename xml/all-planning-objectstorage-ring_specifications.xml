@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ring-specification"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Understanding Swift Ring Specifications</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ring-specification"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Understanding Swift Ring Specifications</title>
     <!---->
     <para><para xml:id="idg-all-planning-objectstorage-ring_specifications-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -11,7 +11,7 @@
         ring for account databases, container databases, and each object storage policy, but each
         ring works similarly. The <literal>swift-ring-builder</literal> utility is used to build and
         manage rings. This utility uses a builder file to contain ring information and additional
-        data required to build future rings. In [[[kw-hos-phrase]]], you will use the
+        data required to build future rings. In &kw-hos-phrase;, you will use the
         cloud model to specify how the rings are configured and used. This model is used to
         automatically invoke the <literal>swift-ring-builder</literal> utility as part of the deploy
         process. (Normally, you will not run the <literal>swift-ring-builder</literal> utility
@@ -23,12 +23,12 @@
           <literal>configuration-data</literal> object, however it is considered best practice to give
         each Swift instance its own <literal>configuration-data</literal> object.
       </para>
-<para><emphasis role="bold">Ring Specifications in [[[kw-hos]]] 2.x and 3.x</emphasis></para>
+<para><emphasis role="bold">Ring Specifications in &kw-hos; 2.x and 3.x</emphasis></para>
 <para>
-        In [[[kw-hos]]] 2.x and 3.x, ring specifications were mentioned in the 
+        In &kw-hos; 2.x and 3.x, ring specifications were mentioned in the 
         <literal>~/helion/my_cloud/definition/data/swift/rings.yml</literal> file. 
-        [[[kw-hos]]] 4.x continues to support ring specifications in that file. 
-        If you upgrade to [[[kw-hos]]] 4.x, you do not need to make any changes.
+        &kw-hos; 4.x continues to support ring specifications in that file. 
+        If you upgrade to &kw-hos; 4.x, you do not need to make any changes.
       </para>
 </sidebar>
     <sidebar xml:id="idg-all-planning-objectstorage-ring_specifications-xml-7"><title>Ring Specifications in the Input Model</title><para>In most models, the ring-specification is mentioned in the
@@ -165,7 +165,7 @@ This is the number of hours that the <literal>swift-ring-builder</literal>
         </tgroup></informaltable></sidebar>
 
     <!---->
-    <sidebar xml:id="erasure_coded"><title>Erasure Coded Rings</title><para><para>In [[[kw-hos-phrase]]], Swift supports erasure coded object rings as well
+    <sidebar xml:id="erasure_coded"><title>Erasure Coded Rings</title><para><para>In &kw-hos-phrase;, Swift supports erasure coded object rings as well
           as traditional replication rings. Erasure coded rings can be useful for large objects,
           like backup, video, biotech, i.e. data that is typically written once but read
           occasionally.</para><para>Swift erasure coding is a non-core feature, and as such we recommend working with
@@ -197,7 +197,7 @@ This is the number of hours that the <literal>swift-ring-builder</literal>
             <row>
               <entry>ec-type</entry>
               <entry>This is the particular erasure policy scheme that is being used. The supported
-                ec_types in [[[kw-hos-phrase]]] are: <itemizedlist>
+                ec_types in &kw-hos-phrase; are: <itemizedlist>
                   <listitem><para><literal>jerasure_rs_vand</literal> =&gt; Vandermonde Reed-Solomon encoding, based
                     on Jerasure</para>
 </listitem>

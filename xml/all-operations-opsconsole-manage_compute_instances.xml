@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="manage_compute_instances"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Managing Compute Hosts</title><para>Operations Console (Ops Console) provides a graphical interface for you to add and
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="manage_compute_instances"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Managing Compute Hosts</title><para>Operations Console (Ops Console) provides a graphical interface for you to add and
         delete compute hosts.</para>
 
         <para>As your deployment grows and changes, you may need to add more compute hosts to increase
             your capacity for VMs, or delete a host to reallocate hardware for a different use. To
-            accomplish these tasks, in previous versions of [[[kw-hos]]] you had to
+            accomplish these tasks, in previous versions of &kw-hos; you had to
             use the command line to update configuration files and run ansible playbooks. Now
             Operations Console (Ops Console) provides a graphical interface for you to complete the
             same tasks quickly using menu items in the console.</para>

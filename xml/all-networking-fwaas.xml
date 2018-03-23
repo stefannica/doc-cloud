@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP2.0FWaaS"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using Firewall as a Service (FWaaS)</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP2.0FWaaS"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using Firewall as a Service (FWaaS)</title><!---->
     <para><para xml:id="idg-all-networking-fwaas-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="idg-all-networking-fwaas-xml-6"><para>The Firewall as a Service (FWaaS) provides the ability to assign network-level, port security
@@ -25,9 +25,9 @@
         <listitem/>
       </itemizedlist>
 </sidebar>
-    <sidebar xml:id="idg-all-networking-fwaas-xml-8"><title>Prerequisites</title><para>[[[kw-hos]]] must be installed. </para>
+    <sidebar xml:id="idg-all-networking-fwaas-xml-8"><title>Prerequisites</title><para>&kw-hos; must be installed. </para>
 </sidebar>
-    <sidebar xml:id="idg-all-networking-fwaas-xml-9"><title>[[[kw-hos-phrase]]] FWaaS Configuration</title><para><emphasis role="bold">Check for an enabled firewall.</emphasis></para>
+    <sidebar xml:id="idg-all-networking-fwaas-xml-9"><title>&kw-hos-phrase; FWaaS Configuration</title><para><emphasis role="bold">Check for an enabled firewall.</emphasis></para>
 <orderedlist>
         <listitem><para>You should check to determine if the firewall is enabled.  The output of the <emphasis>neutron
             ext-list</emphasis> should contain a firewall

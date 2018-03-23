@@ -3,17 +3,17 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="user_dashboard_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using the Dashboard</title><abstract><para><para>Often referred to as Horizon or the Horizon
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="user_dashboard_overview"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using the Dashboard</title><abstract><para><para>Often referred to as Horizon or the Horizon
       dashboard, you can use this console to manage resources on a domain and project level in a
       web-based graphical user interface (GUI).</para></para>
 </abstract>
     <!---->
     <para><para xml:id="idg-all-userguide-user_dashboard_overview-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <para>Horizon is the OpenStack service that serves as the basis for the [[[kw-hos]]]
+    <para>Horizon is the OpenStack service that serves as the basis for the &kw-hos;
       dashboards.</para>
 
-    <para>The dashboards provide a web-based user interface to [[[kw-hos]]] services
+    <para>The dashboards provide a web-based user interface to &kw-hos; services
       including Compute, Volume Operations, Networking, and Identity.</para>
 
     <sidebar><title>Accessing Horizon</title><para> To access the Horizon dashboard as a non cloud
@@ -125,7 +125,7 @@
         with your Horizon IP address.</para>
 </sidebar>
     
-    <sidebar xml:id="dashboard_limitations"><title>Dashboard Use</title><para>As a Cloud or Domain admin of the [[[kw-hos]]] dashboard, you should 
+    <sidebar xml:id="dashboard_limitations"><title>Dashboard Use</title><para>As a Cloud or Domain admin of the &kw-hos; dashboard, you should 
         follow the included recommendations for continued success with your cloud.
       </para>
 <important><itemizedlist>

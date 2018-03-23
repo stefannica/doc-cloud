@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_rhel"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using the Lifecycle Manager to Deploy RHEL
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_rhel"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using the Lifecycle Manager to Deploy RHEL
         Compute Nodes</title>
         <!---->
         <para><para xml:id="idg-all-installation-rhel-install_rhel-xml-4"><phrase><phrase/></phrase></para></para>
@@ -31,10 +31,10 @@
                 </itemizedlist>
 </sidebar>
 
-        <sidebar><title>Deploying UEFI RHEL compute nodes</title><para><para>[[[kw-hos-phrase-30]]] required a manual procedure if you wanted to
+        <sidebar><title>Deploying UEFI RHEL compute nodes</title><para><para>&kw-hos-phrase-30; required a manual procedure if you wanted to
                     use the lifecycle manager to install RHEL 7.2 on UEFI nodes as described in the
                     article <link xlink:href="https://docs.hpcloud.com/hos-3.x/#helion/installation/rhel/install_rhel_compute.html">here</link>. This procedure has been
-                    automated in the [[[kw-hos-phrase]]] lifecycle manager in
+                    automated in the &kw-hos-phrase; lifecycle manager in
                         <literal>prepare-rhel-loader.yml</literal> and
                         <literal>prepare-rhel-grub2.yml</literal> playbooks.. </para></para>
 <para>Before you attempt to use the lifecycle manager to install RHEL on UEFI nodes, you

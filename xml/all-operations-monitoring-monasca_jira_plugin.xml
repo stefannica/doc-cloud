@@ -39,7 +39,7 @@
 
         <para>Creating the JIRA notification type requires a few more steps than other notification
             types covered in this guide. Because the Python and YAML files for this notification
-            type are not yet included in [[[kw-hos-phrase]]], you must perform the
+            type are not yet included in &kw-hos-phrase;, you must perform the
             following steps to manually retrieve and place them on your lifecycle manager.</para>
 <orderedlist xml:id="ol_jvp_kcw_4x">
                 <listitem><para>Navigate a web browser to <link xlink:href="https://review.openstack.org/#/c/348001/"/> and download the <emphasis role="bold">jira_notifier.py</emphasis>

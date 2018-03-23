@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ldap"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Integrating LDAP with the Identity
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ldap"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Integrating LDAP with the Identity
     Service</title>
     <para><para xml:id="idg-all-operations-configuring-identity-identity_ldap-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -26,7 +26,7 @@
           This domain can then be configured to use an external LDAP directory such as Microsoft
           Active Directory as the authentication source.</para>
 </listitem>
-      </itemizedlist><para>[[[kw-hos]]] can support multiple domains for deployments that support
+      </itemizedlist><para>&kw-hos; can support multiple domains for deployments that support
         multiple tenants. Multiple domains can be created with each domain configured to either the
         same or different external authentication sources. This deployment model is known as a
         "per-domain" model.</para>
@@ -39,7 +39,7 @@
         <listitem><para>Database store – each domain configuration can be created using either the identity
           service manager utility (recommenced) or a <link xlink:href="http://developer.openstack.org/api-ref-identity-v3.html#domains-config-v3">Domain Admin API</link> (from OpenStack.org), and the
           results are stored in the identity service MySQL database. This database store is a new
-          method introduced in the OpenStack Kilo release and now available in [[[kw-hos-phrase-30]]].</para>
+          method introduced in the OpenStack Kilo release and now available in &kw-hos-phrase-30;.</para>
 </listitem>
       </itemizedlist><para>Instructions for initially creating per-domain configuration files and then migrating
         to the Database store method via the identity service manager utility are provided as
@@ -602,7 +602,7 @@ $ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/home/stack/h
 
 
     <formalpara><title>Limitations</title><para>
-        [[[kw-hos-phrase]]] domain-specific configuration: </para>
+        &kw-hos-phrase; domain-specific configuration: </para>
 <itemizedlist>
           <listitem><para>No Global User Listing: Once domain-specific driver configuration is enabled, listing
             all users and listing all groups are not supported operations. Those calls require a
@@ -626,7 +626,7 @@ $ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/home/stack/h
           <listitem><para>Keystone assignment operations from LDAP records such as managing or assigning roles
             and projects, are not currently supported.</para>
 </listitem>
-          <listitem><para>The [[[kw-hos]]] 'default' domain is pre-configured to store service
+          <listitem><para>The &kw-hos; 'default' domain is pre-configured to store service
             account users and is authenticated locally against the identity service. Domains
             configured for external LDAP integration are non-default domains. </para>
 </listitem>
@@ -646,7 +646,7 @@ $ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/home/stack/h
 </listitem>
         </itemizedlist>
 <para>
-        [[[kw-hos-phrase]]] API-based domain-specific configuration management </para>
+        &kw-hos-phrase; API-based domain-specific configuration management </para>
 <itemizedlist>
           <listitem><para>No GUI dashboard for domain-specific driver configuration management </para>
 </listitem>
@@ -658,7 +658,7 @@ $ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/home/stack/h
             domain-specific configuration options. </para>
 </listitem>
           <listitem><para>Status: Domain-specific driver configuration database store is a non-core feature for
-              [[[kw-hos-phrase]]]. </para>
+              &kw-hos-phrase;. </para>
 </listitem>
         </itemizedlist>
 </formalpara>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="crt_aggregated_metrics"><title>New Aggregated Metrics</title>
-    <sidebar xml:id="metrics"><para>Following is the list of aggregated metrics produced by monasca transform in [[[kw-hos-phrase]]]
+    <sidebar xml:id="metrics"><para>Following is the list of aggregated metrics produced by monasca transform in &kw-hos-phrase;
         </para>
 <table xml:id="table_ztc_yn5_3y" colsep="1" rowsep="1"><title/><tgroup cols="6" align="left">
             <colspec colname="c1" colnum="1" colwidth="1*"/>

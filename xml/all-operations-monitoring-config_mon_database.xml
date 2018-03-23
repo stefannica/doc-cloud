@@ -2,17 +2,17 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_mon_database"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring the Monitoring Database
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_mon_database"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring the Monitoring Database
     Settings</title><abstract><para><para>The monitoring service, based on Monasca, allows you
       to configure your alarm metrics database should you choose not to use the default option
-      provided with the product.</para>In [[[kw-hos-phrase]]] you have the option
+      provided with the product.</para>In &kw-hos-phrase; you have the option
     to specify a database platform you want to use for the metrics database. These steps will assist
     in this process.</para>
 </abstract>
     <sidebar><title>Choosing an alarm metrics database option</title><para>The monitoring service supports two different database options. The default metrics
         database is <emphasis role="bold">Vertica</emphasis>, which is a highly-scalable analytics database from HP. Vertica
         is free to use, up to 12TB, for all paid Helion customers as a Helion operational database
-        <!---->. Vertica is the recommended database for [[[kw-hos]]].</para>
+        <!---->. Vertica is the recommended database for &kw-hos;.</para>
 <para>You can learn more about Vertica here: <link xlink:href="https://www.vertica.com/hp-vertica-documentation/">Vertica Documentation</link></para>
 <para>The alternative open source database option is <emphasis role="bold">InfluxDB</emphasis>. InfluxDB is an emerging
         open source monitoring database, however the current release contains the following

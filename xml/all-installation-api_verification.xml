@@ -3,13 +3,13 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="api_verification"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>API Verification</title><abstract><para><para>We provide a tool and some steps to help you verify
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="api_verification"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>API Verification</title><abstract><para><para>We provide a tool and some steps to help you verify
       that your cloud deployed correctly.</para></para>
 </abstract>
 
     <para><para xml:id="idg-all-installation-api_verification-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <sidebar xml:id="idg-all-installation-api_verification-xml-6"><para>[[[kw-hos-phrase]]] provides a tool, Tempest, that you can use to verify that
+    <sidebar xml:id="idg-all-installation-api_verification-xml-6"><para>&kw-hos-phrase; provides a tool, Tempest, that you can use to verify that
         your cloud deployment completed successfully:</para>
 <itemizedlist>
         <listitem><para><link xlink:href="#api_verification/prereqs">Prerequisites</link></para>
@@ -35,12 +35,12 @@ ansible-playbook -i hosts/verb_hosts hlm-cloud-configure.yml</screen></sidebar>
     <sidebar xml:id="tempest"><title>Tempest Integration Tests</title><para>Tempest is a set of integration tests for OpenStack API validation, scenarios, and other
         specific tests to be run against a live OpenStack cluster. 
       
-      In [[[kw-hos-phrase]]],  Tempest has been modelled as a service and this gives you the ability to 
+      In &kw-hos-phrase;,  Tempest has been modelled as a service and this gives you the ability to 
             locate Tempest anywhere in the cloud. It is recommended that you install Tempest on your lifecycle manager node
           - that is where it resides by default in a new installation.
       </para>
 <para>A version of the upstream <link xlink:href="http://docs.openstack.org/developer/tempest/">Tempest</link> integration tests is pre-deployed on the
-          [[[kw-hos]]] lifecycle manager node. For details on what Tempest is testing,
+          &kw-hos; lifecycle manager node. For details on what Tempest is testing,
         you can check the contents of this file on your lifecycle
         manager:</para>
 <screen >/opt/stack/tempest/run_filters/ci.txt</screen>

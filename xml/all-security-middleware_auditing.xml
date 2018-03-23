@@ -2,13 +2,13 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-security-middleware_auditing-xml-1"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Security Audit Logs</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-security-middleware_auditing-xml-1"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Security Audit Logs</title>
     <para><para xml:id="idg-all-security-middleware_auditing-xml-4"><phrase><phrase/></phrase></para></para>
 
     
     
    
-    <formalpara><title>The need for auditing</title><para>[[[kw-hos]]]</para>
+    <formalpara><title>The need for auditing</title><para>&kw-hos;</para>
 </formalpara>
     <sidebar><para>Note that logs from existing OpenStack services can also be used for auditing purposes,
         even though they are not in a consistent audit friendly CADF format today. All logs can
@@ -22,12 +22,12 @@
         supports delivery of audit data via the Oslo messaging notifier feature. Each service is
         configured to route data to an audit-specific log file. </para>
 <para> The following are key aspects
-      of auditing support in [[[kw-hos-phrase]]]: </para>
+      of auditing support in &kw-hos-phrase;: </para>
 <itemizedlist>
-        <listitem><para>Auditing is disabled by default and can be enabled only after [[[kw-hos]]]
+        <listitem><para>Auditing is disabled by default and can be enabled only after &kw-hos;
           installation. </para>
 </listitem>
-        <listitem><para>Auditing support has been added to eight [[[kw-hos]]] services (Nova,
+        <listitem><para>Auditing support has been added to eight &kw-hos; services (Nova,
           Cinder, Glance, Keystone, Neutron, Heat, Barbican, and Ceilometer). </para>
 </listitem>
         <listitem><para>Auditing has been added for interactions where REST API calls are invoked. </para>
@@ -44,7 +44,7 @@
     
     <sidebar><title>Centralized auditing configuration</title><para>
       
-      In [[[kw-hos]]], all auditing
+      In &kw-hos;, all auditing
       configuration is centrally managed and controlled via input model YAML  files on the lifecycle
       manager node. The settings are configured in the file
         <literal>~/helion/my_cloud/definition/cloudConfig.yml</literal> in a newly added

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="metric_performance_considerations"><title>Metric Performance Considerations</title>
-        <para>Collecting metrics on your virtual machines can greatly affect performance. [[[kw-hos-phrase]]] supports 200 compute nodes, with up to 40 VMs each. If your
+        <para>Collecting metrics on your virtual machines can greatly affect performance. &kw-hos-phrase; supports 200 compute nodes, with up to 40 VMs each. If your
             environment is managing maximum number of VMs, adding a single metric for all VMs is the
             equivalent of adding 8000 metrics. If too many metrics are added, you may exceed the
             Vertica database license.</para>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="entryscale_kvm_ceph"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Entry-scale KVM with Ceph Model</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="entryscale_kvm_ceph"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Entry-scale KVM with Ceph Model</title>
     <!---->
     <para><para xml:id="idg-all-architecture-examples-entryscale_kvm_ceph-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -32,7 +32,7 @@
       <para><link xlink:href="./../../../media/templates/HOS_Network_Diagram_Template.zip">Download Editable Visio Network Diagram Template</link></para>
 
       <para>This configuration is based on the <literal>entry-scale-kvm-ceph</literal> cloud input model
-        which is included with the [[[kw-hos]]] distro. You will need to make the
+        which is included with the &kw-hos; distro. You will need to make the
         changes outlined below prior to the deployment of your Ceph cluster.</para>
 
     <!----><sidebar xml:id="idg-all-architecture-examples-entryscale_kvm_ceph-xml-8"><para>The table below lists out the key characteristics needed per server role for this

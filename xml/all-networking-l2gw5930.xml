@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-networking-l2gw5930-xml-1"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase><emphasis role="bold">Installing the L2 Gateway Agent for the
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-networking-l2gw5930-xml-1"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase><emphasis role="bold">Installing the L2 Gateway Agent for the
       Networking Service</emphasis></title>
     <sidebar xml:id="idg-all-networking-l2gw5930-xml-4"><title>Introduction</title><para>The L2 gateway is a service plug-in to the Neutron networking service that
         allows two L2 networks to be seamlessly connected to create a single L2 broadcast domain.

@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_kubernetes_coreos"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Deploying a Kubernetes Cluster on CoreOS</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_kubernetes_coreos"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Deploying a Kubernetes Cluster on CoreOS</title>
     <para><para xml:id="idg-all-userguide-container_service-deploying_kubernetes_coreos-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="idg-all-userguide-container_service-deploying_kubernetes_coreos-xml-6"><title>Prerequisites</title><para>These steps assume the following have been completed:</para>
@@ -16,7 +16,7 @@
     
     
     <sidebar xml:id="idg-all-userguide-container_service-deploying_kubernetes_coreos-xml-7"><title>Creating the Cluster</title><para>The following example is created using Kubernetes Container Orchestration Engine (COE)
-        running on CoreOS guest OS on [[[kw-hos]]] VMs.</para>
+        running on CoreOS guest OS on &kw-hos; VMs.</para>
 <orderedlist>
           <listitem><para>Login to the lifecycle manager.</para>
 </listitem>
@@ -120,7 +120,7 @@ WARNING (shell) "heat resource-list" is deprecated, please use "openstack stack 
 </screen></listitem>
           <listitem><para>The cluster is complete when all resources show <emphasis role="bold">CREATE_COMPLETE</emphasis>.</para>
 </listitem>
-          <listitem><para>Install kubectl onto your [[[kw-hos]]] lifecycle manager.
+          <listitem><para>Install kubectl onto your &kw-hos; lifecycle manager.
             </para>
 <screen >$ export https_proxy=http://proxy.yourcompany.net:8080 
 $ wget https://storage.googleapis.com/kubernetes-release/release/v1.2.0/bin/linux/amd64/kubectl
@@ -194,7 +194,7 @@ nginx-controller-5cmev    1/1      Running    0           2m</screen></listitem>
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Welcome to nginx!&lt;/title&gt;</screen></listitem>
-          <listitem><para>If LBaaS v2 is enabled in [[[kw-hos]]] environment, and your cluster was
+          <listitem><para>If LBaaS v2 is enabled in &kw-hos; environment, and your cluster was
             created with more than one kubemaster, a new load balancer can be created to perform
             request rotation between several masters. Please refer to for more information on LBaaS v2 support.</para>
 </listitem>

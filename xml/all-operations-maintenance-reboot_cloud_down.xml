@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="stop_restart"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Bringing Down Your Cloud: Services Down
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="stop_restart"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Bringing Down Your Cloud: Services Down
     Method</title><abstract><para><para>If you have a planned maintenance and need to bring
       down your entire cloud follow the steps below to safely do so. Be mindful that this method
       will bring down all of your services.</para></para>
@@ -89,7 +89,7 @@
               <literal>&lt;service&gt;-start.yml</literal> that you can run. One example, for the compute
             service, is <literal>nova-start.yml</literal>.</para>
 </listitem>
-        <listitem><para>Continue checking the status of your [[[kw-hos-phrase]]] cloud services
+        <listitem><para>Continue checking the status of your &kw-hos-phrase; cloud services
           until there are no more failed or unreachable nodes:
           </para>
 <screen>cd ~/scratch/ansible/next/hos/ansible

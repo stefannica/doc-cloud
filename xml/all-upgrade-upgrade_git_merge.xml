@@ -5,10 +5,10 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade_git_merge"><title>Resolving Git Merge Conflicts During Upgrade</title><!---->
         <!---->
-        <sidebar xml:id="idg-all-upgrade-upgrade_git_merge-xml-2"><title>Introduction</title><para>When you perform an upgrade, [[[kw-hos]]] 
+        <sidebar xml:id="idg-all-upgrade-upgrade_git_merge-xml-2"><title>Introduction</title><para>When you perform an upgrade, &kw-hos; 
             attempts to incorporate new or updated configuration information
             on top of your existing environment. However, if you have made 
-            certain changes to your environment,  [[[kw-hos]]]
+            certain changes to your environment,  &kw-hos;
             cannot automatically determine whether to keep your changes 
             or drop them in favour of the new or updated configurations that
             it wants to put in place. This will result in a <literal>merge conflict</literal>
@@ -19,7 +19,7 @@
             merge conflicts, showing general procedures for determining where the conflict
             is occurring, alternative methods for resolution, and a fallback procedure for 
             the case where the resolution goes wrong and you need to start from scratch.</para>
-<para>For a general overview of how [[[kw-hos]]] uses Git, see the 
+<para>For a general overview of how &kw-hos; uses Git, see the 
             introductory article in the Installation section .
             In particular, note how the <literal>site</literal> branch is the one most used by
                 the end-user, while the <literal>hos</literal> branch contains the "upstream" 
@@ -60,7 +60,7 @@ metadata_proxy_shared_secret = {{ neutron_metadata_proxy_shared_secret }}
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; hos</emphasis>
 neutron_auth_strategy = keystone
 neutron_ca_certificates_file = /etc/ssl/certs/ca-certificates.crt
-service_metadata_proxy = True</screen><para>This indicates that [[[kw-hos-phrase-30]]] is trying to set the value of
+service_metadata_proxy = True</screen><para>This indicates that &kw-hos-phrase-30; is trying to set the value of
                 <literal>metadata_proxy_shared_secret</literal> to be <literal>{{ neutron_metadata_proxy_shared_secret }}</literal>
                 whereas previously you have set its value to <literal>top_secret_password111</literal>.                        
             </para>
@@ -113,12 +113,12 @@ index 597a982..05cb07c 100644
  service_metadata_proxy = True</screen></sidebar>
         
         <sidebar><title>Examining differences between your current version and the  new upstream version</title><para>To compare your change with the new upstream version 
-                from [[[kw-hos-phrase]]]
+                from &kw-hos-phrase;
                 on the <literal>hos</literal> branch you can use 
                 <literal>git diff HEAD hos -- &lt;&lt;path/to/file&gt;&gt;</literal>:</para>
 <screen >git diff HEAD hos -- hos/ansible/roles/nova-common/templates/nova.conf.j2</screen><para>In the extract of output below, you can see your value <literal>top_secret_password111</literal>
                 and the new value <literal>{{ neutron_metadata_proxy_shared_secret }}</literal> that 
-                [[[kw-hos-phrase]]] wants to set.
+                &kw-hos-phrase; wants to set.
             </para>
 <screen >..
  admin_username = {{ neutron_admin_username }}
@@ -128,10 +128,10 @@ index 597a982..05cb07c 100644
  neutron_ca_certificates_file = /etc/ssl/certs/ca-certificates.crt</screen></sidebar>
         
         <sidebar><title>Examining differences between the new upstream version and the previous upstream version</title><para>To compare the new upstream version 
-                from [[[kw-hos-phrase]]] with the previous upstream version from
+                from &kw-hos-phrase; with the previous upstream version from
                 your initial install (or previous upgrade):</para>
 <screen >git diff $(git merge-base hos HEAD) hos -- hos/ansible/roles/nova-common/templates/nova.conf.j2</screen><para>In the extract of output below, you can see the new upstream value <literal>{{ neutron_metadata_proxy_shared_secret }}</literal> that 
-                [[[kw-hos-phrase]]] wants to set and the previous upstream value
+                &kw-hos-phrase; wants to set and the previous upstream value
                 <literal>unset</literal>.
 
             </para>

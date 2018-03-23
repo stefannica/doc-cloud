@@ -2,10 +2,10 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="recoverrabbit"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Understanding and Recovering RabbitMQ after
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="recoverrabbit"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Understanding and Recovering RabbitMQ after
     Failure</title><abstract><para><para>RabbitMQ is the message queue service that runs on
       each of your controller nodes and brokers communication between multiple services in your
-        [[[kw-hos-phrase]]] cloud environment. It is important for cloud operators to
+        &kw-hos-phrase; cloud environment. It is important for cloud operators to
       understand how different troubleshooting scenarios affect RabbitMQ so they can minimize
       downtime in their environments. We are going to discuss multiple scenarios and how it affects
       RabbitMQ. We will also explain how you can recover from them if there are
@@ -15,16 +15,16 @@
     <para><para xml:id="idg-all-operations-troubleshooting-recover_rabbit-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="idg-all-operations-troubleshooting-recover_rabbit-xml-6"><para>RabbitMQ is the message queue service that runs on each of your controller nodes and
-        brokers communication between multiple services in your [[[kw-hos-phrase]]]
+        brokers communication between multiple services in your &kw-hos-phrase;
         cloud environment. It is important for cloud operators to understand how different
         troubleshooting scenarios affect RabbitMQ so they can minimize downtime in their
         environments. We are going to discuss multiple scenarios and how it affects RabbitMQ. We
         will also explain how you can recover from them if there are issues.</para>
 </sidebar>
-    <sidebar xml:id="idg-all-operations-troubleshooting-recover_rabbit-xml-7"><title>How upgrades affect RabbitMQ</title><para>There are two types of upgrades within [[[kw-hos]]] -- major and minor. The
+    <sidebar xml:id="idg-all-operations-troubleshooting-recover_rabbit-xml-7"><title>How upgrades affect RabbitMQ</title><para>There are two types of upgrades within &kw-hos; -- major and minor. The
         effect that the upgrade process has on RabbitMQ depends on these types.</para>
 <para>A major upgrade is defined by an erlang change or major version upgrade of RabbitMQ, such
-        as the upgrade from [[[kw-hos-phrase-20]]] (RabbitMQ version 3.4.3) to 3.0
+        as the upgrade from &kw-hos-phrase-20; (RabbitMQ version 3.4.3) to 3.0
         (RabbitMQ version 3.6.1). A minor upgrade would be an upgrade where RabbitMQ stays within
         the same version, such as v3.4.3 to v.3.4.6.</para>
 <para>During both types of upgrades there may be minor blips in the authentication process of
@@ -178,7 +178,7 @@ helion-cp1-c1-m3-mgmt  : ok=2    changed=0    unreachable=0    failed=0</screen>
 
     <para><emphasis role="bold">RabbitMQ recovery after a small network outage</emphasis></para>
 
-    <para>In the case of a transient network outage, the version of RabbitMQ included with [[[kw-hos-phrase]]] is likely to recover automatically without any further action
+    <para>In the case of a transient network outage, the version of RabbitMQ included with &kw-hos-phrase; is likely to recover automatically without any further action
       needed. However, if yours doesn't and the <literal>rabbitmq-status.yml</literal> playbook is
       reporting an issue then use the scenarios below to resolve your issues.</para>
 

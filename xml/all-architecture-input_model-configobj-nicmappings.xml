@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configobj_nicmappings"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>NIC Mappings</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configobj_nicmappings"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>NIC Mappings</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-configobj-nicmappings-xml-4"><phrase><phrase/></phrase></para></para>
 
 
@@ -14,7 +14,7 @@
                 <guilabel>server</guilabel> in the server definition file. (see ). Devices should be named
                 <literal>hedN</literal> to avoid name clashes with any other devices configured during
             the operating system install as well as any interfaces that are not being managed by
-                [[[kw-hos]]], ensuring that all devices on a baremetal machine are
+                &kw-hos;, ensuring that all devices on a baremetal machine are
             specified in the file. An excerpt from <literal>nic_mappings.yml</literal>
             illustrates:</para>
 
@@ -93,7 +93,7 @@
                     </row>
                     <row>
                         <entry>type</entry>
-                        <entry>The type of port. [[[kw-hos-phrase]]] supports "simple-port" and
+                        <entry>The type of port. &kw-hos-phrase; supports "simple-port" and
                             "multi-port".  Use "simple-port" if your device has a unique bus-address.  Use "multi-port" 
                             if your hardware requires a "port-num" attribute to identify a single port on a multi-port 
                             device.  An examples of such a device is:

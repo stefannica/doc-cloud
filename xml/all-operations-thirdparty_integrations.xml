@@ -2,6 +2,6 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="third_party_integrations"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Third Party Integrations</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="third_party_integrations"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Third Party Integrations</title>
     <!---->
   <xi:include  href="all-architecture-third_party-third_party_service_integration.xml"/><xi:include  href="all-operations-integrating_splunk.xml"/><xi:include  href="all-operations-integrating_nagios.xml"/><xi:include  href="all-operations-integrating_hpeopsbridge.xml"/><xi:include  href="all-operations-monitoring_third_party_components.xml"/></section>

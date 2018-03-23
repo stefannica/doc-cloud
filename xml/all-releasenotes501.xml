@@ -2,19 +2,19 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="release-notes-501"><title>[[[kw-hos-tm]]]
-    [[[kw-hos-version-501]]]: Release Notes</title><abstract><para><para>An overview of the features contained within [[[kw-hos-version-501]]], including known issues and workarounds for this
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="release-notes-501"><title>&kw-hos-tm;
+    &kw-hos-version-501;: Release Notes</title><abstract><para><para>An overview of the features contained within &kw-hos-version-501;, including known issues and workarounds for this
       release.</para></para>
 </abstract>
     
     <!---->
 
     
-    <sidebar><title>Fixed in this release</title><para><emphasis role="bold">[[[kw-hos-phrase-501]]] supports SLES12 SP3 for Compute Nodes</emphasis></para>
-<para>SLES12 SP2 is supported for compute nodes in [[[kw-hos-phrase-50]]]. [[[kw-hos-phrase-501]]] includes support for the more recently released SLES12 SP3.
+    <sidebar><title>Fixed in this release</title><para><emphasis role="bold">&kw-hos-phrase-501; supports SLES12 SP3 for Compute Nodes</emphasis></para>
+<para>SLES12 SP2 is supported for compute nodes in &kw-hos-phrase-50;. &kw-hos-phrase-501; includes support for the more recently released SLES12 SP3.
           </para>
-<important><para>[[[kw-hos-phrase-501]]] does not support SLES12 SP2
-          compute nodes. If you intend to upgrade to [[[kw-hos-phrase-501]]] you will
+<important><para>&kw-hos-phrase-501; does not support SLES12 SP2
+          compute nodes. If you intend to upgrade to &kw-hos-phrase-501; you will
           be required to upgrade your compute nodes to SP3. See steps below for upgrading SLES
           compute nodes from SP2 to SP3. </para>
 </important>
@@ -27,7 +27,7 @@
 <para>The installation process for SLES nodes is almost
         identical to that of HPE Linux nodes as described in the topic for Installation for 
         <link xlink:href="https://docs.hpcloud.com/hos-5.x/helion/installation/installing_kvm.html">
-          [[[kw-hos]]] Entry-scale KVM Cloud</link>. 
+          &kw-hos; Entry-scale KVM Cloud</link>. 
         The key differences are: 
       </para>
 <itemizedlist>
@@ -56,17 +56,17 @@
               <literal>disk_compute.yml</literal> and <literal>control_plane.yml</literal>. For more
             information on configuration of the Input Model for SLES, see SLES Compute Model. </para>
 </listitem>
-          <listitem><para>[[[kw-hos]]] playbooks currently do not take care of SDK, so it needs to
+          <listitem><para>&kw-hos; playbooks currently do not take care of SDK, so it needs to
             be added manually. The following command needs to be run on every SLES compute node:
             </para>
 <screen >deployer_ip=192.168.10.254
 zypper addrepo --no-gpg-checks --refresh http://$deployer_ip:79/hlm/sles12/zypper/SDK SLES-SDK</screen></listitem>
         </itemizedlist>
-<para><emphasis role="bold">Upgrading [[[kw-hos-phrase]]] with SLES Compute SP2 to SP3</emphasis></para>
+<para><emphasis role="bold">Upgrading &kw-hos-phrase; with SLES Compute SP2 to SP3</emphasis></para>
 <para>You can upgrade your SLES compute nodes from SP2 to SP3 by following these steps. 
         </para>
 <orderedlist>
-          <listitem><para>You must be running [[[kw-hos-phrase]]] with SLES12 SP2 Compute</para>
+          <listitem><para>You must be running &kw-hos-phrase; with SLES12 SP2 Compute</para>
 </listitem>
           <listitem><para>Upgrade the Compute OS from SP2 to SP3 by following these steps. 
             </para>
@@ -136,7 +136,7 @@ ansible-playbook -i hosts/verb_hosts hlm-cloud-configure.yml</screen></listitem>
         default MTU of 1500. When attaching the load balancer to a VXLAN-backed project (tenant)
         network, which by default has a MTU of 1450, this leads to packet dropping.</para>
 <para>Removed hardcoded value which prevented LBaaSv2 from using MTU specified by the network object.</para>
-<para><emphasis role="bold">Magnum Fedora Atomic for [[[kw-hos-phrase]]] must use version fedora-25</emphasis></para>
+<para><emphasis role="bold">Magnum Fedora Atomic for &kw-hos-phrase; must use version fedora-25</emphasis></para>
 <para>You can find more information in the document 
       </para>
 <para><emphasis role="bold">3PAR Fix</emphasis></para>
@@ -145,7 +145,7 @@ ansible-playbook -i hosts/verb_hosts hlm-cloud-configure.yml</screen></listitem>
 <para>An additional step is needed to add compute nodes to a cloud where Ceph has already been configured.
         </para>
 <itemizedlist>
-          <listitem><para>Complete the compute host deployment using site.yml as noted in  in the [[[kw-hos-phrase]]] documentation.</para>
+          <listitem><para>Complete the compute host deployment using site.yml as noted in  in the &kw-hos-phrase; documentation.</para>
 </listitem>
           <listitem><para>Then run the following command.
             </para>
