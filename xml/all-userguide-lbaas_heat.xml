@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="LBaaSHeat"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using Load Balancing as a Service with
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="LBaaSHeat"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using Load Balancing as a Service with
     Orchestration Service</title><!---->
     <para><para xml:id="idg-all-userguide-lbaas_heat-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -14,7 +14,7 @@
         and resources to help manage your cloud infrastructure and can also help you with the
         creation of resource types.</para>
 </sidebar>
-    <sidebar xml:id="HeatSupport"><title>Orchestration Service support for LBaaS v2</title><para>In [[[kw-hos-phrase-30]]], the Orchestration Service provides support for
+    <sidebar xml:id="HeatSupport"><title>Orchestration Service support for LBaaS v2</title><para>In &kw-hos-phrase-30;, the Orchestration Service provides support for
         LBaaS v2, which means users can create LBaaS v2 resources using Orchestration. </para>
 <para>The OpenStack documentation for LBaaSv2 resource plugins is available at following
         locations.</para>
@@ -36,7 +36,7 @@
       reach quotas and/or exhaust resources resulting in the stack create-timeout.</para>
 </sidebar>
     
-    <sidebar xml:id="idg-all-userguide-lbaas_heat-xml-8"><title>More Information</title><para>For more information on configuring and using the [[[kw-hos]]] Load Balancing
+    <sidebar xml:id="idg-all-userguide-lbaas_heat-xml-8"><title>More Information</title><para>For more information on configuring and using the &kw-hos; Load Balancing
         as a Service, see: <xref linkend="HP2.0LBaaSAdmin"/> and <xref linkend="HP2.0LBaaS"/></para>
 <para>For more information on the neutron command-line interface (CLI) and load balancing, see
         the OpenStack networking command-line client reference: <link xlink:href="http://docs.openstack.org/cli-reference/content/neutronclient_commands.html"/></para>

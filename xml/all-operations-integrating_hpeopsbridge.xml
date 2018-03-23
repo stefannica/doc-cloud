@@ -2,11 +2,11 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_kyf_brv_vw"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>HPE Operations Bridge Integration</title><abstract><para><para>This documentation demonstrates the possible
-      integration between the [[[kw-hos-phrase]]] monitoring solution and HPE
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_kyf_brv_vw"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>HPE Operations Bridge Integration</title><abstract><para><para>This documentation demonstrates the possible
+      integration between the &kw-hos-phrase; monitoring solution and HPE
       Operations Bridge.</para></para>
 </abstract>
-    <para>[[[kw-hos]]] Monasca can easily be integrated with your existing monitoring
+    <para>&kw-hos; Monasca can easily be integrated with your existing monitoring
       tools. This page describes how to integrate HPE Helion Monasca with HPE Operations Bridge so
       that your OpenStack cloud can be monitored and managed by HPE Ops Bridge.</para>
 

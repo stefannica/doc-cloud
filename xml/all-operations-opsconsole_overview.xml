@@ -3,13 +3,13 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="opsconsole"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Operations Console Overview</title><abstract><para><para>Often referred to as the Ops Console, you can use
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="opsconsole"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Operations Console Overview</title><abstract><para><para>Often referred to as the Ops Console, you can use
       this web-based graphical user interface (GUI) to view data about your cloud infrastructure and
       ensure your cloud is operating correctly.</para></para>
 </abstract>
-    <sidebar xml:id="idg-all-operations-opsconsole_overview-xml-4"><para> You can use the Operations Console (Ops Console) for [[[kw-hos-phrase]]] to view data about your Helion cloud infrastructure in a web-based
+    <sidebar xml:id="idg-all-operations-opsconsole_overview-xml-4"><para> You can use the Operations Console (Ops Console) for &kw-hos-phrase; to view data about your Helion cloud infrastructure in a web-based
       graphical user interface (GUI) and ensure your cloud is operating correctly. By logging on to
-      the console, [[[kw-hos]]] administrators can manage data in the following ways:
+      the console, &kw-hos; administrators can manage data in the following ways:
         <emphasis role="bold">Triage alarm notifications.</emphasis></para>
 <itemizedlist>
         <listitem><para>Alarm Definitions and notifications now have their own screens and are collected under
@@ -56,7 +56,7 @@
           <listitem><para>To resolve scalability issues, plain text search through alarm sets is no longer
             supported</para>
 </listitem>
-          <listitem><para>[[[kw-hos-phrase]]] no longer supports DBaaS and MSGaaS panels in the
+          <listitem><para>&kw-hos-phrase; no longer supports DBaaS and MSGaaS panels in the
             Helion Development Platform (HDP). If these products were installed in HDP 2.x, they
             will be removed during upgrade.</para>
 </listitem>

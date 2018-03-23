@@ -3,10 +3,10 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="header_poisoning"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Preventing Host Header Poisoning</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="header_poisoning"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Preventing Host Header Poisoning</title><!---->
     <para><para xml:id="idg-all-security-header_poisoning-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <sidebar><para> Depending on the environment and context of your [[[kw-hos]]] deployment, it
+    <sidebar><para> Depending on the environment and context of your &kw-hos; deployment, it
       may be advisable to configure Horizon to protect against Host header poisoning (see ref. #1
       below) by using Django's ALLOWED_HOSTS setting (see ref. #2 below). To configure Horizon to
       use the ALLOWED_HOSTS setting, take the following steps: </para>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Key Management with the Barbican Service</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Key Management with the Barbican Service</title>
     <!---->
 
 
@@ -46,9 +46,9 @@
 <itemizedlist>
         <listitem><para>The ability to encrypt volumes/disks. In an OpenStack context, this means support for
           encrypting Cinder volumes (volume encryption). Cinder has its own key manager interface
-          (KeyMgr) and can use BarbicanClient as one of its implementations. By default in [[[kw-hos-phrase]]], Cinder uses Barbican as its key manager when Barbican is
+          (KeyMgr) and can use BarbicanClient as one of its implementations. By default in &kw-hos-phrase;, Cinder uses Barbican as its key manager when Barbican is
           enabled. KeyMgr encrypts data in the virtualization host before writing data to the remote
-          disk. There are three options available in [[[kw-hos]]]
+          disk. There are three options available in &kw-hos;
           </para>
 <itemizedlist>
             <listitem><para>Tenant-based encryption for block volume storage using Barbican for KMS </para>
@@ -83,25 +83,25 @@
 </warning>
 </sidebar>
     
-    <sidebar xml:id="idg-all-security-barbican-xml-6"><title>Installation information</title><para>New installations of [[[kw-hos-phrase]]]:</para>
+    <sidebar xml:id="idg-all-security-barbican-xml-6"><title>Installation information</title><para>New installations of &kw-hos-phrase;:</para>
 <orderedlist>
         <listitem><para>No changes are needed for Barbican to be enabled. When installing your cloud, you should
           use the input-model definitions which already define the necessary Barbican components.
-          When using the pre-defined input model files that come with [[[kw-hos-phrase]]], nothing else needs to be done in those files.</para>
+          When using the pre-defined input model files that come with &kw-hos-phrase;, nothing else needs to be done in those files.</para>
 </listitem>
         <listitem><para>Generate a master key. </para>
 <warning><para>Do not change your master key after deploying
             it to Barbican.</para>
 </warning></listitem>
-        <listitem><para>If you do decide to make configuration changes to your clean install of [[[kw-hos-phrase]]], you will need to redeploy the service. Please refer to <xref linkend="barbicanAdmin"/> for more
+        <listitem><para>If you do decide to make configuration changes to your clean install of &kw-hos-phrase;, you will need to redeploy the service. Please refer to <xref linkend="barbicanAdmin"/> for more
           details on the available customization options. </para>
 </listitem>
       </orderedlist><para><emphasis role="bold">Generating a master key for secret store back ends</emphasis></para>
 <para>Barbican currently supports
         databases and KMIP as its secret store back ends. In OpenStack upstream, there are
         additional back ends available, such as the PKCS11 plug-in and dogtag plug-in, but they are
-        currently not tested or supported by [[[kw-hos]]]. </para>
-<para>In [[[kw-hos]]],
+        currently not tested or supported by &kw-hos;. </para>
+<para>In &kw-hos;,
         by default Barbican is configured to use a database as secret (keys) storage back end. This
         back end encrypts Barbican-managed keys with a project level key (kek (key encryption key))
         before storing it in the database. Project-level keys are encrypted using a master key. As
@@ -145,7 +145,7 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
 <para><emphasis role="bold">Auditing of Barbican events</emphasis></para>
 <para>The Barbican service supports
         auditing and uses OpenStack <xref linkend="auditing"/> to generate auditing data in Cloud Auditing Data Federation (CADF)
-        format. The [[[kw-hos]]] input model has a mechanism to enable / disable auditing on
+        format. The &kw-hos; input model has a mechanism to enable / disable auditing on
         a per-service basis. When Barbican auditing is enabled, it writes audit messages to an audit
         log file that different from Barbican's own internal logging. The base location of audit log
         file is driven by common auditing configuration.</para>

@@ -2,13 +2,13 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgradeto40"><title>Upgrading CMC and VSA to [[[kw-hos-phrase-401]]]</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgradeto40"><title>Upgrading CMC and VSA to &kw-hos-phrase-401;</title>
         <para>This document describes the procedure to upgrade the existing VSA and CMC version to the
-            latest patch as a part of upgrade of [[[kw-hos-phrase-401]]]. </para>
+            latest patch as a part of upgrade of &kw-hos-phrase-401;. </para>
 
     <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="upgrade-cmc"><title>Upgrading the Centralized Management Console (CMC) Version</title>
             <para>The following section describes steps to upgrade the existing CMC to 11.5.01.0099.1
-                version as a part of upgrade of [[[kw-hos-phrase-401]]]. </para>
+                version as a part of upgrade of &kw-hos-phrase-401;. </para>
 
             <para><emphasis role="bold">Procedure</emphasis></para>
 

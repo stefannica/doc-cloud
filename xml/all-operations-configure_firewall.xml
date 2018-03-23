@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_gll_nsn_15"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring the [[[kw-hos]]]
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_gll_nsn_15"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring the &kw-hos;
     Firewall</title><!---->
     <para><para xml:id="idg-all-operations-configure_firewall-xml-4"><phrase><phrase/></phrase></para></para>
 
     <sidebar xml:id="idg-all-operations-configure_firewall-xml-6"><para>The following instructions provide information about how to identify and modify the overall
-        [[[kw-hos]]] firewall that is configured in front of the control services. This
+        &kw-hos; firewall that is configured in front of the control services. This
         firewall is administered only by a cloud admin and is not available for tenant use for
         private network firewall services.</para>
 <para>During the installation process, the configuration processor will automatically generate
@@ -21,7 +21,7 @@
 <para>The purpose of this document is to show you how to make post-installation changes to the
         firewall rules if the need arises.</para>
 <important><para>This process is not to be confused with the <xref linkend="HP2.0FWaaS"/>, which is a separate service
-        that enables the ability for [[[kw-hos]]] tenants to create north-south,
+        that enables the ability for &kw-hos; tenants to create north-south,
         network-level firewalls to provide stateful protection to all instances in a private, tenant
         network. This service is optional and is tenant-configured.</para>
 </important></sidebar>

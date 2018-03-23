@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_diskmodel"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Disk Model</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="concept_diskmodel"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Disk Model</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-concepts-diskmodel-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -22,7 +22,7 @@
 
     <para>Disk-models define how local storage is to be configured and presented to
         <guilabel>services</guilabel>. Disk-models are identified by a name, which you will
-        specify. The [[[kw-hos]]] examples provide some typical configurations. As this is
+        specify. The &kw-hos; examples provide some typical configurations. As this is
         an area that varies with respect to the services that are hosted on a server and the number
         of disks available, it is impossible to cover all possible permutations you may need to
         express via modifications to the examples.</para>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic3051"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Ceilometer Metering Available Meter
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic3051"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Ceilometer Metering Available Meter
     Types</title>
     <!---->
     <!---->
@@ -77,7 +77,7 @@
       database clusters with the other Information services. To avoid unnecessarily high loads,
         <xref linkend="Ceilo_optimize"/>.</para>
 
-    <sidebar xml:id="helion-openstack-default-meters"><title>[[[kw-hos]]] Default Meters</title><para>These meters are installed and enabled by default during an [[[kw-hos]]]
+    <sidebar xml:id="helion-openstack-default-meters"><title>&kw-hos; Default Meters</title><para>These meters are installed and enabled by default during an &kw-hos;
         installation.</para>
 <para>Detailed information on the Ceilometer API can be found on the following page:</para>
 <para><link xlink:href="http://docs.openstack.org/developer/ceilometer/webapi/v2.html">Ceilometer Web API</link>.</para>

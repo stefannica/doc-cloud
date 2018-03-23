@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_vsa"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring for VSA Block Storage
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_vsa"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring for VSA Block Storage
     Backend</title><abstract><para><para>Installation and configuration steps for your VSA
       backend.</para>This page describes how to configure your VSA backend for the Helion
     Entry-scale with KVM cloud model. This procedure can be performed during or after
@@ -14,7 +14,7 @@
 
 
     <sidebar xml:id="prereq"><title>Prerequisites</title><itemizedlist>
-          <listitem><para>Your [[[kw-hos]]] cloud must be fully deployed using the a KVM cloud
+          <listitem><para>Your &kw-hos; cloud must be fully deployed using the a KVM cloud
             model with VSA added. The Entry-Scale KVM with VSA cloud model is an example of such a
             model. For more details on the installation refer to <xref linkend="install_kvm"/>.</para>
 </listitem>
@@ -26,7 +26,7 @@
 </sidebar>
 
     <sidebar xml:id="idg-all-installation-configure_vsa-xml-7"><title>Notes</title><itemizedlist xml:id="ul_kg4_y3k_5v">
-          <listitem><para>The license for the HPE StoreVirtual VSA license is bundled with [[[kw-hos]]] and comes with a free trial which allows a maximum limit of 50 TB
+          <listitem><para>The license for the HPE StoreVirtual VSA license is bundled with &kw-hos; and comes with a free trial which allows a maximum limit of 50 TB
             per node. Hence the total amount of the configured storage on an individual VSA node
             should not exceed 50 TB. To extend the 50 TB per node limit, you can add nodes. A VSA
             cluster can support up to 16 nodes, which means configured storage on a VSA cluster can
@@ -59,7 +59,7 @@
         addition to our documentation, you can also read the OpenStack documentation at <link xlink:href="http://docs.openstack.org/admin-guide/blockstorage_multi_backend.html">Configure multiple storage backends</link> as well.</para>
 <para><emphasis role="bold">VSA driver has updated name:</emphasis> In the OpenStack Mitaka release, the VSA driver used
         for HPE Helion integration had its name updated from <literal>hplefthand_</literal> to
-          <literal>hpelefthand_</literal>. To prevent issues when upgrading from previous [[[kw-hos]]] releases, we left the names as-is in the release and provided a mapping
+          <literal>hpelefthand_</literal>. To prevent issues when upgrading from previous &kw-hos; releases, we left the names as-is in the release and provided a mapping
         so that the integration would continue to work. This will produce a warning in the
           <literal>cinder-volume.log</literal> file advising you of the deprecated name. The warning
         will look similar to
@@ -69,7 +69,7 @@ should be ignored.</screen>
 <para>These are just warnings and can be ignored.</para>
 </sidebar>
 
-    <sidebar xml:id="idg-all-installation-configure_vsa-xml-10"><title>Configure HPE StoreVirtual VSA</title><para>The process for configuring HPE StoreVirtual VSA for [[[kw-hos]]] involves
+    <sidebar xml:id="idg-all-installation-configure_vsa-xml-10"><title>Configure HPE StoreVirtual VSA</title><para>The process for configuring HPE StoreVirtual VSA for &kw-hos; involves
         two major steps:</para>
 <itemizedlist xml:id="ul_kbm_n3k_5v">
           <listitem><para>Creating a cluster</para>
@@ -145,7 +145,7 @@ ok: [helion-cp1-vsa0001-mgmt] =&gt; {
         <!---->
       </orderedlist></sidebar>
 
-    <formalpara xml:id="cmc"><title>Using the CMC Utility</title><para><para>In [[[kw-hos]]], cluster creation using HPE StoreVirtual Centralized
+    <formalpara xml:id="cmc"><title>Using the CMC Utility</title><para><para>In &kw-hos;, cluster creation using HPE StoreVirtual Centralized
           Management Console (CMC) GUI is deprecated. The clusters created by CMC manually cannot be
           configured using Ansible playbooks.</para><para>Perform the following steps to create the cluster using CMC.</para><para xml:id="launching-cmc-utility"><emphasis role="bold">Launching the CMC utility GUI</emphasis></para><para>The HPE StoreVirtual Centralized Management Console (CMC) GUI is an interface where you
           can configure VSA. </para><para>The CMC utility requires a GUI to access it. You can use either of the following methods
@@ -237,7 +237,7 @@ tcp6       0      0 :::5903                 :::*                    LISTEN      
 <screen>/opt/HP/StoreVirtual/UI/jre/bin/java -jar /opt/HP/StoreVirtual/UI/UI.jar</screen><para>By
               default, the CMC GUI is configured to discover the VSA nodes in the subnet in which it
               is installed. This discovery functionality of VSA nodes using the CMC controller node
-              is not supported in [[[kw-hos]]]. Instead, you must manually add each
+              is not supported in &kw-hos;. Instead, you must manually add each
               VSA node, as shown below.</para>
 </listitem>
           <listitem><para>In the CMC GUI, click the <emphasis role="bold">Find</emphasis> menu and then select the <emphasis role="bold">Find Systems</emphasis>
@@ -428,7 +428,7 @@ hplefthand_debug: false</screen><para>where:</para>
                           <emphasis role="bold">cinder-volume.log</emphasis>.</entry>
                     </row>
                   </tbody>
-                </tgroup></informaltable><para>[OPTIONAL] [[[kw-hos-phrase]]] supports VSA deployment for KVM
+                </tgroup></informaltable><para>[OPTIONAL] &kw-hos-phrase; supports VSA deployment for KVM
                 hypervisor only but it can be used as pre-deployed (or out of the band deployed)
                 Lefthand storage boxes or VSA appliances (running on ESX/hyper-v/KVM hypervisor). It
                 also supports Cinder configuration of physical Lefthand storage device and VSA
@@ -456,7 +456,7 @@ volume_backend_name=&lt;vsa-backend-name&gt;</screen><important><para>Similar to
 </important></listitem>
           </orderedlist><important><para>Do not use <literal>backend_host</literal> variable in
               <literal>cinder.conf</literal> file. If <literal>backend_host</literal> is set, it will
-            override the [DEFAULT]/host value which [[[kw-hos-phrase]]] is dependent
+            override the [DEFAULT]/host value which &kw-hos-phrase; is dependent
             on.</para>
 </important></listitem>
         <listitem><para>Commit your configuration to a <xref linkend="using_git"/>:

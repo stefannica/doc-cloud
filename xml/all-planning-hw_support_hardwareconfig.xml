@@ -2,8 +2,8 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="hw_support_hardwareconfig"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Supported Hardware Configurations</title>
-    <sidebar xml:id="supported_configs"><para>[[[kw-hos-phrase]]] supports the following hardware configurations for a
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="hw_support_hardwareconfig"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Supported Hardware Configurations</title>
+    <sidebar xml:id="supported_configs"><para>&kw-hos-phrase; supports the following hardware configurations for a
         deployment.</para>
 <para><emphasis role="bold">Storage Interconnects/Protocols</emphasis></para>
 <itemizedlist>
@@ -14,7 +14,7 @@
         <listitem><para>FibreChannel (FC)</para>
 </listitem>
       </itemizedlist><para><emphasis role="bold">Multipath</emphasis></para>
-<para><para>[[[kw-hos-phrase]]] supports Fibre Channel and FCoE boot from SAN in
+<para><para>&kw-hos-phrase; supports Fibre Channel and FCoE boot from SAN in
           multipath environments. The following list outlines the current limitations based on
           testing: </para></para>
 <itemizedlist>

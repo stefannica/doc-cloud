@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk_setup"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>DPDK Setup for Neutron Networking</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk_setup"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>DPDK Setup for Neutron Networking</title>
     <sidebar><title>Hardware requirements</title><itemizedlist xml:id="ul_epc_stf_qw">
           <listitem><para>Intel-based compute node. DPDK is not available on AMD-based systems.</para>
 </listitem>
@@ -24,7 +24,7 @@
     <sidebar><title>Limitations</title><itemizedlist xml:id="ul_llz_bvf_qw">
         <listitem><para>DPDK is supported on hLinux only. DPDK is not available for RedHat Linux.</para>
 </listitem>
-        <listitem><para>Applies to [[[kw-hos-phrase]]] only. </para>
+        <listitem><para>Applies to &kw-hos-phrase; only. </para>
 </listitem>
         <listitem><para>Tenant network can be untagged vlan or untagged vxlan </para>
 </listitem>

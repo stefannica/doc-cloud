@@ -4,7 +4,7 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="crt_upgrade"><title>Upgrade from 4.0 to 4.x</title>
     <sidebar xml:id="idg-all-operations-monitoring-crt_upgrade-xml-2"><para>Presuming that spark and monasca-transform were configured to be deployed with an existing 
-        [[[kw-hos-phrase]]] deploy the upgrade process is straightforward and falls 
+        &kw-hos-phrase; deploy the upgrade process is straightforward and falls 
         in line with general HOS procedure.
       </para>
 <para>The upgrade process follows the same pattern for the command executions as the service 

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="networkroutevalidation"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Network Route Validation</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="networkroutevalidation"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Network Route Validation</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-other_topics-networkroutevalidation-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -18,7 +18,7 @@
     <para>It does this by using the data in the services section of the input model which provides
         details of which <guilabel>service-components</guilabel> need to connect to each other.
         This data is not configurable by the administrator; however, it is provided as part of the
-        [[[kw-hos]]] release.</para>
+        &kw-hos; release.</para>
 
     <para>For each <guilabel>server</guilabel>, the configuration processor looks at the list of
         <guilabel>service-components</guilabel> it runs and determines the network addresses of

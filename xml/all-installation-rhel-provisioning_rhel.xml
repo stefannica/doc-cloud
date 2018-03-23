@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="provisioning_rhel"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Provisioning RHEL Yourself</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="provisioning_rhel"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Provisioning RHEL Yourself</title><!---->
         <para><para xml:id="idg-all-installation-rhel-provisioning_rhel-xml-4"><phrase><phrase/></phrase></para></para>
 
         
         <sidebar><title>Introduction</title><para>This article outlines the steps needed to manually provision a RHEL node so that 
-                it can be added to a new or existing [[[kw-hos-phrase]]] cloud.</para>
+                it can be added to a new or existing &kw-hos-phrase; cloud.</para>
 </sidebar>
         
         <sidebar><title>Install RHEL 7.2</title><para>Install RHEL 7.2 using the standard iso (RHEL-7.2-20151030.0-Server-x86_64-dvd1.iso)</para>
@@ -105,7 +105,7 @@ passwd stack</screen></sidebar>
                 
             </orderedlist></sidebar>
         
-        <sidebar><title>Set up yum repository</title><para>You need to set up a yum repository, either external or local, containing a [[[kw-hos]]]
+        <sidebar><title>Set up yum repository</title><para>You need to set up a yum repository, either external or local, containing a &kw-hos;
                 supported RHEL distro. You must have a full repository including ResilientStorage and HighAvailability addons.
                 One possible method for setting up a local repository is outlined in this section.
             

@@ -3,16 +3,16 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="min_hardware"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Hardware and Software Support Matrix</title><abstract><para><para>Details about the supported hardware and software for
-        [[[kw-hos-phrase]]].</para></para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="min_hardware"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Hardware and Software Support Matrix</title><abstract><para><para>Details about the supported hardware and software for
+        &kw-hos-phrase;.</para></para>
 </abstract>
     
     <para><para xml:id="idg-all-planning-hw_support_matrix-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <sidebar xml:id="idg-all-planning-hw_support_matrix-xml-6"><para>This document lists the details about the supported hardware and software for [[[kw-hos-phrase]]]</para>
+    <sidebar xml:id="idg-all-planning-hw_support_matrix-xml-6"><para>This document lists the details about the supported hardware and software for &kw-hos-phrase;</para>
 </sidebar>
     
-    <!----><sidebar xml:id="idg-all-planning-hw_support_matrix-xml-7"><title>Firmware Requirements</title><para>Before performing any installation or upgrade of a [[[kw-hos]]] release on
+    <!----><sidebar xml:id="idg-all-planning-hw_support_matrix-xml-7"><title>Firmware Requirements</title><para>Before performing any installation or upgrade of a &kw-hos; release on
         HPE (ProLiant) servers, the Service Pack for ProLiant (SPP) should be applied to be
         compatible with latest releases in firmware. The Service Pack for ProLiant (SPP) can be
           downloaded from <link xlink:href="http://www.hpe.com/info/spp"/></para>

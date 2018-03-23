@@ -29,7 +29,7 @@
 </listitem>
             <listitem><para>Process health metrics (process, http_check)</para>
 </listitem>
-            <listitem><para>[[[kw-hos-phrase]]]-specific component metrics, such as apache, mysql, rabbitmq,
+            <listitem><para>&kw-hos-phrase;-specific component metrics, such as apache, mysql, rabbitmq,
                 kafka, vertica, etc.</para>
 </listitem>
         </itemizedlist>

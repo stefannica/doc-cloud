@@ -2,10 +2,10 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_openstack_clients"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Installing OpenStack Clients</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_openstack_clients"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Installing OpenStack Clients</title>
     <para><para xml:id="idg-all-installation-install_openstack_clients-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <sidebar><para>The way OpenStack clients are installed changed in [[[kw-hos-phrase-40]]].
+    <sidebar><para>The way OpenStack clients are installed changed in &kw-hos-phrase-40;.
         If you have a standalone deployer, the OpenStack CLI and other clients will not be installed
         automatically on that node. If you require access to these clients, you will need to follow
         the procedure below to add the appropriate software. 

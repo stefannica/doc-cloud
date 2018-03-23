@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_sles"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using the Lifecycle Manager to Deploy SLES
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="install_sles"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using the Lifecycle Manager to Deploy SLES
         Compute Nodes</title>
         <para><para xml:id="idg-all-installation-sles-install_sles-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -35,7 +35,7 @@
                         <literal>control_plane.yml</literal>. For more information on configuration of
                         the Input Model for SLES, see . </para>
 </listitem>
-                    <listitem><para>[[[kw-hos]]] playbooks currently do not take care of the SDK,
+                    <listitem><para>&kw-hos; playbooks currently do not take care of the SDK,
                         therefore it needs to be added manually. The following command needs to be
                         run on every SLES compute
                             node:</para>

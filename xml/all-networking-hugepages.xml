@@ -2,10 +2,10 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="hugepages"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Hugepages for DPDK in Neutron
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="hugepages"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Hugepages for DPDK in Neutron
     Networks</title>
     <sidebar><title>Configuring hugepages to enable DPDK</title><para>In order to take advantge of <xref linkend="dpdk"/> and its network
-        performance enhancements, new in [[[kw-hos-phrase]]], you must first enable
+        performance enhancements, new in &kw-hos-phrase;, you must first enable
         hugepages.</para>
 <para>With hugepages, physical RAM is reserved at boot time and dedicated to a virtual machine.
         Only that virtual machine and Open vSwitch can use this specifically allocated RAM. The host

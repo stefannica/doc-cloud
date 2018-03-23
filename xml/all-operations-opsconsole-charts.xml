@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="charts"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Visualizing Data in Charts</title><para>Operations Console allows you to create a new chart and select the time range and the metric you want to chart, based on Monasca metrics.</para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="charts"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Visualizing Data in Charts</title><para>Operations Console allows you to create a new chart and select the time range and the metric you want to chart, based on Monasca metrics.</para>
 
         <para>Present data in a pictorial or graphical format to enable administrators and decision
             makers to grasp difficult concepts or identify new patterns.</para>

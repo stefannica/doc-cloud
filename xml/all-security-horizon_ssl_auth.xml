@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="x509_certificate_auth"><title>Configuring Keystone and Horizon to use X509 Client Certificates</title>
         <sidebar xml:id="section_and_l2p_hx"><title>Overview</title><para>The Keystone service supports X.509 SSL cerificate authentication and authorization
-                for accessing the Horizon dashboard in [[[kw-hos-phrase]]]. This
+                for accessing the Horizon dashboard in &kw-hos-phrase;. This
                 feature is disabled by default, and must be manually configured and enabled by
                 running a number of Ansible playbooks.</para>
 </sidebar>
@@ -361,7 +361,7 @@ ansible-playbook -i hosts/verb_hosts horizon-reconfigure.yml</screen></listitem>
         <sidebar xml:id="section_hbf_q2p_hx"><title>How it works</title><para>The SSL authentication and authorization process is detailed in the following
                     steps.</para>
 <orderedlist xml:id="ol_vhn_cbq_hx">
-                        <listitem><para>User directs a web browser to the [[[kw-hos]]] Horizon login landing
+                        <listitem><para>User directs a web browser to the &kw-hos; Horizon login landing
                         page.</para>
 </listitem>
                     <listitem><para>The user selects the "X.509 Certificate" login option from the dropdown

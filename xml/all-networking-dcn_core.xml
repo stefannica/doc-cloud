@@ -3,9 +3,9 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_core"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Bringing up a Cloud with the DCN Core
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_core"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Bringing up a Cloud with the DCN Core
     Driver</title>
-    <sidebar><title>Bringing up a [[[kw-hos]]] cloud with the DCN core plugin</title><para>Bringing up a [[[kw-hos]]] cloud with the DCN core plugin is identical to
+    <sidebar><title>Bringing up a &kw-hos; cloud with the DCN core plugin</title><para>Bringing up a &kw-hos; cloud with the DCN core plugin is identical to
           <xref linkend="DCN_ml2"/>, with the exception of the following required changes:</para>
 <orderedlist>
         <listitem><para>The following changes need to be made in the <literal>control_plane.yml</literal>

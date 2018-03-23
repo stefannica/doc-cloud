@@ -3,14 +3,14 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configobj_cloud"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase><!---->Cloud Configuration</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configobj_cloud"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase><!---->Cloud Configuration</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-configobj-cloud-xml-4"><phrase><phrase/></phrase></para></para>
 
         
 
 
     <para>The top-level cloud configuration file, <guilabel>cloudConfig.yml</guilabel>, defines
-        some global values for the [[[kw-hos]]] Cloud, as described in the table below.</para>
+        some global values for the &kw-hos; Cloud, as described in the table below.</para>
 
         
         <para>The snippet below shows the start of the control plane definition file.</para>

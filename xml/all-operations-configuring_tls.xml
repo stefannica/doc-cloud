@@ -2,11 +2,11 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tls30"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Transport Layer Security
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tls30"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Transport Layer Security
     (TLS)</title><abstract><para><para>TLS is enabled by default during the installation of
-        [[[kw-hos-phrase]]] and additional configuration options are available to
+        &kw-hos-phrase; and additional configuration options are available to
       secure your environment.</para>TLS is enabled by default during the installation of
-      [[[kw-hos-phrase]]] and additional configuration options are available to
+      &kw-hos-phrase; and additional configuration options are available to
     secure your environment, as described below.</para>
 </abstract>
     
@@ -16,9 +16,9 @@
 
 <!---->
  <!---->
-  <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-configuring_tls-xml-4"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>TLS Configuration</title>
+  <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-configuring_tls-xml-4"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>TLS Configuration</title>
     <!---->
-    <formalpara><title/><para>[[[kw-hos-phrase]]][[[kw-hos]]]</para>
+    <formalpara><title/><para>&kw-hos-phrase;&kw-hos;</para>
 </formalpara>
     <sidebar><para>Please read the following if you're using the default <literal>cert-name:
           my-public-cert</literal> in your model.</para>
@@ -87,13 +87,13 @@ notAfter=Oct  8 09:01:58 2016 GMT</screen>
         </varlistentry>
       </variablelist><para>The major difference between an external VIP certificate and an internal VIP certificate is
         that the internal VIP has approximately 40 domain names in the SAN. This is because each
-        service has a different domain name in [[[kw-hos-phrase]]]. So it is
+        service has a different domain name in &kw-hos-phrase;. So it is
         unlikely that you can create an internal server certificate before running the configuration
         processor. But after a configuration processor run, a certificate request would be created
         for each of your cert-names.</para>
 </sidebar>
     <sidebar><title>Configuring TLS in the input model</title><para>For this example certificate configuration, let's assume there's no FQDN for the external
-        VIP and that you're going to use the default IP address provided by [[[kw-hos-phrase]]]. Let's also assume that for the internal VIP you will use the
+        VIP and that you're going to use the default IP address provided by &kw-hos-phrase;. Let's also assume that for the internal VIP you will use the
         defaults as well. If you were to call your certificate authority "example-CA," the CA
         certificate would then be called "example-CA.crt" and the key would be called
         "example-CA.key." In the following examples, the external VIP certificate will be named
@@ -162,7 +162,7 @@ notAfter=Oct  8 09:01:58 2016 GMT</screen>
     </para>
 
     
-    <sidebar xml:id="idg-all-operations-configuring_tls-xml-7"><title>User-provided certificates and trust chains</title><para>[[[kw-hos]]] generates its own internal certificates but is designed to allow
+    <sidebar xml:id="idg-all-operations-configuring_tls-xml-7"><title>User-provided certificates and trust chains</title><para>&kw-hos; generates its own internal certificates but is designed to allow
         you to bring in your own certificates for the VIPs. Here is the general process.</para>
 <orderedlist>
         <listitem><para>You must have a server certificate and a CA certificate to go with it (unless the signer
@@ -188,7 +188,7 @@ notAfter=Oct  8 09:01:58 2016 GMT</screen>
         <listitem><para>Next, upload it to the lifecycle manager. Server certificates should be added to
             <literal>config/tls/certs</literal> and CA certificates should be added to
             <literal>config/tls/cacerts</literal>. The file extension should be <literal>.crt</literal>
-          for the CA certificate to be processed by [[[kw-hos]]]. Detailed steps are
+          for the CA certificate to be processed by &kw-hos;. Detailed steps are
           next.</para>
 </listitem>
       </orderedlist></sidebar>

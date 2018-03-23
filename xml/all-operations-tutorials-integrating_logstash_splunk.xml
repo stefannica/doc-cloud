@@ -4,16 +4,16 @@
 ]>
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="Integrating_Kibana_with_Splunk"><title>Integrating Your Logs with Splunk</title>
-        <sidebar xml:id="idg-all-operations-tutorials-integrating_logstash_splunk-xml-2"><title>Integrating with Splunk</title><para>The [[[kw-hos-phrase]]] logging solution provides a flexible and
+        <sidebar xml:id="idg-all-operations-tutorials-integrating_logstash_splunk-xml-2"><title>Integrating with Splunk</title><para>The &kw-hos-phrase; logging solution provides a flexible and
                 extensible framework to centralize the collection and processing of logs from all
                 nodes in your cloud. The logs are shipped to a highly available and fault-tolerant
                 cluster where they are transformed and stored for better searching and reporting.
-                The [[[kw-hos-phrase]]] logging solution uses the ELK stack
+                The &kw-hos-phrase; logging solution uses the ELK stack
                 (Elasticsearch, Logstash and Kibana) as a production-grade implementation and can
                 support other storage and indexing technologies. </para>
 <para>You can configure Logstash, the service that aggregates and forwards the logs to a
                 searchable index, to send the logs to a third-party target, such as Splunk.</para>
-<para>This tutorial demonstrates how to integrate the [[[kw-hos-phrase]]]
+<para>This tutorial demonstrates how to integrate the &kw-hos-phrase;
                 centralized logging solution with Splunk, including the steps to set up and forward
                 logs.</para>
 </sidebar>
@@ -25,7 +25,7 @@
                 on its website at <link xlink:href="https://www.splunk.com">splunk.com</link>.</para>
 </sidebar>
         
-        <sidebar xml:id="idg-all-operations-tutorials-integrating_logstash_splunk-xml-4"><title>Configuring Splunk to receive log messages from [[[kw-hos-phrase]]]</title><para>This documentation assumes that you already have Splunk set up and running. For help with
+        <sidebar xml:id="idg-all-operations-tutorials-integrating_logstash_splunk-xml-4"><title>Configuring Splunk to receive log messages from &kw-hos-phrase;</title><para>This documentation assumes that you already have Splunk set up and running. For help with
                 installing and setting up Splunk, refer to <link xlink:href="http://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/Systemrequirements">Splunk Tutorial</link>.</para>
 <para>Log messages (or "events" in Splunk's terminology) can be shipped to Splunk in
                 different ways. The following steps set up
@@ -72,9 +72,9 @@
 </listitem>
             </orderedlist></sidebar>
         
-        <sidebar><title>Forwarding log messages from [[[kw-hos-phrase]]] centralized
+        <sidebar><title>Forwarding log messages from &kw-hos-phrase; centralized
                 logging to Splunk</title><para>After you have Splunk set up and configured to receive log messages, follow these
-                steps to configure the [[[kw-hos-phrase]]] Logstash service to ship
+                steps to configure the &kw-hos-phrase; Logstash service to ship
                 the logs to Splunk:</para>
 <orderedlist>
                 <listitem><para>Log in to the lifecycle manager.</para>

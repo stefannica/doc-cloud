@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="postinstall_checklist"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Other Common Post-Installation Tasks</title><abstract><para><para>This is a collection of other common post-install
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="postinstall_checklist"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Other Common Post-Installation Tasks</title><abstract><para><para>This is a collection of other common post-install
       tasks such as how to determine your admin user credentials and how to configure your
       environmental variables to start using the command-line tools.</para></para>
 </abstract>
@@ -40,7 +40,7 @@ ansible-playbook -i hosts/verb_hosts cloud-client-setup.yml</screen><para>As the
 # Localhost Information
 127.0.0.1 localhost hlm</screen></sidebar>
 
-    <sidebar xml:id="home_dir"><title>Protect home directory</title><para>The home directory of the user that owns the [[[kw-hos-phrase]]] scripts 
+    <sidebar xml:id="home_dir"><title>Protect home directory</title><para>The home directory of the user that owns the &kw-hos-phrase; scripts 
         should not be world readable.  Change the permissions so that they are only readable 
         by the owner:
         </para>

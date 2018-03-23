@@ -13,7 +13,7 @@
                 <listitem><para>The ID of the HipChat room you wish to send notifications to.</para>
 </listitem>
                 <listitem><para>A HipChat user account. This account will be used to authenticate any incoming
-                    notifications from your [[[kw-hos-phrase]]] cloud.</para>
+                    notifications from your &kw-hos-phrase; cloud.</para>
 </listitem>
             </itemizedlist>
 

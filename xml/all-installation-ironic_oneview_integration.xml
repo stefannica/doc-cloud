@@ -2,16 +2,16 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ironic_oneview_integration"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Ironic OneView Integration</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ironic_oneview_integration"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Ironic OneView Integration</title>
     <para><para xml:id="idg-all-installation-ironic_oneview_integration-xml-4"><phrase><phrase/></phrase></para></para>
 
 
-    <sidebar xml:id="idg-all-installation-ironic_oneview_integration-xml-6"><title>Summary</title><para>[[[kw-hos-phrase]]] supports integration of Ironic (Baremetal) service with HPE OneView using
+    <sidebar xml:id="idg-all-installation-ironic_oneview_integration-xml-6"><title>Summary</title><para>&kw-hos-phrase; supports integration of Ironic (Baremetal) service with HPE OneView using
           <emphasis>agent_pxe_oneview</emphasis> driver. Please refer to <link xlink:href="https://docs.openstack.org/developer/ironic/drivers/oneview.html">OpenStack Documentation</link> for more information.</para>
 </sidebar>
 
     <sidebar xml:id="idg-all-installation-ironic_oneview_integration-xml-7"><title>Prerequesites</title><orderedlist xml:id="prereq_list">
-          <listitem><para>Installed [[[kw-hos-phrase]]] with entry-scale-ironic-flat-network or
+          <listitem><para>Installed &kw-hos-phrase; with entry-scale-ironic-flat-network or
             entry-scale-ironic-multi-tenancy model.</para>
 </listitem>
           <listitem><para>OneView 3.0 instance is running and connected to management network.</para>
@@ -48,7 +48,7 @@
               <listitem><para><literal>oneview_encrypted_password</literal>: OneView password in encrypted or
                 clear text form. Encrypted form is distinguished by presence of '@hos@' at the
                 beginning of the string. Encrypted form can be created by running hosencrypt.py
-                program. This program is shipped as part of [[[kw-hos]]] and can be
+                program. This program is shipped as part of &kw-hos; and can be
                 found in <literal>~/helion/hos/ansible</literal> directory on lifecycle manager.</para>
 </listitem>
               <listitem><para><literal>oneview_allow_insecure_connections</literal>: should be set to "true" if

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ovsvapp_monitoring"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Monitoring Integration with OVSvApp Appliance</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ovsvapp_monitoring"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Monitoring Integration with OVSvApp Appliance</title><!---->
     <sidebar xml:id="processes"><title>Processes Monitored with Monasca Agent</title><para>Using the Monasca agent, the following services are monitored on the OVSvApp appliance:</para>
 <itemizedlist>
         <listitem><para><emphasis role="bold">Neutron_ovsvapp_agent service</emphasis> - This is the Neutron agent which runs in the

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="supported_upstream_keystone_features"><title>Supported Upstream Keystone Features</title>
-        <sidebar xml:id="section_azv_113_jx"><title>OpenStack upstream features that are enabled by default in [[[kw-hos-phrase]]]</title><para>The following supported Keystone features are enabled by default in the [[[kw-hos-phrase]]] release.</para>
+        <sidebar xml:id="section_azv_113_jx"><title>OpenStack upstream features that are enabled by default in &kw-hos-phrase;</title><para>The following supported Keystone features are enabled by default in the &kw-hos-phrase; release.</para>
 <informaltable xml:id="simpletable_ctf_tzg_jx"><tgroup cols="4"><thead><row>
                         <entry>Target Release</entry>
                         <entry>Name</entry>
@@ -32,7 +32,7 @@
                 that are specific to a domain. At the time a token is issued, the domain-specific
                 roles are not included in the token, however, the roles that they map to are.</para>
 </sidebar>
-        <sidebar xml:id="section_rpw_21h_jx"><title>OpenStack upstream features that are disabled by default in [[[kw-hos-phrase]]]</title><para>The following is a list of features which are fully supported in the [[[kw-hos-phrase]]] release, but are disabled by default. Customers can run
+        <sidebar xml:id="section_rpw_21h_jx"><title>OpenStack upstream features that are disabled by default in &kw-hos-phrase;</title><para>The following is a list of features which are fully supported in the &kw-hos-phrase; release, but are disabled by default. Customers can run
                 a playbook to enable the features.</para>
 <informaltable xml:id="simpletable_vcz_tbh_jx"><tgroup cols="4"><thead><row>
                     <entry>Target Release</entry>
@@ -89,8 +89,8 @@
 <para>Using the new REST APIs, domain-specific configuration options can be stored in a SQL
                 database instead of in configuration files.</para>
 </sidebar>
-        <sidebar xml:id="section_fm3_mch_jx"><title><emphasis role="bold">OpenStack upstream features that have been specifically disabled in [[[kw-hos-phrase]]]</emphasis></title><para>The following is a list of extensions which are disabled by default in
-                    [[[kw-hos-phrase]]], according to Keystone policy.</para>
+        <sidebar xml:id="section_fm3_mch_jx"><title><emphasis role="bold">OpenStack upstream features that have been specifically disabled in &kw-hos-phrase;</emphasis></title><para>The following is a list of extensions which are disabled by default in
+                    &kw-hos-phrase;, according to Keystone policy.</para>
 <informaltable xml:id="simpletable_y3n_xch_jx"><tgroup cols="4"><thead><row>
                         <entry>Target Release</entry>
                         <entry>Name</entry>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="troubleshooting_ceph"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Ceph Storage Troubleshooting</title><abstract><para><para>Troubleshooting scenarios with resolutions for the
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="troubleshooting_ceph"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Ceph Storage Troubleshooting</title><abstract><para><para>Troubleshooting scenarios with resolutions for the
       Ceph service.</para>This page describes troubleshooting scenarios for Ceph.</para>
 </abstract>
     <!---->
@@ -239,10 +239,10 @@ ceph --cluster &lt;cluster-name&gt; osd rm &lt;osd-num&gt;</screen></listitem>
 <screen>ceph --cluster &lt;cluster-name&gt; osd crush add osd.&lt;osd-num&gt; 1.0 host=&lt;osd-hostname&gt;</screen></listitem>
           </orderedlist>
 </formalpara>
-      <formalpara xml:id="issue8"><title>Issue: Retrieving the UUID for your OSD Disks</title><para><para>In [[[kw-hos]]], OSD disks are referred to by UUID instead of by block
-            device name, which is what previous versions used.</para><para>If you were using a previous version of [[[kw-hos]]] and then upgraded,
+      <formalpara xml:id="issue8"><title>Issue: Retrieving the UUID for your OSD Disks</title><para><para>In &kw-hos;, OSD disks are referred to by UUID instead of by block
+            device name, which is what previous versions used.</para><para>If you were using a previous version of &kw-hos; and then upgraded,
             your <literal>/etc/fstab</literal> file may have been updated with the UUIDs of your OSD
-            disks by the upgrade process. If you are using a fresh install of H[[[kw-hos]]] then your UUIDs will be auto-populated during installation.</para><para>In order to obtain the UUIDs for your partitioned OSD data disks, use these steps:</para></para>
+            disks by the upgrade process. If you are using a fresh install of H&kw-hos; then your UUIDs will be auto-populated during installation.</para><para>In order to obtain the UUIDs for your partitioned OSD data disks, use these steps:</para></para>
 <orderedlist>
             <listitem><para>SSH to your OSD node.</para>
 </listitem>
@@ -433,7 +433,7 @@ ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt;
 ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt; </screen>
 </formalpara>
 
-      <formalpara><title>Issue: Failure of horizon-status.yml</title><important><para>This is applicable only for [[[kw-hos-version-30]]].</para>
+      <formalpara><title>Issue: Failure of horizon-status.yml</title><important><para>This is applicable only for &kw-hos-version-30;.</para>
 </important>
 <para><para>If you deploy RADOS gateway on a controller node, the
               <literal>horizon-status.yml</literal> fails.</para><para><emphasis role="bold">Resolution</emphasis></para><para>Perform the following steps to rectify the issue.</para><para><orderedlist xml:id="ol_r2d_mzg_rw">

@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_ugs_fnd_bt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>The Identity Service</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_ugs_fnd_bt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>The Identity Service</title><!---->
     <para><para xml:id="idg-all-operations-configuring-identity-identity_overview-xml-4"><phrase><phrase/></phrase></para></para>
 
     <para>This topic explains the purpose and mechanisms of the identity service.</para>
 
-      <sidebar><title>What is the Identity service?</title><para>The [[[kw-hos]]] Identity service, based on the OpenStack Keystone API, is
+      <sidebar><title>What is the Identity service?</title><para>The &kw-hos; Identity service, based on the OpenStack Keystone API, is
         responsible for providing UserID authentication and access authorization to enable
         organizations to achieve their access security and compliance objectives and successfully
         deploy OpenStack. In short, the Identity Service is the gateway to the rest of the OpenStack
@@ -96,7 +96,7 @@
         password, and can include options such as SMS text, a temporal token generator, a
         fingerprint scanner, etc. Each of these types of MFA are usually specific to a particular
         MFA vendor. The Keystone architecture supports an MFA-based authentication system, but this
-        has not yet been certified or documented for [[[kw-hos]]].</para>
+        has not yet been certified or documented for &kw-hos;.</para>
 </sidebar>
     <sidebar xml:id="idg-all-operations-configuring-identity-identity_overview-xml-9"><title>Authorization</title><para>The second major function provided by the Keystone service is access authorization that
         determines what resources and actions are available based on the UserID, the role of the

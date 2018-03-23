@@ -2,9 +2,9 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="hw_support_diskcalc"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Disk Calculator</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="hw_support_diskcalc"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Disk Calculator</title>
     <sidebar xml:id="disk_calc"><title>Disk Calculator for Compute-Centric Deployments</title><para>This topic provides guidance on how to estimate the amount of disk space required for a
-        compute-centric [[[kw-hos]]] deployment. To accurately estimate the disk space
+        compute-centric &kw-hos; deployment. To accurately estimate the disk space
         needed, it is important to understand how Helion utilizes resources. Although there are a
         variety of factors, including the number of compute nodes, a large portion of the
         utilization is driven by operational tools, such as monitoring, metering, and logging.</para>
@@ -26,7 +26,7 @@
 <important><para>If you also enable auditing, follow the steps in the <link xlink:href="#hw_support_diskcalc/disk_calc_audit_adj">Audit Logging
           Adjustment</link> section to enter additional input parameters.</para>
 </important><para><emphasis role="bold">Disk Estimation Process</emphasis></para>
-<para>[[[kw-hos]]] provides entry scale and scale-out models for deployment. This
+<para>&kw-hos; provides entry scale and scale-out models for deployment. This
         disk estimation tool, currently in a spreadsheet form, helps you decide which disk model to
         start from as well as what customizations you need to meet your deployment requirements. The
         disk estimation process also provides default settings and minimum values for the parameters

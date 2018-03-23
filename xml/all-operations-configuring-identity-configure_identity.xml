@@ -3,13 +3,13 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_qmz_fg3_btx"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring the Identity Service</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_qmz_fg3_btx"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring the Identity Service</title>
     <!---->
     <para><para xml:id="idg-all-operations-configuring-identity-configure_identity-xml-4"><phrase><phrase/></phrase></para></para>
 
 
     <sidebar><title>What is the Identity service?</title><para>The
-        [[[kw-hos]]] Identity service, based on the OpenStack Keystone API, provides
+        &kw-hos; Identity service, based on the OpenStack Keystone API, provides
         UserID authentication and access authorization to help organizations achieve their access
         security and compliance objectives and successfully deploy OpenStack. In short, the Identity
         service is the gateway to the rest of the OpenStack services. </para>
@@ -106,7 +106,7 @@
         password, and can include options such as SMS text, a temporal token generator, or a
         fingerprint scanner. Each of these types of MFAs are usually specific to a particular MFA
         vendor. The Keystone architecture supports an MFA-based authentication system, but this has
-        not yet been certified or documented for [[[kw-hos]]].</para>
+        not yet been certified or documented for &kw-hos;.</para>
 </sidebar>
     <sidebar xml:id="idg-all-operations-configuring-identity-configure_identity-xml-8"><title>Authorization</title><para>Another major function provided by the Keystone service is access authorization that
         determines which resources and actions are available based on the UserID, the role of the
@@ -211,7 +211,7 @@
           <tbody>
             <row>
               <entry>admin</entry>
-              <entry>The "superuser" role. Provides full access to all [[[kw-hos]]] services
+              <entry>The "superuser" role. Provides full access to all &kw-hos; services
                 across all domains and projects. This role should be given only to a cloud
                 administrator.</entry>
             </row>

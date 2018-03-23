@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="websso"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring Web Single Sign-On</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="websso"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring Web Single Sign-On</title>
     <!---->
     
     <!---->
@@ -18,7 +18,7 @@
         provider web page and supply their credentials. If the user successfully authenticates with
         the identity provider, the authentication credentials are then stored in the user’s web
         browser and automatically provided to all web-based applications, such as the Horizon
-        dashboard in [[[kw-hos-phrase-30]]] . If users have not yet authenticated with
+        dashboard in &kw-hos-phrase-30; . If users have not yet authenticated with
         an identity provider or their credentials have timed out, they are automatically redirected
         to the identity provider to renew their credentials.</para>
 </sidebar>
@@ -26,13 +26,13 @@
         <listitem><para>The WebSSO function supports only Horizon web authentication. It is not supported for
           direct API or CLI access. </para>
 </listitem>
-        <listitem><para>The [[[kw-hos]]] WebSSO function was tested with Microsoft Active Directory
+        <listitem><para>The &kw-hos; WebSSO function was tested with Microsoft Active Directory
           Federation Services (ADFS). The instructions provided are pertinent to ADFS and are
           intended to provide a sample configuration for deploying WebSSO with an external identity
           provider. If you have a different identity provider such as Ping Identity or IBM Tivoli,
           consult with those vendors for specific instructions for those products. </para>
 </listitem>
-        <listitem><para>Only WebSSO federation using the SAML method is supported in [[[kw-hos-phrase-30]]] . OpenID-based federation is not currently supported. </para>
+        <listitem><para>Only WebSSO federation using the SAML method is supported in &kw-hos-phrase-30; . OpenID-based federation is not currently supported. </para>
 </listitem>
         <listitem><para><emphasis role="bold">WebSSO has a change password option in User Settings, but note that this function is
             not accessible for users authenticating with external systems such as LDAP or SAML
@@ -40,7 +40,7 @@
 </listitem>
       </itemizedlist></sidebar>
     <sidebar><title> Enabling WebSSO</title><para>
-      [[[kw-hos-phrase-30]]] now provides WebSSO support for the Horizon web
+      &kw-hos-phrase-30; now provides WebSSO support for the Horizon web
       interface. This support requires several configuration steps including editing the Horizon
       configuration file as well as ensuring that the correct Keystone authentication configuration
       is enabled to receive the authentication assertions provided by the identity provider. </para>

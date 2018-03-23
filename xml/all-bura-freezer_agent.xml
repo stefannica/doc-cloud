@@ -2,14 +2,14 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_pgq_mnw_dt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Backup/Restore Agent</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_pgq_mnw_dt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Backup/Restore Agent</title><!---->
         <para><para xml:id="idg-all-bura-freezer_agent-xml-4"><phrase><phrase/></phrase></para></para>
 
         <para>This topic describes how to configure backup jobs and restore jobs.</para>
 
         <sidebar><title>Introduction </title><para>The backup/restore service agent (Freezer Agent) is a tool that is used to manually
                 back up and restore your data. It can be run from any place you want to take a
-                backup (or do a restore) because all [[[kw-hos]]] nodes have the
+                backup (or do a restore) because all &kw-hos; nodes have the
                 freezer-agent installed on them. To use it, you should run as root. The agent runs
                 in conjunction with the <xref linkend="topic_mlh_wtn_rt"/>. The following explains their relationship:</para>
 <itemizedlist xml:id="ul_djh_2bd_bx">
@@ -29,7 +29,7 @@
                         INI-style config files. </para>
 </listitem>
                 </itemizedlist>
-<para>For [[[kw-hos-phrase]]],
+<para>For &kw-hos-phrase;,
                 you must follow these steps to perform backups: </para>
 <orderedlist>
                     <listitem><para>Define what you want to back up.</para>
@@ -79,7 +79,7 @@
                     <listitem><para>storage is not mandatory. It is Swift by default.</para>
 </listitem>
                 </itemizedlist>
-<para>For [[[kw-hos-phrase]]], you can create a backup using only
+<para>For &kw-hos-phrase;, you can create a backup using only
             mandatory values, as in the following example:
             </para>
 <screen >- freezer-agent --action backup --mode fs --storage swift --path-to-backup /home/user/tmp --container tmp_backups --backup-name backup1</screen><para>Running
@@ -101,7 +101,7 @@
             configuration file for automated jobs to be run by the scheduler. Instructions on how to
             do that are found on the <xref linkend="topic_mlh_wtn_rt"/> page.</para>
 </sidebar>
-        <sidebar><title>Restoring your Data</title><para> For [[[kw-hos-phrase]]], 
+        <sidebar><title>Restoring your Data</title><para> For &kw-hos-phrase;, 
             you must do the following in order to restore data after a
             backup: </para>
 <orderedlist>

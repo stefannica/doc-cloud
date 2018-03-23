@@ -3,25 +3,25 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbicanUpgrade"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Enabling Barbican Support When Upgrading</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbicanUpgrade"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Enabling Barbican Support When Upgrading</title>
     <!---->
     <para><para xml:id="idg-all-upgrade-enable_barbican_for_upgrade-xml-4"><phrase><phrase/></phrase></para></para>
 
 
-    <sidebar><title>Enabling Barbican in previous versions of [[[kw-hos]]]</title><para>
-      Barbican was added in [[[kw-hos-phrase-30]]] and is not available in 2.x
+    <sidebar><title>Enabling Barbican in previous versions of &kw-hos;</title><para>
+      Barbican was added in &kw-hos-phrase-30; and is not available in 2.x
       distributions. (Details of the Barbican Key Management Service are discussed in <xref linkend="barbican"/>.) </para>
 <itemizedlist xml:id="ul_exz_gkl_lx">
-        <listitem><para>For [[[kw-hos]]] upgrades to [[[kw-hos-phrase]]]:</para>
+        <listitem><para>For &kw-hos; upgrades to &kw-hos-phrase;:</para>
 <itemizedlist xml:id="ul_fxz_gkl_lx">
-            <listitem><para>If you had already added Barbican in your [[[kw-hos-phrase-30]]]
+            <listitem><para>If you had already added Barbican in your &kw-hos-phrase-30;
               deployment, then no action is required.</para>
 </listitem>
-            <listitem><para>However, if the Barbican service is not installed in your existing [[[kw-hos-phrase-30]]] installation, follow the process outlined here to add
-              Barbican after you have upgraded your cloud to [[[kw-hos-phrase]]].</para>
+            <listitem><para>However, if the Barbican service is not installed in your existing &kw-hos-phrase-30; installation, follow the process outlined here to add
+              Barbican after you have upgraded your cloud to &kw-hos-phrase;.</para>
 </listitem>
           </itemizedlist></listitem>
-      </itemizedlist><para>If you are upgrading to [[[kw-hos-phrase]]] with your existing input model
+      </itemizedlist><para>If you are upgrading to &kw-hos-phrase; with your existing input model
       configuration files, you will have to include Barbican sections in the relevant input model
       files <emphasis>after performing the upgrade</emphasis>.</para>
 </sidebar>
@@ -63,7 +63,7 @@
     <sidebar><screen >cd ~/scratch/ansible/next/hos/ansible 
 ansible-playbook -i hosts/verb_hosts site.yml</screen></sidebar>
     
-    <formalpara xml:id="tls"><title>TLS configuration </title><para>[[[kw-hos-phrase]]][[[kw-hos-phrase-30]]]<literal>barbican-api</literal><literal>tls-component-endpoints:</literal><literal>network_groups.yml</literal></para>
+    <formalpara xml:id="tls"><title>TLS configuration </title><para>&kw-hos-phrase;&kw-hos-phrase-30;<literal>barbican-api</literal><literal>tls-component-endpoints:</literal><literal>network_groups.yml</literal></para>
 </formalpara>
     <sidebar><para> Go to <literal>helion/my_cloud/definition/data/</literal> and edit
         <literal>network_groups.yml</literal>&gt;</para>

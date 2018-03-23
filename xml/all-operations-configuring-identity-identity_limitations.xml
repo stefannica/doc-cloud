@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_qtp_cn3_bt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Identity Service Notes and Limitations</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_qtp_cn3_bt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Identity Service Notes and Limitations</title>
     <!---->
     <para><para xml:id="idg-all-operations-configuring-identity-identity_limitations-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -56,7 +56,7 @@
         <!---->
       </itemizedlist><para><emphasis role="bold">Integration with LDAP services</emphasis>
       
-        [[[kw-hos-phrase]]] domain-specific configuration: </para>
+        &kw-hos-phrase; domain-specific configuration: </para>
 <itemizedlist>
           <listitem><para>No Global User Listing: Once domain-specific driver configuration is enabled, listing
             all users and listing all groups are not supported operations. Those calls require a
@@ -80,7 +80,7 @@
           <listitem><para>Keystone assignment operations from LDAP records such as managing or assigning roles
             and projects, are not currently supported.</para>
 </listitem>
-          <listitem><para>The [[[kw-hos]]] 'default' domain is pre-configured to store service
+          <listitem><para>The &kw-hos; 'default' domain is pre-configured to store service
             account users and is authenticated locally against the identity service. Domains
             configured for external LDAP integration are non-default domains. </para>
 </listitem>
@@ -100,7 +100,7 @@
 </listitem>
         </itemizedlist>
 <para>
-        [[[kw-hos-phrase]]] API-based domain-specific configuration management </para>
+        &kw-hos-phrase; API-based domain-specific configuration management </para>
 <itemizedlist>
           <listitem><para>No GUI dashboard for domain-specific driver configuration management </para>
 </listitem>
@@ -112,7 +112,7 @@
             domain-specific configuration options. </para>
 </listitem>
           <listitem><para>Status: Domain-specific driver configuration database store is a non-core feature for
-              [[[kw-hos-phrase]]]. </para>
+              &kw-hos-phrase;. </para>
 </listitem>
         </itemizedlist>
 </sidebar>
@@ -156,13 +156,13 @@
         <listitem><para>The WebSSO function supports only Horizon web authentication. It is not supported for
           direct API or CLI access. </para>
 </listitem>
-        <listitem><para>The [[[kw-hos]]] WebSSO function was tested with Microsoft Active Directory
+        <listitem><para>The &kw-hos; WebSSO function was tested with Microsoft Active Directory
           Federation Services (ADFS). The instructions provided are pertinent to ADFS and are
           intended to provide a sample configuration for deploying WebSSO with an external identity
           provider. If you have a different identity provider such as Ping Identity or IBM Tivoli,
           consult with those vendors for specific instructions for those products. </para>
 </listitem>
-        <listitem><para>Only WebSSO federation using the SAML method is supported in [[[kw-hos-phrase-30]]] . OpenID-based federation is not currently supported. </para>
+        <listitem><para>Only WebSSO federation using the SAML method is supported in &kw-hos-phrase-30; . OpenID-based federation is not currently supported. </para>
 </listitem>
         <listitem><para><emphasis role="bold">WebSSO has a change password option in User Settings, but note that this function is
             not accessible for users authenticating with external systems such as LDAP or SAML
@@ -170,10 +170,10 @@
 </listitem>
       </itemizedlist><para><emphasis role="bold">Multi-factor authentication (MFA)</emphasis></para>
 <itemizedlist xml:id="ul_az2_jpd_bt">
-        <listitem><para>[[[kw-hos]]] MFA support is a custom configuration requiring HPE
+        <listitem><para>&kw-hos; MFA support is a custom configuration requiring HPE
           Professional Services support.</para>
 </listitem>
-        <listitem><para>MFA drivers are not included with [[[kw-hos]]] and need to be provided by
+        <listitem><para>MFA drivers are not included with &kw-hos; and need to be provided by
           a specific MFA vendor.</para>
 </listitem>
         <listitem><para>Additional information can be found at <link xlink:href="http://docs.openstack.org/security-guide/content/identity-authentication-methods.html#identity-authentication-methods-external-authentication-methods">http://docs.openstack.org/security-guide/content/identity-authentication-methods.html#identity-authentication-methods-external-authentication-methods</link></para>
@@ -181,7 +181,7 @@
       </itemizedlist><para><emphasis role="bold">Hierarchical multitenancy</emphasis></para>
 <itemizedlist xml:id="ul_tbf_jpd_bt">
         <listitem><para>This function requires additional support from various OpenStack services to be
-          functional. It is a non-core function in [[[kw-hos]]] and is not ready for either
+          functional. It is a non-core function in &kw-hos; and is not ready for either
           proof of concept or production deployments.</para>
 </listitem>
         <listitem><para>Additional information can be found at <link xlink:href="http://specs.openstack.org/openstack/keystone-specs/specs/juno/hierarchical_multitenancy.html">http://specs.openstack.org/openstack/keystone-specs/specs/juno/hierarchical_multitenancy.html</link>.</para>
@@ -191,10 +191,10 @@
         available for Compute resources.</emphasis> This error message is expected as no Compute service is
       configured for this deployment. Please ignore the error message. <emphasis role="bold">Performance and token
         creation/validation</emphasis></para>
-<para>Keystone in OpenStack Mitaka (on which [[[kw-hos-phrase]]] is based) is known
+<para>Keystone in OpenStack Mitaka (on which &kw-hos-phrase; is based) is known
         to have degraded performance in token validation and creation operations compared to the
         previous Liberty release. This is due mainly to the databse schema changes that result in
-        many additional database queries per token operation. In [[[kw-hos-phrase]]],
+        many additional database queries per token operation. In &kw-hos-phrase;,
         both token validation and creation operations have been tuned by increasing the number of
         Keystone processes (from 10 - 15), resulting in a large perfomance gain. </para>
 <para>The
@@ -207,8 +207,8 @@
             <thead>
               <row>
                 <entry>Operation </entry>
-                <entry>In  [[[kw-hos-phrase]]]  (secs/request)</entry>
-                <entry>In  [[[kw-hos-phrase-30]]] (secs/request)</entry>
+                <entry>In  &kw-hos-phrase;  (secs/request)</entry>
+                <entry>In  &kw-hos-phrase-30; (secs/request)</entry>
               </row>
             </thead>
             <tbody>

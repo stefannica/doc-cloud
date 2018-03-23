@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="bura_overview"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Backup and Restore</title><abstract><para><para>Information about how to back up and restore your
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="bura_overview"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Backup and Restore</title><abstract><para><para>Information about how to back up and restore your
       cloud.</para></para>
 </abstract><!---->
     <para><para xml:id="idg-all-bura-bura_overview-xml-4"><phrase><phrase/></phrase></para></para>
@@ -21,7 +21,7 @@
     <para>Second, you can prevent the Freezer backup and restore service from being installed
       completely, or designate which services should be backed up by default. <xref linkend="topic_i4l_xhn_tt"/>.</para>
 
-    <para>[[[kw-hos-phrase]]] supports backup and restore of control plane services. It
+    <para>&kw-hos-phrase; supports backup and restore of control plane services. It
       comes with playbooks and procedures to recover the control plane from various disaster
       scenarios.</para>
 

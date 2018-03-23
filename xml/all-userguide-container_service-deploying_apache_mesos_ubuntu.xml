@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_apache_mesos_ubuntu"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Deploying an Apache Mesos Cluster on
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_apache_mesos_ubuntu"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Deploying an Apache Mesos Cluster on
     Ubuntu</title>
     <para><para xml:id="idg-all-userguide-container_service-deploying_apache_mesos_ubuntu-xml-4"><phrase><phrase/></phrase></para></para>
 
@@ -16,7 +16,7 @@
 </listitem>
       </itemizedlist></sidebar>
     <sidebar xml:id="idg-all-userguide-container_service-deploying_apache_mesos_ubuntu-xml-7"><title>Creating the Cluster</title><para>The following example is created using Kubernetes Container Orchestration Engine (COE)
-        running on Fedora Atomic guest OS on [[[kw-hos]]] VMs.</para>
+        running on Fedora Atomic guest OS on &kw-hos; VMs.</para>
 <orderedlist>
           <listitem><para>As <emphasis role="bold">stack</emphasis> user, login to the lifecycle manager.</para>
 </listitem>
@@ -313,7 +313,7 @@ EOF
 &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
 &lt;title&gt;Directory listing for /&lt;/title&gt;
 ...</screen></listitem>
-          <listitem><para>If LBaaS v2 is enabled in [[[kw-hos]]] environment, a new load balancer
+          <listitem><para>If LBaaS v2 is enabled in &kw-hos; environment, a new load balancer
             can be created to perform request rotation between several masters. Please refer to
               for more information on LBaaS v2 support.</para>
 </listitem>

@@ -3,10 +3,10 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_iq3_nl3_bt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Understanding Domains, Projects, Users, Groups,
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_iq3_nl3_bt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Understanding Domains, Projects, Users, Groups,
     and Roles</title><abstract><para><para>The identity service uses these concepts for
       authentication within your cloud and these are descriptions of each of them.</para> The
-      [[[kw-hos-phrase]]] identity service uses OpenStack Keystone and the concepts of
+      &kw-hos-phrase; identity service uses OpenStack Keystone and the concepts of
     domains, projects, users, groups, and roles to manage authentication. This page describes how
     these work together.</para>
 </abstract>
@@ -62,15 +62,15 @@
         <listitem><para>The "admin" UserID (UID) is created during the Keystone installation, has the "admin"
           role assigned to it, and is defined as the "Cloud Admin". This UID is created using the
           "magic" or "secret" admin token found in the default 'keystone.conf' file installed during
-            [[[kw-hos]]] keystone installation after the Keystone service has been
+            &kw-hos; keystone installation after the Keystone service has been
           installed. This secret token should be removed after installation and the "admin" password
           changed.</para>
 </listitem>
-        <listitem><para>The "default" domain is created automatically during the [[[kw-hos]]]
+        <listitem><para>The "default" domain is created automatically during the &kw-hos;
           Keystone installation.</para>
 </listitem>
         <listitem><para>The "default" domain contains all OpenStack service accounts that are installed during
-          the [[[kw-hos]]] keystone installation process.</para>
+          the &kw-hos; keystone installation process.</para>
 </listitem>
 
         <listitem><para>No users but the OpenStack service accounts should be assigned to the "default"
@@ -157,7 +157,7 @@
         file name format where [SERVICE_CODENAME] represents a specific OpenStack service name. For
         example, the OpenStack Nova service would have a policy file called /etc/nova/policy.json.
         With 
-        [[[kw-hos-phrase-20]]] and above, service policy files can be modified and deployed
+        &kw-hos-phrase-20; and above, service policy files can be modified and deployed
         to control nodes from the lifecycle manager. Administrators are advised to validate policy
         changes before checking in the changes to the site branch of the local git repository before
         rolling the changes into production. Do not make changes to policy files without having a
@@ -178,7 +178,7 @@
         reconfiguration playbooks, change directories to
           <literal>~/scratch/ansible/next/hos/ansible</literal> and run this command:</para>
 <screen >ls | grep reconfigure</screen><para>A read-only role named
-      <literal>project_observer</literal> is explicitly created in [[[kw-hos-phrase]]]. Any user who is
+      <literal>project_observer</literal> is explicitly created in &kw-hos-phrase;. Any user who is
       granted this role can use <literal>list_project</literal>. </para>
 </sidebar>
 

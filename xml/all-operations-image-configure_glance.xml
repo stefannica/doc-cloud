@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configure_glance"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring the Image Service</title><abstract><para><para>The image service, based on OpenStack Glance, works
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configure_glance"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring the Image Service</title><abstract><para><para>The image service, based on OpenStack Glance, works
       out of the box and does not need any special configuration. However, we show you how to enable
       Glance image caching as well as how to configure your environment to allow the Glance
       copy-from feature if you should choose to do so.</para>The image service, based on
@@ -35,7 +35,7 @@
     </para>
 
 
-    <formalpara xml:id="idg-all-operations-image-configure_glance-xml-6"><title>How to enable Glance image caching</title><para><para>In [[[kw-hos-phrase]]], by default, the Glance image caching option is not
+    <formalpara xml:id="idg-all-operations-image-configure_glance-xml-6"><title>How to enable Glance image caching</title><para><para>In &kw-hos-phrase;, by default, the Glance image caching option is not
           enabled. You have the option to have image caching enabled and these steps will show you
           how to do that.</para><para>The main benefits to using image caching is that it will allow the Glance service to
           return the images faster and it will cause less load on other services to supply the

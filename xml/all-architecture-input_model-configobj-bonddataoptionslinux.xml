@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configobj_bonddataoptionslinux"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase><!---->Bond configuration options for the "linux" provider</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="configobj_bonddataoptionslinux"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase><!---->Bond configuration options for the "linux" provider</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-configobj-bonddataoptionslinux-xml-4"><phrase><phrase/></phrase></para></para>
 
         
@@ -11,7 +11,7 @@
         of the bond, as described in the <link xlink:href="https://www.kernel.org/doc/Documentation/networking/bonding.txt">Linux Ethernet Bonding Driver HOWTO</link> document. The parameter names and
         values may be specified as key-value pairs in the <literal>options</literal> section of
         <literal>bond-data</literal>.</para>
-<para>Options used in the [[[kw-hos]]] examples are:</para>
+<para>Options used in the &kw-hos; examples are:</para>
 <informaltable xml:id="table_bonddataoptionslinux" colsep="1" rowsep="1"><tgroup cols="2">
             <colspec colname="c1" colnum="1"/>
             <colspec colname="c2" colnum="2"/>

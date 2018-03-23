@@ -2,16 +2,16 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-installation-magnum-magnum_install-xml-1"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Install the Magnum Service </title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-installation-magnum-magnum_install-xml-1"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Install the Magnum Service </title>
     <para><para xml:id="idg-all-installation-magnum-magnum_install-xml-4"><phrase><phrase/></phrase></para></para>
 
 
    
     
-    <sidebar xml:id="idg-all-installation-magnum-magnum_install-xml-6"><title>Install the Magnum Service</title><para>Installing the Magnum Service can be performed as part of a new [[[kw-hos-phrase]]] environment or can be added to an existing [[[kw-hos-phrase]]] environment. Both installations require container management
+    <sidebar xml:id="idg-all-installation-magnum-magnum_install-xml-6"><title>Install the Magnum Service</title><para>Installing the Magnum Service can be performed as part of a new &kw-hos-phrase; environment or can be added to an existing &kw-hos-phrase; environment. Both installations require container management
         services, running in Magnum cluster VMs with access to specific Openstack API endpoints. The
         following TCP ports need to be open in your firewall to allow access from VMs to external
-        (public) [[[kw-hos]]] endpoints. </para>
+        (public) &kw-hos; endpoints. </para>
 
 <informaltable xml:id="idg-all-installation-magnum-magnum_install-xml-7" colsep="1" rowsep="1"><tgroup cols="2">
             <colspec colname="c1" colnum="1" colwidth="1.0*"/>
@@ -79,7 +79,7 @@
 </warning>
 </sidebar>
     
-    <sidebar xml:id="idg-all-installation-magnum-magnum_install-xml-8"><title>Installing Magnum as part of new [[[kw-hos-phrase]]] environment</title><para>Magnum components are already included in example [[[kw-hos]]] models based
+    <sidebar xml:id="idg-all-installation-magnum-magnum_install-xml-8"><title>Installing Magnum as part of new &kw-hos-phrase; environment</title><para>Magnum components are already included in example &kw-hos; models based
         on Nova KVM, such as <emphasis role="bold">entry-scale-kvm-vsa</emphasis>, <emphasis role="bold">entry-scale-kvm-vsa-mml</emphasis> and
           <emphasis role="bold">mid-scale</emphasis>. These models contain the Magnum dependencies (see above).  You can
         follow generic installation instruction for Mid-Scale and Entry-Scale KM model by using this
@@ -90,7 +90,7 @@
 
 </sidebar>
     
-    <sidebar xml:id="idg-all-installation-magnum-magnum_install-xml-9"><title>Adding Magnum to existing [[[kw-hos-phrase]]] environment</title><para>Adding Magnum to an already deployed [[[kw-hos-phrase]]] installation or
+    <sidebar xml:id="idg-all-installation-magnum-magnum_install-xml-9"><title>Adding Magnum to existing &kw-hos-phrase; environment</title><para>Adding Magnum to an already deployed &kw-hos-phrase; installation or
         during and upgrade can be achieved by performing the following steps.</para>
 
 <orderedlist>
@@ -141,7 +141,7 @@ $ openstack endpoint list --interface=public --service=identity
               <literal>data/network_groups.yml</literal> to a valid hostname, which can be resolved on
             DNS server, and provide a valid TLS certificate for the external endpoint. For
             non-production test installations, you can omit the <literal>external-name</literal>. The
-              [[[kw-hos]]] installer will use an IP address as public endpoint
+              &kw-hos; installer will use an IP address as public endpoint
             hostname, and automatically generate a new certificate, signed by the internal CA.
             Please refer to <xref linkend="tls30"/>
             for more information. </para>
@@ -152,7 +152,7 @@ $ openstack endpoint list --interface=public --service=identity
 
 </listitem>
         </orderedlist>
-<warning><para>By default [[[kw-hos]]] stores the private key used by
+<warning><para>By default &kw-hos; stores the private key used by
         Magnum and its passphrase in Barbican which provides a secure place to store such
         information. You can change this such that this sensitive information is stored on the file
         system or in the database without encryption. Making such a change exposes you to the risk

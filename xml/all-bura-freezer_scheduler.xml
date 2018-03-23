@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_mlh_wtn_rt"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Backup/Restore Scheduler</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_mlh_wtn_rt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Backup/Restore Scheduler</title><!---->
         <para><para xml:id="idg-all-bura-freezer_scheduler-xml-4"><phrase><phrase/></phrase></para></para>
 
         <formalpara><title>Freezer (backup/resore service) Scheduler Overview</title></formalpara>
@@ -25,7 +25,7 @@
 
         
         
-        <sidebar><title>Freezer (backup/restore service) Scheduler Client-ID</title><para>In [[[kw-hos-phrase]]], Freezer Scheduler is automatically installed on the
+        <sidebar><title>Freezer (backup/restore service) Scheduler Client-ID</title><para>In &kw-hos-phrase;, Freezer Scheduler is automatically installed on the
             lifecycle manager and controller nodes.</para>
 <para>There is a client_id for each node and
                 its corresponds to the hostname. The client_id is created at registration time. The

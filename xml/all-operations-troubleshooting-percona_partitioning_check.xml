@@ -2,8 +2,8 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_hzq_2nz_sw"><title>[[[kw-hos-tm]]]
-    [[[kw-hos-version-301]]]: Checking for Percona Cluster Partitioning</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_hzq_2nz_sw"><title>&kw-hos-tm;
+    &kw-hos-version-301;: Checking for Percona Cluster Partitioning</title>
 <sidebar><para>A new check has been added to the Percona play to check whether your Percona cluster has
         become partitioned. If it has, you could have mutliple versions of your dtabase with
         incorrect/out of sync data which need to be re-aligned. This would typically cause

@@ -2,8 +2,8 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="sr-iov"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>SR-IOV and PCI Passthrough Support</title>
-    <para>[[[kw-hos-phrase]]] supports both single-root I/O virtualization (SR-IOV) and
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="sr-iov"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>SR-IOV and PCI Passthrough Support</title>
+    <para>&kw-hos-phrase; supports both single-root I/O virtualization (SR-IOV) and
       PCI passthrough (PCIPT). Both technologies provide for better network performance. <!----></para>
 
     <para>This improves network I/O, decreases latency, and reduces processor overhead.
@@ -104,7 +104,7 @@
           </tgroup></table>
 </sidebar>
     
-    <sidebar><title>SRIOV PCIPT configuration</title><para>If you plan to take advantage of SR-IOV support in [[[kw-hos]]] you will need
+    <sidebar><title>SRIOV PCIPT configuration</title><para>If you plan to take advantage of SR-IOV support in &kw-hos; you will need
         to plan in advance to meet the following requirements:</para>
 <orderedlist xml:id="ol_vk3_c2l_pw">
           <listitem><para>Use one of the supported NIC cards: 
@@ -151,7 +151,7 @@
         <listitem><para>A device on the host needs to be configured only for PCI-SRIOV virtual functions.</para>
 </listitem>
       </orderedlist></sidebar>
-    <sidebar><title>Input model updates</title><para>[[[kw-hos-phrase]]] provides various options for the user to configure the
+    <sidebar><title>Input model updates</title><para>&kw-hos-phrase; provides various options for the user to configure the
         network for tenant VMs. These options have been enhanced to support SRIOV and PCIPT.</para>
 <para>The HLM input model changes to support SRIOV and PCIPT are as follows. If you were familiar
         with the configuration settings previously, you will notice these changes.</para>

@@ -3,12 +3,12 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP2.0LBaaS"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Using Load Balancing as a Service
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="HP2.0LBaaS"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Using Load Balancing as a Service
     (LBaaS)</title>
     <!---->
     <para><para xml:id="idg-all-userguide-lbaas-xml-4"><phrase><phrase/></phrase></para></para>
 
-    <para><emphasis role="bold">[[[kw-hos-phrase]]] LBaaS Configuration</emphasis></para>
+    <para><emphasis role="bold">&kw-hos-phrase; LBaaS Configuration</emphasis></para>
 
     <para>Load Balancing as a Service (LBaaS) is an advanced networking service that allows load
       balancing of multi-node environments. It provides the ability to spread requests across
@@ -16,11 +16,11 @@
       usage of the various OpenStack Command Line Interfaces (CLI). The Load Balancer v1 API is also
       accessible via the Horizon web interface if the v1 API is enabled. The Load Balancer v2 API
       does not currently have a representative Horizon web interface. The v2 API is targeted to have
-      a Horizon web interface in a future [[[kw-hos]]] release. This document
+      a Horizon web interface in a future &kw-hos; release. This document
       describes the configuration for LBaaS v1 and v2. </para>
 
 
-    <para>You can create TLS enabled Load Balancers in [[[kw-hos-phrase]]] by following
+    <para>You can create TLS enabled Load Balancers in &kw-hos-phrase; by following
       the steps labeled for TLS Load Balancers. You cannot enable TLS with v1 Load Balancers, only
       v2 Load Balancers can be enabled with TLS.</para>
 <important><para>When Barbican isn't installed
@@ -28,13 +28,13 @@
 </important>
 
 
-    <para>[[[kw-hos-phrase]]] can support either LBaaS v1 or LBaaS v2 to allow for wide
+    <para>&kw-hos-phrase; can support either LBaaS v1 or LBaaS v2 to allow for wide
       ranging customer requirements. Check with your administrator for the version that is installed
       before starting your configuration. </para>
 
 
 
-    <sidebar xml:id="idg-all-userguide-lbaas-xml-6"><title>Configuration</title><para>[[[kw-hos-phrase]]] LBaaS Configuration</para>
+    <sidebar xml:id="idg-all-userguide-lbaas-xml-6"><title>Configuration</title><para>&kw-hos-phrase; LBaaS Configuration</para>
 <para><para><emphasis role="bold">Create Private Network for LBaaS</emphasis></para><para>You can create the new network and router by executing the following command from the
           lifecycle manager or a shell with access to the API nodes.</para></para>
 <orderedlist>

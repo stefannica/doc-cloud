@@ -3,15 +3,15 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="input_model_introduction"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Introduction to the Input Model</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="input_model_introduction"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Introduction to the Input Model</title><!---->
         <para><para xml:id="idg-all-architecture-input_model-input_model_introduction-xml-4"><phrase><phrase/></phrase></para></para>
 
         
 
-    <para>This document describes how the [[[kw-hos]]] input model can be used to define and
+    <para>This document describes how the &kw-hos; input model can be used to define and
         configure the cloud.</para>
 
-    <para>[[[kw-hos]]] ships with a set of example input models that can be used as starting
+    <para>&kw-hos; ships with a set of example input models that can be used as starting
         points for defining a custom cloud.</para>
 
     <para>The input model allows you, the cloud administrator, to describe the cloud configuration in
@@ -38,7 +38,7 @@
 
     <itemizedlist>
         <listitem><para><guilabel>Concepts</guilabel> - This explains the ideas behind the declarative model
-            approach used in [[[kw-hos-phrase]]] and the core concepts used in describing that
+            approach used in &kw-hos-phrase; and the core concepts used in describing that
             model</para>
 </listitem>
         <listitem><para><guilabel>Input Model</guilabel> - This section provides a description of each of the
@@ -50,8 +50,8 @@
     </itemizedlist>
 
 
-    <sidebar xml:id="new_stuff"><title>New in [[[kw-hos-phrase]]]</title><para>
-        [[[kw-hos-phrase]]] introduces the following additions to the cloud model:
+    <sidebar xml:id="new_stuff"><title>New in &kw-hos-phrase;</title><para>
+        &kw-hos-phrase; introduces the following additions to the cloud model:
         </para>
 <itemizedlist>
             <listitem><para>Container as a Service (Magnum) Support has been included.</para>

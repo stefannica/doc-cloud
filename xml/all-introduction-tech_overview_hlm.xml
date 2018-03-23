@@ -2,11 +2,11 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_hlm"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Helion Lifecycle Manager Overview</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_hlm"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Helion Lifecycle Manager Overview</title>
     <sidebar><title>Lifecycle management</title><para>
         
         Performing software installation and configuration activity can be time consuming, complex 
-        and often error prone. To help with this process, [[[kw-hos-phrase]]] provides lifecycle 
+        and often error prone. To help with this process, &kw-hos-phrase; provides lifecycle 
         management tools as a way to simplify and accelerate the process of installing and performing 
         on-going lifecycle operations for OpenStack clouds.
         The goal is to provide flexible, yet easy-to-use tools that will reduce the time taken to deploy a cloud
@@ -23,22 +23,22 @@
         IT infrastructure by describing how systems inter-relate, rather than just managing one 
         system at a time. Ansible uses no agents and no additional custom security infrastructure, 
         so it is easy to deploy. HPE created a set of Ansible scripts known as <literal>Playbooks</literal>  to install, 
-        configure, maintain and update [[[kw-hos-phrase]]]. These playbooks are collectively 
+        configure, maintain and update &kw-hos-phrase;. These playbooks are collectively 
         known as the <emphasis role="bold">Helion Lifecycle Manager</emphasis>.</para>
-<para>During installation of [[[kw-hos-phrase]]], the core OpenStack services, 
+<para>During installation of &kw-hos-phrase;, the core OpenStack services, 
         such as compute, networking, orchestration, storage, identity, etc. are installed automatically, 
         and by default. These services are integrated and work together out of the box. Rather than 
         configuring each service individually and configuring their interaction, 
-        the [[[kw-hos]]] lifecycle manager provides scripts that perform the integrations for you.</para>
+        the &kw-hos; lifecycle manager provides scripts that perform the integrations for you.</para>
 </sidebar>
     
     
-    <sidebar><title>Example Configurations</title><para>[[[kw-hos-phrase]]] clouds are defined through a set of configuration files 
+    <sidebar><title>Example Configurations</title><para>&kw-hos-phrase; clouds are defined through a set of configuration files 
         in a simple text-based format called YAML. These files are collectively referred to as the 
-        [[[kw-hos]]] input model. Rather than needing to define a cloud from scratch every time,
-        [[[kw-hos-phrase]]] includes a series of starting point examples that reflect 
+        &kw-hos; input model. Rather than needing to define a cloud from scratch every time,
+        &kw-hos-phrase; includes a series of starting point examples that reflect 
         some of the more common cloud configurations in use today. When deploying an initial 
-        [[[kw-hos-phrase]]] cloud, you can choose to start with one of the supplied examples 
+        &kw-hos-phrase; cloud, you can choose to start with one of the supplied examples 
         that is closest to your desired configuration and modify it with the specific 
         configuration data for your environment. 
       </para>
@@ -52,7 +52,7 @@
         to hop between many various commands and applications when deploying new systems, and, 
         in some cases, changing existing ones. Cobbler can help with provisioning, managing DNS and DHCP, 
         package updates, power management, configuration management orchestration, and much more. 
-        [[[kw-hos]]] lifecycle manager utilizes Cobbler as an included and optional baremetal deployer.</para>
+        &kw-hos; lifecycle manager utilizes Cobbler as an included and optional baremetal deployer.</para>
 <para>
         Before the installation of OpenStack, each server needs to have the basic Linux for HPE Helion OS 
         installed along with SSH and security certificates.
@@ -70,7 +70,7 @@
 </sidebar>
     
     <sidebar><title>Configuration Processor</title><para>The configuration processor reads and validates the input model described in the YAML files. It 
-        combines this information with the service definitions provided by [[[kw-hos]]] and any 
+        combines this information with the service definitions provided by &kw-hos; and any 
         persisted state information about the current deployment and then generates the data 
         that is used by the Asible Playbooks to deploy the cloud. It also produces a set of 
         information files that provide details about the configuration. </para>
@@ -104,7 +104,7 @@
 </sidebar>
     
     
-    <sidebar><title>Upgrade</title><para>[[[kw-hos]]] uses Helion Lifecycle Manager for hotfixes, patches, updates and upgrades.
+    <sidebar><title>Upgrade</title><para>&kw-hos; uses Helion Lifecycle Manager for hotfixes, patches, updates and upgrades.
         The lifecycle manager ensures that intermediate upgrade states are persisted, even if upgrade is aborted
         and that persisted states are reused when upgrade is retried
         

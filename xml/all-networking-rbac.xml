@@ -3,11 +3,11 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-networking-rbac-xml-1"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Role-based Access Control in Neutron</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-networking-rbac-xml-1"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Role-based Access Control in Neutron</title><!---->
 <para>This topic explains how to achieve more granular access control for your Neutron networks.</para>
 
 
-    <sidebar xml:id="idg-all-networking-rbac-xml-4"><title>Overview</title><para>Previously in [[[kw-hos]]], a network object was either private to a project or
+    <sidebar xml:id="idg-all-networking-rbac-xml-4"><title>Overview</title><para>Previously in &kw-hos;, a network object was either private to a project or
         could be used by all projects. If the network's shared attribute was True, then the network
         could be used by every project in the cloud. If false, only the members of the owning
         project could use it. There was no way for the network to be shared by only a subset of the

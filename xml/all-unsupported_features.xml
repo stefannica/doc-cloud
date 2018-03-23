@@ -4,7 +4,7 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="unsupported40"><title>Unsupported Features</title>
         <para>
-            Ceph Jewel is not supported in [[[kw-hos-phrase]]], the current supported version is Ceph Hammer.
+            Ceph Jewel is not supported in &kw-hos-phrase;, the current supported version is Ceph Hammer.
         </para>
 
         <para>The following features for VSA are not supported in this release. It requires a minimum

@@ -4,7 +4,7 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="knownissues50"><title>Known Issues in this Release</title>
     
-    <sidebar xml:id="BUGZILLA-1068107"><title>Upgrading from [[[kw-hos-phrase-404]]]</title><warning><para>If your system is currently on version [[[kw-hos-phrase-404]]] the correct upgrade path is to [[[kw-hos-phrase-501]]]</para>
+    <sidebar xml:id="BUGZILLA-1068107"><title>Upgrading from &kw-hos-phrase-404;</title><warning><para>If your system is currently on version &kw-hos-phrase-404; the correct upgrade path is to &kw-hos-phrase-501;</para>
 </warning></sidebar>
     
     <sidebar xml:id="DOCS-4101"><title>OpenStack Security Advisory OSSA-2017-001</title><para>The OpenStack Security Advisory OSSA-2017-001 which describes CVE-2017-2592 was released on
@@ -13,7 +13,7 @@
         entry that contains the token is propagated to the centralized logging facility. The result
         is that anyone with access to the centralized logging facility or the local log file
         containing the token could use the token to impersonate the owner of the token until the
-        token expires. Tokens expire in 4 hours by default. Neutron is the only [[[kw-hos]]] service affected by this issue. The error conditions which cause this
+        token expires. Tokens expire in 4 hours by default. Neutron is the only &kw-hos; service affected by this issue. The error conditions which cause this
         token to leak into the logs are not expected to happen frequently. However, customers should
         be aware of this risk. Customers may wish to further limit the access to the centralized
         logging facility and watch for suspicious activity that could indicate usage of a stolen
@@ -23,12 +23,12 @@
       </para>
 </sidebar>
     
-    <sidebar xml:id="BUGZILLA-1061611"><title>[[[kw-hos]]] Directory Umask</title><para>[[[kw-hos]]] directory umask is 0022. Changing this value may cause unstable
-        internal communication in the [[[kw-hos]]] product and will negatively affect upgrade.</para>
+    <sidebar xml:id="BUGZILLA-1061611"><title>&kw-hos; Directory Umask</title><para>&kw-hos; directory umask is 0022. Changing this value may cause unstable
+        internal communication in the &kw-hos; product and will negatively affect upgrade.</para>
 </sidebar>
     
     
-    <sidebar xml:id="BUGZILLA-1060915"><title>Adding Top-Level Domains with Designate</title><para>In [[[kw-hos-phrase]]] and earlier ( with designate V2.0.1 ) when using
+    <sidebar xml:id="BUGZILLA-1060915"><title>Adding Top-Level Domains with Designate</title><para>In &kw-hos-phrase; and earlier ( with designate V2.0.1 ) when using
         Designate to add Top-Level Domains (that controls who can create zones), there is a caching
         defect. When an entry is made to the tld list (<literal>openstack tld create --name abc.net</literal>), in
         order to take effect the designate-central on all the controllers needs to be restarted. 
@@ -37,7 +37,7 @@
 </sidebar>
     
     <sidebar xml:id="BUGZILLA-1057463"><title>Adding New Flavors After Upgrade</title><para>
-        After upgrading to [[[kw-hos-phrase]]] from [[[kw-hos-phrase-40]]]
+        After upgrading to &kw-hos-phrase; from &kw-hos-phrase-40;
         you may experience an error when attempting to add new flavors. </para>
 <para> Example:
         </para>
@@ -62,7 +62,7 @@ $ update instance_types set created_at=NULL, updated_at=NULL, deleted_at=NULL;</
 <para>Once the tables are updated, exit mysql and run the following command.
         </para>
 <screen >$ sudo /opt/stack/service/nova-api/venv/bin/nova-manage --config-dir /opt/stack/service/nova-api/etc/nova db online_data_migrations</screen>
-<para>You can now create a new flavors in [[[kw-hos-phrase]]]. </para>
+<para>You can now create a new flavors in &kw-hos-phrase;. </para>
 </sidebar>
     
     <sidebar xml:id="DOCS-4188"><title>Using VSA as a Cinder Backend</title><para>When using VSA as a Cinder backend it is necessary to make some changes to the kvm-hypervisor.conf.j2 file with the following steps:
@@ -109,7 +109,7 @@ logrotate /opt/vertica/config/logrotate_base.conf' | sudo tee /etc/cron.daily/ve
 <para>
         While this step is not necessary on the Vertica cluster's primary node, it is also not
         harmful. This command is idempotent and future-proof with regard to upgrading to later
-          [[[kw-hos]]] versions. </para>
+          &kw-hos; versions. </para>
 </sidebar>
     
     <sidebar xml:id="DOCS-4124"><title>VPNaaS does not support SHA-384 and SHA-512</title><para>The VPNaaS plugin limits the ipsec and ike auth algorithm to <emphasis role="bold">SHA-1</emphasis> and
@@ -130,7 +130,7 @@ logrotate /opt/vertica/config/logrotate_base.conf' | sudo tee /etc/cron.daily/ve
     <sidebar xml:id="DOCS-3871"><title>Manual Cleaning</title><para>Manual Cleaning (Raid Configuration) is not supported if the target disk type is SATA SSD.</para>
 </sidebar>
     
-    <sidebar xml:id="DOCS-4145"><title>Transparent VLAN</title><para>In [[[kw-hos-phrase]]] Transparent VLAN is not supported.</para>
+    <sidebar xml:id="DOCS-4145"><title>Transparent VLAN</title><para>In &kw-hos-phrase; Transparent VLAN is not supported.</para>
 </sidebar>
     
     <sidebar xml:id="DOCS-4155"><title>Disaster Recovery Panel</title><para>Although the Disaster Recovery panel can be viewed when logged in as an <emphasis role="bold">admin</emphasis> user,
@@ -158,7 +158,7 @@ default_domain_name = default</screen>
         To attach a volume to an instance without specifying a Device Name, use the command line (CLI). </para>
 </sidebar>
     
-    <sidebar xml:id="DOCS-4157"><title>Ironic: ILO Firmware</title><para>In [[[kw-hos-phrase]]] the ILO Firmware version needs to be minimum 2.30 for
+    <sidebar xml:id="DOCS-4157"><title>Ironic: ILO Firmware</title><para>In &kw-hos-phrase; the ILO Firmware version needs to be minimum 2.30 for
         agent_ilo driver.</para>
 </sidebar>
     
@@ -173,7 +173,7 @@ u'reboot_requested': False, u'abortable': True, u'step': u'erase_devices'}: None
 continue_cleaning /opt/stack/venv/ironic-20170522T163729Z/lib/python2.7/site-packages/ironic/drivers/modules/agent_base_vendor.py:347</screen><para>For more information on OpenStack Ironic Node cleaning, see: <link xlink:href="https://docs.openstack.org/developer/ironic/deploy/cleaning.html">https://docs.openstack.org/developer/ironic/deploy/cleaning.html</link></para>
 </sidebar>
     
-    <sidebar xml:id="DOCS-4177"><title>Ironic Multi-Tenancy Conversion</title><para>Ironic Multi-tenancy is only supported as a fresh install of [[[kw-hos-phrase]]]. An existing Ironic flat environment to multi-tenancy environment
+    <sidebar xml:id="DOCS-4177"><title>Ironic Multi-Tenancy Conversion</title><para>Ironic Multi-tenancy is only supported as a fresh install of &kw-hos-phrase;. An existing Ironic flat environment to multi-tenancy environment
         conversion is not supported. </para>
 </sidebar>
     
@@ -193,12 +193,12 @@ continue_cleaning /opt/stack/venv/ironic-20170522T163729Z/lib/python2.7/site-pac
         default <literal>value=604800</literal>.</para>
 </sidebar>
     
-    <sidebar xml:id="DOCS-4185"><title>F5 Loadbalancer Support</title><para>If you are planning to upgrade from [[[kw-hos-phrase-30]]] or [[[kw-hos-phrase-40]]],
+    <sidebar xml:id="DOCS-4185"><title>F5 Loadbalancer Support</title><para>If you are planning to upgrade from &kw-hos-phrase-30; or &kw-hos-phrase-40;,
         please contact F5 and HPE PointNext to determine which F5 drivers have been certified for
         use with Helion OpenStack. Loading drivers not certified by HPE may result in catastrophic
-        failure of your cloud deployment. The last tested versions are 8.0.8 for [[[kw-hos]]] 3.x and 9.0.3
-        for [[[kw-hos]]] 4.x . More information is expected in 4th quarter 2017, including the correct
-        drivers for [[[kw-hos]]] 5.x.</para>
+        failure of your cloud deployment. The last tested versions are 8.0.8 for &kw-hos; 3.x and 9.0.3
+        for &kw-hos; 4.x . More information is expected in 4th quarter 2017, including the correct
+        drivers for &kw-hos; 5.x.</para>
 </sidebar>
     
     <sidebar xml:id="VNETCORE-2909"><title>VMs fail to get an IP after upgrade</title><para>When a VMs failed to get an IP after an upgrade, apply the following work-around:</para>

@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_3par"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Configuring for 3PAR Block Storage
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_3par"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring for 3PAR Block Storage
     Backend</title><abstract><para><para>Installation and configuration steps for your 3PAR
       backend.</para>This page describes how to configure your 3PAR backend for the HPE Helion
     Entry-scale with KVM cloud model. It consists of the following steps:</para>
@@ -62,7 +62,7 @@
           used for HPE Helion integration had its name updated from <literal>HP3PARFCDriver</literal>
           and <literal>HP3PARISCSIDriver</literal> to <literal>HPE3PARFCDriver</literal> and
             <literal>HPE3PARISCSIDriver</literal>. To prevent issues when upgrading from previous
-            [[[kw-hos]]] releases, we left the names as-is in the release and provided
+            &kw-hos; releases, we left the names as-is in the release and provided
           a mapping so that the integration would continue to work. This will produce a warning in
           the <literal>cinder-volume.log</literal> file advising you of the deprecated name. The
           warning will look similar to
@@ -155,7 +155,7 @@ volume_backend_name: &lt;3par-backend-name&gt;
 volume_driver: cinder.volume.drivers.san.hp.hp_3par_fc.HP3PARFCDriver</screen></listitem>
             </orderedlist><important><para>Do not use <literal>backend_host</literal> variable in
                 <literal>cinder.conf</literal> file. If <literal>backend_host</literal> is set, it will
-              override the [DEFAULT]/host value which [[[kw-hos-phrase]]] is dependent
+              override the [DEFAULT]/host value which &kw-hos-phrase; is dependent
               on.</para>
 </important></listitem>
           <listitem><para>Commit your configuration to the <xref linkend="using_git"/>, as follows:
@@ -205,7 +205,7 @@ volume_driver: cinder.volume.drivers.san.hp.hp_3par_iscsi.HP3PARISCSIDriver
 hp3par_iscsi_ips: &lt;3par-ip-address-1&gt;[,&lt;3par-ip-address-2&gt;,&lt;3par-ip-address-3&gt;, ...]
 hp3par_iscsi_chap_enabled=true</screen><important><para>Do not use <literal>backend_host</literal> variable in
                     <literal>cinder.conf</literal> file. If <literal>backend_host</literal> is set, it
-                  will override the [DEFAULT]/host value which [[[kw-hos-phrase]]] is
+                  will override the [DEFAULT]/host value which &kw-hos-phrase; is
                   dependent on.</para>
 </important></listitem>
             </orderedlist></listitem>

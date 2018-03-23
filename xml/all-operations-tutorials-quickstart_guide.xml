@@ -3,19 +3,19 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="Quickstart_Guide"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>[[[kw-hos]]] Quickstart
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="Quickstart_Guide"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>&kw-hos; Quickstart
         Guide</title>
         <sidebar><title>Introduction</title><para>This document provides simplified
                 instructions
                  for
-                installing and setting up a [[[kw-hos]]] cloud. Use this quickstart
+                installing and setting up a &kw-hos; cloud. Use this quickstart
                 guide to build testing, demonstration, and lab-type environments, rather than
                 production installations. When you complete this quickstart process, you will have a
-                fully functioning [[[kw-hos]]] demo environment.</para>
+                fully functioning &kw-hos; demo environment.</para>
 </sidebar>
-        <sidebar><title>Overview of components</title><para>The following are short descriptions of the components that [[[kw-hos]]] employs when installing and deploying your cloud.</para>
+        <sidebar><title>Overview of components</title><para>The following are short descriptions of the components that &kw-hos; employs when installing and deploying your cloud.</para>
 <para><emphasis role="bold">Ansible</emphasis><para>Ansible is a powerful configuration mangament tool used by
-                        [[[kw-hos]]] to manage nearly all aspects of your cloud
+                        &kw-hos; to manage nearly all aspects of your cloud
                     infrastructure. Most commands in this quickstart guide execute Ansible scripts,
                     known as playbooks. You will run playbooks that install packages, edit
                     configuration files, manage network settings, and take care of the general
@@ -27,11 +27,11 @@
                     configuration files must be committed to the locally hosted git repository to
                     take effect. Read more information on Git at <link xlink:href="https://git-scm.com/"/>.</para><para/><para/></para>
 </sidebar>
-        <sidebar><title>Preparation</title><para>Successfully deploying a [[[kw-hos]]] cloud environment is a large but
+        <sidebar><title>Preparation</title><para>Successfully deploying a &kw-hos; cloud environment is a large but
                 not complicated endeavor. For a successful deployment, you must put a number of
                 components
-                in place before rolling out your cloud. Most importantly, a basic [[[kw-hos]]] cloud requires the proper network infrastrucure. Because
-                    [[[kw-hos]]] segregates the network traffic of many of its
+                in place before rolling out your cloud. Most importantly, a basic &kw-hos; cloud requires the proper network infrastrucure. Because
+                    &kw-hos; segregates the network traffic of many of its
                 elements, if the necessary networks, routes,
                 and firewall access rules aren't in place, communication required
                 for a successful deployment will not occur.</para>
@@ -42,7 +42,7 @@
                 commands on.</para>
 <para><emphasis role="bold">Set up the lifecycle manager</emphasis><para/><emphasis role="bold">Step 1: Download the installation
                     media</emphasis><para>Obtain
-                    a copy of the [[[kw-hos]]] installation
+                    a copy of the &kw-hos; installation
                     media,
                     and
                     make sure that it's accessible by the server that you're installing it on. Your
@@ -72,10 +72,10 @@
                     to mount this installation media on your new server
                     in
                     order to use these files. </para><para><orderedlist xml:id="ol_lsd_qsj_fx">
-                        <listitem><para>Using the URL that you obtained the [[[kw-hos]]]
+                        <listitem><para>Using the URL that you obtained the &kw-hos;
                             installation media from, run <literal>wget</literal> to download the ISO
                             file to your
-                            server:</para><screen>wget &lt;URL for [[[kw-hos]]] installation ISO&gt;</screen></listitem>
+                            server:</para><screen>wget &lt;URL for &kw-hos; installation ISO&gt;</screen></listitem>
                         <listitem><para>Now mount the ISO
                             in
                             the <literal>/media/cdrom/</literal> directory
@@ -222,7 +222,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></para><para/><para>The <l
                                         settings, sets
                                         iptables
                                         firewall rules, and more. Upon successful completion of this
-                                        playbook, your [[[kw-hos]]] cloud will be in
+                                        playbook, your &kw-hos; cloud will be in
                                         place and in a running state. This playbook can take up to
                                         six hours to complete, so
                                         sit

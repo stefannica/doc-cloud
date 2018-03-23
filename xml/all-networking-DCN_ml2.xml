@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_ml2"><title><phrase><phrase><phrase><phrase>[[[kw-hos-tm]]] [[[kw-hos-version-50]]]: </phrase></phrase></phrase></phrase>Bringing up a Cloud with DCN ml2 Mechanism
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_ml2"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Bringing up a Cloud with DCN ml2 Mechanism
     Driver</title>
     <sidebar xml:id="DCN_downloads"><title>Getting the required packages</title><para><emphasis role="bold">Summary of files needed</emphasis></para>
 <informaltable><tgroup cols="3">
@@ -763,7 +763,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
       </orderedlist></sidebar>
     
     
-    <sidebar xml:id="d1e1411"><title>Upgrading DCN</title><para><emphasis role="bold">Upgrading DCN without upgrading [[[kw-hos]]]</emphasis></para>
+    <sidebar xml:id="d1e1411"><title>Upgrading DCN</title><para><emphasis role="bold">Upgrading DCN without upgrading &kw-hos;</emphasis></para>
 <orderedlist>
           <listitem><para>Copy the new DCN debian packages into the third-party area as as to the areas used for the virtual environment edits.</para>
 </listitem>
@@ -777,7 +777,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
           <listitem><para>Run hlm-upgrade.  The hlm-upgrade will upgrade the DCN components.</para>
 </listitem>
         </orderedlist>
-<para><emphasis role="bold">Upgrading [[[kw-hos]]] with or without upgrading DCN</emphasis></para>
+<para><emphasis role="bold">Upgrading &kw-hos; with or without upgrading DCN</emphasis></para>
 <orderedlist>
           <listitem><para>Run hos-init to update the lifecycle manager.</para>
 </listitem>
@@ -868,7 +868,7 @@ cms_id = ee00ac10-662a-4048-8e55-9149b58a47dc
 
 # Do not add anything after this line</screen>
 <important><para>The cms_id values in <literal>nuage_plugin.ini</literal> 
-          files are identical on all [[[kw-hos]]] nodes. So the cms_id 
+          files are identical on all &kw-hos; nodes. So the cms_id 
           value can be retrieved from the nuage_plugin.ini file from any controller.</para>
 </important>
 <para>After running the third-party import during the upgrade process, edit the file
