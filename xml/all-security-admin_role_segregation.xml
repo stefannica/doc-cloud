@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="roleSegregation"><title>&kw-hos-tm; &kw-hos-version-50;: Service Admin Role Segregation in the Identity
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="roleSegregation"><title>&kw-hos-tm; &kw-hos-version-50;: Service Admin Role Segregation in the Identity
     Service</title>
     <!---->
     <para><para xml:id="idg-all-security-admin_role_segregation-xml-4"><phrase><phrase/></phrase></para></para>
@@ -92,4 +94,4 @@
       For configuration steps, see <xref linkend="CreateCloudAdmin"/></para>
 </sidebar>
  
-  </section>
+  </chapter>

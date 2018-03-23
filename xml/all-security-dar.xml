@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dar"><title>&kw-hos-tm; &kw-hos-version-50;: Data at Rest Encryption</title><!---->    <para><para xml:id="idg-all-security-dar-xml-4"><phrase><phrase/></phrase></para></para>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dar"><title>&kw-hos-tm; &kw-hos-version-50;: Data at Rest Encryption</title><!---->    <para><para xml:id="idg-all-security-dar-xml-4"><phrase><phrase/></phrase></para></para>
 
   
     <sidebar><para> The data at rest encryption features in &kw-hos-phrase; include
@@ -177,4 +179,4 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen></listitem
 8d54f41d-91dd-4f5e-bcfe-964af8213a8c    hlm_barbican     SymmetricKey     PreActive   2016-03-02 13:58:58</screen></sidebar>
     <para>For more information on data at rest security with HPE software, see <link xlink:href="http://h20195.www2.hp.com/V2/GetDocument.aspx?docname=4AA6-5241ENW&amp;cc=us&amp;/c=en">Data Security Protection for HPE Helion</link>.</para>
 
-  </section>
+  </chapter>

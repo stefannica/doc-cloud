@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="password_encryption"><title>&kw-hos-tm; &kw-hos-version-50;: Encryption of Passwords and Sensitive
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="password_encryption"><title>&kw-hos-tm; &kw-hos-version-50;: Encryption of Passwords and Sensitive
     Data</title>
     <!---->
     <para><para xml:id="idg-all-security-encrypted_storage-xml-4"><phrase><phrase/></phrase></para></para>
@@ -128,4 +130,4 @@
         the file without the need to decrypt and re-encrypt it:</para>
 <screen >ansible-vault edit &lt;filename&gt;</screen><para>For other available commands, use the help file:</para>
 <screen >ansible-vault -h</screen></sidebar>
-  </section>
+  </chapter>

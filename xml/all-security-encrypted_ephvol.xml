@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="encryption_ephemeral"><title>&kw-hos-tm; &kw-hos-version-50;: Encryption of Ephemeral Volumes</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="encryption_ephemeral"><title>&kw-hos-tm; &kw-hos-version-50;: Encryption of Ephemeral Volumes</title>
     <para>By default, ephemeral volumes are not encrypted. If you wish to enable this feature, you
       should use the following steps.</para>
 
@@ -68,4 +71,4 @@ sudo systemctl restart nova-api</screen>
 cryptsetup -v status &lt;name_of_ephemeral_disk&gt;</screen>
 </listitem>
       </orderedlist></sidebar>
-  </section>
+  </chapter>

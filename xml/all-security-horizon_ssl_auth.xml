@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<!DOCTYPE section [
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="x509_certificate_auth"><title>Configuring Keystone and Horizon to use X509 Client Certificates</title>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="x509_certificate_auth"><title>Configuring Keystone and Horizon to use X509 Client Certificates</title>
         <sidebar xml:id="section_and_l2p_hx"><title>Overview</title><para>The Keystone service supports X.509 SSL cerificate authentication and authorization
                 for accessing the Horizon dashboard in &kw-hos-phrase;. This
                 feature is disabled by default, and must be manually configured and enabled by
@@ -397,4 +399,4 @@ ansible-playbook -i hosts/verb_hosts horizon-reconfigure.yml</screen></listitem>
                 </orderedlist>
 <mediaobject xml:id="image_h4j_mdq_hx"><imageobject  role="fo"><imagedata fileref="media-security-Horizon-SSL-Keystone.png" width="75%" format="PNG"/></imageobject><imageobject  role="html"><imagedata fileref="media-security-Horizon-SSL-Keystone.png"/></imageobject></mediaobject>
 </sidebar>
-    </section>
+    </chapter>
