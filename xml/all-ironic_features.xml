@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ironic_features"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Bare Metal Service (Ironic) Features</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ironic_features"><title>&kw-hos-tm; &kw-hos-version-50;: Bare Metal Service (Ironic) Features</title>
     <sidebar xml:id="IronicFeatures"><para>Bare Metal Service (Ironic) an OpenStack service and associated libraries capable of
         managing and provisioning physical machines, and to do this in a security-aware and
         fault-tolerant manner.</para>

@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_ml2"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Bringing up a Cloud with DCN ml2 Mechanism
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="DCN_ml2"><title>&kw-hos-tm; &kw-hos-version-50;: Bringing up a Cloud with DCN ml2 Mechanism
     Driver</title>
     <sidebar xml:id="DCN_downloads"><title>Getting the required packages</title><para><emphasis role="bold">Summary of files needed</emphasis></para>
 <informaltable><tgroup cols="3">

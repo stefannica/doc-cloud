@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilo_samples"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Metering Service Samples</title><!---->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilo_samples"><title>&kw-hos-tm; &kw-hos-version-50;: Metering Service Samples</title><!---->
     <para><para xml:id="idg-all-metering-metering_samples-xml-4"><phrase><phrase/></phrase></para></para>
 
    

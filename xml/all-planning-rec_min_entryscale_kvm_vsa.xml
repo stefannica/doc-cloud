@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rec_min_entryscale_kvm_vsa"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Recommended Hardware Minimums for an Entry-scale
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rec_min_entryscale_kvm_vsa"><title>&kw-hos-tm; &kw-hos-version-50;: Recommended Hardware Minimums for an Entry-scale
     KVM with VSA Model</title>
     <sidebar xml:id="idg-all-planning-rec_min_entryscale_kvm_vsa-xml-4"><para>These recommended minimums are based on the included  included with the base installation and are suitable only for
       demo environments. For production systems you will want to consider your capacity and

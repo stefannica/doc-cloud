@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dar"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Data at Rest Encryption</title><!---->    <para><para xml:id="idg-all-security-dar-xml-4"><phrase><phrase/></phrase></para></para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dar"><title>&kw-hos-tm; &kw-hos-version-50;: Data at Rest Encryption</title><!---->    <para><para xml:id="idg-all-security-dar-xml-4"><phrase><phrase/></phrase></para></para>
 
   
     <sidebar><para> The data at rest encryption features in &kw-hos-phrase; include

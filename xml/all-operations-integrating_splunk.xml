@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="splunk_integration"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Splunk Integration</title><abstract><para><para>This documentation demonstrates the possible
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="splunk_integration"><title>&kw-hos-tm; &kw-hos-version-50;: Splunk Integration</title><abstract><para><para>This documentation demonstrates the possible
       integration between the &kw-hos-phrase; centralized logging solution and
       Splunk including the steps to setup and forward logs.</para></para>
 </abstract>

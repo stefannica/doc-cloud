@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="neutron_external_networks"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Neutron External Networks</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="neutron_external_networks"><title>&kw-hos-tm; &kw-hos-version-50;: Neutron External Networks</title>
     <sidebar><title>External networks overview</title><para>This topic explains how to create a Neutron external network. </para>
 <para>External networks provide access to the internet.</para>
 <para>The typical use is to provide an IP address that can be used to reach a 

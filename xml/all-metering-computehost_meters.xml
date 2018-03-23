@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="computehost_meters"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Compute Host Meters</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="computehost_meters"><title>&kw-hos-tm; &kw-hos-version-50;: Compute Host Meters</title>
     <sidebar xml:id="compute-host"><informaltable xml:id="idg-all-metering-computehost_meters-xml-5"><tgroup cols="6">
           <colspec colname="col1"/>
           <colspec colname="col2"/>

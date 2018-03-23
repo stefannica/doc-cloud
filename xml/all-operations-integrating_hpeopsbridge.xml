@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_kyf_brv_vw"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>HPE Operations Bridge Integration</title><abstract><para><para>This documentation demonstrates the possible
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_kyf_brv_vw"><title>&kw-hos-tm; &kw-hos-version-50;: HPE Operations Bridge Integration</title><abstract><para><para>This documentation demonstrates the possible
       integration between the &kw-hos-phrase; monitoring solution and HPE
       Operations Bridge.</para></para>
 </abstract>

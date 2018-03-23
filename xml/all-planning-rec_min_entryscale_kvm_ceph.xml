@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rec_min_entryscale_kvm_ceph"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Recommended Hardware Minimums for an Entry-scale
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rec_min_entryscale_kvm_ceph"><title>&kw-hos-tm; &kw-hos-version-50;: Recommended Hardware Minimums for an Entry-scale
     KVM with Ceph Model</title>
 <sidebar xml:id="idg-all-planning-rec_min_entryscale_kvm_ceph-xml-4"><para>The table below lists out the key characteristics needed per server role for this
       configuration.</para>

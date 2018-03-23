@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_vsa"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Configuring for VSA Block Storage
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="config_vsa"><title>&kw-hos-tm; &kw-hos-version-50;: Configuring for VSA Block Storage
     Backend</title><abstract><para><para>Installation and configuration steps for your VSA
       backend.</para>This page describes how to configure your VSA backend for the Helion
     Entry-scale with KVM cloud model. This procedure can be performed during or after

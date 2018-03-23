@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk_troubleshooting"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Troubleshooting DPDK</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dpdk_troubleshooting"><title>&kw-hos-tm; &kw-hos-version-50;: Troubleshooting DPDK</title>
     <sidebar xml:id="idg-all-networking-ts_dpdk-xml-4"><title>Troubleshooting DPDK</title><itemizedlist xml:id="ul_mx2_3qj_bx">
           <listitem><para><link xlink:href="#dpdk_troubleshooting/hardware">Hardware configuration</link></para>
 </listitem>

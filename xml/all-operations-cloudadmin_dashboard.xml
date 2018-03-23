@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cloudadmin_gui"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Cloud Admin Actions with the Dashboard</title><abstract><para><para>The Horizon dashboard provides cloud admins a web GUI
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cloudadmin_gui"><title>&kw-hos-tm; &kw-hos-version-50;: Cloud Admin Actions with the Dashboard</title><abstract><para><para>The Horizon dashboard provides cloud admins a web GUI
       to perform domain admin tasks such as user and project administration and managing project
       quotas.</para>Cloud admins can use the dashboard GUI to perform domain admin tasks such
     as user and project administration and managing project quotas.</para>

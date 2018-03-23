@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_jsc_qps_qt"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Enabling Default Backups of the Control Plane to
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_jsc_qps_qt"><title>&kw-hos-tm; &kw-hos-version-50;: Enabling Default Backups of the Control Plane to
     an SSH Target</title><!---->
     <para><para xml:id="idg-all-bura-cloud_control_plane_backup-xml-4"><phrase><phrase/></phrase></para></para>
 

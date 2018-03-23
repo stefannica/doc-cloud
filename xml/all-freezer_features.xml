@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="freezer_features"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>Backup, Restore, and Disaster Recovery Service
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="freezer_features"><title>&kw-hos-tm; &kw-hos-version-50;: Backup, Restore, and Disaster Recovery Service
     (Freezer) Features</title>
     <sidebar xml:id="FreezerFeatures"><para>Backup, Restore, and Disaster Recovery Service (Freezer) provides integrated tools for
         backing up and restoring cloud data in multiple use cases, including disaster recovery.

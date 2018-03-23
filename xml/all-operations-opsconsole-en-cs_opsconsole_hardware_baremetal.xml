@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Hardware_baremetal"><title><phrase><phrase><phrase><phrase>&kw-cs-tm; &kw-cs-version-10;: </phrase></phrase></phrase></phrase>Physical Hardware</title><para>This page allows you to view and provision bare metal servers that are not managed by HPE OneView.</para>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Hardware_baremetal"><title>&kw-cs-tm; &kw-cs-version-10;: Physical Hardware</title><para>This page allows you to view and provision bare metal servers that are not managed by HPE OneView.</para>
 
         <para><emphasis role="bold">Search and Sort</emphasis></para>
 

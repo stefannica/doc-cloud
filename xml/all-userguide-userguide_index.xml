@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="user_guide"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>User Guide Overview</title><!---->
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="user_guide"><title>&kw-hos-tm; &kw-hos-version-50;: User Guide Overview</title><!---->
     <para><para xml:id="idg-all-userguide-userguide_index-xml-4"><phrase><phrase/></phrase></para></para>
 
     <para>This section contains user tasks for your &kw-hos-phrase; cloud.</para>

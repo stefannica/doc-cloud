@@ -2,7 +2,7 @@
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_newimproved"><title><phrase><phrase><phrase><phrase>&kw-hos-tm; &kw-hos-version-50;: </phrase></phrase></phrase></phrase>What's New and Improved in &kw-hos-phrase;</title>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tech_overview_newimproved"><title>&kw-hos-tm; &kw-hos-version-50;: What's New and Improved in &kw-hos-phrase;</title>
     <sidebar><informaltable xml:id="idg-all-introduction-tech_overview_newimproved-xml-4" colsep="1" rowsep="1"><tgroup cols="2">
           <colspec colname="c1" colnum="1"/>
           <colspec colname="c2" colnum="2"/>
