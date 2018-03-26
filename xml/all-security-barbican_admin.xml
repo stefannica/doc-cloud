@@ -39,6 +39,7 @@
   </para>
  </section>
  <section xml:id="idg-all-security-barbican_admin-xml-8">
+  <title><!-- FIXME: no title?? --></title>
   <para>
    The following Barbican configuration settings can be changed:
   </para>
@@ -130,7 +131,7 @@
     <para>
      To disable auditing for the Barbican service specifically, make sure that
      barbican service name is in <literal>disabled-services</literal> list of
-     the<literal> audit-settings</literal> section or is not present in the
+     the <literal>audit-settings</literal> section or is not present in the
      <literal>enabled-services</literal> list when default: is set to
      <literal>disabled</literal>. You should not specify the service name in
      both lists. If it is specified in both, the enabled-services list takes
@@ -159,10 +160,7 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
   </orderedlist>
  </section>
  <section>
-  <para>
-   <emphasis role="bold">Updating the Barbican API service configuration
-   file</emphasis>
-  </para>
+  <title>Updating the Barbican API service configuration file</title>
   <itemizedlist>
    <listitem>
     <para>
@@ -260,6 +258,7 @@ barbican_service_password:
   </para>
  </section>
  <section>
+  <title><!-- FIXME: no title --></title>
   <para>
    Next, execute the following playbooks from helion/hos/ansible/:
   </para>
@@ -274,6 +273,7 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure-credentials-change.yml
   </para>
  </section>
  <section>
+  <title><!-- FIXME: no title --></title>
 <screen>/etc/barbican# vi barbican-api-paste.ini </screen>
   <para>
    You can verify Barbican status by running the
@@ -282,7 +282,6 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure-credentials-change.yml
   </para>
 <screen>ansible-playbook -i hosts/verb_hosts barbican-status.yml</screen>
  </section>
- <section/>
  <section>
   <title>Updating Logging Configuration</title>
   <para>
@@ -309,8 +308,8 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure-credentials-change.yml
    <listitem>
     <para>
      Edit file
-     <literal>~/helion/hos/ansible/roles/KEYMGR-API/templates/api-logging.conf.j2
-     </literal>and update the log level accordingly.
+     <literal>~/helion/hos/ansible/roles/KEYMGR-API/templates/api-logging.conf.j2</literal>
+     and update the log level accordingly.
     </para>
    </listitem>
   </orderedlist>
