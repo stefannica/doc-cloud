@@ -9,11 +9,11 @@
     services.</para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-troubleshooting-ts_compute-xml-4"><phrase><phrase/></phrase></para></para>
 
 
 
-    
+
+
 
 
     <sidebar xml:id="idg-all-operations-troubleshooting-ts_compute-xml-6"><title>How can I reset the state of a compute instance?</title><para>If you have an instance that is stuck in a non-Active state, such as
@@ -24,12 +24,12 @@
 <para>Here is the content of the help information about the command which shows the syntax:</para>
 <screen >$ nova help reset-state
         usage: nova reset-state [--active] &lt;server&gt; [&lt;server&gt; ...]
-        
+
         Reset the state of a server.
-        
+
         Positional arguments:
         &lt;server&gt;  Name or ID of server(s).
-        
+
         Optional arguments:
         --active  Request the server be reset to "active" state instead of "error"
         state (the default).</screen><para>If you had an instance that was stuck in a <literal>Rebooting</literal> state you would use
@@ -99,40 +99,40 @@
 <screen >git log</screen><para>In this example below, the commit is
                 <literal>ac54d619b4fd84b497c7797ec61d989b64b9edb3</literal>:</para>
 <screen >$ git log
-              
+
               commit 69f95002f9bad0b17f48687e4d97b2a791476c6a
               Merge: 439a85e ac54d61
               Author: git user &lt;user@company.com&gt;
               Date:   Fri May 6 09:08:55 2016 +0000
-              
+
               Merging promotion of saved output
-              
+
               commit 439a85e209aeeca3ab54d1a9184efb01604dbbbb
               Author: git user &lt;user@company.com&gt;
               Date:   Fri May 6 09:08:24 2016 +0000
-              
+
               Saved output from CP run on 1d3976dac4fd7e2e78afad8d23f7b64f9d138778
-              
+
               commit <emphasis role="bold">ac54d619b4fd84b497c7797ec61d989b64b9edb3</emphasis>
               Merge: a794083 66ffe07
               Author: git user &lt;user@company.com&gt;
               Date:   Fri May 6 08:32:04 2016 +0000
-              
+
               Merging promotion of saved output</screen></listitem>
           <listitem><para>Checkout the commit: </para>
 <screen >git checkout &lt;commit_ID&gt;</screen><para>Using the same example above, here is the command:</para>
 <screen >$ git checkout ac54d619b4fd84b497c7797ec61d989b64b9edb3
               Note: checking out 'ac54d619b4fd84b497c7797ec61d989b64b9edb3'.
-              
+
               You are in 'detached HEAD' state. You can look around, make experimental
               changes and commit them, and you can discard any commits you make in this
               state without impacting any branches by performing another checkout.
-              
+
               If you want to create a new branch to retain commits you create, you may
               do so (now or later) by using -b with the checkout command again. Example:
-              
+
               git checkout -b new_branch_name
-              
+
               HEAD is now at ac54d61... Merging promotion of saved output</screen></listitem>
           <listitem><para>Change to the ansible output directory:
             </para>
@@ -175,7 +175,7 @@
                   Ym8S4GAZKGyrakm6zbjefWeV4jMZ3/1AtXg4tCWrutRAwh1CoYyDJlUQAXT79Phi
                   39+8+6nSsJimQunKlmvgX7OK7wSp24U+SPzWYPhZYzVaQ8kNXYAOlezlquDfMxxv
                   GqBE5QsCgYA8K2p/z2kGXCNjdMrEM02reeE2J1Ft8DS/iiXjg35PX7WVIZ31KCBk
-                  wgYTWq0Fwo2W/EoJVl2o74qQTHK0Bs+FTnR2nkVF3htEOAW2YXQTTN2rEsHmlQqE              
+                  wgYTWq0Fwo2W/EoJVl2o74qQTHK0Bs+FTnR2nkVF3htEOAW2YXQTTN2rEsHmlQqE
                   A9iGTNwm9hvzbvrWeXtx8Zk/6aYfsXCoxq193KglS40shOCaXzWX0w==
                   -----END RSA PRIVATE KEY-----'
                   public: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/+GF6TPKQPYrwedU0Epl
@@ -195,8 +195,8 @@
 <screen >cd ~/scratch/ansible/next/hos/ansible/group_vars</screen></listitem>
           <listitem><para>Edit your compute group_vars file, which will prompt you for your vault
             password:</para>
-<screen >ansible-vault edit &lt;group_vars_file&gt; 
-              Vault password: 
+<screen >ansible-vault edit &lt;group_vars_file&gt;
+              Vault password:
               Decryption successful</screen></listitem>
           <listitem><para>Search the contents of this file for the <literal>nova_ssh_key</literal> section and
             replace the private and public keys with the contents that you had saved in a temporary

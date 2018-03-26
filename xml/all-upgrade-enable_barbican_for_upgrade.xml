@@ -79,7 +79,7 @@
         - barbican-worker
         ...
         ...
-        
+
         ...
         ...</screen>
   <para>
@@ -88,7 +88,7 @@
  </section>
  <section>
   <title><!-- FIXME: no title? --></title>
-<screen>cd ~/scratch/ansible/next/hos/ansible 
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts site.yml</screen>
  </section>
  <section xml:id="tls">
@@ -112,12 +112,12 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen>
         - neutron.networks.vlan:
         provider-physical-network: physnet1
         - nova.compute.iscsi
-        
+
         tls-component-endpoints:
         - barbican-api
         component-endpoints:
         - default
-        
+
         routes:
         - default
         load-balancers:

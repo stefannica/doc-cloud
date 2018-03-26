@@ -468,7 +468,7 @@ ansible-playbook -i hosts/verb_hosts swift-start.yml --limit &lt;hostname&gt;</s
                   <para>You need to add more nodes to your system or delete existing objects to remain
                     under 80% utilization.</para>
 
-                  
+
                 </entry>
               </row>
               <row>

@@ -72,5 +72,5 @@
 <screen >monasca notification-create  MySlackNotification SLACK https://slack.com/api/chat.postMessage?token=1234567890&amp;channel=#general</screen></listitem>
             </orderedlist>
 
-        
+
     </section>

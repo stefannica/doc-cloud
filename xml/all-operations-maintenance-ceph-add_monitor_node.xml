@@ -8,7 +8,7 @@
       monitor component then these steps can be used to add additional Ceph monitor nodes.</para><para>If you did not define separate Ceph monitor nodes in your deployment then these steps will
       not work for you. For details on how to define a dedicated Ceph monitor cluster, see <xref linkend="topic_ah5_4yx_qt"/>.</para><para>The steps involved are:</para></para>
 </abstract>
-    <para><para xml:id="idg-all-operations-maintenance-ceph-add_monitor_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
     <sidebar xml:id="idg-all-operations-maintenance-ceph-add_monitor_node-xml-6"><title>Prerequisites</title><para>You should have one or more baremetal servers that meet the minimum hardware requirements

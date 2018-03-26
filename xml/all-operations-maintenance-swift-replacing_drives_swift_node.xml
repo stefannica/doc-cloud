@@ -11,7 +11,7 @@
     the node back to normal.</para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-swift-replacing_drives_swift_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
     <sidebar><title>To Replace the Operating System Disk Drive</title><para>After the operating system disk drive is replaced, the node must be reimaged.</para>

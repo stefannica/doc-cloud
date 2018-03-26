@@ -15,7 +15,7 @@
 <para>This check is from the percona-status play and logs the following in the event of a
         cluster</para>
 <para>partition.</para>
-<screen >TASK: [FND-MDB | status | Report if the cluster seems partitioned] ************ 
+<screen >TASK: [FND-MDB | status | Report if the cluster seems partitioned] ************
 failed: [multicp-cp1-c1-m1-mgmt] =&gt;
 {"failed": true}
 msg: The cluster size is 2
@@ -64,7 +64,7 @@ $ sudo service mysql start</screen></listitem><listitem><para>Check the database
           </para>
 <screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts percona-status.yml</screen></listitem>
-      
-      
+
+
       </orderedlist></sidebar>
   </section>

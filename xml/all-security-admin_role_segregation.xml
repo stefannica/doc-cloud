@@ -8,7 +8,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="roleSegregation"><title>&kw-hos-tm; &kw-hos-version-50;: Service Admin Role Segregation in the Identity
     Service</title>
     <!---->
-    <para><para xml:id="idg-all-security-admin_role_segregation-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-security-admin_role_segregation-xml-6"><title>Overview</title><para>Under the default OpenStack user policies, a user can have either member privilege or admin
         privilege. Admin privilege is assigned by creating a user account with the role of admin.
@@ -23,7 +23,7 @@
 <para>Service Administrator Roles is an alternative to the current one-size-fits-all admin role
         model and can help you institute different privileges for different administrators.</para>
 </sidebar>
-    
+
     <sidebar><title> Pre-installed service admin role components</title><para>
        The main components of
       Service Administrator Roles are as follows </para>
@@ -37,7 +37,7 @@
         <listitem><para>glance_admin role in the identity service and support in glance policy.json </para>
 </listitem>
       </itemizedlist></sidebar>
-    
+
     <sidebar><title>Features and benefits</title><para>
        Service Administrator Roles offer the following
       features and benefits. They:</para>
@@ -54,15 +54,15 @@
           quick and easy deployment</para>
 </listitem>
       </itemizedlist></sidebar>
-    
+
     <sidebar><title>Roles</title><para>The following are the roles defined in &kw-hos-phrase;. These roles serve as a way to group common administrative needs at
       the OpenStack service level. Each role represents administrative privilege into each service.
       Multiple roles can be assigned to a user. You can assign a Service Admin Role to a user once
       you have determined that the user is authorized to perform administrative actions and access
-      resources in that service. 
+      resources in that service.
       </para>
 <para><emphasis role="bold">Pre-installed service admin roles</emphasis></para>
-<para>The following service admin roles exist by default: 
+<para>The following service admin roles exist by default:
         </para>
 <variablelist>
         <varlistentry>
@@ -90,8 +90,8 @@
 </listitem>
         </varlistentry>
       </variablelist>
-<para> 
+<para>
       For configuration steps, see <xref linkend="CreateCloudAdmin"/></para>
 </sidebar>
- 
+
   </chapter>

@@ -31,7 +31,7 @@
 </listitem>
             </itemizedlist>
 
-        
+
         <para>The JIRA issue type that your notifications will create may only be configured with the
             "Project" field as mandatory. If your JIRA issue type has any other mandatory fields,
             the Monasca plugin will not function correctly. Currently, the Monasca plugin only
@@ -54,16 +54,16 @@
                     password of the JIRA account used for the notifications to the respective
                         sections.</para>
 <screen >    plugins:
- 
+
      - monasca_notification.plugins.jira_notifier:JiraNotifier
- 
+
     jira:
- 
-        
+
+
         user:
- 
+
         password:
- 
+
         timeout: 60</screen><para>After
                         adding the necessary block, the <literal>notification_types</literal> section
                         should look like the following example. Note that you must also add the
@@ -71,16 +71,16 @@
                         type.</para>
 <screen >notification_types:
     plugins:
- 
+
      - monasca_notification.plugins.jira_notifier:JiraNotifier
- 
+
     jira:
- 
-        
+
+
         user:
- 
+
         password:
- 
+
         timeout: 60
 
     webhook:

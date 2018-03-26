@@ -7,7 +7,7 @@
     deployed VSA.</para>
 
     <!---->
-    <para><para xml:id="idg-all-operations-blockstorage-vsa-reconfigure_vsa_verb_add_remove_extra_disk-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar><title>Overview</title><para>With the development of a new automation playbook, you can add new disks to the already
         deployed VSA. This allows you to gradually increase the storage capacity of a cluster, i.e.
@@ -142,7 +142,7 @@ ansible-playbook -i hosts/verb_hosts vsalm-configure-disk.yml</screen><para>This
 </listitem>
           </orderedlist>
 </sidebar>
-           
+
     <formalpara><title>Centralized Management Console (CMC)</title><para><para>Perform the following steps to add disk(s):</para><para><orderedlist xml:id="ol_qkt_5pj_zw">
             <listitem><para>Launch the CMC utility. See <xref linkend="config_vsa"/> for more details.</para></listitem>
             <listitem><para>Select the system in the Available Systems pool and click <mediaobject xml:id="image_uhv_1cq_zw"><imageobject role="fo"><imagedata fileref="media-blockstorage-vsa-plus.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-blockstorage-vsa-plus.png"/></imageobject></mediaobject> to expand

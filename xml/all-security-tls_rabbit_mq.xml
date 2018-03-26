@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="TLS_RabbitMQ"><title>&kw-hos-tm; &kw-hos-version-50;: Enabling TLS for RabbitMQ Traffic</title>
-   
+
     <sidebar><para>Since &kw-hos-phrase-40; RabbitMQ traffic can be encrypted using TLS. To enable it, you will have to add
         entries for <literal>tls-component-endpoints:</literal> in your input model files if you have not already done so. This topic explains how.</para>
 <orderedlist>
@@ -15,8 +15,8 @@
      - mysql
      - rabbitmq</screen></listitem>
         <listitem><para>Commit the changes: </para>
-<screen>cd ~/helion                                                                      
-git add -A                                                                       
+<screen>cd ~/helion
+git add -A
 git commit -m "My changed config"</screen></listitem><listitem><para> Then run the typical deployment steps:
           </para>
 <screen>cd ~/helion/hos/ansible/
@@ -39,7 +39,7 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
       false, as shown here,  indicates the connection is over TCP:
       </para>
 <screen >Listing connections ...
-    
+
 rmq_barbican_user       false</screen><para> Other
       indicators will be <literal>rabbit_use_ssl = True</literal> in the Oslo messaging section of
       client configurations. The list of clients that support TLS are as follows: </para>

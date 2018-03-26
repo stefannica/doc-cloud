@@ -818,11 +818,11 @@ git add -A
 git commit -m "My config"</codeblock>
       Then run the
       config-processor-run and ready-deployment playbooks:
-      <codeblock>cd ~/helion/hos/ansible/ 
-ansible-playbook -i hosts/localhost config-processor-run.yml 
+      <codeblock>cd ~/helion/hos/ansible/
+ansible-playbook -i hosts/localhost config-processor-run.yml
 ansible-playbook -i hosts/localhost ready-deployment.yml</codeblock>
       Then run the site.yml
-      playbook:<codeblock>cd ~/scratch/ansible/next/hos/ansible 
+      playbook:<codeblock>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts site.yml</codeblock>
     </section>-->
 </chapter>

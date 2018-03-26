@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_i4l_xhn_tt"><title>&kw-hos-tm; &kw-hos-version-50;: Disabling Backup/Restore before Deployment</title>
     <!---->
-    <para><para xml:id="idg-all-bura-disable_bura_before_deployment-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar><para>Backups are enabled by default. Therefore, you must take action if you want backups to
       be disabled for any reason. This topic explains how to disable default backup jobs before
@@ -90,5 +90,5 @@ ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
           _freezer_manage_jobs.yml</para>
 <screen>ansible-playbook -i hosts/verb_hosts _freezer_manage_jobs.yml</screen></listitem></orderedlist></sidebar>
       <!---->
-    
+
   </section>

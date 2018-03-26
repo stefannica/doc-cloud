@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_x2x_vy4_lt"><title>&kw-hos-tm; &kw-hos-version-50;: ESX ON-Boarding Service (EON)</title><!---->
     <!---->
-    <para><para xml:id="idg-all-esx-eon_service-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>The &kw-hos-phrase; EON (ESX on boarding) service is an inventory service, which
       interacts with the VMware vCenter server, and collects available information from data
@@ -24,9 +24,9 @@
 </sidebar>
     <sidebar><title>EON CLI Operations</title><para>The EON client CLI package provides an http-client coupled command-line tool for managing
         EON (ESX management) services. This topic contains information about the following: </para>
-<orderedlist xml:id="ol_d1l_ygf_rt"> 
+<orderedlist xml:id="ol_d1l_ygf_rt">
           <listitem><para><link xlink:href="#topic_x2x_vy4_lt/resource-manager-operations">Resource Manager Operations</link></para>
-</listitem> 
+</listitem>
           <listitem><para><link xlink:href="#topic_x2x_vy4_lt/resource-operations">Resource Operations</link></para>
 </listitem>
           <listitem><para><link xlink:href="#topic_x2x_vy4_lt/activation-operations">Activation Operations</link></para>
@@ -44,7 +44,7 @@ eon resource-manager-list --type &lt;RESOURCE_MANAGER_TYPE&gt;</screen>
                 <literal>&lt;RESOURCE_MANAGER_TYPE&gt;</literal> is the type of the Resource manager (
               enter <literal>vcenter</literal> for vCenter Server).</para>
 <para><emphasis role="bold">Sample Output</emphasis></para>
-<screen ># eon resource-manager-list 
+<screen ># eon resource-manager-list
 +--------------------------------------+------+-------------+---------+
 | ID                                   | Name | IP Address  | Type    |
 +--------------------------------------+------+-------------+---------+
@@ -107,7 +107,7 @@ eon resource-manager-list --type &lt;RESOURCE_MANAGER_TYPE&gt;</screen>
               </itemizedlist>
 <para><emphasis role="bold">Sample
             Output</emphasis></para>
-<screen ># eon resource-manager-add --name vc01 --ip-address 10.1.200.38 --username administrator@vsphere.local --password init123# --port 443 --type vcenter 
+<screen ># eon resource-manager-add --name vc01 --ip-address 10.1.200.38 --username administrator@vsphere.local --password init123# --port 443 --type vcenter
 +-------------+--------------------------------------+
 | Property    | Value                                |
 +-------------+--------------------------------------+
@@ -141,7 +141,7 @@ eon resource-manager-list --type &lt;RESOURCE_MANAGER_TYPE&gt;</screen>
 </listitem>
               </itemizedlist>
 <para><emphasis role="bold">Sample Output</emphasis></para>
-<screen ># eon resource-manager-update --username root --password gone2far 2A6FC852-5F5E-4206-B6CC-C85E6B62A367 
+<screen ># eon resource-manager-update --username root --password gone2far 2A6FC852-5F5E-4206-B6CC-C85E6B62A367
 +-------------+--------------------------------------+
 | Property    | Value                                |
 +-------------+--------------------------------------+
@@ -202,9 +202,9 @@ eon resource-manager-list --type &lt;RESOURCE_MANAGER_TYPE&gt;</screen>
 | b8f21b2a-ba3f-4279-84e9-3a5e1c7e2287 | HOS-Cluster | domain-c21  | 6542e282-00ac-47a5-9c84-d107604bfb09 | UNSET      | UNSET | esxcluster | imported |
 | e12cc99d-4dff-432e-bc61-b9553b0dd0ef | Cluster2    | domain-c184 | 8d3a4454-63c2-40ae-9c98-34dfd9ad9add | UNSET      | UNSET | esxcluster | imported |
 +--------------------------------------+-------------+-------------+--------------------------------------+------------+-------+------------+----------+
- 
+
 # eon resource-list --type &lt;RESOURCE_TYPE&gt;
- 
+
 Ex:
 # eon resource-list --type esxcluster
 +--------------------------------------+-------------+-------------+--------------------------------------+------------+-------+------------+----------+
@@ -214,11 +214,11 @@ Ex:
 | b8f21b2a-ba3f-4279-84e9-3a5e1c7e2287 | HOS-Cluster | domain-c21  | 6542e282-00ac-47a5-9c84-d107604bfb09 | UNSET      | UNSET | esxcluster | imported |
 | e12cc99d-4dff-432e-bc61-b9553b0dd0ef | Cluster2    | domain-c184 | 8d3a4454-63c2-40ae-9c98-34dfd9ad9add | UNSET      | UNSET | esxcluster | imported |
 +--------------------------------------+-------------+-------------+--------------------------------------+------------+-------+------------+----------+
- 
- 
- 
+
+
+
 # eon resource-list --manager-id &lt;RESOURCE_MANAGER_ID&gt;
- 
+
 Ex:
 # eon resource-list --manager-id 8d3a4454-63c2-40ae-9c98-34dfd9ad9add
 +--------------------------------------+----------+-------------+--------------------------------------+------------+-------+------------+----------+
@@ -227,10 +227,10 @@ Ex:
 | 143eacca-6030-41dc-9599-943f6ae7c747 | Cluster1 | domain-c21  | 8d3a4454-63c2-40ae-9c98-34dfd9ad9add | UNSET      | UNSET | esxcluster | imported |
 | e12cc99d-4dff-432e-bc61-b9553b0dd0ef | Cluster2 | domain-c184 | 8d3a4454-63c2-40ae-9c98-34dfd9ad9add | UNSET      | UNSET | esxcluster | imported |
 +--------------------------------------+----------+-------------+--------------------------------------+------------+-------+------------+----------+
- 
- 
+
+
 # eon resource-list --type &lt;RESOURCE_TYPE&gt; --manager-id &lt;RESOURCE_MANAGER_ID&gt;
- 
+
 Ex:
 # eon resource-list --type esxcluster --manager-id 6542e282-00ac-47a5-9c84-d107604bfb09
 +--------------------------------------+-------------+------------+--------------------------------------+------------+-------+------------+----------+
@@ -238,9 +238,9 @@ Ex:
 +--------------------------------------+-------------+------------+--------------------------------------+------------+-------+------------+----------+
 | b8f21b2a-ba3f-4279-84e9-3a5e1c7e2287 | HOS-Cluster | domain-c21 | 6542e282-00ac-47a5-9c84-d107604bfb09 | UNSET      | UNSET | esxcluster | imported |
 +--------------------------------------+-------------+------------+--------------------------------------+------------+-------+------------+----------+
- 
+
 # eon resource-list --state &lt;RESOURCE_STATE&gt;
- 
+
 Ex:
 # eon resource-list --state provisioning
 +--------------------------------------+-----------+-------------+--------------------------------------+------------+-------+------------+--------------+
@@ -277,8 +277,8 @@ Ex:
                 (<literal>esxcluster</literal> for ESX Clusters).</para>
 <para><emphasis role="bold">Sample Output</emphasis></para>
 <screen >eon get-activation-template --filename activationtemplate.json --type esxcluster
---------------------------------------------------------------- 
-Saved the sample network file in /home/user/activationtemplate.json 
+---------------------------------------------------------------
+Saved the sample network file in /home/user/activationtemplate.json
 --------------------------------------------------------------- </screen></listitem>
           <listitem><para>Resource Activate </para>
 <para>Activates the specified Resource Manager (ESX Cluster) with the
@@ -344,7 +344,7 @@ Saved the sample network file in /home/user/activationtemplate.json
                 <literal>&lt;SERVER_GROUP&gt;</literal> is the server group provided in the configuration
               JSON during the activation.</para>
 <para><emphasis role="bold">Sample Output</emphasis></para>
-<screen ># eon resource-update 9ab2196d-37d2-4006-a2c7-08946b5194ea --action add_host --server-group RACK01 
+<screen ># eon resource-update 9ab2196d-37d2-4006-a2c7-08946b5194ea --action add_host --server-group RACK01
 +-----------------+--------------------------------------+
 | Property        | Value                                |
 +-----------------+--------------------------------------+

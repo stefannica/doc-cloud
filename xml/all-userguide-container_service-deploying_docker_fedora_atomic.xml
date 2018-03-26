@@ -4,7 +4,7 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_docker_fedora_atomic"><title>&kw-hos-tm; &kw-hos-version-50;: Deploying a Docker Swarm Cluster on Fedora
     Atomic</title>
-    <para><para xml:id="idg-all-userguide-container_service-deploying_docker_fedora_atomic-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-userguide-container_service-deploying_docker_fedora_atomic-xml-6"><title>Prerequisites</title><para>These steps assume the following have been completed:</para>
 <itemizedlist>
@@ -23,7 +23,7 @@
           <listitem><para>Source openstack admin credentials. </para>
 <screen >$ source service.osrc</screen></listitem>
           <listitem><para>If you haven't already, download Fedora Atomic image, prepared for Openstack Newton
-            release. 
+            release.
             </para>
 <screen >$ wget https://fedorapeople.org/groups/magnum/fedora-atomic-newton.qcow2</screen></listitem>
           <listitem><para>Create a Glance image.
@@ -74,7 +74,7 @@ $ nova keypair-add --pub-key ~/.ssh/id_rsa.pub testkey</screen></listitem>
           <listitem><para>Immediately after issuing <literal>cluster-create</literal> command, cluster status
             should turn to <emphasis role="bold">CREATE_IN_PROGRESS</emphasis> and <literal>stack_id</literal> assigned.
             </para>
-<screen >$ magnum cluster-show my-swarm-cluster                                                                                            
+<screen >$ magnum cluster-show my-swarm-cluster
 +---------------------+------------------------------------------------------------+
 | Property            | Value                                                      |
 +---------------------+------------------------------------------------------------+
@@ -111,7 +111,7 @@ WARNING (shell) "heat resource-list" is deprecated, please use "openstack stack 
           <listitem><para>The cluster is complete when all resources show <emphasis role="bold">CREATE_COMPLETE</emphasis>.  You can also
             obtain the floating IP address once the cluster has been
             created.</para>
-<screen >$ magnum cluster-show my-swarm-cluster               
+<screen >$ magnum cluster-show my-swarm-cluster
 +---------------------+------------------------------------------------------------+
 | Property            | Value                                                      |
 +---------------------+------------------------------------------------------------+
@@ -160,12 +160,12 @@ fcbfab53148c        swarm:1.0.0         "/swarm join --addr 1"   24 minutes ago 
           <listitem><para>Deploy a sample docker application (nginx) and verify that Nginx is serving requests
             at port 8080 on worker node(s), on both floating and private
             IPs:</para>
-<screen >[fedora@my-6zxz5ukdu-0-bvqbsn2z2uwo-swarm-master-n6wfplu7jcwo ~]$ docker run -itd -p 8080:80 nginx   
+<screen >[fedora@my-6zxz5ukdu-0-bvqbsn2z2uwo-swarm-master-n6wfplu7jcwo ~]$ docker run -itd -p 8080:80 nginx
 192030325fef0450b7b917af38da986edd48ac5a6d9ecb1e077b017883d18802
- 
+
 [fedora@my-6zxz5ukdu-0-bvqbsn2z2uwo-swarm-master-n6wfplu7jcwo ~]$ docker port 192030325fef
 80/tcp -&gt; 10.0.0.11:8080
- 
+
 [fedora@my-6zxz5ukdu-0-bvqbsn2z2uwo-swarm-master-n6wfplu7jcwo ~]$ curl http://10.0.0.11:8080
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;

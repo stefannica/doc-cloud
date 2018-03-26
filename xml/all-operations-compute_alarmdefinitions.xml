@@ -174,12 +174,12 @@ ansible-playbook -i hosts/verb_hosts glance-start.yml --limit &lt;hostname&gt;</
 <screen >sudo -u stack ssh &lt;ip_address_of_messaging_deployer&gt;</screen></listitem>
                     <listitem><para>Stop the <literal>ironic-conductor</literal> process by using this playbook:
                       </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible 
+<screen >cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts ironic-stop.yml</screen></listitem>
                     <listitem><para>Start the process back up again, effectively restarting it, by using this
                       playbook:
                       </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible 
+<screen >cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts ironic-start.yml</screen></listitem>
                   </orderedlist>
                 </entry>
@@ -203,12 +203,12 @@ ansible-playbook -i hosts/verb_hosts ironic-start.yml</screen></listitem>
 <screen >sudo -u stack ssh &lt;ip_address_of_messaging_deployer&gt;</screen></listitem>
                     <listitem><para>Stop the <literal>ironic-api</literal> process by using this playbook:
                       </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible 
+<screen >cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts ironic-stop.yml</screen></listitem>
                     <listitem><para>Start the process back up again, effectively restarting it, by using this
                       playbook:
                       </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible 
+<screen >cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts ironic-start.yml</screen></listitem>
                   </orderedlist>
                 </entry>

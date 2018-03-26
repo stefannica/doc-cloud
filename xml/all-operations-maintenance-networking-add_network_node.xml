@@ -9,7 +9,7 @@
       will help you achieve this.</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-networking-add_network_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-operations-maintenance-networking-add_network_node-xml-6"><title>Prerequisites</title><para>If you are using the mid-scale model then your networking nodes are already separate and
         the roles are defined. If you are not already using this model and wish to add separate

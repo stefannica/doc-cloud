@@ -9,7 +9,7 @@
         existing service in the &kw-hos; stack. The 3rd-party mechanism supports the integration of a
         range of different types of content..</para></para>
 </abstract>
-    <para><para xml:id="idg-all-architecture-third_party-third_party_service_integration-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
 
@@ -31,7 +31,7 @@
         </orderedlist>
 <para>
 
-        
+
         &kw-hos-phrase;
         extends this flexibility by supporting the integration of 3rd-party components with a &kw-hos;
         platform deployment, whether that is a completely separate service or a plugin/driver to an
@@ -112,7 +112,7 @@
 <screen>third-party/
 └── myservice
     ├── ansible
-    ├── logging        
+    ├── logging
     ├── other
     ├── pkgs
     ├── services
@@ -120,7 +120,7 @@
             <listitem><para> Populate each sub-directory with your 3rd-party content; details on the layout for
               each content type are detailed below.Note that the third-party area can also be
               populated with &kw-hos; extensions content shipped with &kw-hos;, e.g. for a &kw-hos;-DCN deployment: </para>
-<screen>cp -r ~/helion/hos_extensions/dcn ~/third-party/</screen><para><emphasis role="bold">Note:</emphasis> Additional content (outside of that provided with &kw-hos; extensions) must be added to the third-party area for a &kw-hos;-DCN deployment. 
+<screen>cp -r ~/helion/hos_extensions/dcn ~/third-party/</screen><para><emphasis role="bold">Note:</emphasis> Additional content (outside of that provided with &kw-hos; extensions) must be added to the third-party area for a &kw-hos;-DCN deployment.
               <phrase> </phrase></para>
 </listitem>
           </orderedlist></listitem>
@@ -271,7 +271,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
 
         <screen >services:
   - name: neutron</screen>
-        <para>The result of this is to create a new Neutron venv, updated with content from the 
+        <para>The result of this is to create a new Neutron venv, updated with content from the
           debs, src or whls (and pip-deps) directories. After the third-party import has been completed,
           subsequent calls to install the Neutron venv will install this updated venv rather than
           the original venv supplied with &kw-hos;.</para>
@@ -298,7 +298,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
           provides the compute service and consists of the following service-components: nova-api,
           nova-scheduler, nova-conductor, nova-novncproxy, and nova-compute.</para>
 
-        
+
         <para>A service may comprise of
           just one service-component, such as rabbitmq or mysql. A service-component represents the
           smallest unit of deployment for Helion lifecycle manager. A cloud operator describes the desired cloud
@@ -327,7 +327,7 @@ total 60
 -rw-r--r-- 1 stack stack 2907 Jul 13 07:41 nova.yml
 -rw-r--r-- 1 stack stack 1002 Jul 13 07:41 novncproxy.yml
 -rw-r--r-- 1 stack stack  767 Jul 13 07:41 scheduler.yml</screen>
-        
+
         <para> The third-party import mechanism supports the import of third-party defined services and
           service components, as shown in the following diagram: </para>
 
@@ -342,18 +342,18 @@ total 60
     ├── serviceA-plugin.yml
     ├── serviceA-server.yml
     └── serviceA.yml</screen>
-        
+
         <para>When the third-party-import playbook has completed, the above third-party service
           definitions will have been added to the existing set of &kw-hos; services under
           <literal>~/helion/hos/services</literal> and committed to git (on the site branch). Here is a sample git log
           entry for the addition of a set of third-party service definitions:</para>
 
-        
+
         <screen >commit 21103bd725e3613b341d06dee9d3eed6ce0aafc7
 Author: Helion git user &lt;helion@hpe.com&gt;
 Date:   Wed Jul 13 09:46:19 2016 +0000
     Third-party services import</screen>
-        
+
         <para>For details on the creation of the service definitions files, please refer to the
           separate guide on the "Implementing a new service in Helion lifecycle manager"</para>
 
@@ -426,16 +426,16 @@ Date:   Wed Jul 13 09:46:19 2016 +0000
             git (on the site branch).</phrase> Here is a sample git log entry representing the import of
           some third-party Ansible content: </para>
 
-        
+
         <screen >commit 9ca9b47f6d2840b48624ffa94fb6b8a072466811
 Author: Helion git user &lt;helion@hpe.com&gt;
 Date:   Wed Jul 13 09:46:21 2016 +0000
     Third-party Ansible import</screen>
-        
+
         <para>For details on the implementation of ansible playbooks and roles for Helion lifecycle manager, please refer to
           the separate guide on the "Implementing a new service in Helion lifecycle manager".</para>
 
-        
+
         <para>In addition to adding the set of third-party Ansible playbooks and roles, the third-party
           top-level playbooks must be integrated with top-level Helion lifecycle manager playbooks for all supported
           lifecycle operations, such as deploy, upgrade and so on. The next section details how that
@@ -486,8 +486,8 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
               swift, etc.</para>
 </listitem>
           </itemizedlist>
-          
-          
+
+
 
           <para>The set of hooks in the above sample Ansible content layout are:</para>
 
@@ -510,7 +510,7 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
             Helion lifecycle manager playbooks in the scratch area, i.e. under <literal>/scratch/ansible/next/helion/hos</literal>. For
             example, from the above hooks specification, <literal>hlm-deploy.yml</literal> is rendered as follows:</para>
 
-          
+
           <screen ># Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
@@ -628,7 +628,7 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
 ---
 symlinks:
   "myservice/server.conf.j2": "roles/myservice-server/templates/server.conf.j2"</screen>
-          
+
           <para>When the above file is parsed by the third-party-import playbook, a
             <literal>~/helion/my_cloud/myservice/server.conf.j2</literal> symlink will be added to point to the
             configuration template under the myservice-server role.</para>
@@ -657,7 +657,7 @@ symlinks:
             does not need to confirm to any particular layout.</para>
 </listitem>
         </orderedlist>
-        
+
         <para>A sample layout for other application content that is be imported is as follows:</para>
 
         <screen >third-party/myservice/other
@@ -701,7 +701,7 @@ symlinks:
             chunk of additional configuration content or any other settings that exposed by the peer
             service/service-component. Currently, only the &kw-hos; neutron service provides such an
             interface. <!---->
-            
+
           </phrase></para>
 
       </section></section><section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1e839"><title>Upgrade</title>

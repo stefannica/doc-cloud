@@ -46,7 +46,7 @@
         Experimental evidence shows this yields an additional 6-8% performance boost.</para>
 </sidebar>
     <!---->
-    
+
     <sidebar xml:id="multiqueue_config"><title>Multiqueue configuration</title><para>In order to use multiqueue, a property must be applied to the Glance image and a setting
         inside the resulting VM must be applied. In this example we create a 4 vCPU flavor for DPDK
         using 1G hugepages.</para>

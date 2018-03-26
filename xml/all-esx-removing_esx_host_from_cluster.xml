@@ -6,12 +6,12 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_srg_d5h_rt"><title>&kw-hos-tm; &kw-hos-version-50;: Removing an ESXi Host from a Cluster</title>
     <!---->
     <!---->
-    <para><para xml:id="idg-all-esx-removing_esx_host_from_cluster-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>This topic describes how to remove an existing ESXi host from a cluster and cleanup of
       services for OVSvAPP VM.</para>
 
-    
+
     <para><emphasis role="bold">Prerequisite</emphasis></para>
 
     <para>Write down the Hostname and ESXi configuration IP addresses of OVSvAPP VMs of that ESX
@@ -95,7 +95,7 @@
               <literal>host_alive.yaml</literal>:</para>
 <screen >- alive_test: ping
   built_by: HostAlive
-  host_name: MCP-VCP-cpesx-esx-ovsvapp0001-mgmt 
+  host_name: MCP-VCP-cpesx-esx-ovsvapp0001-mgmt
   name: MCP-VCP-cpesx-esx-ovsvapp0001-mgmt ping
   target_hostname: MCP-VCP-cpesx-esx-ovsvapp0001-mgmt </screen>
 <para>where
@@ -180,7 +180,7 @@
               </para>
 <screen >~/helion/my_cloud/definition/data/servers.yml</screen><para>For
               example:</para>
-<screen >- ip-addr:192.168.86.17   
+<screen >- ip-addr:192.168.86.17
   server-group: AZ1    role:
   OVSVAPP-ROLE    id:
   6afaa903398c8fc6425e4d066edf4da1a0f04388</screen>

@@ -10,7 +10,7 @@
       achieve this.</para><para>The steps involved are:</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-compute-add_hpelinux_compute-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-operations-maintenance-compute-add_hpelinux_compute-xml-6"><title>Prerequisites</title><para>You should have one or more baremetal servers that meet the minimum hardware requirements
         for a compute node which are documented in the <xref linkend="min_hardware"/>.</para>

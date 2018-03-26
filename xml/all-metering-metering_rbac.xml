@@ -4,14 +4,14 @@
 ]>
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic15050"><info>
-      
-      
-      
-      
-      
+
+
+
+
+
     </info><title>&kw-hos-tm; &kw-hos-version-50;: Ceilometer Metering Setting Role-based
     Access Control</title><!---->
-    <para><para xml:id="idg-all-metering-metering_rbac-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>Role Base Access Control (RBAC) is a technique that limits access to resources based on a
       specific set of roles associated with each user's credentials.</para>

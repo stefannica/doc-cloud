@@ -3,7 +3,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_pgq_mnw_dt"><title>&kw-hos-tm; &kw-hos-version-50;: Backup/Restore Agent</title><!---->
-        <para><para xml:id="idg-all-bura-freezer_agent-xml-4"><phrase><phrase/></phrase></para></para>
+
 
         <para>This topic describes how to configure backup jobs and restore jobs.</para>
 
@@ -44,7 +44,7 @@
 </listitem>
                         <listitem><para>Mongo</para>
 </listitem>
-                    </itemizedlist></listitem> 
+                    </itemizedlist></listitem>
                     <listitem><para>Define whether to use a snapshot in the file system for the backup:</para>
 <itemizedlist>
                         <listitem><para>In Unix systems LVM is used (when available). </para>
@@ -101,7 +101,7 @@
             configuration file for automated jobs to be run by the scheduler. Instructions on how to
             do that are found on the <xref linkend="topic_mlh_wtn_rt"/> page.</para>
 </sidebar>
-        <sidebar><title>Restoring your Data</title><para> For &kw-hos-phrase;, 
+        <sidebar><title>Restoring your Data</title><para> For &kw-hos-phrase;,
             you must do the following in order to restore data after a
             backup: </para>
 <orderedlist>
@@ -173,5 +173,5 @@
                     "description": "backup for tmp dir"
                     }</screen>
 </sidebar>
-        
+
     </section>

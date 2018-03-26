@@ -238,7 +238,7 @@ neutron_ca_certificates_file = /etc/ssl/certs/ca-certificates.crt
 admin_username = {{ neutron_admin_username }}
 <emphasis role="bold">metadata_proxy_shared_secret = {{ neutron_metadata_proxy_shared_secret }}</emphasis>
 neutron_auth_strategy = keystone
-neutron_ca_certificates_file = /etc/ssl/certs/ca-certificates.crt            
+neutron_ca_certificates_file = /etc/ssl/certs/ca-certificates.crt
 ...</screen>
  </section>
  <section>

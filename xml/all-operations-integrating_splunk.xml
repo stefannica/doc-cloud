@@ -97,11 +97,11 @@ output {
     workers =&gt; {{ logstash_num_workers }}
   }
 <emphasis role="bold">  # Forward Logs to Splunk on TCP port 5514
- tcp { 
+ tcp {
    mode =&gt; "client"
    host =&gt; "&lt;Enter Splunk listener IP address&gt;"
    port =&gt; 5514</emphasis>
- }  
+ }
 }</screen></listitem>
         <listitem><para>Commit your changes to git:
           </para>

@@ -8,7 +8,7 @@
 
         <para>Find a good explanation of configuring plugins here: <link xlink:href="https://github.com/openstack/monasca-agent/blob/master/docs/Agent.md#configuring">https://github.com/openstack/monasca-agent/blob/master/docs/Agent.md#configuring</link></para>
 
-        
+
         <para>SSH to a node that has both the monasca-agent installed as well as the component you wish
             to monitor.</para>
 
@@ -17,13 +17,13 @@
             name).</para>
 <screen >sudo /opt/stack/service/monasca-agent/venv/bin/monasca-setup -d HLMCeilometer</screen>
 
-        
+
         <para>The following is an example command that configures the apache plugin and includes
             related
             parameters.</para>
 <screen >sudo /opt/stack/service/monasca-agent/venv/bin/monasca-setup -d apache -a 'url=http://192.168.245.3:9095/server-status?auto'</screen>
 
-        
+
         <para>If there is a change in the configuration it will restart the monasca-agent on the host
             so the configuration is loaded.</para>
 
@@ -33,14 +33,14 @@
         <para>Use the monasca CLI to see if your metric exists (see the <emphasis role="bold">Verify that metrics
                 exist</emphasis> section).</para>
 
-        
-        
+
+
         <para><emphasis role="bold">Using Ansible modules to configure plugins in &kw-hos-phrase;</emphasis></para>
 
         <para>The <literal>monasca_agent_plugin</literal> module is installed as part of the
             monasca-agent role.</para>
 
-        
+
         <para>The following Ansible example configures the process.py plugin for the Ceilometer
             detection plugin. The following example only passes in the name of the detection
             class.</para>
@@ -51,13 +51,13 @@
   monasca_agent_plugin:
     name: "HLMCeilometer"</screen>
 
-        
+
         <para>If a password or other sensitive data are passed to the detection plugin, the
                 <literal>no_log</literal> option should be set to <emphasis role="bold">True</emphasis>. If the
                 <literal>no_log</literal> option is not set to <emphasis role="bold">True</emphasis>, the data passed to the
             plugin will be logged to syslog.</para>
 
-        
+
         <para>The following Ansible example configures the Vertica plugin and passes in related
             arguments.</para>
 <screen >- name: Run Monasca Agent detection plugin for Vertica
@@ -69,7 +69,7 @@
       timeout: 10
   no_log: True</screen>
 
-        
+
         <para>The following Ansible example configures the Keystone endpoint using the http_check.py
             detection plugin. The class name <literal>httpcheck</literal> of the http_check.py
             detection plugin is the name.</para>
@@ -91,8 +91,8 @@
     - keystone
     - keystone_monitor</screen>
 
-        
-        
+
+
         <para><emphasis role="bold">Verify that your check plugin is configured</emphasis></para>
 
         <para>All check configuration files are located in the following directory. You can see the
@@ -100,7 +100,7 @@
             directory.</para>
 <screen >/etc/monasca/agent/conf.d/</screen>
 
-        
+
         <para>When the monasca-agent starts up, all of the check plugins that have a matching
             configuration file in the <literal>/etc/monasca/agent/conf.d/</literal> directory will be
             loaded.</para>
@@ -109,20 +109,20 @@
             log file.</para>
 <screen >/var/log/monasca/agent/collector.log</screen>
 
-        
+
         <para>You can change the monasca-agent log level by modifying the <literal>log_level</literal>
             option in the <literal>/etc/monasca/agent/agent.yaml</literal> configuration file, and
             then restarting the monasca-agent, using the following
             command.</para>
 <screen >sudo service monasca-agent restart</screen>
 
-        
+
         <para>You can debug a check plugin by running <literal>monasca-collector</literal> with the check
             option. The following is an example of the <literal>monasca-collector</literal>
             command.</para>
 <screen >/opt/stack/service/monasca-agent/venv/bin$ sudo ./monasca-collector check &lt;check name&gt;</screen>
 
-        
+
         <para><emphasis role="bold">Verify that metrics exist</emphasis></para>
 
         <para>Begin by logging in to your deployer or controller node.</para>

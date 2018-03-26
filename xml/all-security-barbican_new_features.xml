@@ -124,7 +124,7 @@
 </listitem>
                         <listitem><para>Commit the change in git repository.</para>
 </listitem>
-                        <listitem><screen>cd ~/helion/hos/ansible/ 
+                        <listitem><screen>cd ~/helion/hos/ansible/
 ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
                         <listitem><para>Once master key is set, continue with cloud deployment.</para>
 </listitem>
@@ -137,7 +137,7 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
 </listitem>
           </orderedlist></listitem>
       </orderedlist></sidebar>
-    
+
     <sidebar><title>Features</title><orderedlist xml:id="ol_ybh_rkn_jx">
         <listitem><para>Import and install the PKCS11 library debian package:This is a one-time setup to install
           pkcs11 package on barbican nodes.</para>
@@ -283,7 +283,7 @@ barbican-reconfigure.yml</screen></listitem>
             <listitem><screen>ansible-playbook -i hosts/localhost
 ready-deployment.yml</screen></listitem>
             <listitem><screen>cd ~/scratch/ansible/next/hos/ansible
-ansible-playbook -i hosts/verb_hosts 
+ansible-playbook -i hosts/verb_hosts
 barbican-reconfigure.yml -e@/tmp/pkcs11_plugin_certs.yml</screen></listitem>
 
           </orderedlist></listitem>
@@ -298,6 +298,6 @@ barbican-reconfigure.yml -e@/tmp/pkcs11_plugin_certs.yml</screen></listitem>
       </orderedlist></sidebar>
 
 
-    
+
     <formalpara><title>Notes</title></formalpara>
   </chapter>

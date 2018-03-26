@@ -7,7 +7,7 @@
       instances between compute nodes, allowing for less downtime during
     maintenance.</para></para>
 </abstract>
-    <para><para xml:id="idg-all-operations-maintenance-live_migration-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-operations-maintenance-live_migration-xml-6"><para>&kw-hos; Nova offers a set of commands that allow you to move compute
         instances between compute hosts. Which command you use will depend on the state of the host,

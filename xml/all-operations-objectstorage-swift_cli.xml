@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_m13_dgp_nt"><title>&kw-hos-tm; &kw-hos-version-50;: Using the Swift Command-line Client
     (CLI)</title><!---->
-    <para><para xml:id="idg-all-operations-objectstorage-swift_cli-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>The <literal>swift</literal> utility (or Swift CLI) is installed on the lifecycle manager node
       and also on all other nodes running the Swift proxy service. To use this utility on the
@@ -97,5 +97,5 @@ mydocument</screen>
     <screen >$ swift list documents
 mydocument</screen>
 
-    
+
   </section>

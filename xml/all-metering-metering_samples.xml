@@ -4,9 +4,9 @@
 ]>
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceilo_samples"><title>&kw-hos-tm; &kw-hos-version-50;: Metering Service Samples</title><!---->
-    <para><para xml:id="idg-all-metering-metering_samples-xml-4"><phrase><phrase/></phrase></para></para>
 
-   
+
+
 
     <sidebar><para> Samples are discrete collections of a particular meter or the actual usage data
       defined by a meter description. Each sample is time-stamped and includes a variety of data

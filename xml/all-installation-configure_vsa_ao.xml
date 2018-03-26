@@ -22,7 +22,7 @@
           - name: /dev/sdd
           - name: /dev/sde
           - name: /dev/sdf
-          
+
             - name: vsa-cache
               consumer:
                 name: vsa

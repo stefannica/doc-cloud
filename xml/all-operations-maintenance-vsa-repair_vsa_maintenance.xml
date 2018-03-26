@@ -6,7 +6,7 @@
       for maintenance, using the HPE StoreVirtual Management Console (CMC) utility.</para><para>After maintenance, the VSA node is added back to the cluster.</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-vsa-repair_vsa_maintenance-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-operations-maintenance-vsa-repair_vsa_maintenance-xml-6"><title>Notes</title><para>In order for the Block Storage volumes to remain available even after the VSA storage node
         goes offline, you must ensure that the VSA network RAID configuration/data protection

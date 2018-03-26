@@ -8,7 +8,7 @@
       provide different scenarios and how to resolve them to get your cloud repaired.</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-compute-recover_compute_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-operations-maintenance-compute-recover_compute_node-xml-6"><para>Typical scenarios in which you will need to recover a compute node include the
         following:</para>

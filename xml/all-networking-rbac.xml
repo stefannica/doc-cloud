@@ -43,16 +43,16 @@
             tenants</link></para>
 
 </listitem>
-     
+
         <listitem><para><link xlink:href="#neutron_rbac/createPort">Creating a port on a shared network</link></para>
 
 </listitem>
-        
-   
+
+
         <listitem><para><link xlink:href="#neutron_rbac/bootVM">Booting a VM on a shared network</link></para>
 
 </listitem>
-        
+
         <listitem><para><link xlink:href="#neutron_rbac/limitations">Limitations</link></para>
 
 </listitem>

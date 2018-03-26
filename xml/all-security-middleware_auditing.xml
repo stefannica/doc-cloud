@@ -6,11 +6,11 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-security-middleware_auditing-xml-1"><title>&kw-hos-tm; &kw-hos-version-50;: Security Audit Logs</title>
-    <para><para xml:id="idg-all-security-middleware_auditing-xml-4"><phrase><phrase/></phrase></para></para>
 
-    
-    
-   
+
+
+
+
     <formalpara><title>The need for auditing</title><para>&kw-hos;</para>
 </formalpara>
     <sidebar><para>Note that logs from existing OpenStack services can also be used for auditing purposes,
@@ -44,9 +44,9 @@
 </listitem>
         <!---->
       </itemizedlist></sidebar>
-    
+
     <sidebar><title>Centralized auditing configuration</title><para>
-      
+
       In &kw-hos;, all auditing
       configuration is centrally managed and controlled via input model YAML  files on the lifecycle
       manager node. The settings are configured in the file

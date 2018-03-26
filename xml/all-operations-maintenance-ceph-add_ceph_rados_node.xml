@@ -10,7 +10,7 @@
                 <listitem><para> On controller nodes</para></listitem>
             </orderedlist></para></para>
 </abstract>
-        <para><para xml:id="idg-all-operations-maintenance-ceph-add_ceph_rados_node-xml-5"><phrase><phrase/></phrase></para></para>
+
 
         <sidebar><para><emphasis role="bold">Prerequisite</emphasis></para>
 <para>You should have one or more Baremetal servers that meet the
@@ -21,7 +21,7 @@
 <para>When RADOS Gateway is installed in this mode, a new RADOS Gateway node can be added
                 to the Ceph cluster by executing the steps outlined <link xlink:href="#add_rados_gateway_node/procedure-to-add-rgw-node">below</link>.</para>
 </sidebar>
-        
+
         <sidebar><para><emphasis role="bold">Adding a RADOS Gateway Node On (Dedicated) Cluster Node(s) that Host Ceph Monitor
                 Service</emphasis></para>
 <para>When RADOS Gateway is installed in this mode, it is co-hosted with Ceph Monitor,
@@ -30,7 +30,7 @@
                 cluster). Therefore, in this mode it is recommended to add 2 nodes of this type at a
                 time. Perform the steps outlined <link xlink:href="#add_rados_gateway_node/procedure-to-add-rgw-node">below</link>.</para>
 </sidebar>
-        
+
         <sidebar xml:id="adding-rados-on-controller-nodes"><para><emphasis role="bold">Adding a RADOS Gateway Node on Controller Nodes</emphasis></para>
 <para>When RADOS Gateway is already installed in this mode, a new RADOS Gateway node cannot
                 be added to an existing Ceph cluster.</para>

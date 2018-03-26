@@ -4,7 +4,7 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_kubernetes_fedora_atomic"><title>&kw-hos-tm; &kw-hos-version-50;: Deploying a Kubernetes Cluster on Fedora
     Atomic</title>
-    <para><para xml:id="idg-all-userguide-container_service-deploying_kubernetes_fedora_atomic-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-userguide-container_service-deploying_kubernetes_fedora_atomic-xml-6"><title>Prerequisites</title><para>These steps assume the following have been completed:</para>
 <itemizedlist>
@@ -23,7 +23,7 @@
           <listitem><para>Source openstack admin credentials. </para>
 <screen >$ source service.osrc</screen></listitem>
           <listitem><para>If you haven't already, download Fedora Atomic image, prepared for the Openstack
-            Newton release. 
+            Newton release.
             </para>
 <screen >$ wget https://fedorapeople.org/groups/magnum/fedora-atomic-newton.qcow2</screen></listitem>
           <listitem><para>Create a Glance image.
@@ -74,7 +74,7 @@ $ nova keypair-add --pub-key ~/.ssh/id_rsa.pub testkey</screen></listitem>
           <listitem><para>Immediately after issuing <literal>cluster-create</literal> command, cluster status
             should turn to <emphasis role="bold">CREATE_IN_PROGRESS</emphasis> and stack_id assigned.
             </para>
-<screen >$ magnum cluster-show my-cluster               
+<screen >$ magnum cluster-show my-cluster
 +---------------------+------------------------------------------------------------+
 | Property            | Value                                                      |
 +---------------------+------------------------------------------------------------+
@@ -112,7 +112,7 @@ WARNING (shell) "heat resource-list" is deprecated, please use "openstack stack 
 </listitem>
           <listitem><para>Install kubectl onto your &kw-hos; lifecycle manager.
             </para>
-<screen >$ export https_proxy=http://proxy.yourcompany.net:8080 
+<screen >$ export https_proxy=http://proxy.yourcompany.net:8080
 $ wget https://storage.googleapis.com/kubernetes-release/release/v1.2.0/bin/linux/amd64/kubectl
 $ chmod +x ./kubectl
 $ sudo mv ./kubectl /usr/local/bin/kubectl</screen></listitem>
@@ -169,17 +169,17 @@ spec:
   selector:
     app: nginx
 EOF
- 
+
 $ kubectl create -f nginx.yml</screen></listitem>
             <listitem><para>Check pod status until it turns from <emphasis role="bold">Pending</emphasis> to <emphasis role="bold">Running</emphasis>.
               </para>
-<screen >$ kubectl get pods 
+<screen >$ kubectl get pods
 NAME                      READY    STATUS     RESTARTS    AGE
 nginx-controller-5cmev    1/1      Running    0           2m</screen></listitem>
             <listitem><para>Ensure that the Nginx welcome page is displayed at port 30080 using the kubemaster
               floating IP.
               </para>
-<screen >$ http_proxy= curl http://172.31.0.6:30080 
+<screen >$ http_proxy= curl http://172.31.0.6:30080
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
