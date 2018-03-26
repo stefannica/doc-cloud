@@ -61,7 +61,7 @@
         <para>The following file snippet shows variables from the
                 <literal>~/helion/hos/ansible/roles/monasca-default-alarms/defaults/main.yml</literal>
             file.</para>
-<screen >---
+<screen>---
 notification_address: root@localhost
 notification_name: 'Default Email'
 notification_type: EMAIL
@@ -84,7 +84,7 @@ monasca_client_retry_delay: 2</screen>
         <para>The following is a code snippet from the
                 <literal>~/helion/hos/ansible/roles/monasca-default-alarms/tasks/main.yml</literal>
             file.</para>
-<screen >---
+<screen>---
 - name: monasca-default-alarms | main | Setup default notification method
   monasca_notification_method:
     name: "{{ notification_name }}"
@@ -117,7 +117,7 @@ monasca_client_retry_delay: 2</screen>
         <para>The following is a code snippet from the
                 <literal>~/helion/hos/ansible/roles/monasca-default-alarms/tasks/main.yml</literal>
             file.</para>
-<screen >- name: monasca-default-alarms | main | Create Alarm Definitions
+<screen>- name: monasca-default-alarms | main | Create Alarm Definitions
   monasca_alarm_definition:
     name: "{{ item.name }}"
     description: "{{ item.description | default('') }}"
@@ -156,7 +156,7 @@ monasca_client_retry_delay: 2</screen>
             </itemizedlist>
 
 
-        <screen >monasca_alarm_definitions_system:
+        <screen>monasca_alarm_definitions_system:
   - name: "Host Status"
     description: "Alarms when the specified host is down or not reachable"
     severity: "HIGH"
@@ -222,7 +222,7 @@ monasca_client_retry_delay: 2</screen>
         <para>The preceding configuration would result in the creation of an alarm for each unique
             metric that matched the following
             criteria.</para>
-<screen >process.pid_count + process_name + hostname</screen>
+<screen>process.pid_count + process_name + hostname</screen>
 
 
         <para><emphasis role="bold">Check that the alarms exist</emphasis></para>
@@ -230,16 +230,16 @@ monasca_client_retry_delay: 2</screen>
         <para>Begin by using the following commands, including <literal>monasca
                 alarm-definition-list</literal>, to check that the alarm definition
             exists.</para>
-<screen >source /home/hlmuser/service.osrc
+<screen>source /home/hlmuser/service.osrc
 monasca alarm-definition-list --name &lt;alarm definition name&gt;</screen>
 
 
         <para>Then use either of the following commands to check that the alarm has been generated. A
             status of "OK" indicates a healthy alarm.</para>
 
-        <screen >monasca alarm-list --metric-name &lt;metric name&gt;</screen>
+        <screen>monasca alarm-list --metric-name &lt;metric name&gt;</screen>
         <para>Or</para>
-<screen >monasca alarm-list --alarm-definition-id &lt;id from alarm-definition-list&gt;</screen>
+<screen>monasca alarm-list --alarm-definition-id &lt;id from alarm-definition-list&gt;</screen>
 
 
 
@@ -262,7 +262,7 @@ monasca alarm-definition-list --name &lt;alarm definition name&gt;</screen>
         <para>The following file snippet shows an example of how to remove an alarm definition by
             setting the state to
             <emphasis role="bold">absent</emphasis>.</para>
-<screen >- name: monasca-pre-upgrade | Remove alarm definitions
+<screen>- name: monasca-pre-upgrade | Remove alarm definitions
    monasca_alarm_definition:
      name: "{{ item.name }}"
      state: "absent"

@@ -119,15 +119,15 @@
         passwords and have a need to view them later, you can do so with these steps.</para>
 <para>You will want to ensure that the <literal>HOS_USER_PASSWORD_ENCRYPT_KEY</literal> environment
         variable is set prior to running these commands:</para>
-<screen >export HOS_USER_PASSWORD_ENCRYPT_KEY="&lt;encryption_key&gt;"</screen><para>To view an encrypted password, you can use this command below which will promot you for the
+<screen>export HOS_USER_PASSWORD_ENCRYPT_KEY="&lt;encryption_key&gt;"</screen><para>To view an encrypted password, you can use this command below which will promot you for the
         encrypted password value. It will then output the decrypted value:</para>
-<screen >./hosencrypt.py -d</screen><para><emphasis role="bold">Configuration processor encryption key</emphasis></para>
+<screen>./hosencrypt.py -d</screen><para><emphasis role="bold">Configuration processor encryption key</emphasis></para>
 <para>If you have used the encryption options available with the configuration processor, which
         uses Ansible vault, you can do so with these commands. Each of these commands will prompt
         you for the password you used when setting the encryption initially.</para>
 <para>To view an encrypted file in read-only mode, use this command:</para>
-<screen >ansible-vault view &lt;filename&gt;</screen><para>To edit an encrypted file, use this command. This allows you to edit a decrypted version of
+<screen>ansible-vault view &lt;filename&gt;</screen><para>To edit an encrypted file, use this command. This allows you to edit a decrypted version of
         the file without the need to decrypt and re-encrypt it:</para>
-<screen >ansible-vault edit &lt;filename&gt;</screen><para>For other available commands, use the help file:</para>
-<screen >ansible-vault -h</screen></sidebar>
+<screen>ansible-vault edit &lt;filename&gt;</screen><para>For other available commands, use the help file:</para>
+<screen>ansible-vault -h</screen></sidebar>
   </chapter>

@@ -123,7 +123,7 @@
           <literal>~/helion/my_cloud/definition/data/nic_mappings.yml</literal> file and that they
         meet the server requirements.</para>
 <para>Here is an example with notes in-line:</para>
-<screen >nic-mappings:
+<screen>nic-mappings:
 
 ## NIC specification for controller nodes.  A bonded interface is used for the management
 ## network while a separate interface is used to connect to the Ceph nodes.
@@ -189,7 +189,7 @@
           <literal>~/helion/my_cloud/definition/data/servers.yml</literal> file are mapped to the
         correct NIC interface.</para>
 <para>An example with the bolded line for <literal>nic-mapping</literal> illustrating this:</para>
-<screen ># Controller Nodes
+<screen># Controller Nodes
   - id: controller1
     ip-addr: 10.13.111.138
     server-group: RACK1
@@ -245,7 +245,7 @@
     <sidebar xml:id="ceph3_netinterfaces"><title>net_interfaces.yml</title><para>Define a new interface set for your OSD interfaces in the
           <literal>~/helion/my_cloud/definition/data/net_interfaces.yml</literal> file.</para>
 <para>Here is an example with notes in-line:</para>
-<screen >
+<screen>
 - name: CONTROLLER-INTERFACES
   network-interfaces:
 ## This bonded interface is used by the controller
@@ -338,7 +338,7 @@
            - OSD-CLIENT</screen></sidebar>
     <sidebar xml:id="ceph3_networkgroups"><title>network_groups.yml</title><para>Define the OSD network group in the
           <literal>~/helion/my_cloud/definition/data/network_groups.yml</literal> file:</para>
-<screen >#
+<screen>#
 # OSD client
 #
 # This is the network group that will be used for
@@ -366,7 +366,7 @@
     <sidebar xml:id="ceph3_networks"><title>networks.yml</title><para>Define the OSD VLAN in the <literal>~/helion/my_cloud/definition/data/networks.yml</literal>
         file.</para>
 <para>The example below defines two separate network VLANs:</para>
-<screen >
+<screen>
 - name: OSD-CLIENT-NET
   vlanid: 112
   tagged-vlan: true
@@ -383,7 +383,7 @@
     <sidebar xml:id="ceph3_servergroups"><title>server_groups.yml</title><para>Add the OSD network to the server groups in the
           <literal>~/helion/my_cloud/definition/data/server_groups.yml</literal> file, indicated by
         the bold portion below:</para>
-<screen >
+<screen>
 - name: CLOUD
   server-groups:
    - AZ1
@@ -399,7 +399,7 @@
     <sidebar xml:id="ceph3_firewallrules"><title>firewall_rules.yml</title><para>Modify the firewall rules in the
           <literal>~/helion/my_cloud/definition/data/firewall_rules.yml</literal> file to allow OSD
         nodes to be pingable via the OSD network, indicated by the bold portion below:</para>
-<screen >
+<screen>
 - name: PING
   network-groups:
   - MANAGEMENT

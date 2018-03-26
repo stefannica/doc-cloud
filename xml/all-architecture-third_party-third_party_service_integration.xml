@@ -159,7 +159,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
         according to your particular 3rd-party integration) under the third-party area on the
         deployer, e.g. as follows:</para>
 
-      <screen >third-party
+      <screen>third-party
 └── myservice</screen>
       <para>Further sub-directories are created under the directory specific to a third-party
         integration, e.g. <literal>third-party/myservice</literal>, according to different types of
@@ -187,7 +187,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
         </orderedlist>
         <para>A sample layout of third-party packages ready for import is shown below:</para>
 
-        <screen >third-party/myservice/pkgs
+        <screen>third-party/myservice/pkgs
 ├── debian
 │   ├── pkg1.deb
 │   └── pkg2.deb
@@ -232,7 +232,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
         <para>A sample directory layout for the patching of an existing &kw-hos; venv with plugin code and
           for the creation of a new venv is as follows:</para>
 
-        <screen >third-party/myservice/venvs
+        <screen>third-party/myservice/venvs
 ├── pluginA
 │   ├── debs
 │   ├── pip-deps
@@ -269,7 +269,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
           which must be present. To patch an existing &kw-hos; venv, such as neutron, the services.yml is
           defined as follows:</para>
 
-        <screen >services:
+        <screen>services:
   - name: neutron</screen>
         <para>The result of this is to create a new Neutron venv, updated with content from the
           debs, src or whls (and pip-deps) directories. After the third-party import has been completed,
@@ -278,7 +278,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
 
         <para>An example services.yml for the creation of a new venv is as follows:</para>
 
-        <screen >services:
+        <screen>services:
   - name: myserviceA
     parent: nova-client</screen>
         <para>In this case a new venv is created called "myserviceA", which is based off an existing
@@ -310,7 +310,7 @@ ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
           <literal>~/helion/hos/services</literal> directory. For example, the list of yaml files defining the nova
           service and its constituent service-components (in &kw-hos-phrase;) is as follows: </para>
 
-        <screen >~/helion/hos/services$ ls -l nova
+        <screen>~/helion/hos/services$ ls -l nova
 total 60
 -rw-r--r-- 1 stack stack 3301 Jul 13 07:41 api.yml
 -rw-r--r-- 1 stack stack 1516 Jul 13 07:41 compute.yml
@@ -336,7 +336,7 @@ total 60
         <para> To set up third-party services for import, place the set of yaml files under the
           services sub-directory, e.g.: </para>
 
-        <screen >third-party/myservice/services
+        <screen>third-party/myservice/services
 └── serviceA
     ├── serviceA-client.yml
     ├── serviceA-plugin.yml
@@ -349,7 +349,7 @@ total 60
           entry for the addition of a set of third-party service definitions:</para>
 
 
-        <screen >commit 21103bd725e3613b341d06dee9d3eed6ce0aafc7
+        <screen>commit 21103bd725e3613b341d06dee9d3eed6ce0aafc7
 Author: Helion git user &lt;helion@hpe.com&gt;
 Date:   Wed Jul 13 09:46:19 2016 +0000
     Third-party services import</screen>
@@ -381,7 +381,7 @@ Date:   Wed Jul 13 09:46:19 2016 +0000
         </orderedlist>
         <para><phrase>A sample layout of Ansible content ready for import is as follows:</phrase></para>
 
-        <screen >.
+        <screen>.
 ├── config
 │   └── myservice-symlinks.yml
 ├── hooks.d
@@ -427,7 +427,7 @@ Date:   Wed Jul 13 09:46:19 2016 +0000
           some third-party Ansible content: </para>
 
 
-        <screen >commit 9ca9b47f6d2840b48624ffa94fb6b8a072466811
+        <screen>commit 9ca9b47f6d2840b48624ffa94fb6b8a072466811
 Author: Helion git user &lt;helion@hpe.com&gt;
 Date:   Wed Jul 13 09:46:21 2016 +0000
     Third-party Ansible import</screen>
@@ -467,7 +467,7 @@ Date:   Wed Jul 13 09:46:21 2016 +0000
             the hooks.d directory within your Ansible content, where those playbooks follow a
             specific naming convention:</para>
 
-          <screen >hooks.d/&lt;custom&gt;/pre-&lt;action&gt;.yml
+          <screen>hooks.d/&lt;custom&gt;/pre-&lt;action&gt;.yml
 hooks.d/&lt;custom&gt;/pre-&lt;service&gt;-&lt;action&gt;.yml
 hooks.d/&lt;custom&gt;/post-&lt;service&gt;-&lt;action&gt;.yml
 hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
@@ -491,7 +491,7 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
 
           <para>The set of hooks in the above sample Ansible content layout are:</para>
 
-          <screen >.
+          <screen>.
 ├── hooks.d
 │   └── myservice
 │       ├── post-nova-deploy.yml
@@ -511,7 +511,7 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
             example, from the above hooks specification, <literal>hlm-deploy.yml</literal> is rendered as follows:</para>
 
 
-          <screen ># Licensed under the Apache License, Version 2.0 (the "License"); you may
+          <screen># Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
 #
@@ -571,7 +571,7 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
             Typically, these hook playbooks simply call out to other third-party playbooks,
             e.g.:</para>
 
-          <screen >stack@hlm:~/scratch/ansible/next/hos/ansible$ cat hooks.d/myservice/post-nova-deploy.yml
+          <screen>stack@hlm:~/scratch/ansible/next/hos/ansible$ cat hooks.d/myservice/post-nova-deploy.yml
 #
 # (c) Copyright 2017 Hewlett Packard Enterprise Development Company LP
 #
@@ -609,7 +609,7 @@ hooks.d/&lt;custom&gt;/post-&lt;action&gt;.yml</screen>
             <literal>~/helion/my_cloud/config</literal> area. Configuration templates are typically grouped by service
             under <literal>~/helion/my_cloud/config</literal>. A sample symlinks specification is as follows:</para>
 
-          <screen ># (c) Copyright 2017 Hewlett Packard Enterprise Development LP
+          <screen># (c) Copyright 2017 Hewlett Packard Enterprise Development LP
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
@@ -660,7 +660,7 @@ symlinks:
 
         <para>A sample layout for other application content that is be imported is as follows:</para>
 
-        <screen >third-party/myservice/other
+        <screen>third-party/myservice/other
 └── serviceA
     ├── serviceA-part1.tgz
     └── serviceA-part2.tgz</screen>
@@ -669,7 +669,7 @@ symlinks:
           An example playbook task for delivering this bundled package to a target cloud node is as
           follows:</para>
 
-        <screen >- name: serviceA-server | install | Install myserviceA package
+        <screen>- name: serviceA-server | install | Install myserviceA package
   become: yes
   install_package:
     name: serviceA
@@ -684,7 +684,7 @@ symlinks:
           centralized logging service, you must add a logging profile yaml file under the logging
           directory, e.g.:</para>
 
-        <screen >third-party/myservice/logging/
+        <screen>third-party/myservice/logging/
 └── myservice-clr.yml</screen>
         <para>Note that in addition to configuring a service for centralized logging, the above profile
           also defines the logrotate policy for the service. For details on creating a logging

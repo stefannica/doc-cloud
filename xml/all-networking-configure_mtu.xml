@@ -70,7 +70,7 @@
       that every network in the network group will be assigned the specified MTU. The MTU value must
       be set individually for each network group. For example:
       </para>
-<screen >network-groups:
+<screen>network-groups:
         - name: GUEST
         mtu: 9000
         ...
@@ -187,7 +187,7 @@ ansible-playbook -i hosts/verb_hosts network_interface-reconfigure.yml</screen><
           <listitem><para>Edit <literal>~/helion/my_cloud/config/neutron/neutron.conf.j2</literal> to
               <emphasis role="bold">remove</emphasis> advertise_mtu variable under [DEFAULT]
             </para>
-<screen >[DEFAULT]
+<screen>[DEFAULT]
 ...
 advertise_mtu = False #remove this</screen></listitem>
           <listitem><para>Remove the <literal>dhcp-option-force=26,1400</literal> line from
@@ -199,21 +199,21 @@ advertise_mtu = False #remove this</screen></listitem>
 </listitem>
           <listitem><para>Commit your changes
             </para>
-<screen >git add -A
+<screen>git add -A
 git commit -m "your commit message goes here in quotes"</screen></listitem>
           <listitem><para>Run the configuration processor:
             </para>
-<screen >ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
+<screen>ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
           <listitem><para>Run ready deployment:
             </para>
-<screen >ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
+<screen>ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
           <listitem><para>Run the <literal>network_interface-reconfigure.yml</literal> playbook, changing
             directories first:</para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts network_interface-reconfigure.yml</screen></listitem>
           <listitem><para>Run neutron-reconfigure.yml:
             </para>
-<screen >ansible-playbook -i hosts/verb_hosts neutron-reconfigure.yml</screen></listitem>
+<screen>ansible-playbook -i hosts/verb_hosts neutron-reconfigure.yml</screen></listitem>
 
         </orderedlist>
 <important><para>If you are upgrading an existing deployment, attention must be paid to

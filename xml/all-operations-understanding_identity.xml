@@ -164,7 +164,7 @@
         way to validate them.</para>
 <para>The policy files are located at the following site branch locations on the lifecycle
         manager.</para>
-<screen >~/helion/hos/ansible/roles/GLA-API/templates/policy.json.j2
+<screen>~/helion/hos/ansible/roles/GLA-API/templates/policy.json.j2
 ~/helion/hos/ansible/roles/ironic-common/files/policy.json
 ~/helion/hos/ansible/roles/KEYMGR-API/templates/policy.json
 ~/helion/hos/ansible/roles/heat-common/files/policy.json
@@ -177,7 +177,7 @@
         reconfiguration playbook (for example, nova-reconfigure.yml). For a complete list of
         reconfiguration playbooks, change directories to
           <literal>~/scratch/ansible/next/hos/ansible</literal> and run this command:</para>
-<screen >ls | grep reconfigure</screen><para>A read-only role named
+<screen>ls | grep reconfigure</screen><para>A read-only role named
       <literal>project_observer</literal> is explicitly created in &kw-hos-phrase;. Any user who is
       granted this role can use <literal>list_project</literal>. </para>
 </sidebar>

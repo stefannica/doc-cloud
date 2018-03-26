@@ -37,7 +37,7 @@
       manager in the directory <literal>~/helion/my_cloud/config/neutron</literal>. Here is the
       relevant section where you can see the <literal>ipam_driver</literal> parameter commented
       out:</para>
-<screen >[DEFAULT]
+<screen>[DEFAULT]
   ...
   l3_ha_net_cidr = 169.254.192.0/18
 
@@ -47,7 +47,7 @@
       uncommenting the line <literal>ipam_driver = internal</literal>, commit the file using git
       commit from the <literal>helion/my_cloud</literal>
       directory:</para>
-<screen >git commit -a -m 'My config for enabling the internal IPAM Driver'</screen><para>Then
+<screen>git commit -a -m 'My config for enabling the internal IPAM Driver'</screen><para>Then
       follow the steps to deploy &kw-hos; in the <xref linkend="install_overview"/> appropriate to your cloud configuration.
       </para>
 </sidebar>

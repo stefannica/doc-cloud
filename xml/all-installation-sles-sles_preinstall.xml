@@ -36,7 +36,7 @@
                The contents of these two  files are displayed here for reference:
             </para>
 <para><emphasis role="bold">/etc/sysconfig/iptables</emphasis></para>
-<screen >
+<screen>
 # sample configuration for iptables service
 # you can edit this manually or use system-config-firewall
 # please do not ask us to add additional ports/services to this default configuration
@@ -52,7 +52,7 @@
 -A FORWARD -j REJECT --reject-with icmp-host-prohibited
 COMMIT
 </screen><para><emphasis role="bold">/etc/sysconfig/ip6tables</emphasis></para>
-<screen >
+<screen>
 # sample configuration for ip6tables service
 # you can edit this manually or use system-config-firewall
 # please do not ask us to add additional ports/services to this default configuration

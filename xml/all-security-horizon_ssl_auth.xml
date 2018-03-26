@@ -18,12 +18,12 @@
                         place it in any directory in your deployer node. For example, perform the
                         following command to create the file in the <literal>/tmp/</literal>
                         directory:</para>
-<screen >touch /tmp/x509auth.yml</screen></listitem>
+<screen>touch /tmp/x509auth.yml</screen></listitem>
                     <listitem><para>Edit the new file to include the following text. Note that YAML files are
                         whitespace-sensitive. Please preserve the indentation format of the
                         following
                             text.</para>
-<screen >keystone_x509auth_conf:
+<screen>keystone_x509auth_conf:
     identity_provider:
         id: intermediateca
         description: This is the trusted issuer HEX Id.
@@ -71,7 +71,7 @@
                                     value is set in the <literal>keystone.conf</literal> file, where
                                     the default setting
                                     is:</para>
-<screen >remote_id_attribute = SSL_CLIENT_I_DN_CN</screen></listitem>
+<screen>remote_id_attribute = SSL_CLIENT_I_DN_CN</screen></listitem>
                                 <listitem><para><emphasis role="bold">ca_file</emphasis>: The file that contains the client certificate's
                                     related intermediary and root CA certificates.</para>
 </listitem>
@@ -86,11 +86,11 @@
                         reference this file in the <emphasis role="bold">mapping</emphasis>→ <emphasis role="bold">rules_file</emphasis> parameter. You
                         can create the file with the following example
                         command:</para>
-<screen >touch /tmp/x509auth_mapping.json</screen></listitem>
+<screen>touch /tmp/x509auth_mapping.json</screen></listitem>
                     <listitem><para>Edit the JSON file you created in <emphasis role="bold">Step 3</emphasis> to include the following
                         content.
                         </para>
-<screen >[
+<screen>[
                  {
                      "local": [
                          {
@@ -131,13 +131,13 @@
 </listitem>
                         </itemizedlist><para>The following is an example of a properly formatted DN for a
                             certificate issuer named "intermedia".</para>
-<screen >/C=US/ST=California/O=HPE/OU=Engineering/CN=intermediateca/emailAddress=intermediateca@hpe.com</screen>
+<screen>/C=US/ST=California/O=HPE/OU=Engineering/CN=intermediateca/emailAddress=intermediateca@hpe.com</screen>
 <para>The following example file illustrates an
                                 <literal>x509auth_mapping.json</literal> file with the "intermedia"
                             certificate issuer added to the <emphasis role="bold">any_one_of</emphasis> field. Note that the
                             DN string is in
                             quotes.</para>
-<screen >[
+<screen>[
                  {
                      "local": [
                          {
@@ -172,7 +172,7 @@
 </listitem>
                     <listitem><para>Run the following commands to enable the new X.509/Keystone
                         settings.</para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/tmp/x509auth.yml</screen></listitem>
                 </orderedlist>
 </sidebar>
@@ -188,17 +188,17 @@ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/tmp/x509auth.y
 </listitem>
                     <listitem><para>Locate the following line in the <literal>haproxy.cfg</literal>
                             file.</para>
-<screen >listen {{ network.vip }}-{{ port }}</screen><para>Enter
+<screen>listen {{ network.vip }}-{{ port }}</screen><para>Enter
                             the following codeblock in the open space immediately preceding the
                                 <literal>listen {{ network.vip }}-{{ port }}</literal>
                             line.</para>
-<screen >{%- if service == 'KEY_API' and port == '5000' %}
+<screen>{%- if service == 'KEY_API' and port == '5000' %}
     {% set bind_defaults = 'ca-file /etc/ssl/private/cacert.pem verify optional' %}
 {%- endif %}</screen><para>After
                             entering the preceding code, your <literal>haproxy.cfg</literal> file
                             should look like the following
                         example.</para>
-<screen >
+<screen>
 {%- if network.terminate_tls is defined and network.terminate_tls and port == '80' %}
     {% set port = '443' %}
 {%- endif %}
@@ -217,16 +217,16 @@ listen {{ network.vip }}-{{ port }}
     bind {{ network.vip }}:{{ port }} {% if network.terminate_tls is defined and network.terminate_tls %} ssl crt {{ frontend_server_cert_directory }}/{{ network.cert_file }} {{ bind_defaults }} {% endif %}</screen></listitem>
                     <listitem><para>Commit the changes to your local git
                         repository.</para>
-<screen >git add -A
+<screen>git add -A
 git commit -m "Added HAProxy configuration changes"</screen></listitem>
                     <listitem><para>Run the configuration processor and ready-deployment Ansible
                         playbooks.</para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 ansible-playbook -i hosts/localhost config-processor-run.yml
 ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
                     <listitem><para>Implement the HAProxy configuration changes.
                         </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts FND-CLU-reconfigure.yml</screen></listitem>
                 </orderedlist>
 </sidebar>
@@ -243,20 +243,20 @@ ansible-playbook -i hosts/verb_hosts FND-CLU-reconfigure.yml</screen></listitem>
                             <literal>~/helion/hos/ansible/roles/HZN-WEB/defaults/main.yml</literal>
                         file and set the following parameter to
                         <literal>True</literal>.</para>
-<screen >horizon_websso_enabled: True</screen></listitem>
+<screen>horizon_websso_enabled: True</screen></listitem>
                     <listitem><para>Locate the last line in the
                             <literal>~/helion/hos/ansible/roles/HZN-WEB/defaults/main.yml</literal>
                         file. The default configuration for this line should look like the following.</para>
-<screen >horizon_websso_choices:
+<screen>horizon_websso_choices:
   - {protocol: saml2, description: "ADFS Credentials"}</screen><itemizedlist xml:id="ul_jg3_g2r_mx">
                                 <listitem><para>If your cloud <emphasis role="bold">does not</emphasis> have ADFS enabled, then replace
                                     the preceding <literal>horizon_websso_choices:</literal> parameter
                                     with the
                                     following.</para>
-<screen >- {protocol: x509, description: "X.509 SSL Certificate"}</screen><para>The
+<screen>- {protocol: x509, description: "X.509 SSL Certificate"}</screen><para>The
                                     resulting block should look like the
                                     following.</para>
-<screen >horizon_websso_choices:
+<screen>horizon_websso_choices:
     - {protocol: x509, description: "X.509 SSL Certificate"}</screen></listitem>
                                 <listitem><para>If your cloud <emphasis role="bold">does</emphasis> have ADFS enabled, then simply add the
                                     following parameter to the
@@ -264,12 +264,12 @@ ansible-playbook -i hosts/verb_hosts FND-CLU-reconfigure.yml</screen></listitem>
                                     replace the default parameter, simply add the following line to
                                     the existing
                                     block.</para>
-<screen >- {protocol: saml2, description: "ADFS Credentials"}</screen><para>If
+<screen>- {protocol: saml2, description: "ADFS Credentials"}</screen><para>If
                                     your cloud has ADFS enabled, the final block of your
                                         <literal>~/helion/hos/ansible/roles/HZN-WEB/defaults/main.yml</literal>
                                     should have the following
                                     entries.</para>
-<screen >horizon_websso_choices:
+<screen>horizon_websso_choices:
     - {protocol: x509, description: "X.509 SSL Certificate"}
     - {protocol: saml2, description: "ADFS Credentials"}</screen></listitem>
                             </itemizedlist>
@@ -277,7 +277,7 @@ ansible-playbook -i hosts/verb_hosts FND-CLU-reconfigure.yml</screen></listitem>
                     <listitem><para>Run the following commands to add your changes to the local git repository,
                         and reconfigure the Horizon service, enabling the changes made in <emphasis role="bold">Step
                             1</emphasis>:</para>
-<screen >cd ~/helion
+<screen>cd ~/helion
 git add -A
 git commit -m "my commit message"
 cd ~/helion/hos/ansible/
@@ -337,27 +337,27 @@ ansible-playbook -i hosts/verb_hosts horizon-reconfigure.yml</screen></listitem>
 <orderedlist xml:id="ol_tnt_msq_mx">
                     <listitem><para>Create a new domain, named
                         HPE.</para>
-<screen >openstack domain create HPE</screen></listitem>
+<screen>openstack domain create HPE</screen></listitem>
                     <listitem><para>Create a new project named "xyz", under the HPE domain.
                         </para>
-<screen >openstack project create --domain HPE xyz</screen></listitem>
+<screen>openstack project create --domain HPE xyz</screen></listitem>
                     <listitem><para>Create a new user named "Sam" in the HPE domain. Set the password and email
                         for the new
                         account.</para>
-<screen >openstack user create --domain HPE --password pass --email sam@hpe.com --enable sam</screen></listitem>
+<screen>openstack user create --domain HPE --password pass --email sam@hpe.com --enable sam</screen></listitem>
                     <listitem><para>Create a new role named
                         "role1".</para>
-<screen >openstack role create role1</screen></listitem>
+<screen>openstack role create role1</screen></listitem>
                     <listitem><para>Grant the new role, "role1" to the new user "Sam" from the "HPE" domain.
                         Note that both the user account and domain must be referenced by their
                         unique ID numbers rather than their friendly
                         names.</para>
-<screen >openstack role add --user 04f3db9e7f3f45dc82e1d5f20b4acfcc --domain 6b64021839774991b5e0df16077f11eb role1</screen></listitem>
+<screen>openstack role add --user 04f3db9e7f3f45dc82e1d5f20b4acfcc --domain 6b64021839774991b5e0df16077f11eb role1</screen></listitem>
                     <listitem><para>Add the user "Sam" to the newly-created project from step 2. Note that the
                         project and user account must be referenced by their respective unique ID
                         numbers rather than their friendly
                         names.</para>
-<screen >openstack role add --project 4e2ad14406b247c7a9fc0a48c0b1713e --user 04f3db9e7f3f45dc82e1d5f20b4acfcc role1</screen></listitem>
+<screen>openstack role add --project 4e2ad14406b247c7a9fc0a48c0b1713e --user 04f3db9e7f3f45dc82e1d5f20b4acfcc role1</screen></listitem>
                 </orderedlist>
 </sidebar>
         <sidebar xml:id="section_hbf_q2p_hx"><title>How it works</title><para>The SSL authentication and authorization process is detailed in the following

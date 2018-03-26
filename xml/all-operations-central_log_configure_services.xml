@@ -1022,10 +1022,10 @@ ansible-playbook -i hosts/verb_hosts vsa-reconfigure.yml</screen></listitem>
               sub-component that you want to modify.</para>
 <para>Using Freezer, the Backup, Restore, and Archive service as an example:
               </para>
-<screen >vi ~/helion/hos/ansible/roles/logging-common/vars/freezer-agent-clr.yml</screen>
+<screen>vi ~/helion/hos/ansible/roles/logging-common/vars/freezer-agent-clr.yml</screen>
 <para>Consider the opening clause of the file:
               </para>
-<screen >sub_service:
+<screen>sub_service:
   hosts: FRE-AGN
   name: freezer-agent
   service: freezer</screen>
@@ -1038,11 +1038,11 @@ ansible-playbook -i hosts/verb_hosts vsa-reconfigure.yml</screen></listitem>
               storage on disk.</para>
 </listitem>
           <listitem><para>Verify logging is enabled by locating the following lines: </para>
-<screen >centralized_logging:
+<screen>centralized_logging:
   enabled: true
   format: rawjson</screen></listitem>
           <listitem><para>Observe log files files selected for rotation: </para>
-<screen >- files:
+<screen>- files:
   - /var/log/freezer-agent/freezer-agent.log
   - /var/log/freezer-agent/freezer-scheduler.log
   log_rotate:
@@ -1055,20 +1055,20 @@ ansible-playbook -i hosts/verb_hosts vsa-reconfigure.yml</screen></listitem>
   - rotate 14</screen></listitem>
           <listitem><para>Commit any changes to your local git repository:
             </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 git add -A
 git commit -m "My config or other commit message"</screen></listitem>
           <listitem><para>Run the configuration processor:
             </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
               ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
           <listitem><para>Create a deployment directory:
             </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
           <listitem><para>Run the logging reconfigure playbook:
             </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem>
         </orderedlist>
 </sidebar>
@@ -1106,17 +1106,17 @@ ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem>
 <orderedlist>
           <listitem><para>Navigate to the following directory on your lifecycle manager:
             </para>
-<screen >/home/stack/scratch/ansible/next/hos/ansible</screen></listitem>
+<screen>/home/stack/scratch/ansible/next/hos/ansible</screen></listitem>
           <listitem><para>Open and edit the service weights file:
             </para>
-<screen >vi roles/kronos-logrotation/vars/rotation_config.yml</screen></listitem>
+<screen>vi roles/kronos-logrotation/vars/rotation_config.yml</screen></listitem>
           <listitem><para>Edit the service parameters to set the desired parameters. Example: </para>
-<screen >cinder:
+<screen>cinder:
   weight: 300
   retention: 2</screen></listitem>
           <listitem><para>Run the kronos-logrotation-deploy playbook:
             </para>
-<screen >ansible-playbook -i hosts/verb_hosts kronos-logrotation-deploy.yml</screen></listitem>
+<screen>ansible-playbook -i hosts/verb_hosts kronos-logrotation-deploy.yml</screen></listitem>
           <listitem><para>Verify the changes to the quotas have been changed: </para>
 <para>Login to a node and check the
               contents of the file /opt/kronos/service_info.yml to see the active quotas for that

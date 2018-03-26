@@ -49,7 +49,7 @@
 </important><para>Setting this interval to manage both notifications and polling is the recommended
         procedure when using a SQL cluster back-end.</para>
 <para><emphasis role="bold">Sample Ceilometer Polling Agent file:</emphasis></para>
-<screen >#File:    ~/opt/stack/service/ceilometer-common/etc/pipeline-agent-central.yaml
+<screen>#File:    ~/opt/stack/service/ceilometer-common/etc/pipeline-agent-central.yaml
 ---
 sources:
     - name: meter_source
@@ -65,7 +65,7 @@ sinks:
       transformers:
       publishers:
          - notifier://</screen><para><emphasis role="bold">Sample Ceilometer Notification Agent(notification agent) file:</emphasis></para>
-<screen >#File:    ~/opt/stack/service/ceilometer-common/etc/pipeline.yaml
+<screen>#File:    ~/opt/stack/service/ceilometer-common/etc/pipeline.yaml
 ---
 sources:
     - name: meter_source
@@ -173,7 +173,7 @@ sinks:
         restart both the Polling Agent and the Notification Agent. Ceilometer Collector will also
         need to be restarted. The following code is an example of a compute-only Ceilometer
         Notification Agent (notification agent) <emphasis role="bold">pipeline.yml </emphasis>file:</para>
-<screen >---
+<screen>---
 sources:
     - name: meter_source
       interval: 86400
@@ -317,7 +317,7 @@ ansible-playbook -i hosts/verb_hosts ceilometer-reconfigure.yml</screen></listit
 </listitem>
       </itemizedlist><para> Here is an example of <emphasis role="bold">pipeline.yml </emphasis>in which Swift polling is set to occur hourly.
         </para>
-<screen >---
+<screen>---
       sources:
       - name: swift_source
       interval: 3600

@@ -114,7 +114,7 @@
 <sidebar><para> Audit settings in <literal>cloudConfig.yml</literal> with default set to
         <literal>disabled</literal> and services selectively enabled
       </para>
-<screen >product:
+<screen>product:
     version: 2
     cloud:
     ....
@@ -134,7 +134,7 @@
     - ceilometer</screen><para>
       Audit setting in <literal>cloudConfig.yml</literal> with default set to <literal>enabled</literal>
       and services selectively disabled </para>
-<screen >product:
+<screen>product:
     version: 2
     cloud:
     ....

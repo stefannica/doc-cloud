@@ -29,7 +29,7 @@
         also outside of the Helion infrastructure. If you provide all the values required in the
         following file, jobs will also be deployed to backup and restore to/from an SSH server of
         your choice:</para>
-<screen >~/helion/my_cloud/config/freezer/ssh_credentials.yml</screen>
+<screen>~/helion/my_cloud/config/freezer/ssh_credentials.yml</screen>
 </sidebar>
     <sidebar><title>Backing up your Helion control plane to an SSH server</title><para>You must provide the following connection information to this server:</para>
 <itemizedlist>
@@ -49,7 +49,7 @@
 </sidebar>
     <sidebar><title>Setting up SSH for backups before deployment</title><para>Before running the configuration processor, edit the following file:
         </para>
-<screen >~/helion/my_cloud/config/freezer/ssh_credentials.yml</screen>
+<screen>~/helion/my_cloud/config/freezer/ssh_credentials.yml</screen>
 <para>Please be advised
         that all parameters are mandatory, and take care in providing the SSH private key.</para>
 </sidebar>

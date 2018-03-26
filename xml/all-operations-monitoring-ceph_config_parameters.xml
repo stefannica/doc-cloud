@@ -100,10 +100,10 @@
     <sidebar xml:id="editing_cephlm_parameters"><title>Editing Configuration Parameters</title><para>You can edit the Ceph monitoring parameters by editing the
         <literal>monitoring_settings.yml</literal> file in your cloud configuration.
         </para>
-<screen >~/helion/my_cloud/config/ceph/monitoring_settings.yml</screen>
+<screen>~/helion/my_cloud/config/ceph/monitoring_settings.yml</screen>
 <para>Example configuration:
         </para>
-<screen >ram_gib_per_tib : 1
+<screen>ram_gib_per_tib : 1
 public_nic_speed : 10000
 private_nic_speed_multiplier : 3
 include_private_pools: False
