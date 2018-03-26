@@ -122,7 +122,7 @@ NOT</screen></listitem>
 <para>To manually enable any of the APIs, remove the corresponding rule and
           restart
           Apache</para>
-<screen >{
+<screen>{
 	"context_is_admin": "role:admin",
 	"context_is_project": "project_id:%(target.project_id)s",
 	"context_is_owner": "user_id:%(target.user_id)s",
@@ -245,8 +245,8 @@ NOT</screen></listitem>
         meters already present in the notification agent and the polling agent pipeline are added to
         the Post Sample API pipeline.</para>
 </important><para>The Ceilometer API pipeline configuration file is located in the following directory:</para>
-<screen >/opt/stack/service/ceilometer-api/etc/pipeline-api.yml  </screen><para>Sample API pipeline file:</para>
-<screen >---
+<screen>/opt/stack/service/ceilometer-api/etc/pipeline-api.yml  </screen><para>Sample API pipeline file:</para>
+<screen>---
 sources:
     - name: meter_source
       interval: 30
@@ -317,7 +317,7 @@ sinks:
           <listitem><para>timestamp</para>
 </listitem>
         </itemizedlist></important><para><emphasis role="bold">Example Query:</emphasis></para>
-<screen >ceilometer resource-list -q "project_id=7aa0fe3f02ff4e11a70a41e97d0db5e3;timestamp&gt;=2015-10-22T15:44:00;timestamp&lt;=2015-10-23T15:44:00"</screen></sidebar>
+<screen>ceilometer resource-list -q "project_id=7aa0fe3f02ff4e11a70a41e97d0db5e3;timestamp&gt;=2015-10-22T15:44:00;timestamp&lt;=2015-10-23T15:44:00"</screen></sidebar>
     <literallayout class="normal">
 
     </literallayout>
@@ -360,13 +360,13 @@ sinks:
 </listitem>
       </itemizedlist><para><emphasis role="bold">Sample queries from the command
       line:</emphasis></para>
-<screen >ceilometer sample-list -m METER_NAME -q '&lt;field1&gt;&lt;operator1&gt;&lt;value1&gt;;...;&lt;field_n&gt;&lt;operator_n&gt;&lt;value_n&gt;'</screen><para>
+<screen>ceilometer sample-list -m METER_NAME -q '&lt;field1&gt;&lt;operator1&gt;&lt;value1&gt;;...;&lt;field_n&gt;&lt;operator_n&gt;&lt;value_n&gt;'</screen><para>
       where operators can be:<emphasis role="bold"> &lt;, &lt;=, =, !=, &gt;= &gt;</emphasis></para>
 <important><para>All the key value pairs will be combined with the implicit AND
         operator.</para>
 </important><para><emphasis role="bold">Example usage for the sample-list
       API</emphasis></para>
-<screen >ceilometer sample-list --meter image.serve -q 'resource_id=a1ec2585' </screen><screen >ceilometer sample-list --meter instance -q 'resource_id=&lt;ResourceID&gt;;metadata.event_type=&lt;eventType&gt;'</screen></sidebar>
+<screen>ceilometer sample-list --meter image.serve -q 'resource_id=a1ec2585' </screen><screen >ceilometer sample-list --meter instance -q 'resource_id=&lt;ResourceID&gt;;metadata.event_type=&lt;eventType&gt;'</screen></sidebar>
 <literallayout class="normal">
 
 </literallayout>

@@ -10,7 +10,7 @@
         If so, TLS certificates need to be bootstrapped before a playbook is run with limits.
         You can do this by running the following command.
       </para>
-<screen >
+<screen>
 cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
 </screen></sidebar>
@@ -34,7 +34,7 @@ ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
 
     <sidebar><para>You can run the following commands to see if client libraries see the CA you've added:
       </para>
-<screen >~/scratch/ansible/next/hos/ansible$ ansible -i hosts/verb_hosts FND-STN -a 'sudo keytool -list -alias \
+<screen>~/scratch/ansible/next/hos/ansible$ ansible -i hosts/verb_hosts FND-STN -a 'sudo keytool -list -alias \
     debian:username-internal-cacert-001.pem -keystore /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/security/cacerts -storepass changeit'
   padawan-ccp-c0-m1-mgmt | FAILED | rc=1 &gt;&gt;
   sudo: keytool: command not found
@@ -62,13 +62,13 @@ ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
       client libraries are used by Monasca, so compute nodes will not have them. So the first three
       errors are expected. Check that the fingerprint is correct by checking the
       CA:</para>
-<screen >~/scratch/d002-certs/t002$ openssl x509 -in example-CA.crt -noout -fingerprint
+<screen>~/scratch/d002-certs/t002$ openssl x509 -in example-CA.crt -noout -fingerprint
   SHA1 Fingerprint=E7:B2:6E:9E:00:FB:86:0F:E5:46:CD:B8:C5:67:13:53:4E:3D:8F:43</screen><para>If
       they don't match there likely was a name collision. Add the CA cert again with a new file
       name. If you get Monasca errors but find that the fingerprints match, then try stopping and
       starting Monasca.
       </para>
-<screen >ansible-playbook -i hosts/verb_hosts monasca-stop.yml
+<screen>ansible-playbook -i hosts/verb_hosts monasca-stop.yml
 ansible-playbook -i hosts/verb_hosts monasca-start.yml</screen></sidebar>
     <sidebar><title>Troubleshooting certificates</title><para>Certificates can fail in &kw-hos-phrase; due to the following. </para>
 <itemizedlist>

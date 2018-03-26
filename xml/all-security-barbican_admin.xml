@@ -213,12 +213,12 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
   <para>
    To stop the Barbican service:
   </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts barbican-stop.yml</screen>
   <para>
    To start the Barbican service:
   </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts barbican-start.yml</screen>
  </section>
  <section>
@@ -227,16 +227,16 @@ ansible-playbook -i hosts/verb_hosts barbican-start.yml</screen>
    To change the password for the Barbican administrator, first copy the file
    below:
   </para>
-<screen >cp ~/helion/my_cloud/info/private_data_metadata.yml to ~/helion/change_credentials/ </screen>
+<screen>cp ~/helion/my_cloud/info/private_data_metadata.yml to ~/helion/change_credentials/ </screen>
   <para>
    Then edit private_data_metadata.yml found here:
   </para>
-<screen >~/helion/change_credentials/private_data_metadata.yml</screen>
+<screen>~/helion/change_credentials/private_data_metadata.yml</screen>
   <para>
    Next, change credentials for the barbican admin user and /or barbican
    service user. Remove everything else. The file will look similar to this:
   </para>
-<screen >barbican_admin_password:
+<screen>barbican_admin_password:
     value: <emphasis role="bold">'testing_123'</emphasis>
     metadata:
     - clusters:
@@ -263,7 +263,7 @@ barbican_service_password:
   <para>
    Next, execute the following playbooks from helion/hos/ansible/:
   </para>
-<screen >cd ~/helion/hos/ansible/
+<screen>cd ~/helion/hos/ansible/
 ansible-playbook -i hosts/localhost config-processor-run.yml -e encrypt="" -e rekey=""
 ansible-playbook -i hosts/localhost ready-deployment.yml
 cd ~/scratch/ansible/next/hos/ansible
@@ -274,13 +274,13 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure-credentials-change.yml
   </para>
  </section>
  <section>
-<screen >/etc/barbican# vi barbican-api-paste.ini </screen>
+<screen>/etc/barbican# vi barbican-api-paste.ini </screen>
   <para>
    You can verify Barbican status by running the
    <literal>barbican-status.yml</literal> Ansible playbook on the lifecycle
    manager node.
   </para>
-<screen >ansible-playbook -i hosts/verb_hosts barbican-status.yml</screen>
+<screen>ansible-playbook -i hosts/verb_hosts barbican-status.yml</screen>
  </section>
  <section/>
  <section>
@@ -317,14 +317,14 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure-credentials-change.yml
   <para>
    Once the change is made, commit the change to the local git repository:
   </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 git add -A
 git commit -m "My config" </screen>
   <para>
    Run the configuration-processor-run and ready-deployment playbooks, followed
    by the barbican-reconfigure playbook:
   </para>
-<screen >ansible-playbook -i hosts/localhost config-processor-run.yml
+<screen>ansible-playbook -i hosts/localhost config-processor-run.yml
 ansible-playbook -i hosts/localhost ready-deployment.yml
 cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>

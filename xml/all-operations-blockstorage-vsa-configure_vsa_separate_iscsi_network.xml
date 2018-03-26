@@ -24,7 +24,7 @@
                 example below. In the following example, the name of the network-group is "ISCSI"
                 and this name should remain consistent in other files
                 too.</para>
-<screen >- name: NET_ISCSI
+<screen>- name: NET_ISCSI
   vlanid: 3287
   tagged-vlan: true
   cidr: 172.16.13.0/24
@@ -33,7 +33,7 @@
               <listitem><para><literal>net_interfaces.yml</literal>: A new field (forced-network-groups) is added
                 in this file, as shown in the sample
                 below.</para>
-<screen > Interface-models
+<screen> Interface-models
     - name: INTERFACE_SET_CONTROLLER
       network-interfaces:
         - name: BOND0
@@ -91,7 +91,7 @@
           <emphasis role="bold">forced-network-groups:
             - ISCSI</emphasis></screen></listitem>
               <listitem><para><literal>firewall_rules.yml</literal></para>
-<screen >firewall-rules
+<screen>firewall-rules
     - name: PING
       network-groups:
       - MGMT
@@ -100,13 +100,13 @@
       - <emphasis role="bold">ISCSI</emphasis>
       - SWIFT</screen></listitem>
               <listitem><para><literal>network_groups.yml</literal></para>
-<screen >network-groups:
+<screen>network-groups:
     - name: ISCSI
       hostname-suffix: iscsi
       component-endpoints:
         - vsa</screen></listitem>
               <listitem><para><literal>server_groups.yml</literal></para>
-<screen >server_groups.yml
+<screen>server_groups.yml
       networks:
      #Define the Global networks shared across all the Racks
         - NET_EXTERNAL_API
@@ -118,18 +118,18 @@
             </orderedlist></listitem>
           <listitem><para>Commit your
             changes.</para>
-<screen >git add -A
+<screen>git add -A
 git commit -m "Add Node &lt;name&gt;"</screen></listitem>
           <listitem><para>Run the configuration
             processor:</para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
           <listitem><para>Run the following command to create a deployment
             directory.</para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
           <listitem><para>Run the <literal>site.yml</literal> playbook using the command below. </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts site.yml</screen></listitem>
         </orderedlist>
 </sidebar>

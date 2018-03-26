@@ -82,7 +82,7 @@
 <para>For &kw-hos-phrase;, you can create a backup using only
             mandatory values, as in the following example:
             </para>
-<screen >- freezer-agent --action backup --mode fs --storage swift --path-to-backup /home/user/tmp --container tmp_backups --backup-name backup1</screen><para>Running
+<screen>- freezer-agent --action backup --mode fs --storage swift --path-to-backup /home/user/tmp --container tmp_backups --backup-name backup1</screen><para>Running
             the above command from the command line will cause this backup to execute once. To
             create a configuration file for this same backup, in case you want to run it manually
             another time, create a configuration file like the one below. Note that in the config
@@ -91,7 +91,7 @@
             Note also that where you use -- in the CLI, such as --mode, you do not use the -- in the
             config
             file.</para>
-<screen >[default]
+<screen>[default]
                 action = backup
                 mode = fs
                 backup_name = backup1
@@ -147,7 +147,7 @@
                 </itemizedlist>
 <para>You can create a restore using mandatory values, as in the following example:
                 </para>
-<screen >- freezer-agent --action restore --mode fs --storage swift --restore-abs-path /home/user/tmp --container tmp_backups --backup-name backup1 --restore-from-host ubuntu</screen>
+<screen>- freezer-agent --action restore --mode fs --storage swift --restore-abs-path /home/user/tmp --container tmp_backups --backup-name backup1 --restore-from-host ubuntu</screen>
 <para>To create a configuration file for this same restore, the file would look like the
                 one below. Note that in the config file, the parameter names such as backup-name
                 will use underscores instead of dashes. Thus backup-name as used in the CLI will be
@@ -155,7 +155,7 @@
                 CLI, such as --mode, you do not use the -- in the config file. This is the same
                 format as used above for backup
                 configuration.</para>
-<screen >  {
+<screen>  {
                     "job_actions": [
                     {
                     "freezer_action": {

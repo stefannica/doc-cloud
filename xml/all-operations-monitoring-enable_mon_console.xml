@@ -13,23 +13,23 @@
           <listitem><para>Edit the
             <literal>~/config/rabbitmq/main.yml</literal> file for rabbitmq and under the <literal>rabbit_plugins:</literal>line, uncomment
             </para>
-<screen >- rabbitmq_management</screen></listitem>
+<screen>- rabbitmq_management</screen></listitem>
           <listitem><para>Commit your configuration to the <xref linkend="using_git"/>, as follows:
             </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 git add -A
 git commit -m "Enabled RabbitMQ Admin Console"</screen></listitem>
         <listitem><para>Run the configuration processor:
           </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
         <listitem><para>Update your deployment directory:
           </para>
-<screen >cd ~/helion/hos/ansible
+<screen>cd ~/helion/hos/ansible
 ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
         <listitem><para>Run the RabbitMQ reconfigure playbook to deploy the changes:
             </para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts rabbitmq-reconfigure.yml</screen></listitem>
         </orderedlist>
 <para>To turn the RabbitMQ Admin Console off again, add the comment back and repeat

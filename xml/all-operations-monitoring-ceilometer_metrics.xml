@@ -19,35 +19,35 @@
           <tbody>
             <row>
               <entry>disk.total_space_mb_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host=all,
 project_id=all</screen></entry>
               <entry>Total space of disk</entry>
             </row>
             <row>
               <entry>disk.total_used_space_mb_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host=all,
 project_id=all</screen></entry>
               <entry>Total used space of disk</entry>
             </row>
             <row>
               <entry>swiftlm.diskusage.rate_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host=all,
 project_id=all</screen></entry>
               <entry> </entry>
             </row>
             <row>
               <entry>swiftlm.diskusage.val.avail_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host,
 project_id=all</screen></entry>
               <entry> </entry>
             </row>
             <row>
               <entry>swiftlm.diskusage.val.size_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host,
 project_id=all</screen></entry>
               <entry> </entry>
@@ -55,7 +55,7 @@ project_id=all</screen></entry>
             <row>
               <entry>image</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -69,7 +69,7 @@ source=openstack</screen>
             <row>
               <entry>image.delete</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -83,7 +83,7 @@ source=openstack</screen>
             <row>
               <entry>image.size</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -97,7 +97,7 @@ source=openstack</screen>
             <row>
               <entry>image.update</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -111,7 +111,7 @@ source=openstack</screen>
             <row>
               <entry>image.upload</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -125,7 +125,7 @@ source=openstack</screen>
             <row>
               <entry>instance</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -139,7 +139,7 @@ source=openstack</screen>
             <row>
               <entry>disk.ephemeral.size</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -153,7 +153,7 @@ source=openstack</screen>
             <row>
               <entry>disk.root.size</entry>
               <entry>
-                <screen >user_id,
+                <screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -166,7 +166,7 @@ source=openstack</screen>
             </row>
             <row>
               <entry>memory</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -178,7 +178,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>ip.floating</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -190,7 +190,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>ip.floating.create</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -202,7 +202,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>ip.floating.update</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -214,21 +214,21 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>mem.total_mb_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host=all,
 project_id=all</screen></entry>
               <entry>Total space of memory</entry>
             </row>
             <row>
               <entry>mem.usable_mb_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host=all,
 project_id=all</screen></entry>
               <entry>Available space of memory</entry>
             </row>
             <row>
               <entry>network</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -240,7 +240,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>network.create</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -252,7 +252,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>network.update</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -264,7 +264,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>network.delete</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -276,7 +276,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>port</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -288,7 +288,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>port.create</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -300,7 +300,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>port.delete</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -312,7 +312,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>port.update</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -324,7 +324,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>router</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -336,7 +336,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>router.create</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -348,7 +348,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>router.delete</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -360,7 +360,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>router.update</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -372,7 +372,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>snapshot</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -384,7 +384,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>snapshot.create.end</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -396,7 +396,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>snapshot.delete.end</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -408,7 +408,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>snapshot.size</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -420,7 +420,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>subnet</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -432,7 +432,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>subnet.create</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -444,7 +444,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>subnet.delete</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -456,7 +456,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>subnet.update</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -468,7 +468,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>vcpus</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -480,14 +480,14 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>vcpus_agg</entry>
-              <entry><screen >aggregation_period=hourly,
+              <entry><screen>aggregation_period=hourly,
 host=all,
 project_id</screen></entry>
               <entry>Number of vcpus used by a project</entry>
             </row>
             <row>
               <entry>volume</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -499,7 +499,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>volume.create.end</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -511,7 +511,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>volume.delete.end</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -523,7 +523,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>volume.resize.end</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -535,7 +535,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>volume.size</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -547,7 +547,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>volume.update.end</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -559,7 +559,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>storage.objects</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -571,7 +571,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>storage.objects.size</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,
@@ -583,7 +583,7 @@ source=openstack</screen></entry>
             </row>
             <row>
               <entry>storage.objects.containers</entry>
-              <entry><screen >user_id,
+              <entry><screen>user_id,
 region,
 resource_id,
 datasource=ceilometer,

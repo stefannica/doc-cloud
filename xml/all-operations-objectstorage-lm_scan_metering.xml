@@ -13,7 +13,7 @@
     <para>To view the metrics, use the <literal>swiftlm-scan</literal> command directly. Log on to the
       Swift node as the root user. The following example shows the command and a snippet of the
         output:</para>
-<screen >$ sudo swiftlm-scan --pretty
+<screen>$ sudo swiftlm-scan --pretty
 . . .
   {
     "dimensions": {

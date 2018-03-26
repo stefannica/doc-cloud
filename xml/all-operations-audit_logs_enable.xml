@@ -18,7 +18,7 @@
 
     <para>The following is an example of your audit-settings section:</para>
 
-    <screen ># Disc space needs to be allocated to the audit directory before enabling
+    <screen># Disc space needs to be allocated to the audit directory before enabling
 # auditing.
 # Default can be either "disabled" or "enabled". Services listed in
 # "enabled-services" and "disabled-services" override the default setting.

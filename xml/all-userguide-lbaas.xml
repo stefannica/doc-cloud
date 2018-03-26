@@ -274,7 +274,7 @@ Welcome to 10.1.0.4</screen></listitem>
 <para><para><emphasis role="bold">Verify SNI</emphasis></para><para>You can verify SNI by running the following command from a node with access to the
           private network. You can get the VIP from the neutron
             <literal>lbaas-loadbalancer-list</literal> for LBaaS v2.</para></para>
-<screen >openssl s_client -servername test2@stacme.com -connect &lt;vip of lb&gt;:444</screen>
+<screen>openssl s_client -servername test2@stacme.com -connect &lt;vip of lb&gt;:444</screen>
 <para><para>Certificate information will print to the screen. You should verify that the CN matches
           the CN you passed to <literal>-servername</literal>. In the example below the CN matches the
           servername passed from above.

@@ -31,7 +31,7 @@
 </listitem>
           <listitem><para> Execute the following command to restart the Network (Neutron) service:
             </para>
-<screen >sudo service neutron-ovsvapp-agent restart</screen></listitem>
+<screen>sudo service neutron-ovsvapp-agent restart</screen></listitem>
         </orderedlist>
 </sidebar>
 
@@ -228,7 +228,7 @@ $ neutron port-update  12bf9ea4-4845-4e2c-b511-3b8b1ad7291d --allowed_address_pa
         in a VXLAN. </para>
 <para> Examples
       </para>
-<screen ># Set the destination UDP port number to 6666 for VXLAN packets.
+<screen># Set the destination UDP port number to 6666 for VXLAN packets.
 &lt;Sysname&gt; system-view
 [Sysname] vxlan udp-port 6666</screen><para>Use
       vxlan udp-port to configure the destination UDP port number of VXLAN packets.   Mandatory for
@@ -236,7 +236,7 @@ $ neutron port-update  12bf9ea4-4845-4e2c-b511-3b8b1ad7291d --allowed_address_pa
       VXLAN packets.</para>
 <para>OVS can be configured to use a different port number
       itself:</para>
-<screen ># (IntOpt) The port number to utilize if tunnel_types includes 'vxlan'. By
+<screen># (IntOpt) The port number to utilize if tunnel_types includes 'vxlan'. By
 # default, this will make use of the Open vSwitch default value of '4789' if
 # not specified.
 #

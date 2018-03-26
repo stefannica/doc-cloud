@@ -14,12 +14,12 @@
 </listitem>
         <listitem><para>Run the hlm-status playbook to confirm the
             status:</para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts hlm-status.yml</screen><para>You
             may see an error that looks like this, which indicates that the Vertica service is in a
             down state on one of the nodes in this cloud
             environment:</para>
-<screen >PLAY [vertica Status] *********************************************************
+<screen>PLAY [vertica Status] *********************************************************
 
 TASK: [verticad | Check vertica service status] *******************************
 ok: [helion-ceph-ccp-c1-m3-mgmt]
@@ -31,16 +31,16 @@ ok: [helion-ceph-ccp-c1-m1-mgmt]</screen>
         <listitem><para>You can run the monasca-start playbook, which should restart it. You can specify a
           specific target node with the <literal>--limit</literal> switch if
           desired:</para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts monasca-start.yml --limit &lt;hostname&gt;</screen></listitem>
         <listitem><para>You should re-run the hlm-status playbook to
           confirm:</para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts hlm-status.yml</screen></listitem>
         <listitem><para>If the Vertica service is still having issues, there is a recovery playbook you can use
           against the specific host having the
           isssue:</para>
-<screen >cd ~/scratch/ansible/next/hos/ansible
+<screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts monasca-vertica-recovery.yml --limit &lt;hostname&gt;</screen></listitem>
       </orderedlist>
 

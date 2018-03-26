@@ -25,7 +25,7 @@
 <para>An example of the generated alarms from the Ops Console is provided below after running
         <literal>designate-stop.yml</literal>:
       </para>
-<screen >ALARM:	STATE:	ALARM ID:	LAST CHECK:	DIMENSION:
+<screen>ALARM:	STATE:	ALARM ID:	LAST CHECK:	DIMENSION:
 Process Check
 0f221056-1b0e-4507-9a28-2e42561fac3e 2016-10-03T10:06:32.106Z hostname=helion-cp1-c1-m1-mgmt,
 service=dns,

@@ -64,7 +64,7 @@
           <literal>cinder-volume.log</literal> file advising you of the deprecated name. The warning
         will look similar to
         this:</para>
-<screen >Option "hplefthand_username" from group "&lt;your section&gt;" is deprecated. Use option "hpelefthand_username" from group "&lt;your section&gt;"
+<screen>Option "hplefthand_username" from group "&lt;your section&gt;" is deprecated. Use option "hpelefthand_username" from group "&lt;your section&gt;"
 should be ignored.</screen>
 <para>These are just warnings and can be ignored.</para>
 </sidebar>

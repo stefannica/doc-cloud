@@ -59,13 +59,13 @@
         lifecycle manager node. You can manually scp a copy of the cirros image to the system. You
         can copy it locallly with wget like
       so</para>
-<screen >wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img</screen><para>
+<screen>wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img</screen><para>
       Save the following shell script in the home directory and run it. This should spin up two VMs,
       one on each compute node. </para>
 <caution><para>Make sure to change all network-specific
         information in the script to match your environment.
       </para>
-</caution><screen >#!/usr/bin/env bash
+</caution><screen>#!/usr/bin/env bash
 
 source service.osrc
 

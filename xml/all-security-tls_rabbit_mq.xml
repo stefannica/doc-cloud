@@ -34,11 +34,11 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
     <sidebar><title>Testing</title><para> On the one of the rabbitmq nodes you can list the clients and
       their TLS status by running:
       </para>
-<screen >$ sudo rabbitmqctl -q list_connections ssl state ssl_protocol user name</screen><para>You
+<screen>$ sudo rabbitmqctl -q list_connections ssl state ssl_protocol user name</screen><para>You
       will see output like this where true indicates the client is using TLS for the connection, and
       false, as shown here,  indicates the connection is over TCP:
       </para>
-<screen >Listing connections ...
+<screen>Listing connections ...
 
 rmq_barbican_user       false</screen><para> Other
       indicators will be <literal>rabbit_use_ssl = True</literal> in the Oslo messaging section of

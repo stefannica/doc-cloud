@@ -23,7 +23,7 @@
 </listitem>
           <listitem><para>Execute the following command to determine the OSDs on the OSD node to be replaced:
             </para>
-<screen >ceph osd tree
+<screen>ceph osd tree
 # id    weight  type name       up/down reweight
 -1      6       root default
 -2      3               host padawan-ceph-ccp-ceph0003-mgmt
@@ -44,13 +44,13 @@
           <listitem><para>Log in to the OSD node that is to be replaced and take the OSDs out of the cluster so
             that Ceph can begin re-balancing and copying its data to other OSDs.
             </para>
-<screen >ceph osd out &lt;osd-number&gt; --cluster &lt;cluster-name&gt;</screen><para>For
+<screen>ceph osd out &lt;osd-number&gt; --cluster &lt;cluster-name&gt;</screen><para>For
             example: </para>
-<screen >ceph osd out 1 4 7 --cluster ceph</screen></listitem>
+<screen>ceph osd out 1 4 7 --cluster ceph</screen></listitem>
           <listitem><para>Ceph will begin re-balancing the cluster by migrating placement groups out of the OSDs
             marked out (in the earlier step). Use the following command to view the re-balancing:
             </para>
-<screen >ceph -w --cluster &lt;cluster-name&gt;</screen><para>You should see the placement
+<screen>ceph -w --cluster &lt;cluster-name&gt;</screen><para>You should see the placement
             group states change from <literal>active+clean</literal> to <literal>active</literal>,
               <literal>some degraded objects</literal>, then <literal>active+clean</literal> when
             migration completes. Execute <literal>Control-c</literal> to exit. </para>

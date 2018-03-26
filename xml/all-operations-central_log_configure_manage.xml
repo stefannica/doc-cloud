@@ -93,7 +93,7 @@ ansible-playbook -i hosts/localhost config-processor-run.yml
 ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
       </orderedlist><para>Sample of a Freezer file enabled for Centralized logging:
         </para>
-<screen >---
+<screen>---
 sub_service:
    hosts: FRE-AGN
    name: freezer-agent

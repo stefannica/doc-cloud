@@ -231,7 +231,7 @@
 <para> Keystone relies on two cron jobs to periodically clean up expired tokens
         and for token revocation. The following is how the cron jobs appear on the
         system:</para>
-<screen >1 1 * * * /opt/stack/service/keystone/venv/bin/keystone-manage token_flush
+<screen>1 1 * * * /opt/stack/service/keystone/venv/bin/keystone-manage token_flush
 1 1,5,10,15,20 * * * /opt/stack/service/keystone/venv/bin/revocation_cleanup.sh </screen>
 <para>By
         default, the two cron jobs are enabled on controller node 1 only, not on the other two

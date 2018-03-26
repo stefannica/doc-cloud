@@ -46,7 +46,7 @@
         <sidebar xml:id="changing_meter_list"><title>Change the List of Meters</title><para>The list of meters can be easily reduced or increased by editing the pipeline.yaml
                 file and restarting the polling agent. </para>
 <para>Sample compute-only pipeline.yaml file with the daily poll interval:</para>
-<screen >---
+<screen>---
 sources:
     - name: meter_source
       interval: 86400
@@ -232,7 +232,7 @@ sudo service openstack-nova-novncproxy restart    </screen><important><para>Diff
                 <listitem><para>storage.objects.containers</para>
 </listitem>
             </itemizedlist><para>Sample section of the pipeline.yaml configuration file with Swift polling on an hourly interval:</para>
-<screen >---
+<screen>---
 sources:
     - name: swift_source
       interval: 3600

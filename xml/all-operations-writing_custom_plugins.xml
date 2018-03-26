@@ -32,12 +32,12 @@
                 <emphasis role="bold">mon-agent</emphasis> group. The following example shows correct permissions settings for
             the file
             http_check.yaml.</para>
-<screen >-rw-r----- 1 mon-agent mon-agent 10043 Sep 21 19:05 http_check.yaml</screen>
+<screen>-rw-r----- 1 mon-agent mon-agent 10043 Sep 21 19:05 http_check.yaml</screen>
 
 
         <para>A check plugin YAML configuration file has the following
             structure.</para>
-<screen >init_config:
+<screen>init_config:
     key1: value1
     key2: value2
 
@@ -69,7 +69,7 @@ instances:
         <para>When a detection plugin is successfully run in the configuration step, it will write to
             the check configuration YAML file. The configuration file for the check is written to
             the following directory.</para>
-<screen >
+<screen>
 /etc/monasca/agent/conf.d/</screen>
 
 
@@ -93,7 +93,7 @@ instances:
 
         <para>The following is an example of a <emphasis role="bold">process.py</emphasis> check <emphasis role="bold">ServicePlugin</emphasis>.</para>
 
-        <screen >import monasca_setup.detection
+        <screen>import monasca_setup.detection
 
 class MonascaTransformDetect(monasca_setup.detection.ServicePlugin):
     """Detect Monasca Transform daemons and setup configuration to monitor them."""
@@ -140,7 +140,7 @@ class MonascaTransformDetect(monasca_setup.detection.ServicePlugin):
         </itemizedlist>
         <para>The following is an example custom detection
             plugin.</para>
-<screen >
+<screen>
 # (C) Copyright 2015-2016 Hewlett Packard Enterprise Development Company LP
 
 import ast
@@ -198,24 +198,24 @@ class HttpCheck(monasca_setup.detection.ArgsPlugin):
 
         <para>The following is an example of correct file permissions for the <emphasis role="bold">http_check.py</emphasis>
             file.</para>
-<screen >-rw-r--r-- 1 root root 1769 Sep 19 20:14 http_check.py</screen>
+<screen>-rw-r--r-- 1 root root 1769 Sep 19 20:14 http_check.py</screen>
 
 
         <para>Detection plugins should be placed in the following directory.</para>
 
-        <screen >/usr/lib/monasca/agent/custom_detect.d/</screen>
+        <screen>/usr/lib/monasca/agent/custom_detect.d/</screen>
 
 
         <para>The detection plugin directory name should be accessed using the
                 <literal>monasca_agent_detection_plugin_dir</literal> Ansible variable. This variable
             is defined in the <literal>roles/monasca-agent/vars/main.yml</literal>
             file.</para>
-<screen >monasca_agent_detection_plugin_dir: /usr/lib/monasca/agent/custom_detect.d/</screen>
+<screen>monasca_agent_detection_plugin_dir: /usr/lib/monasca/agent/custom_detect.d/</screen>
 
 
         <para>Example Ansible <literal>monasca_configure</literal> task to install the
             plugin.</para>
-<screen >---
+<screen>---
 - name: _CEI-CMN | monasca_configure |
     Copy Ceilometer Custom plugin
   become: yes
@@ -279,7 +279,7 @@ class HttpCheck(monasca_setup.detection.ArgsPlugin):
 
         <para>The following is an example component check named
             SimpleVerticaExample.</para>
-<screen >import monasca_agent.collector.checks as checks
+<screen>import monasca_agent.collector.checks as checks
 from monasca_agent.common.util import timeout_command
 
 VERTICA_VERSION_QUERY = "SELECT version();"
@@ -332,13 +332,13 @@ class SimpleVerticaExample(checks.AgentCheck):
 
         <para>Check plugins should be placed in the following
             directory.</para>
-<screen >/usr/lib/monasca/agent/custom_checks.d/</screen>
+<screen>/usr/lib/monasca/agent/custom_checks.d/</screen>
 
 
         <para>The check plugin directory should be accessed using the
                 <literal>monasca_agent_check_plugin_dir</literal> Ansible variable. This variable is
             defined in the <literal>roles/monasca-agent/vars/main.yml</literal>
             file.</para>
-<screen >monasca_agent_check_plugin_dir: /usr/lib/monasca/agent/custom_checks.d/</screen>
+<screen>monasca_agent_check_plugin_dir: /usr/lib/monasca/agent/custom_checks.d/</screen>
 
     </section>

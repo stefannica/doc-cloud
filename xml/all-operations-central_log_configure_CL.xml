@@ -94,7 +94,7 @@
         these in the following file on the lifecycle manager (deployer):
           <literal>~/helion/my_cloud/definition/data/&lt;controller_disk_files_used&gt;</literal></para>
 <para>Sample file settings:</para>
-<screen ># Local Log files.
+<screen># Local Log files.
 - name: log
   size: 13%
   mount: /var/log
@@ -176,7 +176,7 @@ ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem>
                 <entry>Add a shared disk partition to each of the Elasticsearch controller nodes.
                     <para>The default partition name used for backup is
                     </para>
-<screen >/var/lib/esbackup</screen>
+<screen>/var/lib/esbackup</screen>
 <para>You can change this by:</para>
 <orderedlist>
                     <listitem><para>Open the following file:
@@ -242,7 +242,7 @@ $ ansible-playbook -i hosts/verb_hosts kronos-reconfigure.yml</screen></listitem
           <literal>.../logging-common/defaults/main.yml</literal>. An example of the contents of the
         file is below:
         </para>
-<screen >1. Select heap tunings based on system RAM
+<screen>1. Select heap tunings based on system RAM
 #-------------------------------------------------------------------------------
 threshold_small_mb: 31000
 threshold_medium_mb: 63000
