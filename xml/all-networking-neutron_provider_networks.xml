@@ -312,12 +312,12 @@ ansible-playbook -i hosts/verb_hosts neutron-deploy.yml</screen></listitem>
           <emphasis>provider-physical-network</emphasis> attribute on one or more network groups. For example
         (some attributes omitted for brevity):</para>
 <screen >network-groups:
-        
+
         - name: NET_GROUP_A
         tags:
         - neutron.networks.vlan:
         provider-physical-network: physnet1
-        
+
         - name: NET_GROUP_B
         tags:
         - neutron.networks.vlan:
@@ -339,11 +339,11 @@ ansible-playbook -i hosts/verb_hosts neutron-deploy.yml</screen></listitem>
         must be defined with tagged-vlan false, otherwise a linux vlan network interface will be
         created. For example:</para>
 <screen >networks:
-        
+
         - name: NET_A
         tagged-vlan: false
         network-group: NET_GROUP_A
-        
+
         - name: NET_B
         tagged-vlan: false
         network-group: NET_GROUP_B</screen><para>When the cloud is deployed, &kw-hos-phrase; will create the appropriate

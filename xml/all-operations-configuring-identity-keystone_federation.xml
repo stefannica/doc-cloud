@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="k2kfed"><title>&kw-hos-tm; &kw-hos-version-50;: Keystone-to-Keystone Federation</title>
     <!---->
-    <para><para xml:id="idg-all-operations-configuring-identity-keystone_federation-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>This topic explains how you can use one instance of Keystone as an identity provider
       and one as a service provider.</para>
@@ -385,7 +385,7 @@ keystone_sp_conf:
           certificate and key here are excerpted for
           space.</para>
 <screen>keystone_k2k_idp_conf:
-    service_provider: 
+    service_provider:
           -
             id: my_sp_id
             description: This is service provider.
@@ -652,7 +652,7 @@ group_domain_name=domain2
       ]
      }
     ]
-   }   
+   }
 ]</screen>
 </listitem>
         <listitem><para>Expected result: The federated user will scope to both project1 and project2. </para>
@@ -821,7 +821,7 @@ group_domain_name=domain4
      }
     ]
    }
-]       
+]
     </screen>
 </listitem>
         <listitem><para>Expected result: The federated user will scope to project5. </para>
@@ -943,9 +943,9 @@ group_domain_name=domain2
       ]
      }
     ]
-   }   
-]           
-            
+   }
+]
+
              </screen>
 </listitem>
         <listitem><para>Expected result: The federated user will scope to project1 and project2. </para>

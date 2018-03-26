@@ -484,7 +484,7 @@ ls *status*</screen>
         </para>
 <screen >stack@helion-control-plane-cluster1-m1-mgmt:~/scratch/ansible/next/hos/ansible$ ls *status*
 bm-power-status.yml    eon-status.yml      heat-status.yml      logging-producer-status.yml  monasca-status.yml      rabbitmq-status.yml
-ceilometer-status.yml  FND-AP2-status.yml  hlm-status.yml       logging-server-status.yml    neutron-status.yml      ceph-status.yml        
+ceilometer-status.yml  FND-AP2-status.yml  hlm-status.yml       logging-server-status.yml    neutron-status.yml      ceph-status.yml
 FND-CLU-status.yml     horizon-status.yml  logging-status.yml  nova-status.yml swift-status.yml
 cinder-status.yml      freezer-status.yml  ironic-status.yml    memcached-status.yml         ops-console-status.yml  vsa-status.yml
 cmc-status.yml         glance-status.yml   keystone-status.yml  monasca-agent-status.yml     percona-status.yml      zookeeper-status.yml</screen>

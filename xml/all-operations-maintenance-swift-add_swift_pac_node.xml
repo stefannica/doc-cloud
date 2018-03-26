@@ -9,7 +9,7 @@
     container (PAC) servers to an existing system.</para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-swift-add_swift_pac_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
     <sidebar><title>To add a new node</title><para>To add a new node to your cloud, you will need to add it to <literal>servers.yml</literal>,
@@ -31,14 +31,14 @@ git checkout site</screen></listitem>
               file:</para>
 <screen >servers:
 ...
-- id: swpac4 
+- id: swpac4
   role: SWPAC-ROLE
   server-group: &lt;server-group-name&gt;
   mac-addr: &lt;mac-address&gt;
   nic-mapping: &lt;nic-mapping-name&gt;
   ip-addr: &lt;ip-address&gt;
   ilo-ip: &lt;ilo-ip-address&gt;
-  ilo-user: &lt;ilo-username&gt; 
+  ilo-user: &lt;ilo-username&gt;
   ilo-password: &lt;ilo-password&gt;</screen><para>
               In the above example, only one new server <emphasis role="bold">swpac6</emphasis> is added. However, you can add
               multiple servers by providing the server details in the <literal>servers.yml</literal>

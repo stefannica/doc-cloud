@@ -34,7 +34,7 @@
 </listitem>
             </orderedlist>
 
-        
+
         <para><emphasis role="bold">Obtain a room ID</emphasis></para>
 
         <para>Use the following instructions to obtain the ID of a HipChat room.</para>
@@ -52,7 +52,7 @@
 </listitem>
             </orderedlist>
 
-        
+
         <para><emphasis role="bold">Create HipChat notification type</emphasis></para>
 
         <para>Use the following instructions to create a HipChat notification type.</para>
@@ -83,6 +83,6 @@
 </listitem>
             </orderedlist>
 
-        
-        
+
+
     </section>

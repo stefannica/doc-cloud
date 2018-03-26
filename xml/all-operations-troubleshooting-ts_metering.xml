@@ -6,7 +6,7 @@
       Ceilometer service.</para>This page describes troubleshooting scenarios for
     Ceilometer.</para>
 </abstract>
-    <para><para xml:id="idg-all-operations-troubleshooting-ts_metering-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <itemizedlist>
       <listitem><para><link xlink:href="#topic1976/logging">Logging</link></para>

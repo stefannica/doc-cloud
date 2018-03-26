@@ -4,7 +4,7 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="deploying_apache_mesos_ubuntu"><title>&kw-hos-tm; &kw-hos-version-50;: Deploying an Apache Mesos Cluster on
     Ubuntu</title>
-    <para><para xml:id="idg-all-userguide-container_service-deploying_apache_mesos_ubuntu-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-userguide-container_service-deploying_apache_mesos_ubuntu-xml-6"><title>Prerequisites</title><para>These steps assume the following have been completed:</para>
 <itemizedlist>
@@ -110,7 +110,7 @@ WARNING (shell) "heat resource-list" is deprecated, please use "openstack stack 
 ...</screen></listitem>
           <listitem><para>The cluster is complete when all resources show <emphasis role="bold">CREATE_COMPLETE</emphasis>.
             </para>
-<screen >$ magnum cluster-show my-mesos-cluster               
+<screen >$ magnum cluster-show my-mesos-cluster
 +---------------------+--------------------------------------+
 | Property            | Value                                |
 +---------------------+--------------------------------------+
@@ -141,9 +141,9 @@ $ sudo mv ./kubectl /usr/local/bin/kubectl</screen></listitem>
           <listitem><para>Create sample Mesos
             application.</para>
 <screen >$ mkdir my_mesos_cluster
- 
+
 $ cd my_mesos_cluster/
- 
+
 ~/my_mesos_cluster$ cat &gt; sample.json &lt;&lt;-EOF
 {
   "id": "sample",
@@ -162,7 +162,7 @@ $ cd my_mesos_cluster/
   }
 }
 EOF
- 
+
 ~/my_mesos_cluster$ curl -s -X POST -H "Content-Type: application/json"  http://172.31.0.10:8080/v2/apps -d@sample.json | json_pp
 {
    "dependencies" : [],

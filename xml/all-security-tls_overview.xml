@@ -67,6 +67,6 @@
       </itemizedlist><para>For information on enabling and disabling TLS, see <xref linkend="tlsConfig"/></para>
 <para>For instructions on installing certificates, see <xref linkend="tlsConfig"/>.</para>
 </sidebar>
-    
+
 
   <xi:include  href="all-security-tls_config.xml"/><xi:include  href="all-security-tls_mysql.xml"/><xi:include  href="all-security-tls_rabbit_mq.xml"/><xi:include  href="all-security-troubleshooting_tls.xml"/></chapter>

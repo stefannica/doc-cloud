@@ -9,7 +9,7 @@
     <para>By default, ephemeral volumes are not encrypted. If you wish to enable this feature, you
       should use the following steps.</para>
 
-    
+
     <sidebar><title>Enabling ephemeral volume encryption</title><para>Before deploying the Compute nodes you will need to change the disk configuration to create
         a new <literal>volume-group</literal> which will be used for your ephemeral disks. To do this,
         following these steps:</para>
@@ -31,8 +31,8 @@
               <listitem><para>To utilize an existing volume-group you can add the following lines to your
                   <literal>nova.conf</literal> file, using the name of your volume-group:
                 </para>
-<screen>[libvirt] 
-images_type = lvm 
+<screen>[libvirt]
+images_type = lvm
 images_volume_group = &lt;volume_group_name&gt; </screen></listitem>
             </orderedlist>
 </listitem>
@@ -45,14 +45,14 @@ images_type = lvm
 images_volume_group = vg-comp
 
 [ephemeral_storage_encryption]
-key_size = 256            
-cipher = aes-xts-plain64 
+key_size = 256
+cipher = aes-xts-plain64
 enabled = True
 
 [keymgr]
 api_class = nova.keymgr.barbican.BarbicanKeyManager
 
-[barbican] 
+[barbican]
 endpoint_template = https://192.168.245.9:9311/v1</screen><para>To
             restart the services, use the following
             commands:</para>

@@ -202,11 +202,11 @@ ansible-playbook -i hosts/verb_hosts keystone-reconfigure.yml -e@/tmp/x509auth.y
 {%- if network.terminate_tls is defined and network.terminate_tls and port == '80' %}
     {% set port = '443' %}
 {%- endif %}
- 
+
 {%- if service == 'KEY_API' and port == '5000' %}
     {% set bind_defaults = 'ca-file /etc/ssl/private/cacert.pem verify optional' %}
 {%- endif %}
- 
+
 listen {{ network.vip }}-{{ port }}
     {%- set options = network.vip_options | default(vip_options_defaults) %}
       {%- if options &gt; 0 %}

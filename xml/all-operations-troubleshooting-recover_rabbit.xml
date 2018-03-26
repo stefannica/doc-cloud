@@ -12,7 +12,7 @@
     issues.</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-troubleshooting-recover_rabbit-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-operations-troubleshooting-recover_rabbit-xml-6"><para>RabbitMQ is the message queue service that runs on each of your controller nodes and
         brokers communication between multiple services in your &kw-hos-phrase;

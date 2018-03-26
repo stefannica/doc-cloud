@@ -6,7 +6,7 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_lfq_3wf_rt"><title>&kw-hos-tm; &kw-hos-version-50;: Removing a Cluster from the Compute Resource
     Pool</title>
     <!---->
-    <para><para xml:id="idg-all-esx-remove_existing_cluster_compute_resource_pool-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar xml:id="idg-all-esx-remove_existing_cluster_compute_resource_pool-xml-6"><para><emphasis role="bold">Prerequisites</emphasis></para>
 <para>Write down the Hostname and ESXi configuration IP addresses of OVSvAPP VMs of that ESX
@@ -24,7 +24,7 @@
 <mediaobject xml:id="image_wgh_f1f_xx"><imageobject role="fo"><imagedata fileref="media-esx-esx_cluster2.png" width="75%" format="PNG"/></imageobject><imageobject role="html"><imagedata fileref="media-esx-esx_cluster2.png"/></imageobject></mediaobject>
 </listitem>
       </orderedlist></sidebar>
-   
+
     <sidebar><title>Removing an existing cluster from the compute resource pool</title><para>Perform the following steps to remove an existing cluster from the compute resource pool.</para>
 <orderedlist xml:id="ol_dq1_pwf_rt">
         <listitem><para>Run the following command to check for the instances launched in that

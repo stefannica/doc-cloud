@@ -8,7 +8,7 @@
       you achieve this.</para><para>The steps involved are:</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-compute-remove_compute_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
     <sidebar xml:id="disable_provisioning"><title>Disable Provisioning on the Compute Host</title><orderedlist>
@@ -176,11 +176,11 @@ neutron-lbaasv2-agent.service         loaded      inactive   dead     neutron-lb
 neutron-metadata-agent.service        loaded      inactive   dead     neutron-metadata-agent Service
 •neutron-openvswitch-agent.service    loaded      failed     failed   neutron-openvswitch-agent Service
 neutron-ovs-cleanup.service           loaded      inactive   dead     Neutron OVS Cleanup Service
-        
+
         LOAD   = Reflects whether the unit definition was properly loaded.
         ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
         SUB    = The low-level unit activation state, values depend on unit type.
-        
+
         7 loaded units listed.
         To show all installed unit files use 'systemctl list-unit-files'.</screen><para>
       For each loaded service issue the command
@@ -230,7 +230,7 @@ ansible-playbook -i hosts/localhost bm-power-down.yml -e nodelist=&lt;node name&
 | f0d262d1-7139-40c7-bdc2-f227c6dee5c8 | Open vSwitch agent   | helion-cp1-comp0002-mgmt | :-)   | False          | neutron-openvswitch-agent |
 +--------------------------------------+----------------------+--------------------------+-------+----------------+---------------------------+
 
-$ neutron agent-delete AGENT_ID 
+$ neutron agent-delete AGENT_ID
 
 $ neutron agent-delete 08f16dbc-4ba2-4c1d-a4a3-a2ff2526ebe4
 $ neutron agent-delete dbe4fe11-8f08-4306-8244-cc68e98bb770

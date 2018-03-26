@@ -10,7 +10,7 @@
       object storage node (OSD node) is a simple and straightforward process.</para><para>The steps involved in adding an OSD node to an existing cluster are as follows:</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-ceph-add_osd_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
     <sidebar xml:id="idg-all-operations-maintenance-ceph-add_osd_node-xml-6"><title>Prerequisites</title><para>To begin, make sure you have one or more baremetal servers that meet the minimum hardware

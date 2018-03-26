@@ -7,7 +7,7 @@
         communication between guest VMs over tagged VLANs configured on the VMs without requiring
         any knowledge of said VLANs by Neutron. VLAN transparency is only supported in clouds that
         are configured with DPDK. Attempting to configure VLAN transparency in a non-DPDK cloud will
-        result in an error message from the configuration processor. 
+        result in an error message from the configuration processor.
       </para>
 </sidebar>
     <sidebar><title>Enabling VLAN transparency support</title><para>To enable VLAN transparency support,
@@ -18,8 +18,8 @@
 <screen >---
   product:
 version: 2
- 
- 
+
+
   configuration-data:
     - name:  NEUTRON-CONFIG-CP1
       services:

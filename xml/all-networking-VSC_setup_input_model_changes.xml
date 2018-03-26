@@ -34,7 +34,7 @@
       </itemizedlist></sidebar>
     <!---->
     <sidebar xml:id="idg-all-networking-VSC_setup_input_model_changes-xml-4"><title>Deploying the VSC via the VM Disk Image</title><para>
-       
+
       The VSC is delivered as a VM definition along
       with the VM disk image. The image already has all the necessary software components in it.
       Furthermore, it is a VXworks based system. To deploy it requires the VM definition xml file be
@@ -62,7 +62,7 @@
 </listitem>
           </orderedlist></listitem>
       </orderedlist></sidebar>
-    
+
     <!---->
     <formalpara xml:id="deploy_vsc_playbook"><title>Deploying the VSC via the playbooks</title></formalpara>
     <para>
@@ -77,16 +77,16 @@
 </listitem>
           <listitem><para>Assign a machine to be the host of the VSC VM. One VSC VM runs on each VM host. </para>
 </listitem>
-          <listitem><para>In the input model, the VSC has two services: <emphasis role="bold">dcn-vsc</emphasis> and <emphasis role="bold">dcn-vsc-data</emphasis>. 
-            The <emphasis role="bold">dcn-vsc</emphasis> service is used for the cloud’s management network and the 
-            <emphasis role="bold">dcn-vsc-data</emphasis> service is used for the vxlan traffic. Hence it is usually 
-            associated with a “guest” network group. The association is realized via “component endpoints.” 
-            So in the network group definition (usually defined in a file called 
-            <literal>network_groups.yml</literal> in the directory 
-            <literal>~/helion/my_cloud/definition/data</literal>), the management network group needs 
-            the <emphasis role="bold">dcn-vsc</emphasis> as one of its <emphasis role="bold">component endpoints</emphasis>. The guest network group needs to 
-            have <emphasis role="bold">dcn-vsc-data</emphasis> as one of its <emphasis role="bold">component endpoints</emphasis>. Included below is an example 
-            of a <literal>network_group.yml</literal> file that is configured to use the VSC.  In it the 
+          <listitem><para>In the input model, the VSC has two services: <emphasis role="bold">dcn-vsc</emphasis> and <emphasis role="bold">dcn-vsc-data</emphasis>.
+            The <emphasis role="bold">dcn-vsc</emphasis> service is used for the cloud’s management network and the
+            <emphasis role="bold">dcn-vsc-data</emphasis> service is used for the vxlan traffic. Hence it is usually
+            associated with a “guest” network group. The association is realized via “component endpoints.”
+            So in the network group definition (usually defined in a file called
+            <literal>network_groups.yml</literal> in the directory
+            <literal>~/helion/my_cloud/definition/data</literal>), the management network group needs
+            the <emphasis role="bold">dcn-vsc</emphasis> as one of its <emphasis role="bold">component endpoints</emphasis>. The guest network group needs to
+            have <emphasis role="bold">dcn-vsc-data</emphasis> as one of its <emphasis role="bold">component endpoints</emphasis>. Included below is an example
+            of a <literal>network_group.yml</literal> file that is configured to use the VSC.  In it the
             cloud’s management network group is MANAGEMENT and guest network group is GUEST.
           </para>
 </listitem>
@@ -146,7 +146,7 @@
         The definition of the HLM_HYPERVISOR_INTERFACES will be described below.
       </para>
 </formalpara>
-    
+
     <formalpara xml:id="add_definition"><title>Adding the Definition</title><para><para>Adding the VSC-HOST-INTERFACES is declared in a file called
             <literal>net_interfaces.yml</literal> or <literal>interfaces_set_1.yml</literal>. Under the
           VSC-HOST-INTERFACES’s lan device used for the management traffic, declare the management
@@ -270,7 +270,7 @@
     - name: EXTERNAL-GW</screen>
 <para><para/></para>
 </formalpara>
-    
+
     <formalpara xml:id="add_VM_host"><title>Adding the VM host to the cloud</title><para> One machine needs to be used to run each VSC-VM, You
         can either add the machine that will be used for the VSC role (i.e., a node that can be used
         to run the VSC VM) or a machine that will be running the hlm-hypervisor role (that runs
@@ -337,7 +337,7 @@
       ip-addr: 192.168.10.7
       role: HYPERVISOR-ROLE
       server-group: RACK1
-      hlm-hypervisor: true 
+      hlm-hypervisor: true
       mac-addr: 8e:8e:62:a6:ce:78
       ilo-ip: 192.168.9.7
       ilo-password: password
@@ -393,7 +393,7 @@ service-components:
 ###########################################################################################
 #
 # The following service components are removed from the common-service-components:
-# 
+#
 #        - freezer-agent
 #        - logging-rotate
 #        - logging-producer
@@ -505,7 +505,7 @@ service-components:
 #  Service components for a VM-Host. Note that the common service components are
 #  not added. Since ntp-servers on controllers are not up when running the
 #  hlm-hypervisor-setup playbook, we have to make the VM host a NTP server.
-#  
+#
 ###################################################################################
        - name: vm-host
           resource-prefix: vm-host
@@ -577,7 +577,7 @@ service-components:
             - public
           cert-file: my-public-deployerincloud-cert</screen>
 </formalpara>
-    
+
     <formalpara xml:id="dcn_cnfig"><title>DCN Configuration Data Additions</title><para> Here are the additional parameters needed to be added
         to the DCN config data (at file &lt;input_model&gt;/data/dcn/dcn_config.yml):
         </para>
@@ -625,10 +625,10 @@ stack@deployerincloud-ccp-c0-m1-mgmt:~/scratch/ansible/next/hos/ansible$ ansible
 # Now with the hypervisor machine setup, run site.yml:
 stack@deployerincloud-ccp-c0-m1-mgmt:~/scratch/ansible/next/hos/ansible$ ansible-playbook -i hosts/verb_hosts site.yml</screen>
 <para>
-        REFERENCE: HLM-Hypervisor instructions - PB3 
+        REFERENCE: HLM-Hypervisor instructions - PB3
       </para>
 </formalpara>
-    
+
     <formalpara xml:id="additional_third_party"><title>Additional third-party import needed for VSC deployment</title><para> The VSC deployment is optional. The VSC related
         playbooks are on the lifecycle manager in
           <literal>~/helion/hos_extensions/dcn/examples</literal> directory. The directories
@@ -772,7 +772,7 @@ ansible-playbook -i hosts/localhost config-processor-run.yml -e encrypt="" -e re
         vsd_passwd: OSadmin
         vsd_cms_id: ''
         vsc_active_ip:  192.168.245.4   &lt;-- changed by the admin
-        # If there is only 1 VSC deployed, do not define vsc_passive_ip.  
+        # If there is only 1 VSC deployed, do not define vsc_passive_ip.
         # Comment out the line below:
         vsc_passive_ip: 192.168.245.6   &lt;-- changed by the admin
         vsc_mgmt_net: HLM

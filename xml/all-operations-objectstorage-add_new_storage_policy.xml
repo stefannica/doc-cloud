@@ -4,7 +4,7 @@
 ]>
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="add_storage_policy"><title>&kw-hos-tm; &kw-hos-version-50;: Adding a New Swift Storage Policy</title><!---->
-    <para><para xml:id="idg-all-operations-objectstorage-add_new_storage_policy-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>This page describes how to add an additional storage policy to an existing system. For an
       overview of storage policies, see <xref linkend="swift_storage_policies"/>. </para>

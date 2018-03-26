@@ -68,7 +68,7 @@
    Example:
   </para>
 <screen >$ openstack flavor create --ram 512 --vcpus 1 --disk 0 --ephemeral 0 --swap 0 --public m1.tinystu
-        
+
 Not all flavors have been migrated to the API database (HTTP 409) (Request-ID: req-bdae0a10-e6c3-42d4-9a58-b4438fcc4309)</screen>
   <para>
    This is caused by the time fields associated with the flavor not being

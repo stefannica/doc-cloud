@@ -189,8 +189,8 @@ ansible-playbook -i hosts/verb_hosts cinder-reconfigure.yml</screen></listitem>
         okay, check if the HAProxy service is functioning properly.</para>
 <para>If the API service is returning an error code, look for the error message in the API logs
         on all API nodes. Successful completions would be logged like this:</para>
-<screen >2016-04-25 10:09:51.107 30743 INFO eventlet.wsgi.server [<emphasis role="bold">req-a14cd6f3-6c7c-4076-adc3-48f8c91448f6</emphasis> 
-dfb484eb00f94fb39b5d8f5a894cd163 7b61149483ba4eeb8a05efa92ef5b197 - - -] 192.168.186.105 - - [25/Apr/2016 
+<screen >2016-04-25 10:09:51.107 30743 INFO eventlet.wsgi.server [<emphasis role="bold">req-a14cd6f3-6c7c-4076-adc3-48f8c91448f6</emphasis>
+dfb484eb00f94fb39b5d8f5a894cd163 7b61149483ba4eeb8a05efa92ef5b197 - - -] 192.168.186.105 - - [25/Apr/2016
 10:09:51] "GET /v2/7b61149483ba4eeb8a05efa92ef5b197/volumes/detail HTTP/1.1" <emphasis role="bold">200</emphasis> 13915 0.235921</screen><para>where <literal>200</literal> represents HTTP status 200 for a successful completion. Look for
         a line with your status code and then examine all entries associated with the request id.
         The request ID in the successful completion is highlighted in bold above.</para>
@@ -333,7 +333,7 @@ Request to delete volume 14b76133-e076-4bd3-b335-fa67e09e51f6 has been accepted.
           <literal>initiatorAddress</literal> field in the output from the
           <literal>getVolumeInfo</literal> command. For example:</para>
 <screen >$ ssh -p16022 192.168.185.3 -lstack 'getVolumeInfo volumeName=volume-7237a7ea-c77f-4edb-9f4f-7928cb605f44' | grep initiatorAddress
-Password: 
+Password:
 initiatorAddress 192.168.185.94</screen><para>If there is no <literal>initiatorAddress</literal> line in the output from
           <literal>getVolumeInfo</literal> then the volume has not been exported from the backend and
         it is safe to reset the volume type to <literal>available</literal> using the <literal>cinder
@@ -341,7 +341,7 @@ initiatorAddress 192.168.185.94</screen><para>If there is no <literal>initiatorA
 <screen >$ cinder reset-state --state available --attach-status detached 7237a7ea-c77f-4edb-9f4f-7928cb605f44</screen><para>If the volume has been exported to a compute host you can get the name of the iSCSI target
         for the volume, using CLIQ this would be:</para>
 <screen >$ ssh -p16022 192.168.185.3 -lstack 'getVolumeInfo volumeName=volume-7237a7ea-c77f-4edb-9f4f-7928cb605f44' | grep iscsiIqn
-Password: 
+Password:
 iscsiIqn                           iqn.2003-10.com.lefthandnetworks:vsacluster:423:volume-7237a7ea-c77f-4edb-9f4f-7928cb605f44</screen><para>You can then log into the compute host, using the IP address from the
           <literal>initiatorAddress</literal> field in the <literal>getVolumeInfo</literal> output,
           <literal>192.168.185.94</literal> in the example above, and check whether it is importing
@@ -390,8 +390,8 @@ tcp: [3] 192.168.185.3:3260,1 iqn.2003-10.com.lefthandnetworks:vsacluster:423:vo
 +--------------------------------------+-----------+-----------------------+-----------------+
 | 85384325-5505-419a-81bb-546c69064ec2 | detaching |        vol1           | 4bedaa76-78ca-… |
 +--------------------------------------+-----------+-----------------------+-----------------+</screen><screen >$ nova show 4bedaa76-78ca-4fe3-806a-3ba57a9af361|grep host
-| OS-EXT-SRV-ATTR:host                 | mycloud-cp1-comp0005-mgmt                                                
-| OS-EXT-SRV-ATTR:hypervisor_hostname  | mycloud-cp1-comp0005-mgmt                                                                   
+| OS-EXT-SRV-ATTR:host                 | mycloud-cp1-comp0005-mgmt
+| OS-EXT-SRV-ATTR:hypervisor_hostname  | mycloud-cp1-comp0005-mgmt
 | hostId                               | 61369a349bd6e17611a47adba60da317bd575be9a900ea590c1be816</screen><para>The first thing to check in this case is whether the instance is still importing the
         volume. Use <literal>virsh list</literal> and <literal>virsh dumpxml</literal> as described in
         the section above. If the XML for the instance has a reference to the device, then you
@@ -453,7 +453,7 @@ Hint: Some lines were ellipsized, use -l to show in full.</screen><para>Then, ch
 2016-04-22 15:21:01.235 6689 DEBUG cinder.backup.drivers.swift [req-41d8f821-7fce-445f-a073-
 2016-04-22 15:21:01.338 6689 DEBUG cinder.backup.chunkeddriver [req-41d8f821-7fce-445f-a073-
 2016-04-22 15:21:04.178 6689 DEBUG requests.packages.urllib3.connectionpool [req-7f7de8dc-3193-
-2016-04-22 15:21:04.179 6689 DEBUG swiftclient [req-7f7de8dc-3193-41e1-ac50-352a45c5565a - - 
+2016-04-22 15:21:04.179 6689 DEBUG swiftclient [req-7f7de8dc-3193-41e1-ac50-352a45c5565a - -
 2016-04-22 15:21:04.180 6689 DEBUG cinder.backup.drivers.swift [req-7f7de8dc-3193-41e1-ac50-
 2016-04-22 15:21:04.180 6689 DEBUG cinder.backup.drivers.swift [req-7f7de8dc-3193-41e1-ac50-
 2016-04-22 15:21:04.283 6689 DEBUG cinder.backup.chunkeddriver [req-7f7de8dc-3193-41e1-ac50-</screen><para>If you determine that the volume is genuinely stuck in <literal>backing-up</literal> then you
@@ -473,9 +473,9 @@ Hint: Some lines were ellipsized, use -l to show in full.</screen><para>Then, ch
         that the volume is actually stuck by examining the <literal>cinder-backup.log</literal>. For
         example:</para>
 <screen ># tail -f cinder-backup.log |grep 162de6d5-ba92-4e36-aba4-e37cac41081b
-2016-04-27 12:39:14.612 6689 DEBUG swiftclient [req-0c65ec42-8f9d-430a-b0d5-05446bf17e34 - - 
+2016-04-27 12:39:14.612 6689 DEBUG swiftclient [req-0c65ec42-8f9d-430a-b0d5-05446bf17e34 - -
 2016-04-27 12:39:15.533 6689 DEBUG cinder.backup.chunkeddriver [req-0c65ec42-8f9d-430a-b0d5-
-2016-04-27 12:39:15.566 6689 DEBUG requests.packages.urllib3.connectionpool [req-0c65ec42-    
+2016-04-27 12:39:15.566 6689 DEBUG requests.packages.urllib3.connectionpool [req-0c65ec42-
 2016-04-27 12:39:15.567 6689 DEBUG swiftclient [req-0c65ec42-8f9d-430a-b0d5-05446bf17e34 - - -</screen><para>If you determine that the volume is genuinely stuck in <literal>detaching</literal> then you
         must follow the procedure described in the detaching section above to remove any volumes
         that remain exported from the backend and imported on the controller node. Remember that in

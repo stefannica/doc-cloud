@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_zx2_mmd_5t"><title>&kw-hos-tm; &kw-hos-version-50;: Ceilometer Metering Failover HA
     Support</title><!---->
-    <para><para xml:id="idg-all-metering-metering_failover_ha-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <sidebar><para> In the &kw-hos; environment, the Ceilometer metering service
       supports native Active-Active high-availability (HA) for the notification and polling agents.
@@ -58,7 +58,7 @@ check_watchers = 10.0
 <para>To disable coordination and workload partitioning by OpenStack, set the following value in
         the configuration file:</para>
 <screen >
-        
+
         [notification]
         workload_partitioning = False</screen><important><para>When a configuration change is made to an API running under the HA
         Proxy, that change needs to be replicated in <emphasis role="bold">all</emphasis> controllers.</para>

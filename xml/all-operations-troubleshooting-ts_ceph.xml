@@ -7,7 +7,7 @@
       Ceph service.</para>This page describes troubleshooting scenarios for Ceph.</para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-troubleshooting-ts_ceph-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>
       Expand All Sections
@@ -23,14 +23,14 @@
       <formalpara xml:id="issue1"><title>Issue: If no Ceph monitor nodes are defined for the cloud, then
           Ceph cloud deployment fails</title><para><para>If no Ceph monitor nodes are defined for the cloud, then Ceph cloud deployment fails
             with the following error while executing the <literal>site.yml</literal> playbook:</para></para>
-<screen >TASK: [_CEP-CMN | install | Install ceph] ************************************* 
+<screen >TASK: [_CEP-CMN | install | Install ceph] *************************************
 changed: [stratushelion-cp1-ceph0001-mgmt]
 changed: [stratushelion-cp1-ceph0002-mgmt]
 changed: [stratushelion-cp1-ceph0005-mgmt]
 changed: [stratushelion-cp1-ceph0003-mgmt]
 changed: [stratushelion-cp1-ceph0004-mgmt]
 
-TASK: [_CEP-CMN | configure | Copy "{{ deployer_ceph_dir }}/ceph.client.admin.keyring" to /etc/ceph directory] *** 
+TASK: [_CEP-CMN | configure | Copy "{{ deployer_ceph_dir }}/ceph.client.admin.keyring" to /etc/ceph directory] ***
 fatal: [stratushelion-cp1-ceph0001-mgmt] =&gt; input file not found at /etc/ceph/ceph.client.admin.keyring or /etc/ceph/ceph.client.admin.keyring
 fatal: [stratushelion-cp1-ceph0002-mgmt] =&gt; input file not found at /etc/ceph/ceph.client.admin.keyring or /etc/ceph/ceph.client.admin.keyring
 fatal: [stratushelion-cp1-ceph0003-mgmt] =&gt; input file not found at /etc/ceph/ceph.client.admin.keyring or /etc/ceph/ceph.client.admin.keyring
@@ -52,13 +52,13 @@ FATAL: all hosts have already failed -- aborting</screen>
       <formalpara xml:id="issue2"><title>Issue: If the disk presented as OSD data and/or a journal disk
           has some pre-existing partitions, then the Ceph cloud deployment fails</title><para><para>If the disk presented as OSD data and/or a journal disk has some pre-existing
             partitions, then the Ceph cloud deployment fails with the following error while
-            executing <literal>site.yml</literal> playbook:</para><para><screen>TASK: [CEP-OSD | configure | Configure the osds of {{ inventory_hostname }}] *** 
+            executing <literal>site.yml</literal> playbook:</para><para><screen>TASK: [CEP-OSD | configure | Configure the osds of {{ inventory_hostname }}] ***
 failed: [stratushelion-cp1-ceph0001-mgmt] =&gt; (item={'key': '/dev/sdd', 'value': '/dev/sdc'}) =&gt; {"failed": true, "item": {"key": "/dev/sdd", "value": "/dev/sdc"}}
 msg: Exception: 'ceph-disk -v prepare --cluster-uuid 2645bbf6-16d0-4c42-8835-8ba9f5c95a1d --cluster ceph --osd-uuid 41cfdfe8-1c97-4c8c-9561-5ced0e88ebfd --fs-type xfs --zap-disk /dev/sdd /dev/sdc' failed with error DEBUG:ceph-disk:Zapping partition table on /dev/sdd
 INFO:ceph-disk:Running command: /sbin/sgdisk --zap-all -- /dev/sdd
 Caution: invalid backup GPT header, but valid main header; regenerating
 backup header from main header.
-  
+
 INFO:ceph-disk:Running command: /sbin/sgdisk --clear --mbrtogpt -- /dev/sdd
 DEBUG:ceph-disk:Calling partprobe on zapped device /dev/sdd
 INFO:ceph-disk:Running command: /sbin/partprobe /dev/sdd
@@ -84,14 +84,14 @@ ansible-playbook -i hosts/verb_hosts site.yml </screen></para></para>
           for a particular node (using --limit &lt;node&gt;) fails</title><para><para>If on a entry-scale-kvm-ceph cloud, the controller nodes are not always a part of the
             actionable nodes then executing the <literal>site.yml</literal> playbook for a particular
             node (using --limit &lt;node&gt;) fails with the following error:</para></para>
-<screen >TASK: [_CEP-CMN | check_network | Set cluster_network_enabled to True if available] *** 
+<screen >TASK: [_CEP-CMN | check_network | Set cluster_network_enabled to True if available] ***
 skipping: [localhost]
 
-TASK: [ceph-deployer | configure | Generate "/etc/ceph/{{ ceph_cluster }}.conf" file] *** 
+TASK: [ceph-deployer | configure | Generate "/etc/ceph/{{ ceph_cluster }}.conf" file] ***
 fatal: [localhost] =&gt; {'msg': "AnsibleUndefinedVariable: One or more undefined variables: 'dict object' has no attribute 'host'", 'failed': True}
 fatal: [localhost] =&gt; {'msg': "AnsibleUndefinedVariable: One or more undefined variables: 'dict object' has no attribute 'host'", 'failed': True}
 
-FATAL: all hosts have already failed -- aborting  
+FATAL: all hosts have already failed -- aborting
         </screen>
 <para><para><emphasis role="bold">Resolution</emphasis>:</para><para>Edit the limit file or limit string specified while executing the
               <literal>site.yml</literal> playbook and include the hostnames of all the <emphasis role="bold">Ceph
@@ -378,12 +378,12 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen></listitem>
 ansible-playbook -i hosts/verb_hosts hlm-upgrade.yml</screen></listitem>
             </orderedlist></para></para>
 </formalpara>
-      
+
       <formalpara><title>Issue: Multiple OSDS fail to recover</title><para><para>In situations where multiple OSDs fail (due to a catastrophic event), then
             for systems with large numbers of OSDs on a ceph OSD server, the OSDs can fail
-            to recover once repaired due to the kernel configuration parameter 
-            <literal>pid_max</literal> being too small (ceph OSD recovery launches many 
-            extra processes).  This will exhibit itself when the related systemd processes 
+            to recover once repaired due to the kernel configuration parameter
+            <literal>pid_max</literal> being too small (ceph OSD recovery launches many
+            extra processes).  This will exhibit itself when the related systemd processes
             fail to remain running.
           </para><para>For systems with 32 failed OSDS setting <literal>pid_max</literal> to 128K (131072) has
             been shown to allow OSD recovery to continue.
@@ -392,12 +392,12 @@ kernel.pid_max = 32768
 sudo sysctl -w kernel.pid_max=131072
 kernel.pid_max = 131072
 sudo sysctl -a | grep pid_max
-kernel.pid_max = 131072</screen></para><para>To make the setting permanent, create <literal>/etc/sysctl.d/ceph_sysctl.conf</literal> 
+kernel.pid_max = 131072</screen></para><para>To make the setting permanent, create <literal>/etc/sysctl.d/ceph_sysctl.conf</literal>
             and set the value in this file.
             <screen>cat  /etc/sysctl.d/ceph_sysctl.conf
 kernel.pid_max = 131072</screen></para></para>
 </formalpara>
-      
+
     </section><section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rados"><title>Troubleshooting RADOS Gateway Issues</title>
       <sidebar><para>Here is a list of known issues along with resolutions for Ceph RADOS Gateway issues.</para>
 </sidebar>
@@ -405,15 +405,15 @@ kernel.pid_max = 131072</screen></para></para>
       <formalpara><title>Issue: Rados Gateway service does not come up after node
           is rebooted</title><para><para>After the RADOS Gateway node is rebooted, wait for the node to become ssh-able and
             allow an additional minimum of five minutes for the node to settle. Start the services
-            on the node:</para><para><screen>cd ~/scratch/ansible/next/hos/ansible 
+            on the node:</para><para><screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts hlm-start.yml --limit &lt;radosgw-node&gt; </screen></para><para> Verify the status of all services on the node:
-            <screen>cd ~/scratch/ansible/next/hos/ansible 
+            <screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt;</screen></para></para>
 </formalpara>
 
 
       <formalpara><title>Issue: Rados Gateway service is not responding</title><para><para>Verify the status of all services on the Rados Gateway node:
-            <screen>cd ~/scratch/ansible/next/hos/ansible 
+            <screen>cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt;</screen></para><para>Based on the results of the playbook:<itemizedlist xml:id="ul_grf_tjb_wv">
               <listitem><para>If the radosgw service is reported down, check the radosgw service logs in
                   <literal>/var/log/ceph/</literal> to diagnose the cause of the crash. </para></listitem>
@@ -429,7 +429,7 @@ ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt;
             first step in identifying what is going on. If there is a 500 error, that usually
             indicates a problem communicating with the radosgw daemon.</para><para>Make sure the daemon is running:
           </para></para>
-<screen >cd ~/scratch/ansible/next/hos/ansible 
+<screen >cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt; </screen>
 </formalpara>
 
@@ -454,11 +454,11 @@ ansible-playbook -i hosts/verb_hosts hlm-status.yml --limit &lt;radosgw-node&gt;
   ignore_errors: yes
   register: sbin_apache2_status_result</screen></para></listitem>
               <listitem><para>Commit the changes to git:
-                </para><screen>git add -A 
+                </para><screen>git add -A
 git commit -m "Changed the status of Horizon in status YAML file"</screen></listitem>
               <listitem><para> After your configuration files are setup, continue with the <xref linkend="install_kvm"/>. </para></listitem>
             </orderedlist></para></para>
 </formalpara>
-      
+
 
     </section></section>

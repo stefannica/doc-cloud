@@ -8,7 +8,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="password_encryption"><title>&kw-hos-tm; &kw-hos-version-50;: Encryption of Passwords and Sensitive
     Data</title>
     <!---->
-    <para><para xml:id="idg-all-security-encrypted_storage-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para> In &kw-hos-phrase;, sensitive connection data is encrypted. The passwords
       that are encrypted include: </para>

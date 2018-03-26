@@ -8,9 +8,9 @@
     controller node or on a separate/dedicated resource node.</para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-ceph-remove_monitor_node-xml-4"><phrase><phrase/></phrase></para></para>
 
-    
+
+
     <sidebar xml:id="idg-all-operations-maintenance-ceph-remove_monitor_node-xml-6"><title>Notes</title><para>It is recommended to maintain an odd number of Ceph monitors because the Paxos protocol is
         being used by Ceph monitors to form a consensus. Although clusters can be deployed with a
         single monitor, we strongly recommend to deploy three monitors on independent nodes for
@@ -18,7 +18,7 @@
 <para>For this reason, it is recommended to maintain at least three and an odd number of Ceph
         monitors.</para>
 </sidebar>
-    
+
     <sidebar xml:id="idg-all-operations-maintenance-ceph-remove_monitor_node-xml-7"><title>To Remove Monitor Nodes from the Controller Node</title><para>Permanent removal of a monitor is not supported when the monitor service is installed on
         the controller node. However, to temporarily bring down the service on the controller node
         (for maintenance purposes), perform the following steps:</para>

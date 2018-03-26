@@ -63,24 +63,24 @@
         "hits":[]
     }
 }</screen></sidebar>
-        
-        
+
+
         <para>You can find more detailed Elasticsearch API documentation at <link xlink:href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html"/>.</para>
 
-        
+
         <para>Review Elasticsearch Python API documentation at the following sources:</para>
 
         <para><link xlink:href="http://elasticsearch-py.readthedocs.io/en/master/api.html"/></para>
 
         <para><link xlink:href="http://elasticsearch-py.readthedocs.io/en/master/api.html"/></para>
 
-        
+
         <para>Read Elasticsearch Java API documentation at </para>
 
         <para><link xlink:href="https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html"/>.</para>
 
-        
-        
+
+
         <sidebar xml:id="section_knd_hcf_bx"><title>Forwarding your logs</title><para>You can configure
             Logstash to ship your logs to an outside storage and indexing system, such as Splunk.
             Setting up this configuration is as simple as editing a few configuration files, and
@@ -118,7 +118,7 @@ ansible-playbook -i hosts/verb_hosts logging-status.yml</screen><para>When
                         workers =&gt; {{ logstash_num_workers }}
                         }
                         <emphasis role="bold">  # Forward Logs to outside source on TCP port 5514
-                            tcp { 
+                            tcp {
                             mode =&gt; "client"
                             host =&gt; "&lt;Destination listener IP address&gt;"
                             port =&gt; 5514</emphasis>
@@ -149,10 +149,10 @@ git commit -m "Your commit message"</screen></listitem>
 ansible-playbook -i hosts/verb_hosts logging-server-configure.yml</screen></listitem>
                 </orderedlist>
 </sidebar>
-        
+
         <para>Please note that the configuring the receiving service will vary from product to product.
             Consult the documentation for your particular product for instructions on how to set it
             up to receive log files from logstash.</para>
 
-        
+
     </section>

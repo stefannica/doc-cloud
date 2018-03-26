@@ -219,16 +219,16 @@ need more than 0 values to unpack</screen><para><emphasis role="bold">Adding sub
 <para>To delete a trunk port, use the <literal>openstack network
         trunk delete</literal> command: </para>
 <screen >$ openstack network trunk delete mytrunk</screen><para>Once a trunk has been created successfully, its parent port may be passed to the
-        <literal>nova boot</literal> command, which will make the VM VLAN-aware: 
+        <literal>nova boot</literal> command, which will make the VM VLAN-aware:
         </para>
 <screen >nova boot --image ubuntu-server --flavor 1 --nic port-id=239f8807-be2e-4732-9de6-c64519f46358 vlan-aware-vm</screen>
 </sidebar>
 
     <sidebar><title>VLAN-aware VM network configuration</title><para>
-       
+
       This section illustrates how to
       configure the VLAN interfaces inside a VLAN-aware VM based upon the subports allocated to the
-      trunk port being used. 
+      trunk port being used.
       </para>
 <orderedlist><listitem><para> Run <literal>openstack network trunk subport list</literal> to see the VLAN IDs in use on the
           trunk port:
@@ -277,10 +277,10 @@ $ ip a
        valid_lft forever preferred_lft forever</screen></listitem>
       </orderedlist></sidebar>
 
-   
+
     <formalpara xml:id="firewall"><title>Firewall issues</title><para>&kw-hos;<literal>neutron.agent.linux.iptables_firewall.OVSHybridIptablesFirewallDriver</literal><literal>firewall_driver =
         neutron.agent.firewall.NoopFirewallDriver</literal></para>
 </formalpara>
 
- 
+
   </section>

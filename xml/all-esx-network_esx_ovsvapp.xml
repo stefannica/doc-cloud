@@ -5,7 +5,7 @@
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_odg_33x_rt"><title>&kw-hos-tm; &kw-hos-version-50;: Networking for ESXi Hypervisor
     (OVSvApp)</title><!----><!---->
-    <para><para xml:id="idg-all-esx-network_esx_ovsvapp-xml-4"><phrase><phrase/></phrase></para></para>
+
 
     <para>To provide the network as a service for tenant VM's hosted on ESXi Hypervisor, a service VM
       named OVSvApp VM is deployed on each ESXi Hypervisor within a cluster managed by OpenStack

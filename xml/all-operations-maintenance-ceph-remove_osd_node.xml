@@ -7,7 +7,7 @@
             allows you to remove capacity.</para>Perform the following steps to remove a Ceph
         Object Storage Daemon (OSD) node from a cluster:</para>
 </abstract><!---->
-        <para><para xml:id="idg-all-operations-maintenance-ceph-remove_osd_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
         <sidebar xml:id="idg-all-operations-maintenance-ceph-remove_osd_node-xml-6"><title>Removing a Ceph OSD Node</title><orderedlist>
                     <listitem><para>Log in to the OSD node that you wish to remove.</para>
@@ -48,7 +48,7 @@ ansible-playbook -i hosts/verb_hosts ceph-stop.yml --limit &lt;osd_node_to_remov
                             above):</para>
 <screen >ceph osd out &lt;osd-number&gt; --cluster &lt;ceph_cluster&gt;
 ceph auth del osd.&lt;osd-number&gt; --cluster &lt;ceph_cluster&gt;
-ceph osd crush remove osd.&lt;osd-number&gt; --cluster &lt;ceph_cluster&gt; 
+ceph osd crush remove osd.&lt;osd-number&gt; --cluster &lt;ceph_cluster&gt;
 ceph osd rm &lt;osd-number&gt; --cluster &lt;ceph_cluster&gt;</screen></listitem>
                     <listitem><para>From the same OSD node, remove the OSD host from the Ceph CRUSH map by
                         executing the following

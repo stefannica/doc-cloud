@@ -6,7 +6,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_rmq_j1v_4t"><title>&kw-hos-tm; &kw-hos-version-50;: Refining Access Control with AppArmor</title><!---->
-    <para><para xml:id="idg-all-security-using_apparmor-xml-4"><phrase><phrase/></phrase></para></para>
+
 
    <sidebar xml:id="idg-all-security-using_apparmor-xml-6"><para> AppArmor is a Mandatory Access Control (MAC) system as opposed to a discretionary access
         control system. It is a kernel-level security module for Linux that controls access to
@@ -28,7 +28,7 @@
         violation attempts are reported. In complain mode, policy violation attempts are reported but
         not prevented. </para>
 </sidebar>
-    
+
     <sidebar xml:id="apparmor_helion"><title>AppArmor in &kw-hos-phrase;</title><para> AppArmor in &kw-hos-phrase; is installed and enabled on the KVM compute nodes by
         default. It runs in enforce mode. It enforces mandatory access control policies for the
         libvirt process. Customers can run 'systemctl status apparmor' command on the compute nodes

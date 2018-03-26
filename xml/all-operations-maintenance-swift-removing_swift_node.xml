@@ -9,7 +9,7 @@
       Swift Object nodes.</para><para>This process has three phases:</para></para>
 </abstract>
     <!---->
-    <para><para xml:id="idg-all-operations-maintenance-swift-removing_swift_node-xml-4"><phrase><phrase/></phrase></para></para>
+
 
 
     <sidebar xml:id="idg-all-operations-maintenance-swift-removing_swift_node-xml-6"><title>Setting the Pass-through Attributes</title><para>This process will remove the Swift node's drives from the rings and move it to the
@@ -37,7 +37,7 @@ pass-through:
 ---
   product:
     version: 2
-            
+
   <emphasis role="bold">pass-through:
     servers:
       - id: ccn-0001
@@ -78,7 +78,7 @@ sudo swift-ring-builder &lt;ring_name&gt;.builder</screen><para>For example, if 
             the example below, the number of partitions of the drives on 192.168.245.3 has reached
             zero for the object-0 ring:</para>
 <screen>$ cd /etc/swiftlm/builder_dir/region-region1/
-$ sudo swift-ring-builder object-0.builder 
+$ sudo swift-ring-builder object-0.builder
 account.builder, build version 6
 4096 partitions, 3.000000 replicas, 1 regions, 1 zones, 6 devices, 0.00 balance, 0.00 dispersion
 The minimum number of hours before a partition can be reassigned is 16
@@ -101,7 +101,7 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
 <screen>---
   product:
     version: 2
-            
+
   pass-through:
     servers:
       - id: ccn-0001

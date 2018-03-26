@@ -4,17 +4,17 @@
 ]>
 <!---->
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="troubleshootng_tls"><title>Troubleshooting TLS</title>
-    
+
     <sidebar><title>Troubleshooting TLS certificate errors when running playbooks with a limit</title><para>
-        Has the deployer been restarted after the original site installation or is this a new deployer? 
-        If so, TLS certificates need to be bootstrapped before a playbook is run with limits. 
+        Has the deployer been restarted after the original site installation or is this a new deployer?
+        If so, TLS certificates need to be bootstrapped before a playbook is run with limits.
         You can do this by running the following command.
       </para>
 <screen >
 cd ~/scratch/ansible/next/hos/ansible
 ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
 </screen></sidebar>
-    
+
 <sidebar><title>Certificate Update Failure</title><para>In general, if a certificate update fails it's because of the following: Haproxy
       hasn't restarted or the Trust chain is not installed. This is the certificate of the CA that
       signed the server certificate.</para>
@@ -38,26 +38,26 @@ ansible-playbook -i hosts/verb_hosts tls-reconfigure.yml --limit TLS-CA
     debian:username-internal-cacert-001.pem -keystore /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/security/cacerts -storepass changeit'
   padawan-ccp-c0-m1-mgmt | FAILED | rc=1 &gt;&gt;
   sudo: keytool: command not found
-  
+
   padawan-ccp-comp0001-mgmt | FAILED | rc=1 &gt;&gt;
   sudo: keytool: command not found
-  
+
   padawan-ccp-comp0003-mgmt | FAILED | rc=1 &gt;&gt;
   sudo: keytool: command not found
-  
+
   padawan-ccp-comp0002-mgmt | FAILED | rc=1 &gt;&gt;
   sudo: keytool: command not found
-  
+
   padawan-ccp-c1-m1-mgmt | success | rc=0 &gt;&gt;
-  debian:username-internal-cacert-001.pem, May 9, 2016, trustedCertEntry, 
+  debian:username-internal-cacert-001.pem, May 9, 2016, trustedCertEntry,
   Certificate fingerprint (SHA1): E7:B2:6E:9E:00:FB:86:0F:E5:46:CD:B8:C5:67:13:53:4E:3D:8F:43
-  
+
   padawan-ccp-c1-m2-mgmt | success | rc=0 &gt;&gt;
-  debian:username-internal-cacert-001.pem, May 9, 2016, trustedCertEntry, 
+  debian:username-internal-cacert-001.pem, May 9, 2016, trustedCertEntry,
   Certificate fingerprint (SHA1): E7:B2:6E:9E:00:FB:86:0F:E5:46:CD:B8:C5:67:13:53:4E:3D:8F:43
-  
+
   padawan-ccp-c1-m3-mgmt | success | rc=0 &gt;&gt;
-  debian:username-internal-cacert-001.pem, May 9, 2016, trustedCertEntry, 
+  debian:username-internal-cacert-001.pem, May 9, 2016, trustedCertEntry,
   Certificate fingerprint (SHA1): E7:B2:6E:9E:00:FB:86:0F:E5:46:CD:B8:C5:67:13:53:4E:3D:8F:43</screen><para>Java
       client libraries are used by Monasca, so compute nodes will not have them. So the first three
       errors are expected. Check that the fingerprint is correct by checking the
