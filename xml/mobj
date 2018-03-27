@@ -14,7 +14,10 @@ file=$(echo -e "$file" | sed -r \
   -e 's_</emphasis>[ \t\r]*</title>_</title>_' \
   -e 's_<abstract>[ \t\r]*<para>[ \t\r]*<para>_<para>_' \
   -e 's_</para>[ \t\r]*</para>[ \t\r]*</abstract>_</para>_' \
+  -e 's_<para>[ \t\r]*<para>_<para>_' \
+  -e 's_</para>[ \t\r]*</para>_</para>_' \
   -e 's_<title>[ \t\r]*\&kw-hos-(phrase|tm);[ \t\r]*(\&kw-hos-version-50;)?:[ \t\r]*_<title>_' \
+  -e 's_<para>[ \t\r]*Expand All Sections[ \t\r]*Collapse All Sections[ \t\r]*</para>__g' \
   )
 
 echo -e "$file" | tr '\r' '\n' > $1
