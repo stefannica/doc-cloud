@@ -6,7 +6,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-networking-rbac-xml-1">
- <title>&kw-hos-tm;: Role-based Access Control in Neutron</title>
+ <title>Role-based Access Control in Neutron</title>
  <para>
   This topic explains how to achieve more granular access control for your
   Neutron networks.
