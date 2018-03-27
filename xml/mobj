@@ -1,0 +1,23 @@
+sed -i -r 's_<mediaobject( *xml:id[^>]+)?>_<informalfigure><mediaobject>_g' $1
+sed -i -r 's_</mediaobject>_</mediaobject></informalfigure>_g' $1
+sed -i -r 's_object  role_figure role_g' $1
+sed -i -r 's_include  href_include href_g' $1
+sed -i -r 's_width="75%" format="PNG"_width="75%"_g' $1
+sed -i -r 's_<(/?)(sidebar|formalpara)_<\1section_g' $1
+sed -i -r 's_<(ordered|itemized)list xml:id="[^"]+">_<\1list>_g' $1
+sed -i -r 's_<title><emphasis( role="bold")?>_<title>_' $1
+sed -i -r 's_</emphasis></title>_</title>_' $1
+sed -i -r 's_<title>\&kw-hos-(phrase|tm); *(\&kw-hos-version-50;)?: _<title>_' $1
+
+DECISION='n'
+while [[ $DECISION != 'y' ]];do
+  git diff -- $1
+  echo -n "Is the diff okay? y/[n]?"
+  read DECISION
+  if [[ $DECISION != 'y' ]]; then
+    echo "Make changes now. Press any key for another diff."
+    read ANYKEY
+  fi
+done
+daps-xmlformat -i $1
+
