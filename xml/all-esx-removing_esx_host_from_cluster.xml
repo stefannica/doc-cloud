@@ -7,8 +7,6 @@
 ]>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="topic_srg_d5h_rt">
  <title>Removing an ESXi Host from a Cluster</title>
-<!---->
-<!---->
  <para>
   This topic describes how to remove an existing ESXi host from a cluster and
   cleanup of services for OVSvAPP VM.
@@ -68,9 +66,9 @@
     <para>
      Cancel the maintenance mode task.
     </para>
-    <para>
- <!---->
-    </para>
+    <!-- Comment from DITA original: -->
+    <!-- TODO Missing Image <image
+    href="../../media/esx/eon_cancel_maintenance%20mode.png" id="image_lpd_qfx_st"/>-->
    </listitem>
    <listitem>
     <para>
@@ -118,10 +116,10 @@
     </para>
     <informalfigure>
      <mediaobject>
-      <imageobject  role="fo">
+      <imageobject role="fo">
        <imagedata fileref="media-esx-eon_disconnect_maintenance.png" width="75%" format="PNG"/>
       </imageobject>
-      <imageobject  role="html">
+      <imageobject role="html">
        <imagedata fileref="media-esx-eon_disconnect_maintenance.png"/>
       </imageobject>
      </mediaobject>
@@ -172,11 +170,11 @@
 <screen>neutron agent-delete 92ca8ada-d89b-43f9-b941-3e0cd2b51e49</screen>
    </listitem>
   </orderedlist>
+  <para>
+   If you have more than one host, perform the preceding procedure for all the
+   hosts.
+  </para>
  </section>
- <para>
-  If you have more than one host, perform the preceding procedure for all the
-  hosts.
- </para>
  <section>
   <title>Cleanup Monasca Agent for OVSvAPP Service</title>
   <para>
@@ -206,7 +204,7 @@
     <para>
      Edit <literal>/etc/monasca/agent/conf.d/host_alive.yaml</literal> file to
      remove the reference to the OVSvAPP you removed. This requires
-     <computeroutput>sudo</computeroutput> access.
+     <command>sudo</command> access.
     </para>
 <screen>sudo vi /etc/monasca/agent/conf.d/host_alive.yaml</screen>
     <para>
@@ -239,7 +237,7 @@
      recommend using the Monasca CLI which is installed on each of your Monasca
      API servers by default. Execute the following command from the Monasca API
      server (for example:
-     <literal><literal>helion-cp1-mtrmon-mX-mgmt</literal></literal>).
+     <literal>helion-cp1-mtrmon-mX-mgmt</literal>).
     </para>
 <screen>monasca alarm-list --metric-name host_alive_status --metric-dimensions hostname=&lt;ovsvapp deleted&gt;</screen>
     <para>
@@ -406,10 +404,10 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
     </para>
     <informalfigure>
      <mediaobject>
-      <imageobject  role="fo">
+      <imageobject role="fo">
        <imagedata fileref="media-esx-drs-rule1.png" width="75%" format="PNG"/>
       </imageobject>
-      <imageobject  role="html">
+      <imageobject role="html">
        <imagedata fileref="media-esx-drs-rule1.png"/>
       </imageobject>
      </mediaobject>
@@ -426,10 +424,10 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
     </para>
     <informalfigure>
      <mediaobject>
-      <imageobject  role="fo">
+      <imageobject role="fo">
        <imagedata fileref="media-esx-drs-group2.png" width="75%" format="PNG"/>
       </imageobject>
-      <imageobject  role="html">
+      <imageobject role="html">
        <imagedata fileref="media-esx-drs-group2.png"/>
       </imageobject>
      </mediaobject>
@@ -443,10 +441,10 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
     </para>
     <informalfigure>
      <mediaobject>
-      <imageobject  role="fo">
+      <imageobject role="fo">
        <imagedata fileref="media-esx-rules3.png" width="75%" format="PNG"/>
       </imageobject>
-      <imageobject  role="html">
+      <imageobject role="html">
        <imagedata fileref="media-esx-rules3.png"/>
       </imageobject>
      </mediaobject>
