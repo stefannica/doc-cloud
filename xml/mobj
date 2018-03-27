@@ -1,13 +1,23 @@
-sed -i -r 's_<mediaobject( *xml:id[^>]+)?>_<informalfigure><mediaobject>_g' $1
-sed -i -r 's_</mediaobject>_</mediaobject></informalfigure>_g' $1
-sed -i -r 's_object  role_figure role_g' $1
-sed -i -r 's_include  href_include href_g' $1
-sed -i -r 's_width="75%" format="PNG"_width="75%"_g' $1
-sed -i -r 's_<(/?)(sidebar|formalpara)_<\1section_g' $1
-sed -i -r 's_<(ordered|itemized)list xml:id="[^"]+">_<\1list>_g' $1
-sed -i -r 's_<title><emphasis( role="bold")?>_<title>_' $1
-sed -i -r 's_</emphasis></title>_</title>_' $1
-sed -i -r 's_<title>\&kw-hos-(phrase|tm); *(\&kw-hos-version-50;)?: _<title>_' $1
+#!/bin/bash
+
+file=$(cat "$1" | tr '\n' '\r')
+
+file=$(echo -e "$file" | sed -r \
+  -e 's_<mediaobject([ \t\r]*xml:id[^>]+)?>_<informalfigure><mediaobject>_g' \
+  -e 's_</mediaobject[ \t\r]*>_</mediaobject></informalfigure>_g' \
+  -e 's_object[ \t\r]*role_object role_g' \
+  -e 's_include[ \t\r]*href_include href_g' \
+  -e 's_width="75%"[ \t\r]*format="PNG"_width="75%"_g' \
+  -e 's_<(/)?(sidebar|formalpara)_<\1section_g' \
+  -e 's_<(ordered|itemized)list[ \t\r]*xml:id="[^"]+">_<\1list>_g' \
+  -e 's_<title>[ \t\r]*<emphasis([ \t\r]*role="bold")?>_<title>_' \
+  -e 's_</emphasis>[ \t\r]*</title>_</title>_' \
+  -e 's_<abstract>[ \t\r]*<para>[ \t\r]*<para>_<para>_' \
+  -e 's_</para>[ \t\r]*</para>[ \t\r]*</abstract>_</para>_' \
+  -e 's_<title>[ \t\r]*\&kw-hos-(phrase|tm);[ \t\r]*(\&kw-hos-version-50;)?:[ \t\r]*_<title>_' \
+  )
+
+echo -e "$file" | tr '\r' '\n' > $1
 
 DECISION='n'
 while [[ $DECISION != 'y' ]];do
