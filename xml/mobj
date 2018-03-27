@@ -1,0 +1,66 @@
+#!/bin/bash
+
+if [[ $(git diff -- "$1") ]]; then
+  echo "File already has changes. For improved data safety, stage or commit them."
+  echo "Press the anykey to continue. (^C to cancel) \$ "
+  read ANYKEY
+fi
+
+file=$(cat "$1" | tr '\n' '\r')
+
+file=$(echo -e "$file" | sed -r \
+  -e 's_<mediaobject([ \t\r]*xml:id[^>]+)?>_<informalfigure><mediaobject>_g' \
+  -e 's_</mediaobject[ \t\r]*>_</mediaobject></informalfigure>_g' \
+  -e 's_<informaltable[ \t\r]*xml:id="[^"]+"_<informaltable_g' \
+  -e 's_object[ \t\r]*role_object role_g' \
+  -e 's_include[ \t\r]*href_include href_g' \
+  -e 's_width="75%"[ \t\r]*format="PNG"_width="75%"_g' \
+  -e 's_<(/)?(sidebar|formalpara)_<\1section_g' \
+  -e 's_<(/)?(guilabel|guibutton|guiicon)_<\1guimenu_g' \
+  -e 's_<(ordered|itemized)list[ \t\r]*xml:id="[^"]+">_<\1list>_g' \
+  -e 's_<title>[ \t\r]*<emphasis([ \t\r]*role="bold")?>_<title>_' \
+  -e 's_</emphasis>[ \t\r]*</title>_</title>_' \
+  -e 's_<abstract>[ \t\r]*<para>[ \t\r]*<para>_<para>_' \
+  -e 's_</para>[ \t\r]*</para>[ \t\r]*</abstract>_</para>_' \
+  -e 's_<literallayout[ \t\r]*class="normal"[ \t\r]*>[ \t\r]*</literallayout[ \t\r]*>__' \
+  -e 's_<para>[ \t\r]*<para>_<para>_' \
+  -e 's_</para>[ \t\r]*</para>_</para>_' \
+  -e 's_>(here|https?:[^<]+)</link>_/>_' \
+  -e 's_<title>[ \t\r]*\&kw-(hos|cs)-(phrase|tm);[ \t\r]*(\&kw-(hos|cs)-version-[15]0;)?:[ \t\r]*_<title>_' \
+  -e 's_<para>[ \t\r]*Expand All Sections[ \t\r]*Collapse All Sections[ \t\r]*</para>__g' \
+  -e 's_to (the )?<xref linkend="using\_git"/>, as follows:_to the local Git repository (see <xref linkend="using\_git"/>), as follows:_g' \
+  -e 's_you should insure_you should ensure_g' \
+  -e 's_motoring_monitoring_g' \
+  -e 's_<\?xml version="1\.0"\?>\r<!DOCTYPE_<?xml version="1.0"?>\r<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"\r type="text/xml"\r title="Profiling step"?>\r<!DOCTYPE_'
+  )
+
+echo -e "$file" | tr '\r' '\n' > $1
+
+val=$(xmllint --noout --noent "$1" 2>/dev/stdout)
+while [[ $val != '' ]]; do
+  echo -e "\n$val"
+  echo -e "\nXML is not well-formed. Make sure to fix file $1 in an editor"
+  echo "Press the anykey to continue. (^C to cancel) \$ "
+  read DECISION
+  val=$(xmllint --noout --noent "$1" 2>/dev/stdout)
+done
+
+DECISION='n'
+while [[ $DECISION != 'y' ]] && [[ $DECISION != 'r' ]];do
+  git diff -- $1
+  echo -n "Is the diff okay? (y)es, [n]o, (r)evert changes to file \$ "
+  read DECISION
+  if [[ $DECISION != 'y' ]] && [[ $DECISION != 'r' ]]; then
+    echo "Make changes now. Press the anykey for another diff. (^C to cancel) \$ "
+    read ANYKEY
+  fi
+  if [[ $DECISION == 'r' ]]; then
+    echo "Will now revert changes to $1 and exit. If you made unstaged changes to the file"
+    echo "before running mobj, these changes will be destroyed as well."
+    echo "Press the anykey to continue. (^C to cancel) \$ "
+    read ANYKEY
+    git checkout -- "$1"
+  fi
+done
+[[ $DECISION == 'r' ]] || daps-xmlformat -i $1
+
