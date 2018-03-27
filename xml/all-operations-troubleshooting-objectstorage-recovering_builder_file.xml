@@ -47,7 +47,8 @@
 
   <procedure>
     <step>
-      <para>Log in to the Swift ring building server. </para>
+      <para>Log in to the Swift ring building server (To identify the Swift ring building
+        server, see <xref linkend="topic_rtc_s3t_mt"/>).</para>
     </step>
     <step>
       <para>Create the <literal>/etc/swiftlm/builder_dir</literal> directory structure with these

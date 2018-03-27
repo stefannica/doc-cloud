@@ -10,6 +10,10 @@
 
 
     <para>The following examples provide an error message, description, and resolution.</para>
+    
+    <note><para>To resolve
+        an error, you must first modify the input model and re-run the configuration processor. (For
+        instructions, see <xref linkend="using_git"/>.) Then, continue with the deployment.</para></note>
 
     <orderedlist xml:id="ol_vnh_g2b_kt">
         <listitem>
