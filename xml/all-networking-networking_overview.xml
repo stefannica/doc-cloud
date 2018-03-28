@@ -108,7 +108,7 @@ ansible-playbook -i hosts/verb_hosts neutron-reconfigure.yml</screen>
  <xi:include href="all-networking-moving_from_dvr_deployments.xml"/>
  <xi:include href="all-networking-dpdk_ovs.xml"/>
  <xi:include href="all-networking-pcipt_sriov_config.xml"/>
- <xi:include href="all-networking-l2gw5930.xml"/>
+<!-- <xi:include href="all-networking-l2gw5930.xml"/>-->
 <!-- <xi:include href="all-networking-vlan-aware_vm.xml"/>-->
 <!-- <xi:include href="all-networking-vlan_transparency.xml"/>-->
 <!-- <xi:include href="all-networking-DCN_integration.xml"/>-->
