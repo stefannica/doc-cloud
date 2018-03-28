@@ -100,16 +100,14 @@ ansible-playbook -i hosts/verb_hosts neutron-reconfigure.yml</screen>
  <xi:include href="all-networking-using_ipam.xml"/>
  <xi:include href="all-networking-lbaas_admin.xml"/>
  <xi:include href="all-networking-octavia_admin.xml"/>
-
- <!-- FIXME: RBAC section is already included elsewhere. Punting for now. -->
- <!-- <xi:include href="all-networking-rbac.xml"/> -->
+ <xi:include href="network-rbac.xml"/>
  <xi:include href="all-networking-configure_mtu.xml"/>
  <xi:include href="all-networking-isolated_metadata.xml"/>
  <xi:include href="all-networking-moving_from_dvr_deployments.xml"/>
  <xi:include href="all-networking-dpdk_ovs.xml"/>
  <xi:include href="all-networking-pcipt_sriov_config.xml"/>
-<!-- <xi:include href="all-networking-l2gw5930.xml"/>-->
-<!-- <xi:include href="all-networking-vlan-aware_vm.xml"/>-->
-<!-- <xi:include href="all-networking-vlan_transparency.xml"/>-->
-<!-- <xi:include href="all-networking-DCN_integration.xml"/>-->
+ <xi:include href="network-l2gw5930.xml"/>
+ <xi:include href="all-networking-vlan-aware_vm.xml"/>
+ <xi:include href="all-networking-vlan_transparency.xml"/>
+ <xi:include href="all-networking-DCN_integration.xml"/>
 </section>
