@@ -21,14 +21,14 @@
  <xi:include href="all-operations-thirdparty_integrations.xml"/>
  <xi:include href="all-operations-managing_identity.xml"/>
  <xi:include href="all-operations-managing_compute.xml"/>
-<!-- <xi:include href="all-operations-managing_esx.xml"/>-->
-<!-- <xi:include href="all-operations-managing_blockstorage.xml"/>-->
-<!-- <xi:include href="all-operations-managing_objectstorage.xml"/>-->
-<!-- <xi:include href="all-operations-managing_networking.xml"/>-->
+ <xi:include href="all-operations-managing_esx.xml"/>
+ <xi:include href="all-operations-managing_blockstorage.xml"/>
+ <xi:include href="all-operations-managing_objectstorage.xml"/>
+ <xi:include href="all-operations-managing_networking.xml"/>
 <!-- <xi:include href="all-operations-managing_dashboards.xml"/>-->
 <!-- <xi:include href="all-operations-managing_orchestration.xml"/>-->
 <!-- <xi:include href="all-operations-managing_telemetry.xml"/>-->
 <!-- <xi:include href="all-operations-maintenance-system_maintenance.xml"/>-->
 <!-- <xi:include href="all-bura-bura_overview.xml"/>-->
-<!-- <xi:include href="all-operations-troubleshooting-troubleshooting_issues.xml"/>-->
+ <xi:include href="all-operations-troubleshooting-troubleshooting_issues.xml"/>
 </book>
