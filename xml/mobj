@@ -22,6 +22,7 @@ file=$(echo -e "$file" | sed -r \
   -e 's_</emphasis>[ \t\r]*</title>_</title>_' \
   -e 's_<abstract>[ \t\r]*<para>[ \t\r]*<para>_<para>_' \
   -e 's_</para>[ \t\r]*</para>[ \t\r]*</abstract>_</para>_' \
+  -e 's_<literallayout class="normal"></literallayout>__' \
   -e 's_<para>[ \t\r]*<para>_<para>_' \
   -e 's_</para>[ \t\r]*</para>_</para>_' \
   -e 's_>(here|https?:[^<]+)</link>_/>_' \
