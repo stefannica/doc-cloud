@@ -11,6 +11,7 @@ file=$(cat "$1" | tr '\n' '\r')
 file=$(echo -e "$file" | sed -r \
   -e 's_<mediaobject([ \t\r]*xml:id[^>]+)?>_<informalfigure><mediaobject>_g' \
   -e 's_</mediaobject[ \t\r]*>_</mediaobject></informalfigure>_g' \
+  -e 's_<informaltable[ \t\r]*xml:id="[^"]+"_<informaltable_g' \
   -e 's_object[ \t\r]*role_object role_g' \
   -e 's_include[ \t\r]*href_include href_g' \
   -e 's_width="75%"[ \t\r]*format="PNG"_width="75%"_g' \
@@ -24,7 +25,7 @@ file=$(echo -e "$file" | sed -r \
   -e 's_<para>[ \t\r]*<para>_<para>_' \
   -e 's_</para>[ \t\r]*</para>_</para>_' \
   -e 's_>(here|https?:[^<]+)</link>_/>_' \
-  -e 's_<title>[ \t\r]*\&kw-hos-(phrase|tm);[ \t\r]*(\&kw-hos-version-50;)?:[ \t\r]*_<title>_' \
+  -e 's_<title>[ \t\r]*\&kw-(hos|cs)-(phrase|tm);[ \t\r]*(\&kw-(hos|cs)-version-[15]0;)?:[ \t\r]*_<title>_' \
   -e 's_<para>[ \t\r]*Expand All Sections[ \t\r]*Collapse All Sections[ \t\r]*</para>__g' \
   -e 's_to (the )?<xref linkend="using\_git"/>, as follows:_to the local Git repository (see <xref linkend="using\_git"/>), as follows:_g' \
   -e 's_you should insure_you should ensure_g' \
@@ -60,5 +61,5 @@ while [[ $DECISION != 'y' ]] && [[ $DECISION != 'r' ]];do
     git checkout -- "$1"
   fi
 done
-daps-xmlformat -i $1
+[[ $DECISION == 'r' ]] || daps-xmlformat -i $1
 
