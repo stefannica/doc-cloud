@@ -2,11 +2,11 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
  type="text/xml"
  title="Profiling step"?>
-<!DOCTYPE section [
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Compute_Sum_Sum">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Compute_Sum_Sum">
  <title>Compute Summary</title>
  <para>
   This page provides cards that are a visual representation of compute host
@@ -162,4 +162,4 @@
    </para>
   </listitem>
  </itemizedlist>
-</section>
+</chapter>

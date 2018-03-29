@@ -2,11 +2,11 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
  type="text/xml"
  title="Profiling step"?>
-<!DOCTYPE section [
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Integrated_Tools">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="CS_Ops_Integrated_Tools">
  <title>Integrated Tools</title>
  <para>
   This page allows you to connect and manage the connection from the Operations
@@ -37,4 +37,4 @@
   <link xlink:href="http://www.hpe.com/info/cloudsystem/docs">HPE Helion
   CloudSystem Administrator Guide</link>
  </para>
-</section>
+</chapter>

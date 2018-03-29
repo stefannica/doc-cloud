@@ -2,11 +2,11 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
  type="text/xml"
  title="Profiling step"?>
-<!DOCTYPE section [
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="compute_instances">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="compute_instances">
  <title>Compute Instances</title>
  <para>
   This Operations Console page allows you to monitor your Compute instances.
@@ -92,4 +92,4 @@
    </listitem>
   </itemizedlist>
  </section>
-</section>
+</chapter>

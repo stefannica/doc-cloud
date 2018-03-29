@@ -2,11 +2,11 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
  type="text/xml"
  title="Profiling step"?>
-<!DOCTYPE section [
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="notification_methods">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="notification_methods">
  <title>Notification Methods</title>
  <para>
   This page allows you to define notification methods that are used by the
@@ -141,4 +141,4 @@
    refreshes with the new notification method populated in the table.
   </para>
  </section>
-</section>
+</chapter>

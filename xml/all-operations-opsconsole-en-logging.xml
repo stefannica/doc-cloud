@@ -2,11 +2,11 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
  type="text/xml"
  title="Profiling step"?>
-<!DOCTYPE section [
+<!DOCTYPE chapter [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <!---->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-opsconsole-en-logging-xml-1">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-opsconsole-en-logging-xml-1">
  <title>Logging</title>
  <para>
   This page displays the link to the Logging Interface, known as Kibana.
@@ -19,7 +19,7 @@
   </para>
   <para>
    For more details about the logging interface, see the
-   <xref linkend="centralized_logging"/>
+   <!-- FIXME: uncomment <xref linkend="centralized_logging"/> -->
   </para>
  </section>
-</section>
+</chapter>
