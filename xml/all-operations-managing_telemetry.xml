@@ -16,6 +16,6 @@
   &kw-hos; cloud.
  </para>
  <xi:include href="all-operations-monitoring.xml"/>
-<!-- <xi:include href="all-operations-centralized_logging.xml"/>-->
-<!-- <xi:include href="all-metering-metering_overview.xml"/>-->
+ <xi:include href="all-operations-centralized_logging.xml"/>
+ <xi:include href="all-metering-metering_overview.xml"/>
 </chapter>
