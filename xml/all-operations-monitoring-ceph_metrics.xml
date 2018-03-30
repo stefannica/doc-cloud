@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
@@ -20,10 +21,41 @@
               <entry>cephlm.capacity.available_bytes</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ceph_metrics">
+ <title>Ceph Metrics</title>
+ <para>
+  A list of metrics associated with the Ceph service.
+ </para>
+ <informaltable colsep="1" rowsep="1">
+  <tgroup cols="3">
+   <colspec colname="c1" colnum="1"/>
+   <colspec colname="c2" colnum="2"/>
+   <colspec colname="c3" colnum="3"/>
+   <thead>
+    <row>
+     <entry>Metric Name</entry>
+     <entry>Dimensions</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>cephlm.capacity.available_bytes</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total available CEPH storage in bytes</entry>
             </row>
@@ -31,10 +63,20 @@ control_plane</screen>
               <entry>cephlm.capacity.perc_utilization</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total available CEPH storage in bytes</entry>
+    </row>
+    <row>
+     <entry>cephlm.capacity.perc_utilization</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Percentage of used CEPH storage</entry>
             </row>
@@ -42,10 +84,20 @@ control_plane</screen>
               <entry>cephlm.capacity.total_bytes</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Percentage of used CEPH storage</entry>
+    </row>
+    <row>
+     <entry>cephlm.capacity.total_bytes</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total CEPH storage in bytes</entry>
             </row>
@@ -53,10 +105,20 @@ control_plane</screen>
               <entry>cephlm.capacity.used_bytes</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total CEPH storage in bytes</entry>
+    </row>
+    <row>
+     <entry>cephlm.capacity.used_bytes</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total used CEPH storage</entry>
             </row>
@@ -64,10 +126,20 @@ control_plane</screen>
               <entry>cephlm.cephlm_check</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total used CEPH storage</entry>
+    </row>
+    <row>
+     <entry>cephlm.cephlm_check</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Checks if cephlm monasca plugin can collect/process the generated
                 metrics</entry>
@@ -76,10 +148,21 @@ control_plane</screen>
               <entry>cephlm.cluster.status</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Checks if cephlm monasca plugin can collect/process the generated
+                metrics</entry>
+    </row>
+    <row>
+     <entry>cephlm.cluster.status</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>CEPH Cluster status</entry>
             </row>
@@ -87,10 +170,20 @@ control_plane</screen>
               <entry>cephlm.connectivity.status</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>CEPH Cluster status</entry>
+    </row>
+    <row>
+     <entry>cephlm.connectivity.status</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Node connectivity status</entry>
             </row>
@@ -98,10 +191,20 @@ control_plane</screen>
               <entry>cephlm.monitor.quorum</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Node connectivity status</entry>
+    </row>
+    <row>
+     <entry>cephlm.monitor.quorum</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>CEPH Monitor quorum status</entry>
             </row>
@@ -109,10 +212,20 @@ control_plane</screen>
               <entry>cephlm.osd.down_count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>CEPH Monitor quorum status</entry>
+    </row>
+    <row>
+     <entry>cephlm.osd.down_count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of osd's which are in down state</entry>
             </row>
@@ -120,10 +233,20 @@ control_plane</screen>
               <entry>cephlm.osd.down_in_count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of osd's which are in down state</entry>
+    </row>
+    <row>
+     <entry>cephlm.osd.down_in_count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of osd's which are down but in the cluster</entry>
             </row>
@@ -131,10 +254,20 @@ control_plane</screen>
               <entry>cephlm.osd.osd_journal_ratio</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of osd's which are down but in the cluster</entry>
+    </row>
+    <row>
+     <entry>cephlm.osd.osd_journal_ratio</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Ratio of number of osd's per journal disk.</entry>
             </row>
@@ -142,10 +275,20 @@ control_plane</screen>
               <entry>cephlm.osd.total_count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Ratio of number of osd's per journal disk.</entry>
+    </row>
+    <row>
+     <entry>cephlm.osd.total_count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of osd's</entry>
             </row>
@@ -153,10 +296,20 @@ control_plane</screen>
               <entry>cephlm.osd.up_count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of osd's</entry>
+    </row>
+    <row>
+     <entry>cephlm.osd.up_count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of osd's which are in up state</entry>
             </row>
@@ -164,10 +317,20 @@ control_plane</screen>
               <entry>cephlm.osd.up_out_count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of osd's which are in up state</entry>
+    </row>
+    <row>
+     <entry>cephlm.osd.up_out_count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of osd's which are up but out of the cluster</entry>
             </row>
@@ -175,10 +338,20 @@ control_plane</screen>
               <entry>cephlm.perfscale.nic_speed_private</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of osd's which are up but out of the cluster</entry>
+    </row>
+    <row>
+     <entry>cephlm.perfscale.nic_speed_private</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Private NIC Speed</entry>
             </row>
@@ -186,10 +359,20 @@ control_plane</screen>
               <entry>cephlm.perfscale.nic_speed_public</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Private NIC Speed</entry>
+    </row>
+    <row>
+     <entry>cephlm.perfscale.nic_speed_public</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Public NIC Speed</entry>
             </row>
@@ -197,10 +380,20 @@ control_plane</screen>
               <entry>cephlm.perfscale.osd_node_ram</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Public NIC Speed</entry>
+    </row>
+    <row>
+     <entry>cephlm.perfscale.osd_node_ram</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Memory-disk ratio of 1GB RAM per 1TB of data disk</entry>
             </row>
@@ -208,10 +401,20 @@ control_plane</screen>
               <entry>cephlm.pg.count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Memory-disk ratio of 1GB RAM per 1TB of data disk</entry>
+    </row>
+    <row>
+     <entry>cephlm.pg.count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of pg's with message containing count of each pg in various
                 states</entry>
@@ -220,10 +423,21 @@ control_plane</screen>
               <entry>cephlm.pool.count</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of pg's with message containing count of each pg in various
+                states</entry>
+    </row>
+    <row>
+     <entry>cephlm.pool.count</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total count of pools</entry>
             </row>
@@ -231,10 +445,20 @@ control_plane</screen>
               <entry>cephlm.pool.top_three_by_objects</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total count of pools</entry>
+    </row>
+    <row>
+     <entry>cephlm.pool.top_three_by_objects</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Top 3 pools ordered by total number of objects</entry>
             </row>
@@ -242,10 +466,20 @@ control_plane</screen>
               <entry>cephlm.pool.top_three_by_usage_bytes</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Top 3 pools ordered by total number of objects</entry>
+    </row>
+    <row>
+     <entry>cephlm.pool.top_three_by_usage_bytes</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Top 3 pools ordered by usage</entry>
             </row>
@@ -253,10 +487,20 @@ control_plane</screen>
               <entry>cephlm.pool.total_objects</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Top 3 pools ordered by usage</entry>
+    </row>
+    <row>
+     <entry>cephlm.pool.total_objects</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total number of objects in pools</entry>
             </row>
@@ -264,10 +508,20 @@ control_plane</screen>
               <entry>cephlm.pool.usage_bytes</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total number of objects in pools</entry>
+    </row>
+    <row>
+     <entry>cephlm.pool.usage_bytes</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total used storage by pools in bytes</entry>
             </row>
@@ -275,10 +529,20 @@ control_plane</screen>
               <entry>cephlm.probe.failure</entry>
               <entry>
                 <screen>service=ceph-storage
+=======
+     </entry>
+     <entry>Total used storage by pools in bytes</entry>
+    </row>
+    <row>
+     <entry>cephlm.probe.failure</entry>
+     <entry>
+<screen>service=ceph-storage
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 cluster
 cloud_name
 control_plane</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Checks if cephlm-probe tool is able to execute a monitoring task</entry>
             </row>
@@ -286,3 +550,12 @@ control_plane</screen>
         </tgroup></informaltable>
 
   </section>
+=======
+     </entry>
+     <entry>Checks if cephlm-probe tool is able to execute a monitoring task</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </informaltable>
+</section>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef

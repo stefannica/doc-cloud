@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
@@ -21,11 +22,42 @@
               <entry>nova.heartbeat</entry>
               <entry>
                 <screen>service=compute
+=======
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="idg-all-operations-monitoring-compute_metrics-xml-1">
+ <title>Compute Metrics</title>
+ <para>
+  A list of metrics associated with the Compute service.
+ </para>
+ <informaltable colsep="1" rowsep="1">
+  <tgroup cols="3">
+   <colspec colname="c1" colnum="1"/>
+   <colspec colname="c2" colnum="2"/>
+   <colspec colname="c3" colnum="3"/>
+   <thead>
+    <row>
+     <entry>Metric Name</entry>
+     <entry>Dimensions</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>nova.heartbeat</entry>
+     <entry>
+<screen>service=compute
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 cloud_name
 hostname
 component
 control_plane
 cluster</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Checks that all services are running heartbeats (uses nova user and to list
                 services then sets up checks for each. e.g. (nova-cheduler, nova-conducter,
@@ -35,10 +67,26 @@ cluster</screen>
               <entry>nova.vm.cpu.total_allocated</entry>
               <entry>
                 <screen>service=compute
+=======
+     </entry>
+     <entry>
+      <para>
+       Checks that all services are running heartbeats (uses nova user and to
+       list services then sets up checks for each. e.g. nova-scheduler,
+       nova-conductor, nova-consoleauth, nova-compute)
+      </para>
+     </entry>
+    </row>
+    <row>
+     <entry>nova.vm.cpu.total_allocated</entry>
+     <entry>
+<screen>service=compute
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 component
 control_plane
 cluster</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total CPUs allocated across all VMs</entry>
             </row>
@@ -46,10 +94,20 @@ cluster</screen>
               <entry>nova.vm.disk.total_allocated_gb</entry>
               <entry>
                 <screen>service=compute
+=======
+     </entry>
+     <entry>Total CPUs allocated across all VMs</entry>
+    </row>
+    <row>
+     <entry>nova.vm.disk.total_allocated_gb</entry>
+     <entry>
+<screen>service=compute
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 component
 control_plane
 cluster</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total Gbytes of disk space allocated to all VMs</entry>
             </row>
@@ -57,10 +115,20 @@ cluster</screen>
               <entry>nova.vm.mem.total_allocated_mb</entry>
               <entry>
                 <screen>service=compute
+=======
+     </entry>
+     <entry>Total Gbytes of disk space allocated to all VMs</entry>
+    </row>
+    <row>
+     <entry>nova.vm.mem.total_allocated_mb</entry>
+     <entry>
+<screen>service=compute
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 hostname
 component
 control_plane
 cluster</screen>
+<<<<<<< HEAD
               </entry>
               <entry>Total Mbytes of memory allocated to all VMs</entry>
             </row>
@@ -68,3 +136,12 @@ cluster</screen>
         </tgroup></informaltable>
 
   </section>
+=======
+     </entry>
+     <entry>Total Mbytes of memory allocated to all VMs</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </informaltable>
+</section>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef

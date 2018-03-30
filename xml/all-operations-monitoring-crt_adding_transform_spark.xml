@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <!DOCTYPE section [
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
@@ -19,6 +20,39 @@
 <screen>cd ~/helion/my_cloud/definition/data/</screen><para> Add spark and
             monasca-transform to input model, control_plane.yml
             </para>
+=======
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook51-profile.xsl"
+ type="text/xml"
+ title="Profiling step"?>
+<!DOCTYPE section [
+ <!ENTITY % entities SYSTEM "entities.ent"> %entities;
+]>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="crt_adding_transform_spark">
+ <title>Adding Monasca Transform and Spark to &kw-hos; Deployment</title>
+  <para>
+   Since Monasca Transform and Spark are optional components, the users might
+   elect to not install these two components during their initial
+   &kw-hos; install. The following instructions provide a way the users
+   can add Monasca Transform and Spark to their existing &kw-hos;
+   deployment.
+  </para>
+  <para>
+   <emphasis role="bold">Steps</emphasis>
+  </para>
+  <orderedlist>
+   <listitem>
+    <para>
+     Add Monasca Transform and Spark to the input model. Monasca Transform and
+     Spark on a entry level cloud would be installed on the common control
+     plane, for mid scale cloud which has a MML (Metering, Monitoring and
+     Logging) cluster, Monasca Transform and Spark will should be added added
+     to MML cluster.
+    </para>
+<screen>cd ~/helion/my_cloud/definition/data/</screen>
+    <para>
+     Add spark and monasca-transform to input model, control_plane.yml
+    </para>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 <screen>clusters
        - name: core
          cluster-prefix: c1
@@ -42,13 +76,23 @@
            - monasca-transform
 
            [...]
+<<<<<<< HEAD
             </screen></listitem>
         <listitem><para>Run the Configuration Processor
         </para>
+=======
+            </screen>
+   </listitem>
+   <listitem>
+    <para>
+     Run the Configuration Processor
+    </para>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 <screen>cd ~/helion/my_cloud/definition
 git add -A
 git commit -m "Adding Monasca Transform and Spark"
 cd ~/helion/hos/ansible
+<<<<<<< HEAD
 ansible-playbook -i hosts/localhost config-processor-run.yml</screen></listitem>
         <listitem><para>Run Ready Deployment
           </para>
@@ -61,6 +105,32 @@ ansible-playbook -i hosts/localhost ready-deployment.yml
 ansible-playbook -i hosts/verb_hosts hlm-deploy.yml</screen></listitem>
       </orderedlist><para><emphasis role="bold">Verify Deployment</emphasis></para>
 <para>Login to each controller node and run </para>
+=======
+ansible-playbook -i hosts/localhost config-processor-run.yml</screen>
+   </listitem>
+   <listitem>
+    <para>
+     Run Ready Deployment
+    </para>
+<screen>cd ~/helion/hos/ansible
+ansible-playbook -i hosts/localhost ready-deployment.yml
+</screen>
+   </listitem>
+   <listitem>
+    <para>
+     Run HLM Deploy
+    </para>
+<screen>cd ~/scratch/ansible/next/hos/ansible
+ansible-playbook -i hosts/verb_hosts hlm-deploy.yml</screen>
+   </listitem>
+  </orderedlist>
+  <para>
+   <emphasis role="bold">Verify Deployment</emphasis>
+  </para>
+  <para>
+   Login to each controller node and run
+  </para>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 <screen>sudo service monasca-transform status
 sudo service spark-master status
 sudo service spark-worker status</screen>
@@ -102,5 +172,9 @@ Main PID: 55572 (bash)
           └─55573 /usr/bin/java -cp /opt/stack/service/spark/venv/bin/../current/conf/:/opt/stack/service/spark/venv/bin/../current/lib/spark-assembly-1.6.1-hadoop2.6.0.jar:/opt/stack/service/spark/ven...
 Warning: Journal has been rotated since unit was started. Log output is incomplete or unavailable.
         </screen>
+<<<<<<< HEAD
 </sidebar>
   </section>
+=======
+</section>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef

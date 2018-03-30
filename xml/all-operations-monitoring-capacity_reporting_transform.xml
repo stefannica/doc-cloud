@@ -54,10 +54,19 @@
  <xi:include href="all-operations-monitoring-crt_arch_transform_spark.xml"/>
  <xi:include href="all-operations-monitoring-crt_components.xml"/>
  <xi:include href="all-operations-monitoring-crt_aggregated_metrics.xml"/>
+<<<<<<< HEAD
 <!-- <xi:include href="all-operations-monitoring-crt_deployment.xml"/>-->
 <!-- <xi:include href="all-operations-monitoring-crt_upgrade.xml"/>-->
 <!-- <xi:include href="all-operations-monitoring-crt_reconfigure.xml"/>-->
 <!-- <xi:include href="all-operations-monitoring-crt_adding_transform_spark.xml"/>-->
 <!-- <xi:include href="all-operations-monitoring-crt_increasing_scale.xml"/>-->
 <!-- <xi:include href="all-operations-monitoring-crt_change_compute_host.xml"/>-->
+=======
+ <xi:include href="all-operations-monitoring-crt_deployment.xml"/>
+ <xi:include href="all-operations-monitoring-crt_upgrade.xml"/>
+ <xi:include href="all-operations-monitoring-crt_reconfigure.xml"/>
+ <xi:include href="all-operations-monitoring-crt_adding_transform_spark.xml"/>
+ <xi:include href="all-operations-monitoring-crt_increasing_scale.xml"/>
+ <xi:include href="all-operations-monitoring-crt_change_compute_host.xml"/>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 </section>

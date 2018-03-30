@@ -6,6 +6,7 @@
  <!ENTITY % entities SYSTEM "entities.ent"> %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="barbican">
+<<<<<<< HEAD
  <title>&kw-hos-tm;: Key Management With the Barbican Service</title>
 <!-- TODO UPGRADE Is this only applicable to V3 docs -->
 <!--<xref href="../upgrade/enable_barbican_for_upgrade.dita#barbicanUpgrade"
@@ -13,6 +14,46 @@
   <keyword keyref="kw-hos"/> (separate document) -->
  <section xml:id="idg-all-security-barbican-xml-4">
   <title>Barbican Service Overview</title>
+=======
+ <title>&kw-hos-tm;: Key Management with the Barbican Service</title>
+<!-- FIXME: What purpose does this itemized list serve? -->
+ <itemizedlist>
+  <listitem>
+   <para>
+    <!-- FIXME: <link xlink:href="#barbican/overview">Barbican service overview</link> -->
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    <!-- FIXME: <link xlink:href="#barbican/installation">Installation information</link> -->
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      <!-- FIXME: <link xlink:href="#barbican/kmip">KMIP plug-in support</link> -->
+     </para>
+    </listitem>
+   </itemizedlist>
+  </listitem>
+  <listitem>
+   <para>
+    <link xlink:href="#barbican/auditing">Auditing</link>
+   </para>
+  </listitem>
+  <!-- TODO UPGRADE Is this only applicable to V3 docs -->
+  <!--<li><xref href="../upgrade/enable_barbican_for_upgrade.dita#barbicanUpgrade"
+  Enabling Barbican when upgrading</xref> from previous versions of
+  <keyword keyref="kw-hos"/> (separate document)</li>-->
+  <listitem>
+   <para>
+    <!-- FIXME: <xref linkend="dar"/> -->
+    (separate document)
+   </para>
+  </listitem>
+ </itemizedlist>
+ <section xml:id="idg-all-security-barbican-xml-4">
+  <title>Barbican service overview</title>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   <para>
    Barbican is an &ostack-bare; key management service offering secure storage,
    provisioning, and management of key data. The Barbican service provides
@@ -21,8 +62,13 @@
    Management Interoperability Protocol (KMIP) plug-in for a KMIP-compliant HSM
    Hardware Secure Module (HSM) device. Barbican supports symmetric and
    asymmetric key generation using various algorithms. Cinder, neutron-lbaas v2
+<<<<<<< HEAD
    and Nova will integrate with Barbican for their encryption key generation
    and storage.
+=======
+   and Nova will  integrate with Barbican for their encryption key generation
+and storage.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   </para>
   <para>
    Barbican has two types of core feature sets:
@@ -30,28 +76,43 @@
   <itemizedlist>
    <listitem>
     <para>
+<<<<<<< HEAD
      The <emphasis>Barbican component</emphasis>, a Web Server Gateway
      Interface (WSGI) application that exposes a REST API for
      secrets/containers/orders.
+=======
+     The <emphasis>Barbican component</emphasis>, a Web Server Gateway Interface (WSGI) application
+     that exposes a REST API for secrets/containers/orders.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
    </listitem>
    <listitem>
     <para>
+<<<<<<< HEAD
      <emphasis>Barbican workers</emphasis> for asynchronous processing, which
      is used for various messaging-event-driven tasks related to certificate
+=======
+     <emphasis>Barbican workers</emphasis> for asynchronous processing, which is
+     used for various messaging-event-driven tasks related to certificate
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
      generation.
     </para>
    </listitem>
   </itemizedlist>
  </section>
  <section xml:id="features">
+<<<<<<< HEAD
   <title>Key Features</title>
+=======
+  <title>Key features</title>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   <para>
    The major features of the Barbican key management service are:
   </para>
   <itemizedlist>
    <listitem>
     <para>
+<<<<<<< HEAD
      The ability to encrypt volumes/disks. In an &ostack-bare; context, this
      means support for encrypting Cinder volumes (volume encryption). Cinder
      has its own key manager interface (KeyMgr) and can use BarbicanClient as
@@ -59,6 +120,15 @@
      Barbican as its key manager when Barbican is enabled. KeyMgr encrypts data
      in the virtualization host before writing data to the remote disk. There
      are three options available in &kw-hos;:
+=======
+     The ability to encrypt volumes/disks. In an &ostack-bare; context, this means
+     support for encrypting Cinder volumes (volume encryption). Cinder has its
+     own key manager interface (KeyMgr) and can use BarbicanClient as one of
+     its implementations. By default in &kw-hos-phrase;, Cinder uses Barbican
+     as its key manager when Barbican is enabled. KeyMgr encrypts data in the
+     virtualization host before writing data to the remote disk. There are
+     three options available in &kw-hos;:
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
     <itemizedlist>
      <listitem>
@@ -68,8 +138,13 @@
      </listitem>
      <listitem>
       <para>
+<<<<<<< HEAD
        Barbican with KMIP and PKCS11 and external KMS (certified with
        MicroFocus ESKM),
+=======
+       Barbican with KMIP and PKCS11 and external KMS (certified with MicroFocus
+       ESKM),
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
       </para>
      </listitem>
      <listitem>
@@ -103,8 +178,13 @@
    </listitem>
    <listitem>
     <para>
+<<<<<<< HEAD
      A well-defined auditing ability in &ostack-bare; services for key access
      and lifecycle events
+=======
+     A well-defined auditing ability in &ostack-bare; services for key access and
+     lifecycle events
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
    </listitem>
    <listitem>
@@ -131,8 +211,13 @@
  </section>
  <section xml:id="idg-all-security-barbican-xml-6">
   <title>Installation</title>
+<<<<<<< HEAD
 <!-- TODO UPGRADE -->
 <!--The initial preparation for
+=======
+  <!-- TODO UPGRADE -->
+  <!--The initial preparation for
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   Barbican use looks like this:<p>Upgrade: if you are upgrading to <keyword
       keyref="kw-hos-phrase"/> from 2.x versions, you need follow these steps after upgrading
     from 2.x to 3.0:</p>
@@ -154,11 +239,19 @@
   <itemizedlist>
    <listitem>
     <para>
+<<<<<<< HEAD
      For new installations, no changes are needed for Barbican to be enabled.
      When installing your cloud, you should use the input models which already
      define the necessary Barbican components. When using the pre-defined input
      model files that come with &kw-hos-phrase;, nothing else needs to be done
      in those files.
+=======
+     No changes are needed for Barbican to be enabled. When installing your
+     cloud, you should use the input model definitions which already define the
+     necessary Barbican components. When using the pre-defined input model
+     files that come with &kw-hos-phrase;, nothing else needs to be done in
+     those files.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
    </listitem>
    <listitem>
@@ -180,16 +273,25 @@
     </para>
    </listitem>
   </itemizedlist>
+<<<<<<< HEAD
   <bridgehead renderas="sect4">Master Key Configuration</bridgehead>
   <para>
    Barbican currently supports databases and KMIP as its secret store back-ends
    In &ostack-bare; upstream additional back-ends are available, such as the
    PKCS11 and dogtag plug-ins, but they are not tested or supported by
    &kw-hos;.
+=======
+<bridgehead renderas="sect4">Error Received if Root Logical Volume is Too Small</bridgehead>
+  <para>
+   Barbican currently supports databases and KMIP as its secret store back-ends
+   In &ostack-bare; upstream additional back-ends are available, such as the PKCS11
+   and dogtag plug-ins, but they are not tested or supported by &kw-hos;.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   </para>
   <para>
    In &kw-hos;, by default Barbican is configured to use a database as a secret
    (keys) storage back-end. This back-end encrypts Barbican-managed keys with a
+<<<<<<< HEAD
    project level key (<emphasis>KEK</emphasis>/Key Encryption Key) before
    storing it in the database. Project-level keys are encrypted using a master
    key. As part of the initial Barbican configuration, you must generate and
@@ -201,6 +303,12 @@
    <emphasis role="bold">before initial deployment</emphasis>. If no key is
    specified before deployment, the default master key is
    used&mdash;<emphasis role="bold">this practice is discouraged</emphasis>.
+=======
+   project level key (kek or key encryption key) before storing it in the
+   database. Project-level keys are encrypted using a master key. As part of
+   the initial Barbican configuration, you must generate and configure this
+   master key.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   </para>
   <procedure>
    <step>
@@ -221,8 +329,13 @@
    </step>
    <step>
     <para>
+<<<<<<< HEAD
      If there is an existing <literal>barbican_customer_master_key</literal>
      value, replace it with the generated master key you just generated.
+=======
+     If there is an existing <literal>barbican_customer_master_key</literal> value, replace it
+     with the generated master key you just generated.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
    </step>
    <step>
@@ -246,6 +359,7 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
     </para>
    </step>
   </procedure>
+<<<<<<< HEAD
   <bridgehead renderas="sect4">Upgrade Master Key Configuration</bridgehead>
   <procedure>
    <step>
@@ -331,20 +445,32 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
    </step>
   </procedure>
   <bridgehead renderas="sect4">KMIP Plug-in Support</bridgehead>
+=======
+<bridgehead renderas="sect4">KMIP Plug-in Support</bridgehead>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   <para>
    Barbican has a KMIP plug-in to store encryption keys (called secrets in
    Barbican service terminology) in an HSM device using the KMIP protocol. This
    plug-in has been tested against MicroFocus ESKM with KMIP server. To enable
    its support, Barbican needs to be configured with the corresponding plug-in
+<<<<<<< HEAD
    connection details, and client certificate information needs to be defined
    in its configuration. The ESKM KMIP server uses a client certificate to
+=======
+   connection details, and client certificate information needs to be defined in
+   its configuration. The ESKM KMIP server uses a client certificate to
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
    validate a KMIP client connection established by the Barbican server. As
    part of that KMIP configuration, playbooks provide a mechanism to upload
    your client certs to nodes hosting the Barbican API server.
   </para>
   <para>
+<<<<<<< HEAD
    KMIP deployment instructions can be found in
    <xref linkend="configure_KMIP_ESKM"/>.
+=======
+   KMIP deployment instructions can be found in <xref linkend="configure_KMIP_ESKM"/>.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   </para>
   <note>
    <para>
@@ -356,6 +482,7 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
     <link xlink:href="https://software.microfocus.com/en-us/products/eskm-enterprise-secure-key-management/overview"/>.
    </para>
   </note>
+<<<<<<< HEAD
  </section>
  <section xml:id="audit-barbican">
   <title>Auditing Barbican Events</title>
@@ -369,11 +496,26 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
    location of audit log file is driven by common auditing configuration.
   </para>
   <bridgehead renderas="sect4">Enabling and Disabling Auditing</bridgehead>
+=======
+<bridgehead renderas="sect4">Auditing Barbican Events</bridgehead>
+  <para>
+   The Barbican service supports auditing and uses
+   <xref linkend="idg-all-security-middleware_auditing-xml-1"/>
+   to generate auditing data in Cloud Auditing Data Federation (CADF) format.
+   The &kw-hos; input model has a mechanism to enable and disable auditing on a
+   per-service basis. When Barbican auditing is enabled, it writes audit
+   messages to an audit log file that is separate from the Barbican internal
+   logging. The base location of audit log file is driven by common auditing
+   configuration.
+  </para>
+<bridgehead renderas="sect5">Enabling and Disabling Auditing</bridgehead>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   <para>
    The auditing of Barbican events can be enabled and disabled thorough the
    Barbican reconfigure playbook. As part of the configuration of Barbican, its
    audit messages can be directed to a log or to a messaging queue. By default,
    messages are written to the Barbican log file. Once an architecture-level
+<<<<<<< HEAD
    decision is made with regards to the default consumer of audit events
    (either logging or messaging), the Barbican service can be configured to use
    it as the default option when auditing is enabled.
@@ -381,22 +523,42 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
   <para>
    Auditing can be disabled or enabled by following these steps on the &lcm;
    node.
+=======
+   decision is made with regards to the default consumer of audit events (either
+   logging or messaging), the Barbican service can be configured to use it as
+   the default option when auditing is enabled.
+  </para>
+  <para>
+   Auditing can be disabled or enabled by following these steps on the
+   &lcm; node.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   </para>
   <procedure>
    <step>
     <para>
+<<<<<<< HEAD
      Edit the file
      <literal>~/openstack/my_cloud/definition/cloudConfig.yml</literal>. All
      audit-related configuration is defined in the audit-settings section. You
      must use valid YAML syntax when specifying values.
+=======
+     Edit the file <literal>~/openstack/my_cloud/definition/cloudConfig.yml</literal>.
+     All audit-related configuration is defined in the audit-settings section.
+     You must use valid YAML syntax when specifying values.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
    </step>
    <step>
     <para>
      Any service (including Barbican) that is listed under enabled-services or
      disabled-services will override the default setting. To enable auditing,
+<<<<<<< HEAD
      make sure that the Barbican service name is in the enabled-services list
      of the <literal>audit-settings</literal> section or is not present in
+=======
+     make sure that the Barbican service name is in the enabled-services list of
+     the <literal>audit-settings</literal> section or is not present in
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
      disabled-services list when default: is set to enabled.
     </para>
     <para>
@@ -408,8 +570,13 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
      If you want to disable (or enable) a few, whichever is the opposite of the
      default global setting you used, you can do so in a disabled-services (or
      enabled-services) section below it. Here the enabled-services entry is
+<<<<<<< HEAD
      commented out. You should only have either a default of enabled (or
      disabled) or a section of disabled (or enabled). There is no need to
+=======
+     commented out. You should only have either a default of enabled
+     (or disabled) or a section of disabled (or enabled). There is no need to
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
      duplicate the setting.
     </para>
 <screen>audit-settings:
@@ -428,10 +595,17 @@ ansible-playbook -i hosts/localhost ready-deployment.yml</screen>
    <step>
     <para>
      When you are satisfied with your settings, copy the files to
+<<<<<<< HEAD
      <literal>~/openstack/my_cloud/definition/</literal>, and commit the
      changes in the git repository. For example, if you are using the Entry
      Scale KVM model, you would copy from ~/openstack/examples/entry-scale-kvm
      and commit.
+=======
+     <literal>~/openstack/my_cloud/definition/</literal>, and commit the changes
+     in the git repository. For example, if you are using the Entry Scale KVM
+     model, you would copy from ~/openstack/examples/entry-scale-kvm and
+     commit.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
     </para>
 <screen>
 cp -r ~/openstack/examples/entry-scale-kvm/* ~/openstack/my_cloud/definition/
@@ -464,7 +638,11 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
    added is primarily related to Barbican user, roles, service and endpoint
    definitions, and Barbican role assignments.
   </para>
+<<<<<<< HEAD
   <bridgehead renderas="sect4">User, Roles, Service and Endpoint Definitions</bridgehead>
+=======
+<bridgehead renderas="sect4">User, Roles, Service and Endpoint Definitions</bridgehead>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   <informaltable colsep="1" rowsep="1">
    <tgroup cols="4">
     <colspec colname="c1" colnum="1" colwidth="1.0*"/>
@@ -498,9 +676,15 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         Password is randomly generated and made available in the Barbican
         client environment setup script, <literal>barbican.osrc,</literal>, on
         the &lcm; node.
+=======
+        Password is randomly generated and made available in the Barbican client
+        environment setup script, <literal>barbican.osrc,</literal>, on the
+        &lcm; node.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -517,8 +701,12 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         Service account used for Keystone token validation by
         <literal>barbican</literal> service.
+=======
+        Service account used for Keystone token validation by <literal>barbican</literal> service.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
       <entry>
@@ -541,15 +729,25 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         Barbican specific role with privilege to create/modify/list/delete
         keys, certificates.
+=======
+        Barbican specific role with privilege to create/modify/list keys,
+        certificates.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         This role has the same privileges defined for
         <literal>creator</literal> role in upstream Barbican. Referenced in the
         service policy config file, <filename>policy.json</filename>.
+=======
+        This role has the same privileges defined for <literal>creator</literal> role in upstream
+        Barbican. Referenced in the service policy config file, <filename>policy.json</filename>.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -566,17 +764,26 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         Barbican specific role that has administrative privileges. Privileges
         include modifications (update/delete) in container's consumer,
         transport keys, certificate authorities (CA), assignment and management
         of per project CA.
+=======
+        Barbican specific role that has administrative privileges.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         This role has the same privileges defined for<literal>admin</literal>
         role in upstream Barbican. Referenced in the service policy config
         file, <filename>policy.json</filename>.
+=======
+        This role has the same privileges defined for<literal>admin</literal> role in upstream
+        Barbican. Referenced in the service policy config file, <filename>policy.json</filename>.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -599,9 +806,14 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         This role has the same privileges defined
         for<literal>observer</literal> role in upstream Barbican. Referenced in
         the service policy config file, <filename>policy.json</filename>.
+=======
+        This role has the same privileges defined for<literal>observer</literal> role in upstream
+        Barbican. Referenced in the service policy config file, <filename>policy.json</filename>.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -625,9 +837,14 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         This role has the same privileges defined for<literal>auditor</literal>
         role in upstream Barbican. Referenced in the service policy config
         file, <filename>policy.json</filename>.
+=======
+        This role has the same privileges defined for<literal>auditor</literal> role in upstream
+        Barbican. Referenced in the service policy config file, <filename>policy.json</filename>.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -650,10 +867,15 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         This role has the same privileges defined
         for<literal>key-manager:service-admin</literal> role in upstream
         Barbican. Referenced in the service policy config file,
         <filename>policy.json</filename>.
+=======
+        This role has the same privileges defined for<literal>key-manager:service-admin</literal> role in upstream
+        Barbican. Referenced in the service policy config file, <filename>policy.json</filename>.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -717,7 +939,11 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
     </tbody>
    </tgroup>
   </informaltable>
+<<<<<<< HEAD
   <bridgehead renderas="sect4">Role Assignments</bridgehead>
+=======
+<bridgehead renderas="sect4">Role Assignments</bridgehead>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
   <informaltable colsep="1" rowsep="1">
    <tgroup cols="4">
     <colspec colname="c1" colnum="1" colwidth="1.0*"/>
@@ -752,9 +978,15 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       <entry>key-manager:service-admin </entry>
       <entry>
        <para>
+<<<<<<< HEAD
         User is assigned Barbican service administration privileges on
         Keystone- defined <literal>admin</literal> project. This role and the
         one above allows full Barbican-related administration capabilities.
+=======
+        User is assigned Barbican service administration privileges on Keystone-
+        defined <literal>admin</literal> project. This role and the one above
+        allows full Barbican-related administration capabilities.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
        </para>
       </entry>
      </row>
@@ -765,8 +997,13 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       <entry>
        <para>
         User assigned Keystone defined administrative role on its
+<<<<<<< HEAD
         <literal>admin</literal> project. This way customer can continue to use
         Barbican CLI and &ostack-bare; CLI without need to switch when testing
+=======
+        <literal>admin</literal> project. This way customer can continue to
+        use Barbican CLI and &ostack-bare; CLI without need to switch when testing
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
         or verifying data.
        </para>
       </entry>
@@ -802,8 +1039,13 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
        <para>
         Barbican service account is given <literal>service</literal> role on
         <literal>services</literal> project for token validation. API server
+<<<<<<< HEAD
         uses this for creating scoped service token and then includes it as
         <literal>X-Service-Token</literal> when requesting customer/client
+=======
+        uses this for creating scoped service token and then includes it
+        as <literal>X-Service-Token</literal> when requesting customer/client
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
         token validation from Keystone.
        </para>
       </entry>
@@ -811,15 +1053,24 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
     </tbody>
    </tgroup>
   </informaltable>
+<<<<<<< HEAD
  </section>
+=======
+</section>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
  <section xml:id="idg-all-security-barbican-xml-11">
   <title>Known issues and workarounds</title>
   <orderedlist>
    <listitem>
     <para>
+<<<<<<< HEAD
      Make sure that in your Certificate Signing Request (CSR) <literal>Common
      Name</literal> matches the <literal>barbican_kmip_username</literal> value
      defined in
+=======
+     Make sure that in your Certificate Signing Request (CSR) <literal>Common Name</literal>
+     matches the <literal>barbican_kmip_username</literal> value defined in
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
      <filename>roles/barbican-common/vars/barbican_deploy_config.yml</filename>.
      Otherwise you may see an internal server error message in Barbican for
      secret create request.
@@ -828,6 +1079,7 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
    <listitem>
     <para>
      Barbican does not return a clear error message with regards to client
+<<<<<<< HEAD
      certificate setup and its connectivity with KMIP server. During secret
      create request, a general "Internal Server Error" is returned when the
      certificate is invalid or missing any of necessary client certificate data
@@ -841,6 +1093,22 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
   </orderedlist>
 <!-- Commented in DITA original -->
 <!--<codeblock>stack@padawan-ccp-c1-m1-mgmt:~$ monasca
+=======
+     certificate setup and its connectivity with KMIP server. During
+     secret create request, a general "Internal Server Error" is returned when
+     the certificate is invalid or missing any of necessary client certificate
+     data (client certificate, key and CA root certificate).
+    </para>
+   </listitem>
+   <!-- Commented in DITA original -->
+   <!--<li>After reconfiguring VIP from TLS to non-TLS , false measurements appear in monitoring.
+          Monasca measurements for http_status checks alternate between '0' and '1' as shown
+          below.</li>-->
+  </orderedlist>
+
+      <!-- Commented in DITA original -->
+      <!--<codeblock>stack@padawan-ccp-c1-m1-mgmt:~$ monasca
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
         - -os-username monasca measurement-list - -dimensions
         component=barbican-api,monitored_host_type=vip,api_endpoint=internal - -merge_metrics</codeblock>
      <codeblock> http_status 2016-02-17T20:17:00
@@ -859,10 +1127,19 @@ ansible-playbook -i hosts/verb_hosts barbican-reconfigure.yml</screen>
       control plane definition file,
       <codeph>control_plane.yml</codeph>:<codeblock>~/helion/my_cloud/definition/data/control_plane.yml</codeblock>Make
       changes to add Barbican service components if not already there, as explained next:-->
+<<<<<<< HEAD
  </section>
 <!-- Commented in DITA original -->
 <!--<section conref="../upgrade/enable_barbican_for_upgrade.dita#barbicanUpgrade/config"/>-->
 <!--<section>Commit the change in git repository.
+=======
+
+ </section>
+
+    <!-- Commented in DITA original -->
+    <!--<section conref="../upgrade/enable_barbican_for_upgrade.dita#barbicanUpgrade/config"/>-->
+    <!--<section>Commit the change in git repository.
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
       <codeblock>cd ~/helion
 git add -A
 git commit -m "My config"</codeblock>

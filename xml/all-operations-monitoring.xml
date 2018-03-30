@@ -13,6 +13,11 @@
  </para>
  <xi:include href="all-operations-monitoring_service.xml"/>
  <xi:include href="all-operations-monitoring-configure_monitoring.xml"/>
+<<<<<<< HEAD
 <!-- <xi:include href="all-operations-monitoring-monasca_plugins_overview.xml"/>-->
 <!-- <xi:include href="all-operations-monitoring-alarm_metrics.xml"/>-->
+=======
+ <xi:include href="all-operations-monitoring-monasca_plugins_overview.xml"/>
+ <xi:include href="all-operations-monitoring-alarm_metrics.xml"/>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 </section>

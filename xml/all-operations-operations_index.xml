@@ -28,7 +28,11 @@
  <xi:include href="all-operations-managing_dashboards.xml"/>
  <xi:include href="all-operations-managing_orchestration.xml"/>
  <xi:include href="all-operations-managing_telemetry.xml"/>
+<<<<<<< HEAD
 <!-- <xi:include href="all-operations-maintenance-system_maintenance.xml"/>-->
+=======
+ <!-- <xi:include href="all-operations-maintenance-system_maintenance.xml"/> -->
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 <xi:include href="all-bura-bura_overview.xml"/>
  <xi:include href="all-operations-troubleshooting-troubleshooting_issues.xml"/>
 </book>

@@ -30,8 +30,12 @@
  <xi:include href="all-security-security_overview.xml"/>
  <xi:include href="all-operations-operations_index.xml"/>
  <xi:include href="all-userguide-userguide_index.xml"/>
+<<<<<<< HEAD
  <!-- Last one is wrong, should it be all-operations-opsconsole_overview.xml?
  - sknorr, 2018-03-23 -->
+=======
+ <xi:include href="book-operations-opsconsole_index.xml"/>
+>>>>>>> fc4b868dc1cb963dd112a2e1bc7d0526fd8179ef
 <!-- <xi:include href="all-operations-opsconsole-en-alarm_definitions.xml"/>-->
 
  <book>
